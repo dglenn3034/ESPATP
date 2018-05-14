@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Landsat8AndNAIPOrder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>12703252-344a-41ef-a14c-2213065af04c</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3c7d504a-237d-4291-8819-703614ae5ca9</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c1674f07-7185-4d1c-8b4e-6d5b3c9b5f61</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>027a7cd0-2127-4b59-897d-79d8a7f42372</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+</TestCaseEntity>

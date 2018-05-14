@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Reports</name>
+   <tag></tag>
+   <elementGuidId>1420017e-8ca4-4fc9-aadc-5e5ac644c340</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Reports</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;page-wrapper&quot;]/div[1]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-3 col-md-6&quot;]/div[@class=&quot;panel-orange panel panel-default&quot;]/div[@class=&quot;panel-heading&quot;]/div[@class=&quot;row panel-title&quot;]/div[@class=&quot;col-xs-9 text-right&quot;]/div[2]</value>
+   </webElementProperties>
+</WebElementEntity>

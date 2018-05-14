@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Touches Named Search, Histograms and places an order for Landsat</description>
+   <name>SmokeTest01</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>05601fc9-6d4a-4dd6-8f67-0967b6ac1976</testCaseGuid>
+</TestCaseEntity>

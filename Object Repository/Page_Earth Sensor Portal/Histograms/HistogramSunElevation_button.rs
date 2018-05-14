@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>HistogramSunElevation_button</name>
+   <tag></tag>
+   <elementGuidId>5f9fe8ad-fa9f-40ab-a4d7-178a38a7999f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//i[@class='far fa-sun']/../../../../div/div/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>far fa-edit cesium-button cesium-toolbar-button btn btn-primary</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-describedby</name>
+      <type>Main</type>
+      <value>tooltip</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[1]/div[1]/div[@class=&quot;show-hide-filter-container left-container&quot;]/div[@class=&quot;filter-wrapper filter-in&quot;]/div[@class=&quot;filter-panel pull-left disabled&quot;]/div[@class=&quot;row&quot;]/ul[1]/li[1]/div[1]/div[@class=&quot;row&quot;]/div[@class=&quot;edit-filter-button&quot;]/div[1]/button[@class=&quot;far fa-edit cesium-button cesium-toolbar-button btn btn-primary&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

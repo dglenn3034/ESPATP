@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DavidsonQueryTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0382f234-a9df-4171-b0e5-da1e82651312</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8b3d9343-c82b-4f42-b03b-785b88d3297c</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>92f7ddff-330d-4343-803b-cb9483ee48ef</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c06465a0-524a-4c84-9209-9c8fdb322bd7</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+</TestCaseEntity>

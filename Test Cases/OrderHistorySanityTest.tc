@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Tests presence of GUI section in Admin Console for System Admin login</description>
+   <name>OrderHistorySanityTest</name>
+   <tag>AdminGUISanity</tag>
+   <comment></comment>
+   <testCaseGuid>b41c9b51-e632-475b-a628-307eae8f319e</testCaseGuid>
+</TestCaseEntity>

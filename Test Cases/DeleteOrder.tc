@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Delete's the first ATP order found</description>
+   <name>DeleteOrder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b515ece9-878f-4c33-a4b0-d84d47971ed3</testCaseGuid>
+</TestCaseEntity>

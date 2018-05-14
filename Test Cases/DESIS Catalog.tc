@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Order 3 DESIS files from France</description>
+   <name>DESIS Catalog</name>
+   <tag>DESISCATALOG</tag>
+   <comment></comment>
+   <testCaseGuid>3dc2177a-6ff1-46c0-8bc3-fdaf02bc3819</testCaseGuid>
+</TestCaseEntity>

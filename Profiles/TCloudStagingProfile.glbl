@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>TCloudStagingProfile</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>User name for ESP Production</description>
+      <initValue>'dummy@dummy.com'</initValue>
+      <name>User</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ESP Production User Password</description>
+      <initValue>'DummyPassword'</initValue>
+      <name>pwd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>TCloud Staging Site - Company GeoCue</description>
+      <initValue>'https://geocue.tcloudhost-dev.com'</initValue>
+      <name>site</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Users\\myname\\AppData\\Local\\Temp'</initValue>
+      <name>ScreenShotFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>TCloud Staging - GeoCue Company</description>
+      <initValue>'https://geocue.tcloudhost-dev.com'</initValue>
+      <name>GeoCueCompanySite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Admin site</description>
+      <initValue>'https://geocue.tcloud-dev.com/admin'</initValue>
+      <name>AdminSite</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

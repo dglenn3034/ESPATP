@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Landsat8AndOrthosOrder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fa1402e9-aa8e-4ec4-8805-0e08878f00ae</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ab1f8373-b4cb-4ea2-b9dd-683b1481c675</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9ee1a239-85d4-4f14-a856-d328228e60d0</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d4d6f444-302f-4e21-b470-20aa1febc1d0</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+</TestCaseEntity>

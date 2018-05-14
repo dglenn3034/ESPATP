@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>HistogramCloudCoverageFull_CheckBox</name>
+   <tag></tag>
+   <elementGuidId>983dc652-46bb-428a-b08a-7a24c23a0bf8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#popover .col-md-offset-2 > div:nth-child(5) input</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@type = 'checkbox' and @name = 'cloudCoverageFull']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>cloudCoverageFull</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>on</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;popover&quot;)/div[@class=&quot;popover-content&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-offset-2&quot;]/div[@class=&quot;checkbox&quot;]/label[1]/input[1]</value>
+   </webElementProperties>
+</WebElementEntity>

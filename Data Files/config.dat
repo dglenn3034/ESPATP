@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>Configuration for sensative data</description>
+   <name>config</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>102e7b3e-10fd-420b-ba0a-ec42a7bf5eec</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>krutland%40geocue.com Graystone504%3F%3F https%3A%2F%2Fgeocue.earthsensorportal.com</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>email</name>
+      <size>1</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>password</name>
+      <size>1</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>site</name>
+      <size>1</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

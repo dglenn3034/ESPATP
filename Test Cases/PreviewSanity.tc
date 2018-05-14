@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Preview Landsat, Naip, Lidar and Orthos</description>
+   <name>PreviewSanity</name>
+   <tag>Preview</tag>
+   <comment></comment>
+   <testCaseGuid>677a9bf9-02b7-4640-8cfd-aa4b74e6026c</testCaseGuid>
+</TestCaseEntity>
