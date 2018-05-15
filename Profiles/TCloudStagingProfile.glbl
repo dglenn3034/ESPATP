@@ -6,7 +6,7 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>User name for ESP Production</description>
-      <initValue>'dummy@dummy.com'</initValue>
+      <initValue>'dummy2@dummy.com'</initValue>
       <name>User</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

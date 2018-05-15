@@ -6,12 +6,12 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>User name for ESP Production</description>
-      <initValue>'dummy@geocue.com'</initValue>
+      <initValue>'dglenn@geocue.com'</initValue>
       <name>User</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>ESP Production User Password</description>
-      <initValue>'DummyPWD'</initValue>
+      <initValue>'David123!'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'C:\\Users\\myname\\AppData\\Local\\Temp'</initValue>
+      <initValue>'C:\\Users\\dglenn\\AppData\\Local\\Temp'</initValue>
       <name>ScreenShotFile</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_CREATED</name>
+   <tag></tag>
+   <elementGuidId>ded7fa35-7f47-4a0d-92bf-8c0f575f725c</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>CREATED</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;genericGridContainer&quot;)/div[@class=&quot;table-responsive grid-min-height&quot;]/table[@class=&quot;table table-striped table-bordered custom-grid default-hover-style&quot;]/thead[1]/tr[@class=&quot;grid-header-row fit&quot;]/th[@class=&quot;orders-grid-th-background&quot;]/div[@class=&quot;dropdown open btn-group&quot;]/div[@class=&quot;dropdown-menu filter-dropdown discrete-filter-dropdown&quot;]/ul[@class=&quot;list-unstyled&quot;]/div[@class=&quot;checkbox&quot;]/label[1]</value>
+   </webElementProperties>
+</WebElementEntity>

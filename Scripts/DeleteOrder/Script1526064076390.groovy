@@ -46,21 +46,24 @@ WebUI.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/Admin Conso
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/OrderNameFIlter_LikeField'), 
     'ATP')
 
-ordername = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/NameofOrderInRowone_Field'))
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/OrderStatusFilter_Button'))
 
-'Delete Order Button'
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/RowDelete_Button'))
+WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_CREATEDCheckbox'), 
+    3)
 
-WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/DeleteFromBucket_CheckBox'))
+WebUI.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_CREATEDCheckbox'))
 
-WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/SubtractFromQuota_CheckBox'))
+WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_STARTEDCheckbox'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/DeleteOrderContinue_Button'))
+WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_SUBMITTEDCheckbox'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/input_orderName'), 
-    ordername)
+WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_FAILURECheckbox'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/button_Confirm'))
+WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_WARNINGCheckbox'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_CANCELEDCheckbox'))
+
+WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_REJECTEDCheckbox'))
+
+WebUI.callTestCase(findTestCase('JustDeleteOneATPOrder'), [:], FailureHandling.STOP_ON_FAILURE)
 
