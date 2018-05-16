@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>ESP Production User Password</description>
-      <initValue>'dummypwd'</initValue>
+      <initValue>'dummypassword'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
