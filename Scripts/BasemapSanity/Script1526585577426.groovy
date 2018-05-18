@@ -62,13 +62,21 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Consol
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsNameFilterInput_Field'), 
     'ATPBasemap')
 
+WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilter_Button'))
+
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilerInput_Field'), 'COMPLETE')
+
 try {
     WebUiBuiltInKeywords.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label'))
 
     println('Basemap Does not exist')
 }
 catch (Exception e) {
-    println('Basemap does exist')
+    println('Basemap does exist, we will delete it')
+
+    WebUI.check(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsDeleteFirstBasemap_checkbox'))
+
+    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 } 
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/CreateBasemap_Button'))
