@@ -31,7 +31,7 @@ WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalV
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
 
-WebUiBuiltInKeywords.waitForPageLoad(5)
+WebUiBuiltInKeywords.waitForPageLoad(10)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/a_ System Information'))
 
@@ -65,5 +65,25 @@ WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Cons
 
 WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_REJECTEDCheckbox'))
 
-WebUI.callTestCase(findTestCase('JustDeleteOneATPOrder'), [:], FailureHandling.STOP_ON_FAILURE)
+countOrders = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/TotalOrders_Field'))
+
+while (countOrders != '1') {
+    println('Number of Orders = ' + countOrders)
+
+    WebUI.callTestCase(findTestCase('Utilities/JustDeleteOneATPOrder'), [:], FailureHandling.STOP_ON_FAILURE)
+
+    countOrders2 = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/TotalOrders_Field'))
+
+    if (countOrders2 == countOrders) {
+        println('Exiting, last delete must have failed!!')
+
+        break
+    } else {
+        countOrders = countOrders2
+    }
+    
+    
+}
+
+WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

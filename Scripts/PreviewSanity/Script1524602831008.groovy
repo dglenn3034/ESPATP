@@ -114,3 +114,5 @@ filelocation = (GlobalVariable.ScreenShotFile + '\\miaminaip.png')
 'Take a screenshot'
 WebUI.takeScreenshot(filelocation)
 
+WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
+

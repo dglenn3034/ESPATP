@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>NamedSearchExists</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>597e4d95-4e45-4dd8-a6fe-9c41df1294f3</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0dd0d8fd-4b65-415d-8dfc-c04bb731685f</id>
+      <masked>false</masked>
+      <name>NamedSearch</name>
+   </variable>
+</TestCaseEntity>

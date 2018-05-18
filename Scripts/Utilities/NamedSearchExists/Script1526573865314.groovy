@@ -19,31 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button'), 3)
 
-WebUI.navigateToUrl(GlobalVariable.QCSite)
+WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+try {
+    WebUI.selectOptionByLabel(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField'), NamedSearch, 
+        true, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'), 5)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine'))
-
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'), 'Davidson')
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
-
-WebUI.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectsOpenFirstProject_Checkbox'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItemsItemCount_Label'), 'Displaying 1072 of 1072 Item(s)')
-
-WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
+}
+catch (Exception e) {
+    println('No such Named Search')
+	throw new com.kms.katalon.core.exception.StepFailedException()
+} 
 

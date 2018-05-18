@@ -21,19 +21,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.GeoCueCompanySite)
+WebUI.navigateToUrl(GlobalVariable.AdminSite)
 
 WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
 
 WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/AccountSettings_Button'), 2)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/AccountSettings_Button'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/AccountSettings_ Admin Console'))
 
 WebUiBuiltInKeywords.waitForPageLoad(2)
 
@@ -52,4 +46,6 @@ WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Port
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/a_ System Information'), 
     1)
+
+WebUI.callTestCase(findTestCase('Utilities/AdminConsoleSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

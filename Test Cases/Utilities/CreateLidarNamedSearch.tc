@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This creates a Named Search based on the input NamedSearch param that is a filtered portion of Project Davidson.
+The AOI is imported.</description>
+   <name>CreateLidarNamedSearch</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c30675d6-dafc-4852-a7ad-e70cbaf7765c</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8af8dbcd-dc95-4f3b-a2bb-9972961a2431</id>
+      <masked>false</masked>
+      <name>NamedSearch</name>
+   </variable>
+</TestCaseEntity>

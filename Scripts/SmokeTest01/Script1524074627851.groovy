@@ -130,3 +130,5 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
 WebUI.closeBrowser()
 
+WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
+

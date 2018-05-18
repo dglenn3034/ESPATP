@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input</name>
+   <name>ProductSelectionAirborneLidar_Filter_button</name>
    <tag></tag>
-   <elementGuidId>ccd48fe0-6eea-4840-94c6-6c69059175ee</elementGuidId>
+   <elementGuidId>0f938f16-ae40-4c86-a033-d3474a04f653</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[(text() = 'CREATED' or . = 'CREATED')]/input
+         <value>//span[(text()='Airborne LIDAR')]/../../td/button
 </value>
       </entry>
    </selectorCollection>
@@ -18,27 +18,34 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>checkbox</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>value</name>
+      <name>class</name>
       <type>Main</type>
-      <value>on</value>
+      <value>fa fa-filter btn btn-default</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-describedby</name>
+      <type>Main</type>
+      <value>productSpecificAttributeFilter</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;genericGridContainer&quot;)/div[@class=&quot;table-responsive grid-min-height&quot;]/table[@class=&quot;table table-striped table-bordered custom-grid default-hover-style&quot;]/thead[1]/tr[@class=&quot;grid-header-row fit&quot;]/th[@class=&quot;orders-grid-th-background&quot;]/div[@class=&quot;dropdown open btn-group&quot;]/div[@class=&quot;dropdown-menu filter-dropdown discrete-filter-dropdown&quot;]/ul[@class=&quot;list-unstyled&quot;]/div[@class=&quot;checkbox&quot;]/label[1]/input[1]</value>
+      <value>id(&quot;app&quot;)/div[1]/div[1]/div[6]/span[1]/div[@class=&quot;prodSelection&quot;]/div[@class=&quot;field&quot;]/table[@class=&quot;table table-bordered&quot;]/tbody[1]/tr[9]/td[3]/button[@class=&quot;fa fa-filter btn btn-default&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

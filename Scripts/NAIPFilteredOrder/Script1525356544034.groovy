@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSel
 
 Thread.sleep(1000)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductFIlter_AddClause_button'))
+WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductFilter_AddLineButton'))
 
 WebUI.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductFilter_DateSelectorField'), '01/01/2014')
 
@@ -82,4 +82,6 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrd
 WebUiBuiltInKeywords.delay(3)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+
+WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 
