@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ProjectItemsNameFilter_Button</name>
+   <tag></tag>
+   <elementGuidId>30e510fe-9cc7-4b44-be82-3e04e39ff71f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a/span[(text()='Name')]/../../div/a/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa fa-filter header-icon-size selected-filter-dropdown</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;genericGridContainer&quot;)/div[@class=&quot;table-responsive grid-min-height&quot;]/table[@class=&quot;table-striped table-bordered custom-grid project-item-grid-hover-style&quot;]/thead[1]/tr[@class=&quot;grid-header-row fit&quot;]/th[@class=&quot;project-item-grid-th-background&quot;]/div[@class=&quot;dropdown btn-group&quot;]/a[1]/i[@class=&quot;fa fa-filter header-icon-size selected-filter-dropdown&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

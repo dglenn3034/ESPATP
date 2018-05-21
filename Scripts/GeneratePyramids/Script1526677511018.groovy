@@ -43,7 +43,46 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
 WebUI.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectsOpenFirstItem'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsCountLabel'), 'Displaying 1072 of 1072 Item(s)')
+WebUI.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsCountLabel'), 5)
+
+try {
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge'))
+
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetClearSet_Button'))
+
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetDismiss_Button'))
+}
+catch (Exception e) {
+    /* do nothing if working set is empty */
+    println('working set is empty to start with')
+} 
+
+WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsNameFilter_Button'))
+
+WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsNameLike_Field'), 
+    'DavCo_AA')
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsSelectAll'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsAddtoWorkingSet'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetSelectProcess'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetGeneratePyramidsRadio'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetExecuteProcess'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+
+WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/ReadyToExecuteOKButton'), 5)
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/ReadyToExecuteOKButton'))
+
+WebUI.delay(2)
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

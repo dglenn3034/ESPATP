@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>WorkingSetGeneratePyramidsRadio</name>
+   <tag></tag>
+   <elementGuidId>75532e44-7485-4127-a015-d21c31af1b88</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//td[(text()='Generate Pyramids')]/../td/input[@type='radio']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>radio</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>on</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[1]/div[1]/div[1]/div[@class=&quot;process-grid-container&quot;]/div[@class=&quot;draggable-panel react-draggable panel panel-primary&quot;]/div[@class=&quot;panel-collapse collapse in&quot;]/div[@class=&quot;panel-body&quot;]/div[1]/div[@class=&quot;react-bs-table-container qcpanel-container-table&quot;]/div[@class=&quot;react-bs-table react-bs-table-bordered&quot;]/div[@class=&quot;react-bs-container-body&quot;]/table[@class=&quot;table table-striped table-bordered table-hover table-condensed&quot;]/tbody[1]/tr[1]/td[1]/input[1]</value>
+   </webElementProperties>
+</WebElementEntity>

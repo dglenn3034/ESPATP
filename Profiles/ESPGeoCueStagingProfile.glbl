@@ -6,12 +6,12 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>User name for ESP Staging</description>
-      <initValue>'dummy@geocue.com'</initValue>
+      <initValue>'dummy@dummy.com'</initValue>
       <name>User</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>ESP StagingUser Password</description>
-      <initValue>'DummyPWD'</initValue>
+      <initValue>'dummypwd'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -43,5 +43,25 @@
       <description>Admin Site Geocue</description>
       <initValue>'https://geocue.earthsensorportal-dev.com/admin'</initValue>
       <name>AdminSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'gcesp-lidar'</initValue>
+      <name>S3SourceLidarBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ATP'</initValue>
+      <name>S3SourceLidarPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'gcesp-orthos'</initValue>
+      <name>S3SourceOrthoBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ATP'</initValue>
+      <name>S3SourceOrthoPrefix</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

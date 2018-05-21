@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ProjectsOpenFirstProject_Checkbox</name>
+   <name>LoadingMask</name>
    <tag></tag>
-   <elementGuidId>93a0aee5-9a5f-4487-92b7-8e5a5cb0286c</elementGuidId>
+   <elementGuidId>df16cccd-839a-4434-ad4b-163669bd8602</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#genericGridContainer tbody > .grid-body-row > td:nth-child(2) > span:first-child</value>
+         <key>XPATH</key>
+         <value>//div[@class='loading-mask']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

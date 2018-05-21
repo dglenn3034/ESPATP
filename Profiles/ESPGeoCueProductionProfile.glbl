@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>ESP Production User Password</description>
-      <initValue>'dummypassword'</initValue>
+      <initValue>'dummypwd'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -43,5 +43,25 @@
       <description></description>
       <initValue>'https://geocue.earthsensorportal.com/admin#/'</initValue>
       <name>AdminSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'gcesp-lidar'</initValue>
+      <name>S3SourceLidarBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ATP'</initValue>
+      <name>S3SourceLidarPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'gcesp-orthos'</initValue>
+      <name>S3SourceOrthoBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ATP'</initValue>
+      <name>S3SourceOrthoPrefix</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
