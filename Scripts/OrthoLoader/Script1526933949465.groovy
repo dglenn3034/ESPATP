@@ -33,17 +33,22 @@ WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'),
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button'))
+WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPOrthoProject', ('ProductType') : 'AerialImages'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine'))
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoaderButton'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'), 'Davidson')
+WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderInputBucketName'), 
+    GlobalVariable.S3SourceOrthoBucket)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderInputS3Prefix'), 
+    GlobalVariable.S3SourceOrthoPrefix)
 
-WebUI.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsOpenFirstItem'), FailureHandling.STOP_ON_FAILURE)
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderSelectATPProject'))
 
-WebUI.verifyElementText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsCountLabel'), 'Displaying 1072 of 1072 Item(s)')
+WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderExecute'))
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

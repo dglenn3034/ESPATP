@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CreateProject</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8ec3efde-23a2-4431-ae4a-8d660669fda5</testCaseGuid>
+   <variable>
+      <defaultValue>'ATPProject'</defaultValue>
+      <description></description>
+      <id>a477989a-d48b-4fa7-9091-f54cf7bf34b8</id>
+      <masked>false</masked>
+      <name>ProjectName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Lidar'</defaultValue>
+      <description></description>
+      <id>7b7eca57-b85d-4519-a96f-71eb0c2bbb33</id>
+      <masked>false</masked>
+      <name>ProductType</name>
+   </variable>
+</TestCaseEntity>

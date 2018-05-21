@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CreateProjectButton</name>
+   <tag></tag>
+   <elementGuidId>87592d3c-ade3-4e2a-8e51-17ef6421097e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='tb-vertical-slidingcontainer']/div/div/div/div/button[@class='fa fa-magic cesium-button cesium-toolbar-button btn btn-primary']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa fa-magic cesium-button cesium-toolbar-button btn btn-primary</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-describedby</name>
+      <type>Main</type>
+      <value>tooltip</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[1]/div[1]/div[1]/div[@class=&quot;tb-wrapper tb-slide-in&quot;]/div[@class=&quot;tb-vertical-slidingcontainer&quot;]/div[@class=&quot;tb-vertical&quot;]/div[@class=&quot;btn-group-container&quot;]/div[@class=&quot;btn-group-row&quot;]/div[@class=&quot;btn-group&quot;]/button[@class=&quot;fa fa-magic cesium-button cesium-toolbar-button btn btn-primary&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

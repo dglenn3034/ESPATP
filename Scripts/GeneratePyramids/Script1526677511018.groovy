@@ -41,7 +41,7 @@ WebUI.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterPr
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
-WebUI.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectsOpenFirstItem'), FailureHandling.STOP_ON_FAILURE)
+WebUI.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsOpenFirstItem'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsCountLabel'), 5)
 

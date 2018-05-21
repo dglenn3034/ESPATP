@@ -21,7 +21,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 /* begin here */
-
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
@@ -52,8 +51,6 @@ catch (Exception e) {
 WebUI.navigateToUrl(GlobalVariable.AdminSite)
 
 WebUI.waitForPageLoad(10)
-
-not_run: WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Admin Console/a_ Custom Base Maps'), 20)
 
