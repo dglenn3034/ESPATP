@@ -67,23 +67,13 @@ WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Cons
 
 countOrders = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/TotalOrders_Field'))
 
-while (countOrders != '1') {
-    println('Number of Orders = ' + countOrders)
+println('Number of Orders = ' + countOrders)
 
-    WebUI.callTestCase(findTestCase('Utilities/JustDeleteOneATPOrder'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/JustDeleteOneATPOrder'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    countOrders2 = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/TotalOrders_Field'))
+countOrders2 = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/TotalOrders_Field'))
 
-    if (countOrders2 == countOrders) {
-        println('Exiting, last delete must have failed!!')
+println('Number of Orders after delete = ' + countOrders2)
 
-        break
-    } else {
-        countOrders = countOrders2
-    }
-    
-    
-}
-
-WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/AdminConsoleSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

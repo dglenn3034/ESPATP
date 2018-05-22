@@ -30,7 +30,7 @@ WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalV
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/CesiumSearchField'), 'Birmingham')
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/CesiumSearchField'), 'Birmingham, Al')
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/CesiumSearchButton'))
 

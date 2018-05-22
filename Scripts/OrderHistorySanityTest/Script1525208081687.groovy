@@ -63,7 +63,7 @@ WebUiBuiltInKeywords.delay(2)
 'click on header just to allow tooltip to clear'
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_Row1SelectBox'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_DetailsButton'), 2)
+WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_DetailsButton'), 5)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_DetailsButton'))
 

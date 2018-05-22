@@ -66,6 +66,8 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Pr
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsAddtoWorkingSet'))
 
+WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge'), 3)
+
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetSelectProcess'))
