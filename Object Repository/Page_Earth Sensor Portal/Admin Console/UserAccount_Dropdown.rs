@@ -4,7 +4,17 @@
    <name>UserAccount_Dropdown</name>
    <tag></tag>
    <elementGuidId>dd0a05e2-289f-4a67-b443-17824fe49637</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;navDropDown1&quot;)/i[@class=&quot;fa fa-user fa-fw&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id = 'user-account-dropdown' and @type = 'button']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
