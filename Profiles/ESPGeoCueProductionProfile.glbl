@@ -64,4 +64,14 @@
       <initValue>'ATP'</initValue>
       <name>S3SourceOrthoPrefix</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'gcesp-geocue-orders'</initValue>
+      <name>GeoCueDeliveryBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ATPOrders'</initValue>
+      <name>GeoCueDeliveryPrefix</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -34,4 +34,14 @@
       <initValue>'https://geocue.tcloudhost.com/admin'</initValue>
       <name>AdminSite</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-geocue-orders'</initValue>
+      <name>GeoCueDeliveryBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ATP'</initValue>
+      <name>GeoCueDeliveryPrefix</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

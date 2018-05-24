@@ -19,7 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown'), 3)
+WebUI.delay(3)
+
+WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown'), 10)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown'))
 

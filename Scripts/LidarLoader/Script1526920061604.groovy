@@ -29,7 +29,7 @@ WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalV
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'), 5)
+WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'), 10)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
 
