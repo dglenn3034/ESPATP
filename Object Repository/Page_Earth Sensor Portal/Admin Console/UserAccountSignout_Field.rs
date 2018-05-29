@@ -4,7 +4,17 @@
    <name>UserAccountSignout_Field</name>
    <tag></tag>
    <elementGuidId>f6c58056-623d-4c64-893e-4e0158e96037</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[(text() = '  Sign Out ' or . = '  Sign Out ')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div/div/nav/div/ul/li/ul/li/a/span/i[@class='fa fa-power-off fa-fw']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

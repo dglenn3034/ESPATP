@@ -31,6 +31,8 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
 
 WebUiBuiltInKeywords.waitForPageLoad(2)
 
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/AddOrganizationButton'))
@@ -50,6 +52,9 @@ WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Cons
     'airgon.com')
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationSaveButton'))
+
+'Wait on success message to clear'
+WebUI.delay(5)
 
 WebUI.callTestCase(findTestCase('Utilities/AdminConsoleSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

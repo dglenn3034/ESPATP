@@ -29,7 +29,7 @@ WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalV
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
 
-WebUiBuiltInKeywords.waitForPageLoad(2)
+WebUiBuiltInKeywords.waitForPageLoad(5)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations'))
 
@@ -41,6 +41,8 @@ WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Cons
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeleteRow1Button'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeleteOKButton'))
+
+WebUI.delay(5)
 
 WebUI.callTestCase(findTestCase('Utilities/AdminConsoleSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

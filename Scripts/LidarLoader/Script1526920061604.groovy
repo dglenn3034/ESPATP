@@ -60,6 +60,8 @@ try {
         println('No problem with the SRS/PRJ file')
 
         WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderExecute'))
+
+        WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
     } else {
         throw new com.kms.katalon.core.exception.StepFailedException('Failed to read SRS/PRJ file')
     }

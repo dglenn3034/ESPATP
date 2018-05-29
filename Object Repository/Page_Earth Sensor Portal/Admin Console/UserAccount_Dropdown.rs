@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id = 'user-account-dropdown' and @type = 'button']</value>
+         <value>//div[@id='app']/div/div/nav/div/ul/li/a/i[@class='fa fa-user fa-fw']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

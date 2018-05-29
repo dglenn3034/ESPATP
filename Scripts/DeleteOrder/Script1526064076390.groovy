@@ -44,7 +44,7 @@ WebUI.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/Admin Conso
     3)
 
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/OrderNameFIlter_LikeField'), 
-    'ATP')
+    'ATPLS')
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/OrderStatusFilter_Button'))
 
