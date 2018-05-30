@@ -19,6 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/SystemInfoTableContainer'))
+
 ordername = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/NameofOrderInRowone_Field'))
 
 'Delete Order Button'
@@ -37,5 +39,5 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Consol
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
-this.println('Deleted ' + ordername)
+println('Deleted ' + ordername)
 

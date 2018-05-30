@@ -78,6 +78,8 @@ catch (Exception e) {
     WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 } 
 
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 5)
+
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/CreateBasemap_Button'))
 
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapName_Field'), 'ATPBasemap')
