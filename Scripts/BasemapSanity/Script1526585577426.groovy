@@ -101,5 +101,8 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Consol
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
+'Allow completion message to clear'
+WebUI.delay(5)
+
 WebUI.callTestCase(findTestCase('Utilities/AdminConsoleSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 
