@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Orders Lidar from Williston FL, adds post processing for Clipping and images</description>
+   <name>LidarandOrthosOrder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2ed91bf5-c41d-4d4e-bf5f-7319581dc002</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>684e8664-c239-4252-a8dd-8379a3adbbda</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c0be5fd5-8c80-463e-a57e-2ac58234af6b</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2544bbd2-71d7-4fb0-a350-4519e14d698e</id>
+      <masked>false</masked>
+      <name>site</name>
+   </variable>
+</TestCaseEntity>
