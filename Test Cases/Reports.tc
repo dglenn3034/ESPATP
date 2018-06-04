@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Generates report for order for Geocue between 04/01/18 and 06/01/18
+Generates report for users for Geocue</description>
    <name>Reports</name>
    <tag></tag>
    <comment></comment>

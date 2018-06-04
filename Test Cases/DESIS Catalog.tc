@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Order 3 DESIS files from France</description>
+   <description>Order 3 DESIS files from France using the AOI file: \\diskstation1\Data\esp\test_data\desis.kml</description>
    <name>DESIS Catalog</name>
    <tag>DESISCATALOG</tag>
    <comment></comment>

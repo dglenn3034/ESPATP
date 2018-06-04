@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Creates a new organization within the GeoCue company named ATPOrganization
+Paired with Delete Organization</description>
    <name>AddATPOrganization</name>
    <tag></tag>
    <comment></comment>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Finds the first order in the order history beginning with ATPLS and having a status of SUCCESS and adds its contents to the order cart. Then deletes the first item from the order cart and places an order for the one remaining item</description>
    <name>OrderHistoryAddToCart</name>
    <tag></tag>
    <comment></comment>

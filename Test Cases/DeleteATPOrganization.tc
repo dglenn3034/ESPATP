@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Deletes ATPOrganization.
+Paired with AddATPOrganization</description>
    <name>DeleteATPOrganization</name>
    <tag></tag>
    <comment></comment>

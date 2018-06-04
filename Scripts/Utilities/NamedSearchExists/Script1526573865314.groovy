@@ -30,6 +30,6 @@ try {
 }
 catch (Exception e) {
     println('No such Named Search')
-	throw new com.kms.katalon.core.exception.StepFailedException()
+	throw new com.kms.katalon.core.exception.StepFailedException('No such Named Search')
 } 
 

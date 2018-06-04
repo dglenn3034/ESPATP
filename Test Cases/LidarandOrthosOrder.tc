@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Orders Lidar from Williston FL, adds post processing for Clipping and images</description>
+   <description>Orders Lidar and Orthos from Houston Bay area using an imported AOI: \\diskstation1\Data\esp\test_data\HoustonBayArea.zip
+
+Orders all of the items found in this search</description>
    <name>LidarandOrthosOrder</name>
    <tag></tag>
    <comment></comment>

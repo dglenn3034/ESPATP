@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>This creates a Named Search based on the input NamedSearch param that is a filtered portion of Project Davidson.
-The AOI is imported.</description>
+The AOI is imported \\diskstation1\Data\Rob_MUSES\Shapefile_test_datasets\AL.kmz</description>
    <name>CreateLidarNamedSearch</name>
    <tag></tag>
    <comment></comment>

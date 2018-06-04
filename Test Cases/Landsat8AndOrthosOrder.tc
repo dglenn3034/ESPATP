@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Submits an order for 1 landsat image and one NAIP image taken from the Houston area, taking the first item from the search results grid fo each</description>
    <name>Landsat8AndOrthosOrder</name>
    <tag></tag>
    <comment></comment>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Executes Lidar Loader to catalog files found in the S3 bucket gcesp-lidar/ATP, using an ATPLIdar prefix, and loading into the project ATPLidarProject, without copying the data into ESP, using an SRS file: Z:\ESP\Test_data\swfwmd\Hernando\stplanFLWest.srs</description>
    <name>LidarLoader</name>
    <tag></tag>
    <comment></comment>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>selects the first order in the SystemInfo table (assumed to be already displayed) and deletes it, checking the subtract from quota as well as the delete files from bucket options</description>
    <name>JustDeleteOneATPOrder</name>
    <tag></tag>
    <comment></comment>

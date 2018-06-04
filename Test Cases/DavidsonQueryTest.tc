@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Opens the Davidson Project in the QC analyst environment and checks the Project Items grid to be sure '1072' items are found</description>
    <name>DavidsonQueryTest</name>
    <tag></tag>
    <comment></comment>

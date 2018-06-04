@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Creates a project named based on the input and with the data type either Lidar or Orthos based on an input parameter as well.
+Simply returns if the project already exists</description>
    <name>CreateProject</name>
    <tag></tag>
    <comment></comment>

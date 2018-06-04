@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Orders Naip and Lidar in one order</description>
+   <description>Orders One NAIP file from the MIAMI beach area, search results filterd in product selection to only show items where acquisition data > 01/01/2014</description>
    <name>NAIPFilteredOrder</name>
    <tag></tag>
    <comment></comment>

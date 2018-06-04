@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Tests presence of GUI section in Admin Console for System Admin login</description>
+   <description>Opens order History, manipulates the columns displayed, filters on orders beginning with ATP, selects the first one and zooms to it, then opens the details for it, selects the popup details icon and dismisses it</description>
    <name>OrderHistorySanityTest</name>
    <tag>AdminGUISanity</tag>
    <comment></comment>
