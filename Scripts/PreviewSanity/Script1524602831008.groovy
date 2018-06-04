@@ -67,7 +67,7 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/SearchResult
 'zoom to the item'
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRowZoomToItem_Button'))
 
-WebUiBuiltInKeywords.delay(5)
+WebUiBuiltInKeywords.delay(10)
 
 String filelocation = GlobalVariable.ScreenShotFile + '\\miamilidar.png'
 
@@ -107,7 +107,7 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/SearchResult
 'zoom to the item'
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRowZoomToItem_Button'))
 
-WebUiBuiltInKeywords.delay(5)
+WebUiBuiltInKeywords.delay(10)
 
 filelocation = (GlobalVariable.ScreenShotFile + '\\miaminaip.png')
 

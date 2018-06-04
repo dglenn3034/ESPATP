@@ -23,6 +23,8 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInforma
 
 ordername = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/NameofOrderInRowone_Field'))
 
+
+
 'Delete Order Button'
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/RowDelete_Button'))
 

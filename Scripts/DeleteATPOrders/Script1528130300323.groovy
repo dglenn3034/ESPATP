@@ -44,7 +44,15 @@ WebUI.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/Admin Conso
     3)
 
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/OrderNameFIlter_LikeField'), 
-    'ATPLS')
+    'ATP')
+
+WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/CompanyNameFilter_Button'))
+
+WebUiBuiltInKeywords.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/CompanyNameFilter_LikeField'), 
+    3)
+
+WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/CompanyNameFilter_LikeField'), 
+    'GeoCue')
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/OrderStatusFilter_Button'))
 
@@ -67,13 +75,27 @@ WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Cons
 
 countOrders = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/TotalOrders_Field'))
 
-println('Number of Orders = ' + countOrders)
+int iCountOrders = Integer.parseInt(countOrders)
 
-WebUI.callTestCase(findTestCase('Utilities/JustDeleteOneATPOrder'), [:], FailureHandling.STOP_ON_FAILURE)
+while (iCountOrders > 0) {
+    println('Number of Orders = ' + countOrders)
 
-countOrders2 = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/TotalOrders_Field'))
+    WebUI.callTestCase(findTestCase('Utilities/JustDeleteOneATPOrder'), [:], FailureHandling.STOP_ON_FAILURE)
 
-println('Number of Orders after delete = ' + countOrders2)
+    countOrders2 = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/TotalOrders_Field'))
+
+    int iCountOrders2 = Integer.parseInt(countOrders2)
+
+    println('Number of Orders after delete = ' + countOrders2)
+
+    if (iCountOrders == iCountOrders2) {
+        throw new com.kms.katalon.core.exception.StepFailedException('Delete failed')
+    } else {
+        iCountOrders = iCountOrders2
+
+        countOrders = countOrders2
+    }
+}
 
 WebUI.callTestCase(findTestCase('Utilities/AdminConsoleSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -15,7 +15,7 @@
       <guid>0410dcad-726c-460d-a6d3-bc2c4e4c2120</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DeleteOrder</testCaseId>
+      <testCaseId>Test Cases/DeleteATPOrders</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9894c434-2ddc-45fc-a76d-781a5c07fe30</guid>
