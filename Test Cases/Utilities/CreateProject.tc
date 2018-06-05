@@ -20,4 +20,18 @@ Simply returns if the project already exists</description>
       <masked>false</masked>
       <name>ProductType</name>
    </variable>
+   <variable>
+      <defaultValue>'\\\\diskstation1\\Data\\esp\\test_data\\HoustonBayArea.zip'</defaultValue>
+      <description></description>
+      <id>bbf4e934-440e-49af-b4c9-3a737229c1aa</id>
+      <masked>false</masked>
+      <name>FootprintFile</name>
+   </variable>
+   <variable>
+      <defaultValue>'ATPLidar'</defaultValue>
+      <description></description>
+      <id>59bb30da-e24b-46ef-83e0-d9a4da0075e4</id>
+      <masked>false</masked>
+      <name>ProjectPrefix</name>
+   </variable>
 </TestCaseEntity>

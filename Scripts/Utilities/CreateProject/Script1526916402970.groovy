@@ -33,35 +33,59 @@ try {
     println(ProjectName + ' does not exist, we will create it')
 }
 catch (Exception e) {
-	
     println(ProjectName + ' does exist, we will delete it and recreate it')
-	WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName], FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName], FailureHandling.STOP_ON_FAILURE)
+
     println(ProjectName + ' deleted ')
-}
+} 
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProjectButton'))
 
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputName'), 
-        ProjectName)
+    ProjectName)
 
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputPrefix'), 
-        'ATP' + ProductType)
+    ProjectPrefix)
 
 if (ProductType == 'Lidar') {
-        WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar'))
-} 
-else {
-        WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeOrtho'))
+    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar'))
+} else {
+    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeOrtho'))
 }
-    
+
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputDescription'), 
-        ('ATP Project for ' + ProductType) + ' Loading')
+    ('ATP Project for ' + ProductType) + ' Loading')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave'))
+println('FootprintFile = ' + FootprintFile)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+if ((FootprintFile != null) && (FootprintFile.length() > 0)) {
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectImportFootprintSingleFile_Tab'))
 
-WebUI.delay(2)
+    WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField'), 
+        FootprintFile)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+    WebUI.delay(2)
+
+    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectFootprintImport_Button'))
+
+    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectFootprintImport_Button'))
+
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/button_OK'))
+
+    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave'))
+
+    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+} else {
+    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave'))
+
+    'This OK is to accept that the project is created with no footprint'
+    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+
+    'This OK is to close the project created confirmation dialog'
+    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+}
+
+'Wait on completion message to fade'
+WebUI.delay(5)
 

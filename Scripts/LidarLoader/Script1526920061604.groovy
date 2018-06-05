@@ -33,8 +33,8 @@ WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'),
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
 
-WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPLidarProject', ('ProductType') : 'Lidar'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPLidarProject', ('ProjectPrefix') : 'ATPLidar'
+        , ('ProductType') : 'Lidar', ('FootprintFile') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoaderButton'))
 
