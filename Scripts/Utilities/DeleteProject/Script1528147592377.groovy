@@ -21,47 +21,27 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine'))
-
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'), ProjectName)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
-
+'If filter is already set, skip to delete, otherwise create filter'
 try {
-    WebUI.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsNoRecordsFound'), 2)
+    WebUI.verifyElementVisible(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsDeleteFirstFilterRow_Button'))
 
-    println(ProjectName + ' does not exist, we will create it')
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 }
 catch (Exception e) {
-	
-    println(ProjectName + ' does exist, we will delete it and recreate it')
-	WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName], FailureHandling.STOP_ON_FAILURE)
-    println(ProjectName + ' deleted ')
-}
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProjectButton'))
+    WebUI.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'), ProjectName)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputName'), 
-        ProjectName)
-
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputPrefix'), 
-        'ATP' + ProductType)
-
-if (ProductType == 'Lidar') {
-        WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar'))
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 } 
-else {
-        WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeOrtho'))
-}
-    
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputDescription'), 
-        ('ATP Project for ' + ProductType) + ' Loading')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave'))
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridRow1DeleteButton'))
+
+WebUI.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridDeleteDataCheckBox'))
+
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridDeleteProjectButton'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
-
-WebUI.delay(2)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
