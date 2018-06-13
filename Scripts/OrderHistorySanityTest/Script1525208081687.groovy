@@ -60,12 +60,12 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory
 
 WebUiBuiltInKeywords.delay(2)
 
+WebUI.mouseOver(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_Row1SelectBox'))
+
 'click on header just to allow tooltip to clear'
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_Row1SelectBox'))
 
-WebUI.waitForElementNotVisible(findTestObject('GenericToolTip'), 5)
-
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_DetailsButton'), 5)
+WebUI.delay(3)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_DetailsButton'))
 

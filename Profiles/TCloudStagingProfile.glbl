@@ -6,12 +6,12 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>User name for ESP Production</description>
-      <initValue>'dummy2@dummy.com'</initValue>
+      <initValue>'dummy@dummy.com'</initValue>
       <name>User</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>ESP Production User Password</description>
-      <initValue>'DummyPassword'</initValue>
+      <initValue>'dummypwd'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -31,7 +31,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Admin site</description>
-      <initValue>'https://geocue.tcloud-dev.com/admin'</initValue>
+      <initValue>'https://geocue.tcloudhost-dev.com/admin'</initValue>
       <name>AdminSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -43,5 +43,35 @@
       <description></description>
       <initValue>'ATP'</initValue>
       <name>GeoCueDeliveryPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://geocue.tcloudhost-dev.com/qc'</initValue>
+      <name>QCSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://geocue.tcloudhost-dev.com'</initValue>
+      <name>LidarSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-testing'</initValue>
+      <name>S3SourceOrthoBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Staging/atp/orthos'</initValue>
+      <name>S3SourceOrthoPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-testing'</initValue>
+      <name>S3SourceLidarBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Staging/atp/lidar'</initValue>
+      <name>S3SourceLidarPrefix</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

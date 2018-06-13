@@ -32,11 +32,13 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button'))
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/CesiumSearchField'), 'France')
 
-WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\esp\\test_data\\desis.kml')
+WebUI.click(findTestObject('Page_Earth Sensor Portal/CesiumSearchButton'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button'))
+WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button'))
 
 WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
@@ -69,7 +71,7 @@ WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/OrderCart/
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button'))
 
 WebUiBuiltInKeywords.delay(2)
 

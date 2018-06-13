@@ -69,8 +69,6 @@ if ((FootprintFile != null) && (FootprintFile.length() > 0)) {
 
     WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectFootprintImport_Button'))
 
-    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectFootprintImport_Button'))
-
     WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/button_OK'))
 
     WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave'))

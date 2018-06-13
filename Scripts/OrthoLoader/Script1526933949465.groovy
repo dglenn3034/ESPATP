@@ -33,8 +33,8 @@ WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'),
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
 
-WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPOrthoProject', ('ProductType') : 'Orthos'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPOrthoProject', ('ProductType') : 'Orthos'
+        , ('ProjectPrefix') : 'ATPOrthos'], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoaderButton'))
 
@@ -46,7 +46,7 @@ WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderSelectATPProject'))
 
-WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
+not_run: WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderExecute'))
 

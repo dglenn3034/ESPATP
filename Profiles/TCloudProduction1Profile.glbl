@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>ESPGeoCueStagingProfile</name>
+   <name>TCloudProduction1Profile</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
-      <description>User name for ESP Staging</description>
+      <description>User name for TCloud Production</description>
       <initValue>'dummy@dummy.com'</initValue>
       <name>User</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP StagingUser Password</description>
-      <initValue>'dummypwd!'</initValue>
+      <description>TCloud Production User Password</description>
+      <initValue>'dummypwd'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP Geocue Staging Site</description>
-      <initValue>'https://geocue.earthsensorportal-dev.com'</initValue>
+      <description>TCloud Geocue Alternate Production Site</description>
+      <initValue>'https://geocue.tcloudhost-alternate.com'</initValue>
       <name>site</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>GeoCue QC site ESP Staging</description>
-      <initValue>'https://geocue.earthsensorportal-dev.com/qc'</initValue>
+      <description>GeoCue QC site TCloud Alternate Production</description>
+      <initValue>'https://geocue.tcloudhost-alternate.com/qc'</initValue>
       <name>QCSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -30,43 +30,43 @@
       <name>ScreenShotFile</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP Account Geocue Company</description>
-      <initValue>'https://geocue.earthsensorportal-dev.com'</initValue>
+      <description>TCloud Account Geocue Company</description>
+      <initValue>'https://geocue.tcloudhost-alternate.com'</initValue>
       <name>GeoCueCompanySite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Lidar site SWFWMD</description>
-      <initValue>'https://swfwmd.earthsensorportal-dev.com/'</initValue>
+      <description>Lidar site GeoCue</description>
+      <initValue>'https://geocue.tcloudhost-alternate.com/'</initValue>
       <name>LidarSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Admin Site Geocue</description>
-      <initValue>'https://geocue.earthsensorportal-dev.com/admin'</initValue>
+      <description></description>
+      <initValue>'https://geocue.tcloudhost-alternate.com/admin#/'</initValue>
       <name>AdminSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'gcesp-testing'</initValue>
+      <initValue>'esp-testing'</initValue>
       <name>S3SourceLidarBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Staging/atp/lidar'</initValue>
+      <initValue>'Production/atp/lidar'</initValue>
       <name>S3SourceLidarPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'gcesp-testing'</initValue>
+      <initValue>'esp-testing'</initValue>
       <name>S3SourceOrthoBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Staging/atp/orthos'</initValue>
+      <initValue>'Production/atp/orthos'</initValue>
       <name>S3SourceOrthoPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'gcesp-geocue-orders'</initValue>
+      <initValue>'esp-geocue-orders'</initValue>
       <name>GeoCueDeliveryBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

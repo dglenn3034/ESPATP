@@ -44,4 +44,29 @@
       <initValue>'ATP'</initValue>
       <name>GeoCueDeliveryPrefix</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-testing'</initValue>
+      <name>S3SourceLidarBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-testing'</initValue>
+      <name>S3SourceOrthoBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Production/atp/lidar'</initValue>
+      <name>S3SourceLidarPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Production/atp/orthos'</initValue>
+      <name>S3SourceOrthoPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>QC Site</description>
+      <initValue>'https://geocue.tcloudhost.com/qc'</initValue>
+      <name>QCSite</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

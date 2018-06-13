@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>ESP Production User Password</description>
-      <initValue>'DummyPWD'</initValue>
+      <initValue>'dummypwd'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -46,22 +46,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'gcesp-lidar'</initValue>
+      <initValue>'gcesp-testing'</initValue>
       <name>S3SourceLidarBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'ATP'</initValue>
+      <initValue>'Production/atp/lidar'</initValue>
       <name>S3SourceLidarPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'gcesp-orthos'</initValue>
+      <initValue>'gcesp-testing'</initValue>
       <name>S3SourceOrthoBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'ATP'</initValue>
+      <initValue>'Production/atp/orthos'</initValue>
       <name>S3SourceOrthoPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

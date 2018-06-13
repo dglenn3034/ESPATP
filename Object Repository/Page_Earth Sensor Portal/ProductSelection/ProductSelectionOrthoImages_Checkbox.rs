@@ -12,7 +12,11 @@
          <key>CSS</key>
          <value>.prodSelection tr:nth-child(10) td:first-child input</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[(text() = 'OrthoImages')]/parent::td/preceding-sibling::td[1]/input</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

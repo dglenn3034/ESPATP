@@ -38,7 +38,7 @@ WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : '
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoaderButton'))
 
-'4 files from swfwmd/Hernando'
+'2 laz files from swfwmd/Hernando'
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderInputBucketName'), 
     GlobalVariable.S3SourceLidarBucket)
 
