@@ -50,5 +50,7 @@ not_run: WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Ortho
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderExecute'))
 
+WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 
