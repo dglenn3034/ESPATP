@@ -37,7 +37,7 @@ catch (Exception e) {
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridRow1DeleteButton'))
 
-WebUI.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridDeleteDataCheckBox'))
+WebUI.uncheck(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridDeleteDataCheckBox'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridDeleteProjectButton'))
 
