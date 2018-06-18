@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
 
 WebUiBuiltInKeywords.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button'), 
-    0)
+    5)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button'))
 

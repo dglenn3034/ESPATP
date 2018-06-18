@@ -161,4 +161,82 @@
          <variableId>027a7cd0-2127-4b59-897d-79d8a7f42372</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>dc07f137-a2f0-49eb-82b8-180b0533a6c5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/LidarandOrthosOrder</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>684e8664-c239-4252-a8dd-8379a3adbbda</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c0be5fd5-8c80-463e-a57e-2ac58234af6b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2544bbd2-71d7-4fb0-a350-4519e14d698e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c29544dc-7656-4510-9ed8-a0828d35069e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrderHistoryAddToCart</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>510eea92-60fb-4c49-8a79-4cd54e619c27</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Reports</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e45f3395-3f59-4761-9e22-8f673b107dfc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/BasemapSanity</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b9e948a1-35cb-4e76-a80c-7a81a81e15eb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CreateProjectWithFootprint</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fd8ddfe1-3588-4aee-8ce3-38433f515a13</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AddATPOrganization</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>62268422-cd72-432f-9b79-97cec80f14bf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DeleteATPOrganization</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f48661a5-617b-4b0f-973d-1bd3e241e03a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GeneratePyramids</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b4f369ea-a7d7-4d25-a953-ceef09655e43</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/LidarLoader</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>04d9a43d-078c-47ad-859c-f567b88631a4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrthoLoader</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

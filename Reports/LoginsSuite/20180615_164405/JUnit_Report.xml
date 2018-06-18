@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="LoginsSuite" time="1" tests="0" failures="0" errors="3">
+   <testsuite name="LoginsSuite" tests="0" failures="0" errors="3" time="1" timestamp="2018-06-15 16:44:07" hostname="DGlenn - MUSES-David.local.niirs10.com" id="Test Suites/LoginsSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\ATPS\\ESPATP\\Reports\\LoginsSuite\\20180615_164405"/>
+         <property name="logFiles" value="D:\\ATPS\\ESPATP\\Reports\\LoginsSuite\\20180615_164405\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DGlenn - MUSES-David.local.niirs10.com"/>
+         <property name="hostAddress" value="192.168.1.75"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.1.1"/>
+      </properties>
+      <testcase name="Test Cases/DataDrivenExample" classname="Test Cases/DataDrivenExample" status="ERROR">
+         <error type="ERROR" message="Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@1cbf6e72' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData'"/>
+         <system-out><![CDATA[2018-06-15 16:44:07 - [TEST_CASE][ERROR] - Test Cases/DataDrivenExample: Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@1cbf6e72' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData'
+
+2018-06-15 16:44:07 - [TEST_STEP][PASSED] - Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(Logins): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1']]></system-out>
+         <system-err><![CDATA[2018-06-15 16:44:07 - [TEST_CASE][ERROR] - Test Cases/DataDrivenExample: Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@1cbf6e72' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData']]></system-err>
+      </testcase>
+      <testcase name="Test Cases/DataDrivenExample" classname="Test Cases/DataDrivenExample" status="ERROR">
+         <error type="ERROR" message="Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@62163b39' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData'"/>
+         <system-out><![CDATA[2018-06-15 16:44:08 - [TEST_CASE][ERROR] - Test Cases/DataDrivenExample: Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@62163b39' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData'
+
+2018-06-15 16:44:08 - [TEST_STEP][PASSED] - Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(Logins): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1']]></system-out>
+         <system-err><![CDATA[2018-06-15 16:44:08 - [TEST_CASE][ERROR] - Test Cases/DataDrivenExample: Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@62163b39' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData']]></system-err>
+      </testcase>
+      <testcase name="Test Cases/DataDrivenExample" classname="Test Cases/DataDrivenExample" status="ERROR">
+         <error type="ERROR" message="Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@201b6b6f' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData'"/>
+         <system-out><![CDATA[2018-06-15 16:44:08 - [TEST_CASE][ERROR] - Test Cases/DataDrivenExample: Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@201b6b6f' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData'
+
+2018-06-15 16:44:08 - [TEST_STEP][PASSED] - Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(Logins): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1']]></system-out>
+         <system-err><![CDATA[2018-06-15 16:44:08 - [TEST_CASE][ERROR] - Test Cases/DataDrivenExample: Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@201b6b6f' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData']]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-15 16:44:07 - [TEST_SUITE][ERROR] - LoginsSuite: Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@1cbf6e72' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData']]></system-out>
+      <system-err><![CDATA[2018-06-15 16:44:07 - [TEST_SUITE][ERROR] - LoginsSuite: Test Cases/DataDrivenExample FAILED because (of) org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'com.kms.katalon.core.testdata.reader.SheetPOI@1cbf6e72' with class 'com.kms.katalon.core.testdata.reader.SheetPOI' to class 'com.kms.katalon.core.testdata.InternalData']]></system-err>
+   </testsuite>
+</testsuites>

@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductFil
 WebUI.selectOptionByLabel(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAttributeName_Dropdown'), 
     'Name', false, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterValue_Field'), 'DavCo_B')
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterValue_Field'), 'DavCo_BH')
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 

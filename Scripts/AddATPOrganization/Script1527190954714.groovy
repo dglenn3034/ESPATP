@@ -29,7 +29,7 @@ WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalV
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
 
-WebUiBuiltInKeywords.waitForPageLoad(2)
+WebUiBuiltInKeywords.waitForPageLoad(4)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 

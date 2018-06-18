@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DataDrivenExample</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c4fb1f96-345d-46e7-86e2-7358bed02a45</testCaseGuid>
+   <variable>
+      <defaultValue>'dummy.com'</defaultValue>
+      <description></description>
+      <id>2c33746c-4e4e-4a65-9554-114eee3f2d12</id>
+      <masked>false</masked>
+      <name>Site</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1f4baf17-6025-4ab4-a981-c2ce1d54105f</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'pwd'</defaultValue>
+      <description></description>
+      <id>58d7feaf-85e7-41d6-a3d4-d28ed433b055</id>
+      <masked>false</masked>
+      <name>pwd</name>
+   </variable>
+</TestCaseEntity>

@@ -84,6 +84,8 @@ WebUI.check(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramSunElev
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramSunElevation_button'))
 
 WebUI.setText(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramOpenFilterFirstValue_input'), '0')
