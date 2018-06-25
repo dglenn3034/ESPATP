@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DeleteOrganization</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe03c2e6-4034-446f-87f5-369c9ff21cf2</testCaseGuid>
+   <variable>
+      <defaultValue>'ATPOrganization'</defaultValue>
+      <description></description>
+      <id>ad480149-0c1d-4a9c-b21a-73eb3a314a19</id>
+      <masked>false</masked>
+      <name>Name</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DeleteGroup</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04cf0fa6-543f-4e39-a7c6-38fd125c931c</testCaseGuid>
+   <variable>
+      <defaultValue>'ATPUser2'</defaultValue>
+      <description></description>
+      <id>eff93cbe-44f1-44ff-b185-48e6e65a22b9</id>
+      <masked>false</masked>
+      <name>Name</name>
+   </variable>
+</TestCaseEntity>

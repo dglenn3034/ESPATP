@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Add a User</description>
+   <name>CreateUser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3647214d-0785-4716-a8dc-6e00099c1aab</testCaseGuid>
+   <variable>
+      <defaultValue>'dglenn@airgon.com'</defaultValue>
+      <description></description>
+      <id>f015bb31-29be-417f-88f9-88c2d8f4a7c8</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'ATPOrganization'</defaultValue>
+      <description></description>
+      <id>a9e01f61-cb64-46ff-928f-20b3e2b5026b</id>
+      <masked>false</masked>
+      <name>organization</name>
+   </variable>
+</TestCaseEntity>

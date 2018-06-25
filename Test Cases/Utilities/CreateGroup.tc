@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CreateGroup</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ca1d48a0-ab15-4d5e-afe0-ca1c303be7e2</testCaseGuid>
+   <variable>
+      <defaultValue>'ATPUser2'</defaultValue>
+      <description></description>
+      <id>f1d75250-751e-462b-9461-5ce487d7eba2</id>
+      <masked>false</masked>
+      <name>Name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>00acd5aa-1878-4b32-8a72-b7b6910c6198</id>
+      <masked>false</masked>
+      <name>Description</name>
+   </variable>
+</TestCaseEntity>

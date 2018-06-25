@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CreateOrganization</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd88c30b-22e6-4585-a1dc-dd92d8056a88</testCaseGuid>
+   <variable>
+      <defaultValue>'ATPOrganization'</defaultValue>
+      <description></description>
+      <id>6921f99c-24bb-4ec0-abef-c4819e5bc3b2</id>
+      <masked>false</masked>
+      <name>Name</name>
+   </variable>
+   <variable>
+      <defaultValue>'ATP Organization'</defaultValue>
+      <description></description>
+      <id>09f2133c-f6e4-4b83-9a1a-e1bcda5f8da5</id>
+      <masked>false</masked>
+      <name>Description</name>
+   </variable>
+   <variable>
+      <defaultValue>'User'</defaultValue>
+      <description></description>
+      <id>76046fa2-816a-409e-99ba-d06eb90b7013</id>
+      <masked>false</masked>
+      <name>Group</name>
+   </variable>
+</TestCaseEntity>

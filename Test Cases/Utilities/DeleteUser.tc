@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DeleteUser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4ac3bbf6-b868-43a9-af14-88df443bd89f</testCaseGuid>
+   <variable>
+      <defaultValue>'dglenn@airgon.com'</defaultValue>
+      <description></description>
+      <id>139fe82a-786c-4de5-bd60-815d2e7963ff</id>
+      <masked>false</masked>
+      <name>UserId</name>
+   </variable>
+</TestCaseEntity>
