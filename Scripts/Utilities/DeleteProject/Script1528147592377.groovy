@@ -37,11 +37,15 @@ catch (Exception e) {
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridRow1DeleteButton'))
 
-WebUI.uncheck(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridDeleteDataCheckBox'))
+WebUI.uncheck(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/input_isDeleteFromCatalog'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridDeleteProjectButton'))
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/input_isDeleteFromS3Source'))
+
+WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/button_Delete'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+
+WebUiBuiltInKeywords.delay(5)
 

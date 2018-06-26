@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat as SimpleDateFormat
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.site)
+WebUI.navigateToUrl(GlobalVariable.GeoCueCompanySite)
 
 WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
 

@@ -87,5 +87,5 @@ WebUiBuiltInKeywords.delay(3)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
-not_run: WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>ESP Production User Password</description>
-      <initValue>'DummyPassword'</initValue>
+      <initValue>'dummy'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -68,5 +68,10 @@
       <description>QC Site</description>
       <initValue>'https://geocue.tcloudhost.com/qc'</initValue>
       <name>QCSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://geocue.tcloudhost.com'</initValue>
+      <name>LidarSite</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

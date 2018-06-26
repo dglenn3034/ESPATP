@@ -40,6 +40,8 @@ catch (Exception e) {
     println(ProjectName + ' deleted ')
 } 
 
+WebUI.delay(2)
+
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProjectButton'))
 
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputName'), 
@@ -73,9 +75,13 @@ if ((FootprintFile != null) && (FootprintFile.length() > 0)) {
 
     WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave'))
 
+    WebUI.delay(3)
+
     WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 } else {
     WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave'))
+
+    WebUI.delay(3)
 
     'This OK is to accept that the project is created with no footprint'
     WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
