@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Opens order History, manipulates the columns displayed, filters on orders beginning with ATP, selects the first one and zooms to it, then opens the details for it, selects the popup details icon and dismisses it</description>
+   <description>Opens order History, manipulates the columns displayed, filters on orders beginning with ATP, selects the first one and zooms to it, then opens the details for it, selects the popup details icon and dismisses it
+
+Requires standard USER group</description>
    <name>OrderHistorySanityTest</name>
-   <tag>AdminGUISanity</tag>
+   <tag></tag>
    <comment></comment>
    <testCaseGuid>b41c9b51-e632-475b-a628-307eae8f319e</testCaseGuid>
 </TestCaseEntity>

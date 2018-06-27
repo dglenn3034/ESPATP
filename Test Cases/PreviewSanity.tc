@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Preview Landsat, Naip using the AOI: \\diskstation1\Data\esp\test_data\miamibeachshapfile.zip, taking a screenshot when each preview is done and saving it as a png file in local user temp folder</description>
+   <description>Preview Landsat, Naip using the AOI: \\diskstation1\Data\esp\test_data\miamibeachshapfile.zip, taking a screenshot when each preview is done and saving it as a png file in local user temp folder
+
+Requires standard USER group</description>
    <name>PreviewSanity</name>
    <tag>Preview</tag>
    <comment></comment>

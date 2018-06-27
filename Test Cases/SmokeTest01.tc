@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>delete smoketest01 named search if it exists, then recreate it using aoi: \\diskstation1\Data\Rob_MUSES\Shapefile_test_datasets\AL.kmz, landsat ndvi, histogram filters on sun elevation, cloud coverage, save the named search, select the first item from the search results, add it the order cart and submit the job</description>
+   <description>delete smoketest01 named search if it exists, then recreate it using aoi: \\diskstation1\Data\Rob_MUSES\Shapefile_test_datasets\AL.kmz, landsat ndvi, histogram filters on sun elevation, cloud coverage, save the named search, select the first item from the search results, add it the order cart and submit the job. Requires standard USER group</description>
    <name>SmokeTest01</name>
    <tag></tag>
    <comment></comment>

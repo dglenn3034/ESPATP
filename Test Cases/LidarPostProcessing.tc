@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Orders Lidar from Williston FL, using the SWFWMD company, adds post processing for Clipping and images (Hillshade, Intensity, Slope)</description>
+   <description>Orders Lidar from Williston FL, using the SWFWMD company, adds post processing for Clipping and images (Hillshade, Intensity, Slope)
+
+Requires standard USER group</description>
    <name>LidarPostProcessing</name>
    <tag></tag>
    <comment></comment>

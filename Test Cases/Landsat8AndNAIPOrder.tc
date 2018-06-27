@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Submits an order by taking the first landsat item and the first NAIP item from the search results,  found using an AOI set by the view centered on Birmingham AL</description>
+   <description>Submits an order by taking the first landsat item and the first NAIP item from the search results,  found using an AOI set by the view centered on Birmingham AL
+
+Requires standard USER group</description>
    <name>Landsat8AndNAIPOrder</name>
    <tag></tag>
    <comment></comment>

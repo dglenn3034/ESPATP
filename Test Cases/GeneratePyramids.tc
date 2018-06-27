@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Opens the Davidson project, clears the working set, filters the project itesm to a small set using name='DavCo_AA', adds them to the working set, opens the working set and executes the generate pyramids process</description>
+   <description>Opens the Davidson project, clears the working set, filters the project itesm to a small set using name='DavCo_AA', adds them to the working set, opens the working set and executes the generate pyramids process
+
+Requires QCAnalyst role</description>
    <name>GeneratePyramids</name>
    <tag></tag>
    <comment></comment>

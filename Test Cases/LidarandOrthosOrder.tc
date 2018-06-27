@@ -2,7 +2,8 @@
 <TestCaseEntity>
    <description>Orders Lidar and Orthos from Houston Bay area using an imported AOI: \\diskstation1\Data\esp\test_data\HoustonBayArea.zip
 
-Orders all of the items found in this search</description>
+Orders all of the items found in this search
+Requires standard USER group</description>
    <name>LidarandOrthosOrder</name>
    <tag></tag>
    <comment></comment>

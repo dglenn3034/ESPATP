@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Loops through all orders that begin with ATP, are from the GeoCue company and have a status of SUCCESS and deletes them one at a time</description>
+   <description>Loops through all orders that begin with ATP, are from the GeoCue company and have a status of SUCCESS and deletes them one at a time
+
+Requires System Admin and Delete Orders roles</description>
    <name>DeleteATPOrders</name>
    <tag></tag>
    <comment></comment>

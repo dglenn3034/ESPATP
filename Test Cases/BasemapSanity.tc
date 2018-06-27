@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Creates a new basemap named ATPBasemap using the ATPLIdarNS named search. Deletes the basemap if it exists.</description>
+   <description>Creates a new basemap named ATPBasemap using the ATPLIdarNS named search. Deletes the basemap if it exists.
+
+Requires Company Admin role</description>
    <name>BasemapSanity</name>
    <tag></tag>
    <comment></comment>

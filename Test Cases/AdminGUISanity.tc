@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Tests presence of GUI section in Admin Console for System Admin login</description>
+   <description>Tests presence of GUI section in Admin Console for System Admin login
+Requires System Admin role</description>
    <name>AdminGUISanity</name>
    <tag>AdminGUISanity</tag>
    <comment></comment>

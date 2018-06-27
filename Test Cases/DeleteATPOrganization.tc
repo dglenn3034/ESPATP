@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Deletes ATPOrganization.
-Paired with AddATPOrganization</description>
+Paired with AddATPOrganization
+
+Requires Company Admin role</description>
    <name>DeleteATPOrganization</name>
    <tag></tag>
    <comment></comment>

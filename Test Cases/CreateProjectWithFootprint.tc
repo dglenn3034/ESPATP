@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Calls create project to create ATPProjectFootprint with HoustonBayArea as footprint. Deletes project if it exists, then recreates it</description>
+   <description>Calls create project to create ATPProjectFootprint with HoustonBayArea as footprint. Deletes project if it exists, then recreates it
+
+Requires System Admin role (in order to delete the project if it already exists)</description>
    <name>CreateProjectWithFootprint</name>
    <tag></tag>
    <comment></comment>

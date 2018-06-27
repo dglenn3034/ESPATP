@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Creates a new organization within the GeoCue company named ATPOrganization
-Paired with Delete Organization</description>
+   <description>Creates a new organization within the GeoCue company named ATPOrganization. fails if organization exists.
+Paired with Delete Organization
+Requires Company Admin Role</description>
    <name>AddATPOrganization</name>
    <tag></tag>
    <comment></comment>
