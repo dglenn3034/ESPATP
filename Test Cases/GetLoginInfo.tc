@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>DataDrivenExample</name>
+   <name>GetLoginInfo</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c4fb1f96-345d-46e7-86e2-7358bed02a45</testCaseGuid>

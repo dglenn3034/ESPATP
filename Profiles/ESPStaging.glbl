@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>ESPStaging</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>User name for ESP Staging</description>
+      <initValue>'dummy.com'</initValue>
+      <name>User</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ESP StagingUser Password</description>
+      <initValue>'dummy'</initValue>
+      <name>pwd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ESP Geocue Staging Site</description>
+      <initValue>'https://geocue.earthsensorportal-dev.com'</initValue>
+      <name>site</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>GeoCue QC site ESP Staging</description>
+      <initValue>'https://geocue.earthsensorportal-dev.com/qc'</initValue>
+      <name>QCSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Users\\myname\\AppData\\Local\\Temp'</initValue>
+      <name>ScreenShotFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ESP Account Geocue Company</description>
+      <initValue>'https://geocue.earthsensorportal-dev.com'</initValue>
+      <name>GeoCueCompanySite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Lidar site SWFWMD</description>
+      <initValue>'https://swfwmd.earthsensorportal-dev.com/'</initValue>
+      <name>LidarSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Admin Site Geocue</description>
+      <initValue>'https://geocue.earthsensorportal-dev.com/admin'</initValue>
+      <name>AdminSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'gcesp-testing'</initValue>
+      <name>S3SourceLidarBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Staging/atp/lidar'</initValue>
+      <name>S3SourceLidarPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'gcesp-testing'</initValue>
+      <name>S3SourceOrthoBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Staging/atp/orthos'</initValue>
+      <name>S3SourceOrthoPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'gcesp-geocue-orders'</initValue>
+      <name>GeoCueDeliveryBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ATPOrders'</initValue>
+      <name>GeoCueDeliveryPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1</initValue>
+      <name>EnvDataRowIndex</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

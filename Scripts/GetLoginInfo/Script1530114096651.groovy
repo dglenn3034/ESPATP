@@ -16,30 +16,22 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
+
+import internal.GlobalVariable
+
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testdata.ExcelData as ExcelData
 import com.kms.katalon.core.testdata.InternalData as InternalData
 
-ExcelData Logindata = findTestData('Logins')
+ExcelData envData = findTestData('LoginData')
 
-
-for (def rowindex : (0..Logindata.getRowNumbers() - 1)) {
-	Site = Logindata.getValue(1, rowindex+1)
-	username = Logindata.getValue(2, rowindex+1)
-	pwd = Logindata.getValue (3, rowindex+1)
+    
+	GlobalVariable.User = envData.getValue(2, GlobalVariable.EnvDataRowIndex)
+	GlobalVariable.pwd = envData.getValue (3, GlobalVariable.EnvDataRowIndex)
+	GlobalVariable.ScreenShotFile = envData.getValue (4, GlobalVariable.EnvDataRowIndex)
 	
-    WebUI.openBrowser('')
 	
-    WebUI.navigateToUrl(Site)
+    	
 
-    WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), username)
-
-    WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), pwd)
-
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
-    WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
-	
-}
 
 

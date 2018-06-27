@@ -15,7 +15,7 @@
       <guid>1793671e-9c48-4628-be8e-21738e233188</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/DataDrivenExample</testCaseId>
+      <testCaseId>Test Cases/GetLoginInfo</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>2a13c7a4-5b01-416e-92e6-401d7dc4d1e2</id>
@@ -23,7 +23,7 @@
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/Logins</testDataId>
+         <testDataId>Data Files/LoginData</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>2a13c7a4-5b01-416e-92e6-401d7dc4d1e2</testDataLinkId>

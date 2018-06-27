@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>ESPGeoCueProductionProfile</name>
+   <name>ESPProduction</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
@@ -73,5 +73,10 @@
       <description></description>
       <initValue>'ATPOrders'</initValue>
       <name>GeoCueDeliveryPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1</initValue>
+      <name>EnvDataRowIndex</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

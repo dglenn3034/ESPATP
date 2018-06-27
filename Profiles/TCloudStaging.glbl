@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>TCloudProductionProfile</name>
+   <name>TCloudStaging</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
@@ -15,8 +15,8 @@
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>TCloud Production Site - Company GeoCue</description>
-      <initValue>'https://teledyne.tcloudhost.com'</initValue>
+      <description>TCloud Staging Site - Company GeoCue</description>
+      <initValue>'https://geocue.tcloudhost-dev.com'</initValue>
       <name>site</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -25,13 +25,13 @@
       <name>ScreenShotFile</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>TCloud Production - GeoCue Company</description>
-      <initValue>'https://geocue.tcloudhost.com'</initValue>
+      <description>TCloud Staging - GeoCue Company</description>
+      <initValue>'https://geocue.tcloudhost-dev.com'</initValue>
       <name>GeoCueCompanySite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Admin Site</description>
-      <initValue>'https://geocue.tcloudhost.com/admin'</initValue>
+      <description>Admin site</description>
+      <initValue>'https://geocue.tcloudhost-dev.com/admin'</initValue>
       <name>AdminSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -46,8 +46,13 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'esp-testing'</initValue>
-      <name>S3SourceLidarBucket</name>
+      <initValue>'https://geocue.tcloudhost-dev.com/qc'</initValue>
+      <name>QCSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://geocue.tcloudhost-dev.com'</initValue>
+      <name>LidarSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -56,22 +61,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Production/atp/lidar'</initValue>
+      <initValue>'Staging/atp/orthos'</initValue>
+      <name>S3SourceOrthoPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-testing'</initValue>
+      <name>S3SourceLidarBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Staging/atp/lidar'</initValue>
       <name>S3SourceLidarPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Production/atp/orthos'</initValue>
-      <name>S3SourceOrthoPrefix</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>QC Site</description>
-      <initValue>'https://geocue.tcloudhost.com/qc'</initValue>
-      <name>QCSite</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'https://geocue.tcloudhost.com'</initValue>
-      <name>LidarSite</name>
+      <initValue>1</initValue>
+      <name>EnvDataRowIndex</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
