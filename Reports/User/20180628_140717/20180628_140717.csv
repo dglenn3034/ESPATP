@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+User,Firefox 59.0,,2018-06-28 14:07:19,2018-06-28 14:07:57,38.346s,INCOMPLETE
+,,,,,,
+Test Cases/Landsat8AndNAIPOrder,Firefox 59.0,"Submits an order by taking the first landsat item and the first NAIP item from the search results,  found using an AOI set by the view centered on Birmingham AL\n\nRequires standard USER group",2018-06-28 14:07:19,2018-06-28 14:07:57,38.044s,FAILED
+callTestCase,Firefox 59.0,,2018-06-28 14:07:19,2018-06-28 14:07:20,1.019s,PASSED
+openBrowser,Firefox 59.0,,2018-06-28 14:07:20,2018-06-28 14:07:26,6.017s,PASSED
+navigateToUrl,Firefox 59.0,,2018-06-28 14:07:26,2018-06-28 14:07:28,1.606s,PASSED
+setText,Firefox 59.0,,2018-06-28 14:07:28,2018-06-28 14:07:32,4.103s,PASSED
+setText,Firefox 59.0,,2018-06-28 14:07:32,2018-06-28 14:07:36,4.061s,PASSED
+click,Firefox 59.0,,2018-06-28 14:07:36,2018-06-28 14:07:38,2.181s,PASSED
+setText,Firefox 59.0,,2018-06-28 14:07:38,2018-06-28 14:07:57,18.654s,FAILED

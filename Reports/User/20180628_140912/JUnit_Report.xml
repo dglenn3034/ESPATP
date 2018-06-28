@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="User" time="99" tests="1" failures="0" errors="0">
+   <testsuite name="User" tests="1" failures="0" errors="0" time="99" timestamp="2018-06-28 14:09:13" hostname="DGlenn - MUSES-David.local.niirs10.com" id="Test Suites/User">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\ATPS\\ESPATP\\Reports\\User\\20180628_140912"/>
+         <property name="logFiles" value="D:\\ATPS\\ESPATP\\Reports\\User\\20180628_140912\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DGlenn - MUSES-David.local.niirs10.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.1.1"/>
+         <property name="browser" value="Firefox 59.0"/>
+         <property name="hostAddress" value="192.168.1.75"/>
+         <property name="sessionId" value="64922f97-459e-4713-91ca-e1ca8231d772"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Landsat8AndNAIPOrder" classname="Test Cases/Landsat8AndNAIPOrder" status="PASSED">
+         <system-out><![CDATA[2018-06-28 14:09:14 - [TEST_CASE][PASSED] - Test Cases/Landsat8AndNAIPOrder: Test Cases/Landsat8AndNAIPOrder
+
+2018-06-28 14:09:14 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-06-28 14:09:14 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-06-28 14:09:14 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-06-28 14:09:15 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, EnvDataRowIndex): null
+
+2018-06-28 14:09:15 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, EnvDataRowIndex): null
+
+2018-06-28 14:09:15 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, EnvDataRowIndex): null
+
+2018-06-28 14:09:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-06-28 14:09:15 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-28 14:09:21 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-28 14:09:21 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-06-28 14:09:23 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-06-28 14:09:23 - [TEST_STEP][PASSED] - setText: Text 'dmglenn3034@gmail.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-06-28 14:09:27 - [MESSAGE][PASSED] - Text 'dmglenn3034@gmail.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-06-28 14:09:27 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-06-28 14:09:31 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-06-28 14:09:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-06-28 14:09:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-06-28 14:09:35 - [TEST_STEP][PASSED] - setText: Text 'Birmingham, Al' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-06-28 14:09:39 - [MESSAGE][PASSED] - Text 'Birmingham, Al' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-06-28 14:09:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-06-28 14:09:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-06-28 14:09:41 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-06-28 14:09:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-06-28 14:09:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-06-28 14:09:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-06-28 14:09:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-06-28 14:09:50 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox' is checked
+
+2018-06-28 14:09:53 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox' is checked
+
+2018-06-28 14:09:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-06-28 14:09:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-06-28 14:09:56 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-06-28 14:10:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-06-28 14:10:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-06-28 14:10:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-06-28 14:10:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-06-28 14:10:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-06-28 14:10:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-06-28 14:10:07 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionNaipRGB_Checkbox' is checked
+
+2018-06-28 14:10:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionNaipRGB_Checkbox' is checked
+
+2018-06-28 14:10:10 - [TEST_STEP][PASSED] - uncheck: Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox' is un-checked
+
+2018-06-28 14:10:13 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox' is un-checked
+
+2018-06-28 14:10:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-06-28 14:10:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-06-28 14:10:17 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-06-28 14:10:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-06-28 14:10:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-06-28 14:10:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-06-28 14:10:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-06-28 14:10:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-06-28 14:10:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-06-28 14:10:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-06-28 14:10:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-06-28 14:10:30 - [TEST_STEP][PASSED] - Statement - date = new java.util.Date(): null
+
+2018-06-28 14:10:30 - [TEST_STEP][PASSED] - Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss): null
+
+2018-06-28 14:10:30 - [TEST_STEP][PASSED] - Statement - aDate = sdf.format(new java.util.Date()): null
+
+2018-06-28 14:10:30 - [TEST_STEP][PASSED] - Statement - OName = "ATPLSandNAIP-" + aDate: null
+
+2018-06-28 14:10:30 - [TEST_STEP][PASSED] - setText: Text 'ATPLSandNAIP-2018-06-28 14:10:30' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-06-28 14:10:34 - [MESSAGE][PASSED] - Text 'ATPLSandNAIP-2018-06-28 14:10:30' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-06-28 14:10:34 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-06-28 14:10:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-06-28 14:10:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-06-28 14:10:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-06-28 14:10:38 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-06-28 14:10:41 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-28 14:10:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-06-28 14:10:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-06-28 14:10:44 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully
+
+2018-06-28 14:10:44 - [TEST_CASE][PASSED] - Test Cases/Utilities/CatalogSignOut: Test Cases/Utilities/CatalogSignOut
+
+2018-06-28 14:10:44 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-06-28 14:10:47 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-28 14:10:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-06-28 14:10:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-06-28 14:10:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-06-28 14:10:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-06-28 14:10:51 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-28 14:10:53 - [MESSAGE][PASSED] - Browser is closed
+
+2018-06-28 14:10:53 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-28 14:09:13 - [TEST_SUITE][PASSED] - User: Test Cases/Landsat8AndNAIPOrder]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
