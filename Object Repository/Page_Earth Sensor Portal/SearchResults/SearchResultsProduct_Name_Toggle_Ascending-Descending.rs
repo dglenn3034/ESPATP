@@ -12,7 +12,11 @@
       <entry>
          <key>BASIC</key>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='searchResult-pane-1']/div/div/div/table/thead/tr/th/a/span[(text()='Name')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

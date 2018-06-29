@@ -20,7 +20,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
 
@@ -50,6 +51,8 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSel
 WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
 
 Thread.sleep(4000)
+
+WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsProduct_Name_Toggle_Ascending-Descending'))
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow'))
 
