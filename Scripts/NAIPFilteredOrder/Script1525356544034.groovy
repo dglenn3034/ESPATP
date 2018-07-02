@@ -20,7 +20,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
 
@@ -74,6 +75,17 @@ String aDate = sdf.format(new Date())
 String OName = 'ATPNaipFilteredOrder-' + aDate
 
 WebUI.setText(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'), OName)
+
+WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipAdd_Button'))
+
+WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipResampling_Checkbox'))
+
+WebUI.selectOptionByValue(findTestObject('Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipResamplingType_Field'), 
+    'cubic', false)
+
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipResamplePixelSize_Field'), '2')
+
+WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipOK_Button'))
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button'))
 

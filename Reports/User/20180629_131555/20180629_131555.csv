@@ -1,0 +1,39 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+User,Firefox 59.0,,2018-06-29 13:16:01,2018-06-29 13:16:38,37.862s,PASSED
+,,,,,,
+Test Cases/Landsat8AndNAIPOrder,Firefox 59.0,"Submits an order by taking the first landsat item and the first NAIP item from the search results,  found using an AOI set by the view centered on Birmingham AL\n\nRequires standard USER group",2018-06-29 13:16:01,2018-06-29 13:16:38,37.540s,PASSED
+callTestCase,Firefox 59.0,,2018-06-29 13:16:01,2018-06-29 13:16:02,0.987s,PASSED
+openBrowser,Firefox 59.0,,2018-06-29 13:16:02,2018-06-29 13:16:06,4.003s,PASSED
+navigateToUrl,Firefox 59.0,,2018-06-29 13:16:06,2018-06-29 13:16:08,1.651s,PASSED
+setText,Firefox 59.0,,2018-06-29 13:16:08,2018-06-29 13:16:08,0.135s,PASSED
+setText,Firefox 59.0,,2018-06-29 13:16:08,2018-06-29 13:16:08,0.058s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:08,2018-06-29 13:16:10,2.162s,PASSED
+setText,Firefox 59.0,,2018-06-29 13:16:10,2018-06-29 13:16:10,0.122s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:10,2018-06-29 13:16:11,0.345s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 59.0,,2018-06-29 13:16:11,2018-06-29 13:16:15,4.013s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:15,2018-06-29 13:16:15,0.311s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:15,2018-06-29 13:16:16,0.583s,PASSED
+check,Firefox 59.0,,2018-06-29 13:16:16,2018-06-29 13:16:16,0.263s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:16,2018-06-29 13:16:16,0.307s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 59.0,,2018-06-29 13:16:16,2018-06-29 13:16:20,4.000s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:20,2018-06-29 13:16:21,1.265s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:21,2018-06-29 13:16:22,0.957s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:22,2018-06-29 13:16:23,0.495s,PASSED
+check,Firefox 59.0,,2018-06-29 13:16:23,2018-06-29 13:16:23,0.242s,PASSED
+uncheck,Firefox 59.0,,2018-06-29 13:16:23,2018-06-29 13:16:23,0.255s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:23,2018-06-29 13:16:25,1.486s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 59.0,,2018-06-29 13:16:25,2018-06-29 13:16:29,4.000s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:29,2018-06-29 13:16:29,0.292s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:29,2018-06-29 13:16:29,0.300s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:29,2018-06-29 13:16:30,0.349s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:30,2018-06-29 13:16:30,0.314s,PASSED
+Statement - date = new java.util.Date(),Firefox 59.0,,2018-06-29 13:16:30,2018-06-29 13:16:30,0.005s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Firefox 59.0,,2018-06-29 13:16:30,2018-06-29 13:16:30,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Firefox 59.0,,2018-06-29 13:16:30,2018-06-29 13:16:30,0.000s,PASSED
+"Statement - OName = ""ATPLSandNAIP-"" + aDate",Firefox 59.0,,2018-06-29 13:16:30,2018-06-29 13:16:30,0.000s,PASSED
+setText,Firefox 59.0,,2018-06-29 13:16:30,2018-06-29 13:16:30,0.169s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:30,2018-06-29 13:16:31,0.306s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:31,2018-06-29 13:16:31,0.327s,PASSED
+delay,Firefox 59.0,,2018-06-29 13:16:31,2018-06-29 13:16:34,3.016s,PASSED
+click,Firefox 59.0,,2018-06-29 13:16:34,2018-06-29 13:16:34,0.274s,PASSED
+callTestCase,Firefox 59.0,,2018-06-29 13:16:34,2018-06-29 13:16:38,4.171s,PASSED

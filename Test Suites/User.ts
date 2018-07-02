@@ -4,7 +4,7 @@
    <name>User</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-06-28T14:09:12</lastRun>
+   <lastRun>2018-06-29T13:18:33</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>8ce2ac0e-91a3-4664-bb28-7097c9770bf1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Landsat8AndNAIPOrder</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -148,11 +148,5 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/PreviewSanity</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>e757ac99-925e-45af-80cd-12d3efbfa0cf</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/SmokeTest01</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
