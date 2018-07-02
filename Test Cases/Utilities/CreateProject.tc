@@ -21,7 +21,7 @@ Simply returns if the project already exists</description>
       <name>ProductType</name>
    </variable>
    <variable>
-      <defaultValue>'\\\\diskstation1\\Data\\esp\\test_data\\HoustonBayArea.zip'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>bbf4e934-440e-49af-b4c9-3a737229c1aa</id>
       <masked>false</masked>
