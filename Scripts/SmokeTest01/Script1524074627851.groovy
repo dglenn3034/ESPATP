@@ -21,7 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
 
@@ -41,16 +42,24 @@ WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/C
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button'))
 
-WebUI.selectOptionByLabel(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField'), 'SmokeTest01', 
-    true, FailureHandling.OPTIONAL)
+try {
+    WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : SmokeTest01], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearch_DeleteButton'), FailureHandling.OPTIONAL)
+    println('Named Search SmokeTest01 does exist, we will delete it and recreate it')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'), FailureHandling.OPTIONAL)
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearch_DeleteButton'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearchesCancel_Button'), FailureHandling.OPTIONAL)
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'), 3)
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearchesCancel_Button'), FailureHandling.CONTINUE_ON_FAILURE)
+}
+catch (Exception e) {
+    println('Named Search SmokeTest01 does not exist, we will create it')
+
+    WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearchesCancel_Button'))
+
+    WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'), 3)
+} 
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
 
@@ -60,7 +69,7 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSel
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductFilter_AddLineButton'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductFilter_DateSelectorField'), '01/01/2017')
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductFilter_DateSelectorField'), '06/01/2017')
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
@@ -68,7 +77,7 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSel
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button'))
 
-WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\Rob_MUSES\\Shapefile_test_datasets\\AL.kmz')
+WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\Rob_MUSES\\Shapefile_test_datasets\\rob_coloradio.shp_file_lp360.zip')
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button'))
 

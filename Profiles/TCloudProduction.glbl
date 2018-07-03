@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>TCloud Production Site - Company GeoCue</description>
-      <initValue>'https://teledyne.tcloudhost.com'</initValue>
+      <initValue>'https://geocue.tcloudhost.com'</initValue>
       <name>site</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
