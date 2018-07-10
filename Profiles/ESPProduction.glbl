@@ -61,7 +61,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Production/atp/orthos'</initValue>
+      <initValue>'production/atp/orthos'</initValue>
       <name>S3SourceOrthoPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

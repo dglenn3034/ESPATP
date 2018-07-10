@@ -25,11 +25,11 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_
 
 try {
     WebUI.selectOptionByLabel(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField'), NamedSearch, 
-        true, FailureHandling.CONTINUE_ON_FAILURE)
-
+        false, FailureHandling.STOP_ON_FAILURE)
 }
 catch (Exception e) {
     println('No such Named Search')
-	throw new com.kms.katalon.core.exception.StepFailedException('No such Named Search')
+
+    throw new com.kms.katalon.core.exception.StepFailedException('No such Named Search')
 } 
 

@@ -50,16 +50,14 @@ try {
     WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearch_DeleteButton'), FailureHandling.OPTIONAL)
 
     WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'), FailureHandling.STOP_ON_FAILURE)
-
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearchesCancel_Button'), FailureHandling.CONTINUE_ON_FAILURE)
 }
 catch (Exception e) {
     println('Named Search SmokeTest01 does not exist, we will create it')
 
     WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearchesCancel_Button'))
-
-    WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'), 3)
 } 
+
+WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'), 3)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
 
@@ -99,9 +97,9 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramSunElevation_button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramOpenFilterFirstValue_input'), '0')
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramOpenFilterFirstValue_input'), '60')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramOpenFilterSecondvalue_Field'), '40')
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramOpenFilterSecondvalue_Field'), '70')
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
 
