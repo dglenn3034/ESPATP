@@ -37,6 +37,8 @@ WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Cons
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationGroupPulldown'), 
     Group)
 
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDomainField'), 'airgon.com')
+
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationSaveButton'))
 
 'Wait on success message to clear'
