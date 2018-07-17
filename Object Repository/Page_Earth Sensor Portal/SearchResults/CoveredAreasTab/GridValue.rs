@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FirstRowAColumnValue</name>
+   <name>GridValue</name>
    <tag></tag>
    <elementGuidId>150bb41a-69c0-42b0-8e6e-087a543ed350</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='searchResult-pane-1']/descendant::tbody/tr[1]/td[COLNDX]</value>
+         <key>BASIC</key>
+         <value>//div[@id='searchResult-pane-1']/descendant::tbody/tr[ROWNDX]/td[COLNDX]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@id='searchResult-pane-1']/descendant::tbody/tr[1]/td[COLNDX]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='searchResult-pane-1']/descendant::tbody/tr[1]/td[COLNDX]</value>
+      <value>//div[@id='searchResult-pane-1']/descendant::tbody/tr[ROWNDX]/td[COLNDX]</value>
    </webElementProperties>
 </WebElementEntity>

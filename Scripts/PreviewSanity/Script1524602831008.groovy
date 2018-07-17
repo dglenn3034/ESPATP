@@ -19,13 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-myColumnFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnFilter')
-FilterXp = myColumnFilterObject.findPropertyValue('xpath')
-myLikeFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/LikeFilter')
-LikeFilterXp = myLikeFilterObject.findPropertyValue('xpath')
 
-
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
 
@@ -61,21 +57,7 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/MapDataSource_DropD
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/MapDataSourceSearch Results_Item'))
 
-'This is filter Icon for  Name column'
-Xp = FilterXp.replace('Column', 'Name')
-tmpObjectFilter = WebUI.modifyObjectProperty(myColumnFilterObject, 'xpath', 'equals', Xp, true)
-WebUiBuiltInKeywords.click(tmpObjectFilter)
-
-
-'This is the pop up box for entering the \'like\' string'
-/* SearchResults NameFilterLike_Field */
-/* LC80150422014082LGN00 */
-
-Xp = LikeFilterXp.replace('Column', 'Name')
-tmpObjectLike = WebUI.modifyObjectProperty(myLikeFilterObject, 'xpath', 'equals', Xp, true)
-WebUiBuiltInKeywords.setText(tmpObjectLike, 'LC80150422014082LGN00')
-
-
+CustomKeywords.'searchResults.searchResults.LikeFilterOnColumn'('Name', 'LC80150422014082LGN00')
 
 'Display the preview of this data item in the map'
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRow_Globe'))
@@ -108,8 +90,7 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelec
 WebUiBuiltInKeywords.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_Grid'), 
     1)
 
-WebUiBuiltInKeywords.click(tmpObjectFilter)
-WebUiBuiltInKeywords.setText(tmpObjectLike, 'FL_2508007_se_17_1_20131018')
+CustomKeywords.'searchResults.searchResults.LikeFilterOnColumn'('Name', 'FL_2508007_se_17_1_20131018')
 
 WebUI.delay(1)
 

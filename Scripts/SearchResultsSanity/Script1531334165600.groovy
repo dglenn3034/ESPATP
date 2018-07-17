@@ -20,16 +20,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
- 
-
-myNumericFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/NumericFilter')
+/* myNumericFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/NumericFilter')
 NumericFilterXp = myNumericFilterObject.findPropertyValue('xpath')
 
 myLikeFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/LikeFilter')
 LikeFilterXp = myLikeFilterObject.findPropertyValue('xpath')
+*/
+myRow1ColumnValueObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/GridValue')
 
-
-myRow1ColumnValueObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/FirstRowAColumnValue') 
 ValXp = myRow1ColumnValueObject.findPropertyValue('xpath')
 
 /* Login using credentials from login test object */
@@ -49,7 +47,6 @@ WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalV
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
-
 
 /* if named Search ATPSearchResultsSanity exists, delete it and recreate it */
 try {
@@ -100,10 +97,8 @@ WebUI.setText(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearchSa
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/SaveNamedSearchSave_Button'))
 
-
-
-'Search Results Sanity Starts Here'
 /* verify starting count */
+'Search Results Sanity Starts Here'
 WebUiBuiltInKeywords.verifyElementText(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying'), 
     'Displaying 486 of 486 Item(s)')
 
@@ -111,47 +106,31 @@ WebUiBuiltInKeywords.verifyElementText(findTestObject('Page_Earth Sensor Portal/
 WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFieldsToggle_button'))
 
 /* 'check' the name column */
-nameIndex = WebUI.callTestCase(findTestCase('Utilities/GetColumnIndex'), [('ColumnName') : 'name'], FailureHandling.STOP_ON_FAILURE)
-println ('Index for Name = ' + nameIndex)
+Integer nameIndex = CustomKeywords.'searchResults.searchResults.GetSetColumn'('Name')
+
+println('Index for Name = ' + nameIndex)
 
 /* 'check' the Total Number Of Points column */
-totPtsIndex = WebUI.callTestCase(findTestCase('Utilities/GetColumnIndex'), [('ColumnName') : 'Total Number Of Points'], FailureHandling.STOP_ON_FAILURE)
-/* WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsToggletotalNumberOfPoints_Checkbox')) */
+Integer totPtsIndex = CustomKeywords.'searchResults.searchResults.GetSetColumn'('Total Number Of Points')
 
+println('Index for Total Number Of Points = ' + nameIndex)
 
 /* sort on Name column */
 CustomKeywords.'searchResults.searchResults.sortByName'('Name')
 
-nameIndex = nameIndex + 2 /* bump over to skip first two columns of icons */
+nameIndex = (nameIndex + 2 /* bump over to skip first two columns of icons */ )
 
 /* Test value of Name field in first row */
-Xp = ValXp.replace('COLNDX', nameIndex.toString())
-println('Value Xp = ' + Xp)
-tmpValObject = WebUI.modifyObjectProperty(myRow1ColumnValueObject, 'xpath', 'equals', Xp, true)
-txtVal = WebUiBuiltInKeywords.getText(tmpValObject)
-println('Value for name = ' + txtVal)
-WebUI.verifyElementText(tmpValObject, 'DavCo_AG28')
-
+CustomKeywords.'searchResults.searchResults.VerifyValueInGrid'('Name', 1, 'DavCo_AG28')
 
 /* sort again - reverse */
 CustomKeywords.'searchResults.searchResults.sortByName'('Name')
 
+/* Test value of Name field in first row (note: column name is from HTML not database */
+CustomKeywords.'searchResults.searchResults.VerifyValueInGrid'('Name', 1, 'DavCo_AZ33')
 
-/* Test value of Name field in first row */
-txtVal = WebUiBuiltInKeywords.getText(tmpValObject)
-println('Value for name = ' + txtVal)
-WebUI.verifyElementText(tmpValObject, 'DavCo_AZ33')
-
-
-/* Select filter on Name */
-CustomKeywords.'searchResults.searchResults.filterByName'('Name')
-
-
-/* Filter like 'DavCo_AZ' */
-Xp = LikeFilterXp.replace('Column', 'Name')
-println('Like Filter Xp = ' + Xp)
-tmpObject = WebUI.modifyObjectProperty(myLikeFilterObject, 'xpath', 'equals', Xp, true)
-WebUiBuiltInKeywords.setText(tmpObject, 'DavCo_AZ')
+/* Filter 'Name' to Like 'DavCo_AZ' */
+CustomKeywords.'searchResults.searchResults.LikeFilterOnColumn'('Name', 'DavCo_AZ')
 
 /* Verify count */
 WebUiBuiltInKeywords.verifyElementText(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying'), 
@@ -165,18 +144,7 @@ WebUiBuiltInKeywords.verifyElementText(findTestObject('Page_Earth Sensor Portal/
     'Displaying 486 of 486 Item(s)')
 
 /* Filter on Total number of points [3500000, 4000000] */
-CustomKeywords.'searchResults.searchResults.filterByName'('Total Number Of Points')
-
-
-Xp = NumericFilterXp.replace('Column', 'Total Number Of Points')
-Xp = Xp.replace('#', '1')
-println('Total Number of Points Numeric Xp = ' + Xp)
-tmpObject = WebUI.modifyObjectProperty(myNumericFilterObject, 'xpath', 'equals', Xp, true)
-WebUiBuiltInKeywords.setText(tmpObject, '3500000')
-Xp = Xp.replace('[1]', '[2]')
-println('Total Number of Points Numeric Xp = ' + Xp)
-tmpObject = WebUI.modifyObjectProperty(myNumericFilterObject, 'xpath', 'equals', Xp, true)
-WebUiBuiltInKeywords.setText(tmpObject, '4000000')
+CustomKeywords.'searchResults.searchResults.NumericFilterOnColumn'('Total Number Of Points', '3500000', '4000000')
 
 /* verify Count */
 WebUiBuiltInKeywords.verifyElementText(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying'), 

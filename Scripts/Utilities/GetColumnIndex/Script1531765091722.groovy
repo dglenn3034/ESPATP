@@ -30,31 +30,41 @@ ChkBoxLabelXp = myCheckBoxLabelObject.findPropertyValue('xpath')
 
 checkedCount = 0
 ndx = 1
-colNdx = 0
+def Integer colNdx = 0
 
-
-while (colNdx < 1 && ndx < 11) {
+/* arbitrary stop point of 10 for ndx */
+while (colNdx < 1 && ndx < 10) {
 
 	sndx = ndx.toString()
+	Xp = ChkBoxLabelXp.replace('NDX', sndx)
+	println ('Xpath for next Check Box Label = ' + Xp)
+    myObjLabel = WebUI.modifyObjectProperty(myCheckBoxLabelObject, 'xpath', 'equals', Xp, true)
+ 
 	Xp = ChkBoxXp.replace('NDX', sndx)
-    myObj = WebUI.modifyObjectProperty(myCheckBoxObject, 'xpath', 'equals', Xp, true)
-    cName = WebUI.getAttribute (myObj,'name')
+	myObjBox = WebUI.modifyObjectProperty(myCheckBoxObject, 'xpath', 'equals', Xp, true)
+	
+    cName = WebUI.getText(myObjLabel)
+	println ('retrieved text for column ' + sndx + ' = ' + cName)
 	
     if (cName == ColumnName) {
 		
 		/* check the box */ 
-		WebUiBuiltInKeywords.check(myObj)
+		WebUiBuiltInKeywords.check(myObjBox)
 
 		colNdx = checkedCount + 1
 	}
     else {
 
-		val = WebUI.getAttribute(myObj, 'checked')
+		val = WebUI.getAttribute(myObjBox, 'checked')
 		if (val == 'true') {
 			checkedCount = checkedCount + 1
 		}
 	} 
 	ndx = ndx + 1
 } 
+
+if (ndx == 10) {
+	throw new com.kms.katalon.core.exception.StepFailedException('Failed to find column name = ' + ColumnName)
+}
 
 return colNdx
