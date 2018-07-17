@@ -20,6 +20,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
+myColumnSortObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort')
+ColumnSortXp = myColumnSortObject.findPropertyValue('xpath')
+
+
 WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
     FailureHandling.STOP_ON_FAILURE)
 
@@ -52,11 +56,15 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSel
 
 Thread.sleep(4000)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsProduct_Name_Toggle_Ascending-Descending'))
+Xp = ColumnSortXp.replace('Column', 'Name')
+println('Column Sort Xp = ' + Xp)
+tmpObject = WebUI.modifyObjectProperty(myColumnSortObject, 'xpath', 'equals', Xp, true)
+WebUiBuiltInKeywords.click(tmpObject)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsProduct_Name_Toggle_Ascending-Descending'))
+
+WebUiBuiltInKeywords.click(tmpObject)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow'))
 

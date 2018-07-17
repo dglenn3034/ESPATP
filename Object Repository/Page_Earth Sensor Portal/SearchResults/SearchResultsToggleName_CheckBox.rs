@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BasemapsStatusFilerInput_Field</name>
+   <name>SearchResultsToggleName_CheckBox</name>
    <tag></tag>
-   <elementGuidId>e884c195-c868-448f-b2d0-cdfe1dcc7946</elementGuidId>
+   <elementGuidId>a710a609-97de-413b-9964-8412f7dd9bd5</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//input[@type = 'checkbox' and @name = 'name']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//thead/tr/th/a/span[(text()='Status')]/../../div/div/ul/div/input</value>
+         <value>id(&quot;searchResult-pane-1&quot;)/descendant::input[@type = 'checkbox' and @name = 'name']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,20 +28,27 @@
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>text</value>
+      <value>checkbox</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>name</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>value</name>
       <type>Main</type>
-      <value>form-control string-filter</value>
+      <value>on</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;genericGridContainer&quot;)/div[@class=&quot;table-responsive grid-min-height&quot;]/table[@class=&quot;table table-striped table-bordered custom-grid default-hover-style&quot;]/thead[1]/tr[@class=&quot;grid-header-row fit&quot;]/th[@class=&quot;basemaps-grid-th-background&quot;]/div[@class=&quot;dropdown open btn-group&quot;]/div[@class=&quot;dropdown-menu filter-dropdown string-filter-dropdown&quot;]/ul[@class=&quot;list-unstyled&quot;]/div[@class=&quot;form-group form-group-sm&quot;]/input[@class=&quot;form-control string-filter&quot;]</value>
+      <value>id(&quot;searchResult-pane-1&quot;)/div[@class=&quot;search-result-product-grid&quot;]/div[@id=&quot;genericGridContainer&quot;]/span[1]/div[@class=&quot;dropdown open btn-group&quot;]/div[@class=&quot;dropdown-menu column-filter-dropdown&quot;]/ul[@class=&quot;list-unstyled&quot;]/div[@class=&quot;checkbox&quot;]/label[1]/input[1]</value>
    </webElementProperties>
 </WebElementEntity>

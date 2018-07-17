@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SearchResultsClose_Button</name>
+   <name>SearchResultsFieldsToggle_button</name>
    <tag></tag>
-   <elementGuidId>caac6973-6f71-41ae-9870-4c1bb14def9b</elementGuidId>
+   <elementGuidId>4ca9a4b5-7f4b-4abb-9a02-21c5204ef25b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='search-result-container']/descendant::i[@class='fa fa-times']</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;app&quot;)/div[1]/div[1]/div[@class=&quot;search-result-container&quot;]/div[@class=&quot;draggable-panel react-draggable panel panel-primary&quot;]/div[@class=&quot;panel-heading&quot;]/span[@class=&quot;panel-title&quot;]/a[1]/button[@class=&quot;close btn btn-default&quot;]/i[@class=&quot;fa fa-times&quot;]</value>
+         <value>//div[@id='searchResult-pane-1']/descendant::i[(contains(@class, 'fa-cog'))]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>fa fa-times</value>
+      <value>fa fa-cog above-header-icon</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,6 +38,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app&quot;)/div[1]/div[1]/div[@class=&quot;search-result-container&quot;]/div[@class=&quot;draggable-panel react-draggable panel panel-primary&quot;]/div[@class=&quot;panel-heading&quot;]/span[@class=&quot;panel-title&quot;]/a[1]/button[@class=&quot;close btn btn-default&quot;]/i[@class=&quot;fa fa-times&quot;]</value>
+      <value>id(&quot;searchResult-pane-1&quot;)/div[@class=&quot;search-result-product-grid&quot;]/div[@id=&quot;genericGridContainer&quot;]/span[1]/div[@class=&quot;dropdown open btn-group&quot;]/a[1]/i[@class=&quot;fa fa-cog above-header-icon&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

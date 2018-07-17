@@ -43,7 +43,7 @@ WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/C
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button'))
 
 try {
-    WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : SmokeTest01], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : "SmokeTest01"], FailureHandling.STOP_ON_FAILURE)
 
     println('Named Search SmokeTest01 does exist, we will delete it and recreate it')
 

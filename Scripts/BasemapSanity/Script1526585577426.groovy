@@ -66,10 +66,11 @@ WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Cons
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilter_Button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilerInput_Field'), 'COMPLETE')
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilterInput_Field'), 'COMPLETE')
 
 try {
-    WebUiBuiltInKeywords.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label'))
+    WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label'), 
+        1)
 
     println('Basemap Does not exist')
 }
