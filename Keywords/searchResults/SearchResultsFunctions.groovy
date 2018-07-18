@@ -95,7 +95,7 @@ public class searchResults {
 		WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFieldsToggle_button'))
 
 		/* 'check' the column */
-/* 		def Integer colIndex = WebUI.callTestCase(findTestCase('Utilities/GetColumnIndex'), [('ColumnName') : columnName], FailureHandling.STOP_ON_FAILURE) */
+		/* 		def Integer colIndex = WebUI.callTestCase(findTestCase('Utilities/GetColumnIndex'), [('ColumnName') : columnName], FailureHandling.STOP_ON_FAILURE) */
 		def Integer colIndex = GetSetColumn (columnName)
 		println ('Index for column = ' + colIndex)
 
@@ -116,42 +116,42 @@ public class searchResults {
 	@Keyword
 	def GetSetColumn (String columnName) {
 		println ('Searching for index for ' + columnName)
-		
-		
+
+
 		def TestObject myCheckBoxObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox')
 		def String ChkBoxXp = myCheckBoxObject.findPropertyValue('xpath')
-		
+
 		def TestObject myCheckBoxLabelObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel')
 		def String ChkBoxLabelXp = myCheckBoxLabelObject.findPropertyValue('xpath')
-		
+
 		def Integer checkedCount = 0
 		def Integer ndx = 1
 		def Integer colNdx = 0
 		def String sndx, Xp
-		
+
 		/* arbitrary stop point of 10 for ndx */
 		while (colNdx < 1 && ndx < 10) {
-		
+
 			sndx = ndx.toString()
 			Xp = ChkBoxLabelXp.replace('NDX', sndx)
 			println ('Xpath for next Check Box Label = ' + Xp)
 			def TestObject myObjLabel = WebUI.modifyObjectProperty(myCheckBoxLabelObject, 'xpath', 'equals', Xp, true)
-		 
+
 			Xp = ChkBoxXp.replace('NDX', sndx)
 			def TestObject myObjBox = WebUI.modifyObjectProperty(myCheckBoxObject, 'xpath', 'equals', Xp, true)
-			
+
 			def String cName = WebUI.getText(myObjLabel)
 			println ('retrieved text for column ' + sndx + ' = ' + cName)
-			
+
 			if (cName == columnName) {
-				
+
 				/* check the box */
 				WebUiBuiltInKeywords.check(myObjBox)
-		
+
 				colNdx = checkedCount + 1
 			}
 			else {
-		
+
 				def String val = WebUI.getAttribute(myObjBox, 'checked')
 				if (val == 'true') {
 					checkedCount = checkedCount + 1
@@ -159,12 +159,11 @@ public class searchResults {
 			}
 			ndx = ndx + 1
 		}
-		
+
 		if (ndx == 10) {
 			throw new com.kms.katalon.core.exception.StepFailedException('Failed to find column name = ' + columnName)
 		}
-		
+
 		return colNdx
-		
 	}
 }

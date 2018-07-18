@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ProductFilter_AddLineButton</name>
+   <name>AttributeFilter_AddLineButton</name>
    <tag></tag>
    <elementGuidId>f7e8c3e4-b5fc-47f6-bd8c-57489a10cf4f</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@id = 'btnAddLine' and @type = 'button']</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value>#btnAddLine</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//button[@id = 'btnAddLine' and @type = 'button']</value>
+         <key>XPATH</key>
+         <value>//button[@id='btnAddLine']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

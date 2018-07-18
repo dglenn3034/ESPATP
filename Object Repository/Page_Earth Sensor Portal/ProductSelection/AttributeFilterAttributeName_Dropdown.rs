@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@placeholder='select' and @id='bg-nested-dropdown']</value>
+         <value>(//select[(contains(@class,'filterAttributeSelect'))])[ROWNDX]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

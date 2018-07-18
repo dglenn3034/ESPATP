@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SearchResultsToggleName_CheckBox</name>
+   <name>AttributeLikeFilterValue_Field</name>
    <tag></tag>
-   <elementGuidId>a710a609-97de-413b-9964-8412f7dd9bd5</elementGuidId>
+   <elementGuidId>12c1219d-7229-4747-baa4-372aa2c8791e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@type = 'checkbox' and @name = 'name']</value>
+         <value>//input[@type = 'text' and @placeholder = 'Enter a Value...']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>id(&quot;searchResult-pane-1&quot;)/descendant::input[@type = 'checkbox' and @name = 'name']</value>
+         <value>(//input[@type='text' and @class='form-control'])[ROWNDX]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,27 +28,27 @@
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>checkbox</value>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>placeholder</name>
       <type>Main</type>
-      <value>name</value>
+      <value>Enter a Value...</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>value</name>
+      <name>class</name>
       <type>Main</type>
-      <value>on</value>
+      <value>form-control</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;searchResult-pane-1&quot;)/div[@class=&quot;search-result-product-grid&quot;]/div[@id=&quot;genericGridContainer&quot;]/span[1]/div[@class=&quot;dropdown open btn-group&quot;]/div[@class=&quot;dropdown-menu column-filter-dropdown&quot;]/ul[@class=&quot;list-unstyled&quot;]/div[@class=&quot;checkbox&quot;]/label[1]/input[1]</value>
+      <value>id(&quot;1&quot;)/input[@class=&quot;form-control&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

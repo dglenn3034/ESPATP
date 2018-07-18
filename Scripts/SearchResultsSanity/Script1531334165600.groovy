@@ -20,16 +20,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-/* myNumericFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/NumericFilter')
-NumericFilterXp = myNumericFilterObject.findPropertyValue('xpath')
-
-myLikeFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/LikeFilter')
-LikeFilterXp = myLikeFilterObject.findPropertyValue('xpath')
-*/
-myRow1ColumnValueObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/GridValue')
-
-ValXp = myRow1ColumnValueObject.findPropertyValue('xpath')
-
 /* Login using credentials from login test object */
 WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
     FailureHandling.STOP_ON_FAILURE)
@@ -72,12 +62,12 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelec
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionAirborneLidar_Filter_button'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductFilter_AddLineButton'))
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilter_AddLineButton'))
 
 WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAttributeName_Dropdown'), 
     'Name', false)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterValue_Field'), 'DavCo_A')
+WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeLikeFilterValue_Field'), 'DavCo_A')
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterOK_Button'))
 
