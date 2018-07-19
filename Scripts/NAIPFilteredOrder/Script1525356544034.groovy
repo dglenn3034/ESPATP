@@ -50,7 +50,7 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSel
 
 Thread.sleep(1000)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilter_AddLineButton'))
+WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button'))
 
 WebUI.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterDateValue_Field'), '01/01/2014')
 

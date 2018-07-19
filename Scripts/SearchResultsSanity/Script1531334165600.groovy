@@ -62,12 +62,12 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelec
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionAirborneLidar_Filter_button'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilter_AddLineButton'))
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button'))
 
 WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAttributeName_Dropdown'), 
     'Name', false)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeLikeFilterValue_Field'), 'DavCo_A')
+WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterValue_Field'), 'DavCo_A')
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterOK_Button'))
 

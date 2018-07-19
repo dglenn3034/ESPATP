@@ -65,7 +65,7 @@ WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/ProductSelec
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionLandsat8Filter_button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilter_AddLineButton'))
+WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button'))
 
 WebUI.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterDateValue_Field'), '06/01/2017')
 

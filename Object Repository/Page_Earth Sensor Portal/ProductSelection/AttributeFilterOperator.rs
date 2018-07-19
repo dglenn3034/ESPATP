@@ -7,20 +7,20 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>(//select[(contains(@class,'operator'))])[ROWNDX]/option[(text()='OPERATOR')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>(//select[(contains(@class,'operator'))])[ROWNDX]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//select[(contains(@class,'operator'))]</value>
+      <value>(//select[(contains(@class,'operator'))])[ROWNDX]/option[(text()='OPERATOR')]</value>
    </webElementProperties>
 </WebElementEntity>

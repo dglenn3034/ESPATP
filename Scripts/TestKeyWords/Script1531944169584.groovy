@@ -46,3 +46,16 @@ CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8'
 
 CustomKeywords.'productSelection.productSelection.SelectChildProduct'('NAIP', 'NDVI')
 
+CustomKeywords.'productSelection.productSelection.SelectProduct'('Airborne LIDAR')
+
+CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Landsat8', 'Like', 'Name', 'LC', false)
+
+CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('NAIP', '>=', 'Date Acquired', '01/01/2015', 
+    true)
+
+CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Airborne LIDAR', '>=', 'Total Number Of Points', 
+    '3500000', false)
+
+CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Airborne LIDAR', '<=', 'Total Number Of Points', 
+    '4000000', false)
+

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Generic for Product Filtering by XPATH substitution</description>
-   <name>ProductFilter</name>
+   <description></description>
+   <name>AttributeFilterNextClause</name>
    <tag></tag>
-   <elementGuidId>6bd69fcf-cee1-4bc2-ac92-7cd863a4dd55</elementGuidId>
+   <elementGuidId>dc63f635-4da3-42f9-9180-99216ec61513</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[(text()='PRODUCT')]/parent::td/following-sibling::td/button</value>
+         <value>//div[@class='form-group'][ROWNDX]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[(text()='PRODUCT')]/parent::td/following-sibling::td/button</value>
+      <value>//div[@class='form-group'][ROWNDX]</value>
    </webElementProperties>
 </WebElementEntity>
