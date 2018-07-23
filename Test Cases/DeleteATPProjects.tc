@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Deletes the ATPLIdarProject and ATPOrthoProject including any data files</description>
+   <name>DeleteATPProjects</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5f885a57-f530-4fad-92a4-cd16594e0f84</testCaseGuid>
+</TestCaseEntity>

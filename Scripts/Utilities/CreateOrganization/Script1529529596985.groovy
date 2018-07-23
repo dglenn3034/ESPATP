@@ -21,6 +21,23 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations'))
 
+WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterButton'))
+
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterLikeBox'), Name)
+
+try {
+    WebUI.verifyElementText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNoRecordsText'), 
+        'No Records found.')
+    println(Name + 'does not exist, will create')
+}
+catch (Exception e) {
+    println(Name + ' already exists skipping creation')
+    return null
+} 
+
+finally { 
+}
+
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/AddOrganizationButton'))
 
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationName'), Name)

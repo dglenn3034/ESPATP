@@ -149,4 +149,16 @@
       <isRun>false</isRun>
       <testCaseId>Test Cases/PreviewSanity</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>d993dc28-b397-4add-9f7e-43502ec9f7f6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/SearchResultsSanity</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ba468699-b86d-4a6e-9b55-c3017b99435b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/SmokeTest01</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

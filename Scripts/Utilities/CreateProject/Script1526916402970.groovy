@@ -33,11 +33,14 @@ try {
     println(ProjectName + ' does not exist, we will create it')
 }
 catch (Exception e) {
-    println(ProjectName + ' does exist, we will delete it and recreate it')
+    println(ProjectName + ' does exist')
 
+	/*
     WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName], FailureHandling.STOP_ON_FAILURE)
 
     println(ProjectName + ' deleted ')
+	*/
+	return
 } 
 
 WebUI.delay(2)
@@ -92,4 +95,6 @@ if ((FootprintFile != null) && (FootprintFile.length() > 0)) {
 
 'Wait on completion message to fade'
 WebUI.delay(5)
+
+return
 

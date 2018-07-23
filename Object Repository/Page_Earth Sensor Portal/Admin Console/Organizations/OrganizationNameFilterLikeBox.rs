@@ -4,7 +4,17 @@
    <name>OrganizationNameFilterLikeBox</name>
    <tag></tag>
    <elementGuidId>76f993f9-8915-4f32-9dfd-1d498ed14749</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@type = 'text']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//thead/descendant::span[(text()='Name')]/parent::a/parent::div/descendant::input[@type='text']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

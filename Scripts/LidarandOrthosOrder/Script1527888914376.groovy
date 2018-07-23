@@ -44,9 +44,13 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Bu
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionAirborne_Lidar_Checkbox'))
+not_run: WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionAirborne_Lidar_Checkbox'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionOrthoImages_Checkbox'))
+not_run: WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionOrthoImages_Checkbox'))
+
+CustomKeywords.'productSelection.productSelection.SelectProduct'('OrthoImages')
+
+CustomKeywords.'productSelection.productSelection.SelectProduct'('Airborne LIDAR')
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
 

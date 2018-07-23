@@ -19,7 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd', ('Role') : 'Company Admin'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
 
@@ -35,6 +36,7 @@ WebUiBuiltInKeywords.waitForPageLoad(4)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
+' Add Group'
 WebUI.callTestCase(findTestCase('Utilities/CreateGroup'), [('Name') : 'ATPUser2', ('Description') : 'Test Group for ATP based on User'], 
     FailureHandling.STOP_ON_FAILURE)
 
@@ -42,14 +44,17 @@ WebUI.callTestCase(findTestCase('Utilities/CreateGroup'), [('Name') : 'ATPUser2'
 WebUI.callTestCase(findTestCase('Utilities/CreateOrganization'), [('Description') : 'ATP Test Organization', ('Group') : 'ATPUser2'
         , ('Name') : 'ATPOrganization'], FailureHandling.STOP_ON_FAILURE)
 
+'Add user'
 WebUI.callTestCase(findTestCase('Utilities/CreateUser'), [('email') : 'dglenn@airgon.com', ('organization') : 'ATPOrganization'], 
     FailureHandling.STOP_ON_FAILURE)
 
+'delete User'
 WebUI.callTestCase(findTestCase('Utilities/DeleteUser'), [('UserId') : 'dglenn@airgon.com'], FailureHandling.STOP_ON_FAILURE)
 
 'Delete Organization'
 WebUI.callTestCase(findTestCase('Utilities/DeleteOrganization'), [('Name') : 'ATPOrganization'], FailureHandling.STOP_ON_FAILURE)
 
+'delete group'
 WebUI.callTestCase(findTestCase('Utilities/DeleteGroup'), [('Name') : 'ATPUser2'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Utilities/AdminConsoleSignOut'), [:], FailureHandling.STOP_ON_FAILURE)

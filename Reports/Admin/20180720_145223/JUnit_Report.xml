@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Admin" time="137" tests="6" failures="0" errors="0">
+   <testsuite name="Admin" tests="6" failures="0" errors="0" time="137" timestamp="2018-07-20 14:52:29" hostname="DGlenn - MUSES-David.local.niirs10.com" id="Test Suites/Admin">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180720_145223"/>
+         <property name="logFiles" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180720_145223\\execution0.log"/>
+         <property name="attachments" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180720_145223\\1532116474081.png, D:\\ATPS\\ESPATP\\Reports\\Admin\\20180720_145223\\1532116474167.png"/>
+         <property name="hostName" value="DGlenn - MUSES-David.local.niirs10.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Firefox 61.0"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="fa8fc229-e969-4fd9-b99e-1b1809f30ae0"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/AdminGUISanity" classname="Test Cases/AdminGUISanity" status="PASSED">
+         <system-out><![CDATA[2018-07-20 14:52:29 - [TEST_CASE][PASSED] - Test Cases/AdminGUISanity: Test Cases/AdminGUISanity
+
+2018-07-20 14:52:29 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:52:29 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - rowNdx == 3: null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-20 14:52:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:52:30 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - rowNdx == 3: null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-20 14:52:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:52:30 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-20 14:52:35 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-20 14:52:35 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:52:35 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:52:35 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:52:35 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:52:35 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:52:35 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:52:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:52:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:52:36 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-20 14:52:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-20 14:52:36 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Users' is present
+
+2018-07-20 14:52:36 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Users' is present
+
+2018-07-20 14:52:36 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Groups' is present
+
+2018-07-20 14:52:36 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Groups' is present
+
+2018-07-20 14:52:36 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Organizations' is present
+
+2018-07-20 14:52:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Organizations' is present
+
+2018-07-20 14:52:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Access Restriction' is present
+
+2018-07-20 14:52:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Access Restriction' is present
+
+2018-07-20 14:52:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Basemaps' is present
+
+2018-07-20 14:52:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Basemaps' is present
+
+2018-07-20 14:52:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Reports' is present
+
+2018-07-20 14:52:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/div_Reports' is present
+
+2018-07-20 14:52:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/a_ System Information' is present
+
+2018-07-20 14:52:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/a_ System Information' is present
+
+2018-07-20 14:52:37 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/a_ActivityLog' is present
+
+2018-07-20 14:52:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/a_ActivityLog' is present
+
+2018-07-20 14:52:37 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-20 14:52:37 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-20 14:52:37 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-20 14:52:40 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-20 14:52:40 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:52:40 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:52:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:52:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:52:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:52:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-20 14:52:41 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-20 14:52:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/AddATPOrganization" classname="Test Cases/AddATPOrganization" status="PASSED">
+         <system-out><![CDATA[2018-07-20 14:52:41 - [TEST_CASE][PASSED] - Test Cases/AddATPOrganization: Test Cases/AddATPOrganization
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:52:41 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-20 14:52:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:52:41 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-20 14:52:44 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-20 14:52:44 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:52:44 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:52:44 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:52:44 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:52:44 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:52:44 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:52:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:52:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:52:45 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-20 14:52:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-20 14:52:45 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-20 14:52:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2018-07-20 14:52:46 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-20 14:52:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-20 14:52:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-20 14:52:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/AddOrganizationButton' is clicked on
+
+2018-07-20 14:52:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/AddOrganizationButton' is clicked on
+
+2018-07-20 14:52:46 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationName'
+
+2018-07-20 14:52:46 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationName'
+
+2018-07-20 14:52:46 - [TEST_STEP][PASSED] - setText: Text 'Organization for ATP exercise' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/textarea_description'
+
+2018-07-20 14:52:47 - [MESSAGE][PASSED] - Text 'Organization for ATP exercise' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/textarea_description'
+
+2018-07-20 14:52:47 - [TEST_STEP][PASSED] - setText: Text 'gcesp-geocue-orders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeliveryBucket'
+
+2018-07-20 14:52:47 - [MESSAGE][PASSED] - Text 'gcesp-geocue-orders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeliveryBucket'
+
+2018-07-20 14:52:47 - [TEST_STEP][PASSED] - setText: Text 'ATPOrders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeliveryPrefix'
+
+2018-07-20 14:52:47 - [MESSAGE][PASSED] - Text 'ATPOrders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeliveryPrefix'
+
+2018-07-20 14:52:47 - [TEST_STEP][PASSED] - setText: Text 'airgon.com' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationGroupPulldown'
+
+2018-07-20 14:52:47 - [MESSAGE][PASSED] - Text 'airgon.com' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationGroupPulldown'
+
+2018-07-20 14:52:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationSaveButton' is clicked on
+
+2018-07-20 14:52:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationSaveButton' is clicked on
+
+2018-07-20 14:52:47 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-20 14:52:52 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-20 14:52:52 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-20 14:52:52 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-20 14:52:52 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-20 14:52:55 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-20 14:52:55 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:52:55 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:52:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:52:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:52:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-20 14:52:56 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-20 14:52:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/DeleteATPOrganization" classname="Test Cases/DeleteATPOrganization" status="PASSED">
+         <system-out><![CDATA[2018-07-20 14:52:56 - [TEST_CASE][PASSED] - Test Cases/DeleteATPOrganization: Test Cases/DeleteATPOrganization
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:52:56 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-20 14:52:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:52:56 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-20 14:52:59 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-20 14:52:59 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:52:59 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:52:59 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:53:00 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:53:00 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:53:00 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:53:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:53:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:53:01 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-20 14:53:01 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-20 14:53:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-20 14:53:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-20 14:53:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterButton' is clicked on
+
+2018-07-20 14:53:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterButton' is clicked on
+
+2018-07-20 14:53:01 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterLikeBox'
+
+2018-07-20 14:53:02 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterLikeBox'
+
+2018-07-20 14:53:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeleteRow1Button' is clicked on
+
+2018-07-20 14:53:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeleteRow1Button' is clicked on
+
+2018-07-20 14:53:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeleteOKButton' is clicked on
+
+2018-07-20 14:53:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeleteOKButton' is clicked on
+
+2018-07-20 14:53:02 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-20 14:53:07 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-20 14:53:07 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-20 14:53:07 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-20 14:53:07 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-20 14:53:10 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-20 14:53:10 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:53:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:53:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:53:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:53:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:53:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-20 14:53:11 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-20 14:53:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/AdminBasics" classname="Test Cases/AdminBasics" status="PASSED">
+         <system-out><![CDATA[2018-07-20 14:53:11 - [TEST_CASE][PASSED] - Test Cases/AdminBasics: Test Cases/AdminBasics
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:53:11 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-20 14:53:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:53:11 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-20 14:53:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-20 14:53:14 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:53:14 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:53:14 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:53:14 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:53:14 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:53:14 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:53:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:53:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:53:15 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-20 14:53:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-20 14:53:15 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-20 14:53:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2018-07-20 14:53:16 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-20 14:53:16 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateGroup' successfully
+
+2018-07-20 14:53:16 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateGroup: Test Cases/Utilities/CreateGroup
+
+2018-07-20 14:53:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-20 14:53:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-20 14:53:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilter_Button' is clicked on
+
+2018-07-20 14:53:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilter_Button' is clicked on
+
+2018-07-20 14:53:16 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilterLikeBox'
+
+2018-07-20 14:53:17 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilterLikeBox'
+
+2018-07-20 14:53:17 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-20 14:53:17 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupNoRecordsText' are matched.
+
+2018-07-20 14:53:17 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupNoRecordsText' are matched.
+
+2018-07-20 14:53:17 - [TEST_STEP][PASSED] - Statement - println(Name + "does not exist, will create"): null
+
+2018-07-20 14:53:17 - [TEST_STEP][PASSED] - Statement - Finally: null
+
+2018-07-20 14:53:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsAddGroup_Button' is clicked on
+
+2018-07-20 14:53:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsAddGroup_Button' is clicked on
+
+2018-07-20 14:53:17 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsName_Field'
+
+2018-07-20 14:53:17 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsName_Field'
+
+2018-07-20 14:53:17 - [TEST_STEP][PASSED] - setText: Text 'Test Group for ATP based on User' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsDescription_Field'
+
+2018-07-20 14:53:17 - [MESSAGE][PASSED] - Text 'Test Group for ATP based on User' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsDescription_Field'
+
+2018-07-20 14:53:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsCopyfromUserGroup_Option' is clicked on
+
+2018-07-20 14:53:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsCopyfromUserGroup_Option' is clicked on
+
+2018-07-20 14:53:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsAddGroupSave_Button' is clicked on
+
+2018-07-20 14:53:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsAddGroupSave_Button' is clicked on
+
+2018-07-20 14:53:18 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:20 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-20 14:53:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-20 14:53:20 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:22 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateGroup' successfully
+
+2018-07-20 14:53:22 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateOrganization' successfully
+
+2018-07-20 14:53:22 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateOrganization: Test Cases/Utilities/CreateOrganization
+
+2018-07-20 14:53:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-20 14:53:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-20 14:53:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterButton' is clicked on
+
+2018-07-20 14:53:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterButton' is clicked on
+
+2018-07-20 14:53:22 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterLikeBox'
+
+2018-07-20 14:53:23 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterLikeBox'
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNoRecordsText' are matched.
+
+2018-07-20 14:53:23 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNoRecordsText' are matched.
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - Statement - println(Name + "does not exist, will create"): null
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - Statement - Finally: null
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/AddOrganizationButton' is clicked on
+
+2018-07-20 14:53:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/AddOrganizationButton' is clicked on
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationName'
+
+2018-07-20 14:53:23 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationName'
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - setText: Text 'ATP Test Organization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/textarea_description'
+
+2018-07-20 14:53:23 - [MESSAGE][PASSED] - Text 'ATP Test Organization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/textarea_description'
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - setText: Text 'gcesp-geocue-orders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeliveryBucket'
+
+2018-07-20 14:53:23 - [MESSAGE][PASSED] - Text 'gcesp-geocue-orders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeliveryBucket'
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - setText: Text 'ATPOrders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeliveryPrefix'
+
+2018-07-20 14:53:23 - [MESSAGE][PASSED] - Text 'ATPOrders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeliveryPrefix'
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationGroupPulldown'
+
+2018-07-20 14:53:23 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationGroupPulldown'
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - setText: Text 'airgon.com' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDomainField'
+
+2018-07-20 14:53:23 - [MESSAGE][PASSED] - Text 'airgon.com' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDomainField'
+
+2018-07-20 14:53:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationSaveButton' is clicked on
+
+2018-07-20 14:53:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationSaveButton' is clicked on
+
+2018-07-20 14:53:24 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:26 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:26 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationRefresh_Button' is clicked on
+
+2018-07-20 14:53:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationRefresh_Button' is clicked on
+
+2018-07-20 14:53:26 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:28 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateOrganization' successfully
+
+2018-07-20 14:53:28 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateUser' successfully
+
+2018-07-20 14:53:28 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateUser: Test Cases/Utilities/CreateUser
+
+2018-07-20 14:53:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/a_Users' is clicked on
+
+2018-07-20 14:53:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/a_Users' is clicked on
+
+2018-07-20 14:53:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilter_Button' is clicked on
+
+2018-07-20 14:53:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilter_Button' is clicked on
+
+2018-07-20 14:53:28 - [TEST_STEP][PASSED] - setText: Text 'dglenn@airgon.com' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilterLikeBox'
+
+2018-07-20 14:53:29 - [MESSAGE][PASSED] - Text 'dglenn@airgon.com' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilterLikeBox'
+
+2018-07-20 14:53:29 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-20 14:53:29 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersNoRecordsText' are matched.
+
+2018-07-20 14:53:29 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersNoRecordsText' are matched.
+
+2018-07-20 14:53:29 - [TEST_STEP][PASSED] - Statement - println(email + "does not exist, will create"): null
+
+2018-07-20 14:53:29 - [TEST_STEP][PASSED] - Statement - Finally: null
+
+2018-07-20 14:53:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersAddUser_Button' is clicked on
+
+2018-07-20 14:53:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersAddUser_Button' is clicked on
+
+2018-07-20 14:53:29 - [TEST_STEP][PASSED] - setText: Text 'dglenn@airgon.com' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersEmail_Field'
+
+2018-07-20 14:53:29 - [MESSAGE][PASSED] - Text 'dglenn@airgon.com' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersEmail_Field'
+
+2018-07-20 14:53:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersSelect Organization_Option' is clicked on
+
+2018-07-20 14:53:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersSelect Organization_Option' is clicked on
+
+2018-07-20 14:53:29 - [TEST_STEP][PASSED] - setText: Text 'gcesp-geocue-orders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersdeliveryBucket_Field'
+
+2018-07-20 14:53:29 - [MESSAGE][PASSED] - Text 'gcesp-geocue-orders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersdeliveryBucket_Field'
+
+2018-07-20 14:53:29 - [TEST_STEP][PASSED] - setText: Text 'ATPOrders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersDeliveryPrefix_Field'
+
+2018-07-20 14:53:30 - [MESSAGE][PASSED] - Text 'ATPOrders' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersDeliveryPrefix_Field'
+
+2018-07-20 14:53:30 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersSelectUserGroup_CheckBox' is checked
+
+2018-07-20 14:53:30 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersSelectUserGroup_CheckBox' is checked
+
+2018-07-20 14:53:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersGroupsAssign_Arrow' is clicked on
+
+2018-07-20 14:53:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersGroupsAssign_Arrow' is clicked on
+
+2018-07-20 14:53:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersAddUserSave_Button' is clicked on
+
+2018-07-20 14:53:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersAddUserSave_Button' is clicked on
+
+2018-07-20 14:53:30 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:32 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-20 14:53:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-20 14:53:33 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:35 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateUser' successfully
+
+2018-07-20 14:53:35 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/DeleteUser' successfully
+
+2018-07-20 14:53:35 - [TEST_CASE][PASSED] - Test Cases/Utilities/DeleteUser: Test Cases/Utilities/DeleteUser
+
+2018-07-20 14:53:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/a_Users' is clicked on
+
+2018-07-20 14:53:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/a_Users' is clicked on
+
+2018-07-20 14:53:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilter_Button' is clicked on
+
+2018-07-20 14:53:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilter_Button' is clicked on
+
+2018-07-20 14:53:35 - [TEST_STEP][PASSED] - setText: Text 'dglenn@airgon.com' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilterLikeBox'
+
+2018-07-20 14:53:36 - [MESSAGE][PASSED] - Text 'dglenn@airgon.com' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilterLikeBox'
+
+2018-07-20 14:53:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersFirstRowDelete_Button' is clicked on
+
+2018-07-20 14:53:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersFirstRowDelete_Button' is clicked on
+
+2018-07-20 14:53:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-20 14:53:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-20 14:53:36 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:38 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-20 14:53:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-20 14:53:38 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:40 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/DeleteUser' successfully
+
+2018-07-20 14:53:40 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/DeleteOrganization' successfully
+
+2018-07-20 14:53:40 - [TEST_CASE][PASSED] - Test Cases/Utilities/DeleteOrganization: Test Cases/Utilities/DeleteOrganization
+
+2018-07-20 14:53:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-20 14:53:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-20 14:53:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterButton' is clicked on
+
+2018-07-20 14:53:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterButton' is clicked on
+
+2018-07-20 14:53:41 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterLikeBox'
+
+2018-07-20 14:53:41 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterLikeBox'
+
+2018-07-20 14:53:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeleteRow1Button' is clicked on
+
+2018-07-20 14:53:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeleteRow1Button' is clicked on
+
+2018-07-20 14:53:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeleteOKButton' is clicked on
+
+2018-07-20 14:53:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeleteOKButton' is clicked on
+
+2018-07-20 14:53:41 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:43 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-20 14:53:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-20 14:53:44 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:46 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:46 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/DeleteOrganization' successfully
+
+2018-07-20 14:53:46 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/DeleteGroup' successfully
+
+2018-07-20 14:53:46 - [TEST_CASE][PASSED] - Test Cases/Utilities/DeleteGroup: Test Cases/Utilities/DeleteGroup
+
+2018-07-20 14:53:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-20 14:53:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-20 14:53:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilter_Button' is clicked on
+
+2018-07-20 14:53:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilter_Button' is clicked on
+
+2018-07-20 14:53:46 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilterLikeBox'
+
+2018-07-20 14:53:46 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilterLikeBox'
+
+2018-07-20 14:53:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupDeleteRow1_Button' is clicked on
+
+2018-07-20 14:53:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupDeleteRow1_Button' is clicked on
+
+2018-07-20 14:53:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-20 14:53:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-20 14:53:47 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-20 14:53:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-20 14:53:49 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-20 14:53:51 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-20 14:53:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/DeleteGroup' successfully
+
+2018-07-20 14:53:51 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-20 14:53:51 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-20 14:53:51 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-20 14:53:54 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-20 14:53:54 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:53:54 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:53:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:53:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:53:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:53:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:53:54 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-20 14:53:55 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-20 14:53:55 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Reports" classname="Test Cases/Reports" status="PASSED">
+         <system-out><![CDATA[2018-07-20 14:53:55 - [TEST_CASE][PASSED] - Test Cases/Reports: Test Cases/Reports
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:53:55 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-20 14:53:55 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:53:55 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-20 14:53:58 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-20 14:53:58 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-20 14:53:58 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-20 14:53:58 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:53:59 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:53:59 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:53:59 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:53:59 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:53:59 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:53:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:54:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:54:00 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-20 14:54:00 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-20 14:54:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsViewDetails' is clicked on
+
+2018-07-20 14:54:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsViewDetails' is clicked on
+
+2018-07-20 14:54:00 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '70CDF0F3358140198A4A473F1B915CCF' are selected in object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsOrderReportOrganization' 
+
+2018-07-20 14:54:01 - [MESSAGE][PASSED] - All options with value '70CDF0F3358140198A4A473F1B915CCF' are selected in object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsOrderReportOrganization' 
+
+2018-07-20 14:54:01 - [TEST_STEP][PASSED] - setText: Text '04/01/2018' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsDatePickEnd'
+
+2018-07-20 14:54:01 - [MESSAGE][PASSED] - Text '04/01/2018' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsDatePickEnd'
+
+2018-07-20 14:54:01 - [TEST_STEP][PASSED] - setText: Text '06/01/2018' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsDatePickStart'
+
+2018-07-20 14:54:01 - [MESSAGE][PASSED] - Text '06/01/2018' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsDatePickStart'
+
+2018-07-20 14:54:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsOrderReportPreview' is clicked on
+
+2018-07-20 14:54:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsOrderReportPreview' is clicked on
+
+2018-07-20 14:54:01 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-20 14:54:06 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-20 14:54:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsDismissOrderPreview' is clicked on
+
+2018-07-20 14:54:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsDismissOrderPreview' is clicked on
+
+2018-07-20 14:54:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsOrderReportEmail' is clicked on
+
+2018-07-20 14:54:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsOrderReportEmail' is clicked on
+
+2018-07-20 14:54:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsOKButton' is clicked on
+
+2018-07-20 14:54:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsOKButton' is clicked on
+
+2018-07-20 14:54:07 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-20 14:54:07 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-20 14:54:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/a_Users' is clicked on
+
+2018-07-20 14:54:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/a_Users' is clicked on
+
+2018-07-20 14:54:08 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '70CDF0F3358140198A4A473F1B915CCF' are selected in object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsUserReportOrganization' 
+
+2018-07-20 14:54:08 - [MESSAGE][PASSED] - All options with value '70CDF0F3358140198A4A473F1B915CCF' are selected in object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsUserReportOrganization' 
+
+2018-07-20 14:54:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsUserReportPreview' is clicked on
+
+2018-07-20 14:54:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsUserReportPreview' is clicked on
+
+2018-07-20 14:54:08 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-20 14:54:13 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-20 14:54:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsDismissOrderPreview' is clicked on
+
+2018-07-20 14:54:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsDismissOrderPreview' is clicked on
+
+2018-07-20 14:54:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsUserReportsEmail' is clicked on
+
+2018-07-20 14:54:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsUserReportsEmail' is clicked on
+
+2018-07-20 14:54:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsOKButton' is clicked on
+
+2018-07-20 14:54:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Reports/ReportsOKButton' is clicked on
+
+2018-07-20 14:54:14 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-20 14:54:19 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-20 14:54:19 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-20 14:54:19 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-20 14:54:19 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-20 14:54:22 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-20 14:54:22 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:54:22 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:54:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:54:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:54:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:54:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:54:22 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-20 14:54:23 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-20 14:54:23 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/BasemapSanity" classname="Test Cases/BasemapSanity" status="PASSED">
+         <system-out><![CDATA[2018-07-20 14:54:23 - [TEST_CASE][PASSED] - Test Cases/BasemapSanity: Test Cases/BasemapSanity
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:54:23 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-20 14:54:23 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-20 14:54:23 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-20 14:54:26 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-20 14:54:26 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-20 14:54:26 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-20 14:54:26 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-20 14:54:27 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-20 14:54:27 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:54:27 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-20 14:54:27 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:54:27 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-20 14:54:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:54:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-20 14:54:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-20 14:54:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-20 14:54:29 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-20 14:54:29 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/NamedSearchExists' successfully
+
+2018-07-20 14:54:29 - [TEST_CASE][PASSED] - Test Cases/Utilities/NamedSearchExists: Test Cases/Utilities/NamedSearchExists
+
+2018-07-20 14:54:29 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clickable
+
+2018-07-20 14:54:29 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clickable
+
+2018-07-20 14:54:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clicked on
+
+2018-07-20 14:54:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clicked on
+
+2018-07-20 14:54:30 - [TEST_STEP][PASSED] - Statement - Try: All options with label 'ATPLidarNS' are selected in object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-20 14:54:30 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label 'ATPLidarNS' are selected in object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-20 14:54:31 - [MESSAGE][PASSED] - All options with label 'ATPLidarNS' are selected in object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-20 14:54:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/NamedSearchExists' successfully
+
+2018-07-20 14:54:31 - [TEST_STEP][PASSED] - Statement - println("Named Search is found"): null
+
+2018-07-20 14:54:31 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:54:31 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/admin#/' successfully
+
+2018-07-20 14:54:31 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-20 14:54:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-20 14:54:31 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/a_ Custom Base Maps' is clickable
+
+2018-07-20 14:54:32 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/a_ Custom Base Maps' is clickable
+
+2018-07-20 14:54:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/a_ Custom Base Maps' is clicked on
+
+2018-07-20 14:54:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/a_ Custom Base Maps' is clicked on
+
+2018-07-20 14:54:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsNameFilter_Button' is clicked on
+
+2018-07-20 14:54:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsNameFilter_Button' is clicked on
+
+2018-07-20 14:54:32 - [TEST_STEP][PASSED] - setText: Text 'ATPBasemap' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsNameFilterInput_Field'
+
+2018-07-20 14:54:32 - [MESSAGE][PASSED] - Text 'ATPBasemap' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsNameFilterInput_Field'
+
+2018-07-20 14:54:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilter_Button' is clicked on
+
+2018-07-20 14:54:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilter_Button' is clicked on
+
+2018-07-20 14:54:32 - [TEST_STEP][PASSED] - setText: Text 'COMPLETE' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilterInput_Field'
+
+2018-07-20 14:54:33 - [MESSAGE][PASSED] - Text 'COMPLETE' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilterInput_Field'
+
+2018-07-20 14:54:33 - [TEST_STEP][FAILED] - Statement - Try: Unable to verify object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label' located by 'By.xpath: //em[(text() = ' No Records found.' or . = ' No Records found.')]' not found)
+
+2018-07-20 14:54:33 - [TEST_STEP][FAILED] - verifyElementPresent: Unable to verify object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label' located by 'By.xpath: //em[(text() = ' No Records found.' or . = ' No Records found.')]' not found)
+
+2018-07-20 14:54:34 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label' located by 'By.xpath: //em[(text() = ' No Records found.' or . = ' No Records found.')]' not found
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\Admin\\20180720_145223\\1532116474081.png]]
+
+2018-07-20 14:54:34 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label' located by 'By.xpath: //em[(text() = ' No Records found.' or . = ' No Records found.')]' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\Admin\\20180720_145223\\1532116474167.png]]
+
+2018-07-20 14:54:34 - [TEST_STEP][PASSED] - Statement - Catch (Exception e): Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-20 14:54:34 - [TEST_STEP][PASSED] - Statement - println("Basemap does exist, we will delete it"): null
+
+2018-07-20 14:54:34 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsDeleteFirstBasemap_checkbox' is checked
+
+2018-07-20 14:54:34 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsDeleteFirstBasemap_checkbox' is checked
+
+2018-07-20 14:54:34 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-20 14:54:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-20 14:54:34 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-20 14:54:35 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-20 14:54:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/CreateBasemap_Button' is clicked on
+
+2018-07-20 14:54:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/CreateBasemap_Button' is clicked on
+
+2018-07-20 14:54:35 - [TEST_STEP][PASSED] - setText: Text 'ATPBasemap' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapName_Field'
+
+2018-07-20 14:54:36 - [MESSAGE][PASSED] - Text 'ATPBasemap' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapName_Field'
+
+2018-07-20 14:54:36 - [TEST_STEP][PASSED] - setText: Text 'ATPBasemap for Testing' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapDescription_Field'
+
+2018-07-20 14:54:36 - [MESSAGE][PASSED] - Text 'ATPBasemap for Testing' is set on object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapDescription_Field'
+
+2018-07-20 14:54:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapNamedSearchOption_ATPLidarNS' is clicked on
+
+2018-07-20 14:54:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapNamedSearchOption_ATPLidarNS' is clicked on
+
+2018-07-20 14:54:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapMaxDetailOption_14' is clicked on
+
+2018-07-20 14:54:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapMaxDetailOption_14' is clicked on
+
+2018-07-20 14:54:37 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapisPublic_Checkbox' is clickable
+
+2018-07-20 14:54:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapisPublic_Checkbox' is clickable
+
+2018-07-20 14:54:37 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapisPublic_Checkbox' is checked
+
+2018-07-20 14:54:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapisPublic_Checkbox' is checked
+
+2018-07-20 14:54:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapCreate_button' is clicked on
+
+2018-07-20 14:54:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapCreate_button' is clicked on
+
+2018-07-20 14:54:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-20 14:54:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-20 14:54:38 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-20 14:54:43 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-20 14:54:43 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-20 14:54:43 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-20 14:54:43 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-20 14:54:46 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-20 14:54:46 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:54:46 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-20 14:54:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:54:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-20 14:54:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:54:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-20 14:54:46 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-20 14:54:46 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-20 14:54:46 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-20 14:52:29 - [TEST_SUITE][PASSED] - Admin: Test Cases/BasemapSanity]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -4,10 +4,21 @@
    <name>OrganizationNameFilterButton</name>
    <tag></tag>
    <elementGuidId>44602ee3-4d37-463d-a8c1-304306de7c0a</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//thead/descendant::span[(text()='Name')]/parent::a/parent::div/descendant::i[(contains(@class,'filter'))]
+</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//thead/descendant::span[(text()='Name')]/parent::a/parent::div/descendant::i[(contains(@class,'filter'))]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -32,6 +43,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;page-wrapper&quot;]/div[1]/div[@class=&quot;row&quot;]/div[1]/div[1]/div[2]/div[@class=&quot;admin-table-container&quot;]/table[@class=&quot;table-striped&quot;]/thead[1]/tr[1]/th[2]/div[1]/div[@class=&quot;dropdown btn-group&quot;]/a[1]/i[@class=&quot;fa fa-filter header-icon-size&quot;]</value>
+      <value>//thead/descendant::span[(text()='Name')]/parent::a/parent::div/descendant::i[(contains(@class,'filter'))]</value>
    </webElementProperties>
 </WebElementEntity>

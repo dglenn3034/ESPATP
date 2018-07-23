@@ -20,7 +20,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
 
@@ -43,7 +44,9 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Bu
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
 
-WebUI.check(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox'))
+not_run: WebUI.check(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox'))
+
+CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8', 'NDVI')
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
 
@@ -55,9 +58,13 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
 
-WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionNaipRGB_Checkbox'))
+CustomKeywords.'productSelection.productSelection.clearAllProducts'()
 
-WebUI.uncheck(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox'))
+CustomKeywords.'productSelection.productSelection.SelectChildProduct'('NAIP', 'RGB')
+
+not_run: WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionNaipRGB_Checkbox'))
+
+not_run: WebUI.uncheck(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox'))
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
 

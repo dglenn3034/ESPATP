@@ -6,6 +6,10 @@
    <elementGuidId>aa820b25-8687-4d53-ad0c-3fa0a4918892</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@class='form-group'][1]/descendant::input[@type='text']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
       </entry>
       <entry>
@@ -13,6 +17,6 @@
          <value>.form-group > input</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

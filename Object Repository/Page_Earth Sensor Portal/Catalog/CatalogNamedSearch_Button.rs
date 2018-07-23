@@ -7,12 +7,16 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>.tb-vertical > .btn-group-container > .btn-group-row > .btn-group > div > .fa-download</value>
+         <value>(//button[(contains(@class,'download'))])[1]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[(contains(@class,'download'))])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

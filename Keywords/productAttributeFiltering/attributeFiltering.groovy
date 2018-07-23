@@ -68,10 +68,13 @@ public class attributeFiltering {
 		Xp = FilterXp.replace('PRODUCT', ProductName)
 		tmpObject = WebUI.modifyObjectProperty(myObj, 'xpath', 'equals', Xp, true)
 		WebUiBuiltInKeywords.click(tmpObject)
-
+		
+		/* wait on dialog (for some reason) */
+		WebUI.verifyElementClickable(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button'))
+		
 		/* add a clause */
 		WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button'))
-		
+
 		/* get the number of clauses now added */
 		myObj = findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause')
 		FilterXp = myObj.findPropertyValue('xpath')

@@ -6,16 +6,16 @@
    <elementGuidId>f7e8c3e4-b5fc-47f6-bd8c-57489a10cf4f</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>#btnAddLine</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//button[@id='btnAddLine']</value>
+         <value>//div[@class='messagebox modal-dialog']/descendant::button[@id = 'btnAddLine' and @type = 'button']</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//button[@id = 'btnAddLine' and @type = 'button']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>#btnAddLine</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

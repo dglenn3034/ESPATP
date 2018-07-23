@@ -40,22 +40,23 @@ WebUI.verifyElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/Ca
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
 
-CustomKeywords.'productSelection.productSelection.SelectProduct'('OrthoImages')
+not_run: CustomKeywords.'productSelection.productSelection.SelectProduct'('OrthoImages')
 
-CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8', 'NDVI')
+not_run: CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8', 'NDVI')
 
 CustomKeywords.'productSelection.productSelection.SelectChildProduct'('NAIP', 'NDVI')
 
-CustomKeywords.'productSelection.productSelection.SelectProduct'('Airborne LIDAR')
+not_run: CustomKeywords.'productSelection.productSelection.SelectProduct'('Airborne LIDAR')
 
-CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Landsat8', 'Like', 'Name', 'LC', false)
+not_run: CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Landsat8', 'Like', 'Name', 'LC', 
+    false)
 
 CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('NAIP', '>=', 'Date Acquired', '01/01/2015', 
     true)
 
-CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Airborne LIDAR', '>=', 'Total Number Of Points', 
+not_run: CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Airborne LIDAR', '>=', 'Total Number Of Points', 
     '3500000', false)
 
-CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Airborne LIDAR', '<=', 'Total Number Of Points', 
+not_run: CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Airborne LIDAR', '<=', 'Total Number Of Points', 
     '4000000', false)
 

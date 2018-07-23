@@ -40,10 +40,8 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
 
 WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button'), 3)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button'))
-
 try {
-    WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : "SmokeTest01"], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : 'SmokeTest01'], FailureHandling.STOP_ON_FAILURE)
 
     println('Named Search SmokeTest01 does exist, we will delete it and recreate it')
 
@@ -61,15 +59,10 @@ WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/C
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
 
-WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox'))
+CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8', 'NDVI')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionLandsat8Filter_button'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button'))
-
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterDateValue_Field'), '06/01/2017')
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Landsat8', '>=', 'Date Acquired', '06/01/2017', 
+    true)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK', [('variable') : '']))
 

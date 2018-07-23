@@ -20,8 +20,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('Role') : 'Company Admin'
+        , ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
 
@@ -44,17 +44,10 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Bu
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionNaipRGB_Checkbox'))
+CustomKeywords.'productSelection.productSelection.SelectChildProduct'('NAIP', 'RGB')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionNaipFilter_Button'))
-
-Thread.sleep(1000)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button'))
-
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterDateValue_Field'), '01/01/2014')
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('NAIP', '>=', 'Date Acquired', 
+    '01/01/2014', true)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
 

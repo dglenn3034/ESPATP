@@ -21,8 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
 myColumnSortObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort')
-ColumnSortXp = myColumnSortObject.findPropertyValue('xpath')
 
+ColumnSortXp = myColumnSortObject.findPropertyValue('xpath')
 
 WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
     FailureHandling.STOP_ON_FAILURE)
@@ -48,21 +48,27 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Bu
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox'))
+CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8', 'NDVI')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionOrthoImages_Checkbox'))
+not_run: WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox'))
+
+CustomKeywords.'productSelection.productSelection.SelectProduct'('OrthoImages')
+
+not_run: WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionOrthoImages_Checkbox'))
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
 
 Thread.sleep(4000)
 
 Xp = ColumnSortXp.replace('Column', 'Name')
+
 println('Column Sort Xp = ' + Xp)
+
 tmpObject = WebUI.modifyObjectProperty(myColumnSortObject, 'xpath', 'equals', Xp, true)
+
 WebUiBuiltInKeywords.click(tmpObject)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow'))
-
 
 WebUiBuiltInKeywords.click(tmpObject)
 

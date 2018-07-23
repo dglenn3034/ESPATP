@@ -21,9 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/a_Users'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersFilterEmail_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilter_Button'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilter_Field'), UserId)
+WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilterLikeBox'), UserId)
 
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersFirstRowDelete_Button'))
 

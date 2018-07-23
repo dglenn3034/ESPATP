@@ -25,10 +25,33 @@ import com.kms.katalon.core.testdata.InternalData as InternalData
 
 ExcelData envData = findTestData('LoginData')
 
-    
-	GlobalVariable.User = envData.getValue(2, GlobalVariable.EnvDataRowIndex)
-	GlobalVariable.pwd = envData.getValue (3, GlobalVariable.EnvDataRowIndex)
-	GlobalVariable.ScreenShotFile = envData.getValue (4, GlobalVariable.EnvDataRowIndex)
+def Integer rowNdx = 1 
+
+    if (Role == "Company Admin") {
+		rowNdx = 1
+	} 
+	else if (Role == "User") {
+		rowNdx == 2
+	}
+	else if (Role == "System Admin") {
+		rowNdx == 3
+	}
+	else if (Role == "Organization Admin") {
+		rowNdx == 4
+	}
+	else if (Role == "QC Analyst") {
+		rowNdx == 5
+	}
+	else {
+		rowNdx == 1
+	}
+	
+	
+	GlobalVariable.User = envData.getValue(2, rowNdx)
+	GlobalVariable.pwd = envData.getValue (3, rowNdx)
+	GlobalVariable.ScreenShotFile = envData.getValue (4, rowNdx)
+	
+	return
 	
 	
     	

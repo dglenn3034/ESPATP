@@ -4,7 +4,17 @@
    <name>GroupNameFilter_Button</name>
    <tag></tag>
    <elementGuidId>f5b4e94f-523c-4db7-8c0c-60e649a46eed</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//thead/descendant::span[(text()='Name')]/parent::a/parent::div/descendant::i[(contains(@class,'filter'))]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;page-wrapper&quot;]/div[1]/div[@class=&quot;row&quot;]/div[1]/div[1]/div[2]/div[@class=&quot;admin-table-container&quot;]/table[@class=&quot;table-striped&quot;]/thead[1]/tr[1]/th[2]/div[1]/div[@class=&quot;dropdown btn-group&quot;]/a[1]/i[@class=&quot;fa fa-filter header-icon-size&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

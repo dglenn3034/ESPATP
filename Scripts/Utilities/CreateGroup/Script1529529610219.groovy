@@ -21,6 +21,22 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/a_ Groups'))
 
+WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilter_Button'))
+
+WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilterLikeBox'), Name)
+
+try {
+    WebUI.verifyElementText(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupNoRecordsText'), 'No Records found.')
+
+    println(Name + 'does not exist, will create')
+}
+catch (Exception e) {
+	println(Name + ' already exists skipping creation')
+	return
+} 
+finally { 
+}
+
 WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupsAddGroup_Button'))
 
 WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupsName_Field'), Name)

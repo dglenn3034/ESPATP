@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Exercises filtering, sorting, etc. for a fixed set of data from Davidson county</description>
    <name>SearchResultsSanity</name>
    <tag></tag>
    <comment></comment>
