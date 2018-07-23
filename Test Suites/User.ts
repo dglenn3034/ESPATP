@@ -4,7 +4,7 @@
    <name>User</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-06-29T13:18:33</lastRun>
+   <lastRun>2018-07-23T13:08:38</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>8ce2ac0e-91a3-4664-bb28-7097c9770bf1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Landsat8AndNAIPOrder</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -38,7 +38,7 @@
    <testCaseLink>
       <guid>05264cf4-c834-42ca-a69d-ca7a3e24f160</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Landsat8AndOrthosOrder</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -62,7 +62,7 @@
    <testCaseLink>
       <guid>2b51d3fd-8232-4b8f-b0eb-302ebe9ab797</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/LidarandOrthosOrder</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -86,7 +86,7 @@
    <testCaseLink>
       <guid>0d3bd065-6d78-48f2-8dd0-91321c6b3732</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/LidarPostProcessing</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -110,7 +110,7 @@
    <testCaseLink>
       <guid>9fe9dabe-ee08-4946-9bdd-8dbe0256b23f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NAIPFilteredOrder</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -134,31 +134,31 @@
    <testCaseLink>
       <guid>7bb4f580-751b-413a-a416-036929ece49e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/OrderHistoryAddToCart</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a5ca43c6-0bc2-4693-89b3-c760d2e0c899</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/OrderHistorySanityTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>7be0932d-906c-481c-a825-2fe9255f80a6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/PreviewSanity</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d993dc28-b397-4add-9f7e-43502ec9f7f6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/SearchResultsSanity</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ba468699-b86d-4a6e-9b55-c3017b99435b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/SmokeTest01</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -19,6 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+def boolean found=true
+
 WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button'), 3)
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button'))
@@ -26,10 +28,13 @@ WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_
 try {
     WebUI.selectOptionByLabel(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField'), NamedSearch, 
         false, FailureHandling.STOP_ON_FAILURE)
+	found = true
 }
 catch (Exception e) {
     println('No such Named Search')
+	found = false
 
-    throw new com.kms.katalon.core.exception.StepFailedException('No such Named Search')
+    /* throw new com.kms.katalon.core.exception.('No such Named Search') */
 } 
+return found
 

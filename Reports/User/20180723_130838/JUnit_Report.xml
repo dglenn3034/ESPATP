@@ -1,0 +1,2527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="User" time="341" tests="10" failures="0" errors="0">
+   <testsuite name="User" tests="10" failures="0" errors="0" time="341" timestamp="2018-07-23 13:08:44" hostname="DGlenn - MUSES-David.local.niirs10.com" id="Test Suites/User">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838"/>
+         <property name="logFiles" value="D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\execution0.log"/>
+         <property name="attachments" value="D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369475785.png, D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369476135.png, C:\\Users\\dglenn\\AppData\\Local\\Temp\\miamilidar.png, C:\\Users\\dglenn\\AppData\\Local\\Temp\\miaminaip.png, D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369607679.png, D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369608077.png, D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369636040.png, D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369636459.png"/>
+         <property name="hostName" value="DGlenn - MUSES-David.local.niirs10.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Firefox 61.0"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="a9bdae5c-1ec7-4219-ac31-8e2710043f71"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Landsat8AndNAIPOrder" classname="Test Cases/Landsat8AndNAIPOrder" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:08:44 - [TEST_CASE][PASSED] - Test Cases/Landsat8AndNAIPOrder: Test Cases/Landsat8AndNAIPOrder
+
+2018-07-23 13:08:45 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:08:45 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:08:45 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:08:46 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:08:46 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:08:50 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:08:50 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:08:50 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:08:50 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:08:50 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:08:50 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:08:50 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:08:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:08:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:08:53 - [TEST_STEP][PASSED] - setText: Text 'Birmingham, Al' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-07-23 13:08:53 - [MESSAGE][PASSED] - Text 'Birmingham, Al' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-07-23 13:08:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-07-23 13:08:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-07-23 13:08:53 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-07-23 13:08:57 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-07-23 13:08:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-07-23 13:08:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:08:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:08:58 - [TEST_STEP][NOT_RUN] - check: NOT_RUN: check
+
+2018-07-23 13:08:58 - [MESSAGE][NOT_RUN] - NOT_RUN: check
+
+2018-07-23 13:08:58 - [TEST_STEP][PASSED] - productSelection.productSelection.SelectChildProduct: productSelection.productSelection.SelectChildProduct is PASSED
+
+2018-07-23 13:08:58 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:08:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ChildProductSelector' is clicked on
+
+2018-07-23 13:08:59 - [MESSAGE][PASSED] - productSelection.productSelection.SelectChildProduct is PASSED
+
+2018-07-23 13:08:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:08:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:08:59 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-07-23 13:09:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:09:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:09:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:09:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:09:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:09:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:09:05 - [TEST_STEP][PASSED] - productSelection.productSelection.clearAllProducts: productSelection.productSelection.clearAllProducts is PASSED
+
+2018-07-23 13:09:05 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:05 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:06 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:06 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:06 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:06 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:06 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:06 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:07 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:07 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:07 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:07 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:07 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:08 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:08 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:08 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:08 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:08 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:08 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:09 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:09 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:10 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:10 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:11 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:11 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:11 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:11 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:11 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:11 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:12 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:12 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:12 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:12 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:12 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:12 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:12 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:12 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:12 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:14 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:14 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:14 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:14 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:14 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:14 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is present
+
+2018-07-23 13:09:15 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox' is un-checked
+
+2018-07-23 13:09:15 - [MESSAGE][PASSED] - productSelection.productSelection.clearAllProducts is PASSED
+
+2018-07-23 13:09:15 - [TEST_STEP][PASSED] - productSelection.productSelection.SelectChildProduct: productSelection.productSelection.SelectChildProduct is PASSED
+
+2018-07-23 13:09:15 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ChildProductSelector' is clicked on
+
+2018-07-23 13:09:16 - [MESSAGE][PASSED] - productSelection.productSelection.SelectChildProduct is PASSED
+
+2018-07-23 13:09:16 - [TEST_STEP][NOT_RUN] - check: NOT_RUN: check
+
+2018-07-23 13:09:16 - [MESSAGE][NOT_RUN] - NOT_RUN: check
+
+2018-07-23 13:09:16 - [TEST_STEP][NOT_RUN] - uncheck: NOT_RUN: uncheck
+
+2018-07-23 13:09:16 - [MESSAGE][NOT_RUN] - NOT_RUN: uncheck
+
+2018-07-23 13:09:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:09:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:09:17 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-07-23 13:09:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:09:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:09:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:09:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:09:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:09:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:09:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:09:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:09:23 - [TEST_STEP][PASSED] - Statement - date = new java.util.Date(): null
+
+2018-07-23 13:09:23 - [TEST_STEP][PASSED] - Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss): null
+
+2018-07-23 13:09:23 - [TEST_STEP][PASSED] - Statement - aDate = sdf.format(new java.util.Date()): null
+
+2018-07-23 13:09:23 - [TEST_STEP][PASSED] - Statement - OName = "ATPLSandNAIP-" + aDate: null
+
+2018-07-23 13:09:23 - [TEST_STEP][PASSED] - setText: Text 'ATPLSandNAIP-2018-07-23 13:09:23' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:09:23 - [MESSAGE][PASSED] - Text 'ATPLSandNAIP-2018-07-23 13:09:23' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:09:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:09:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:09:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:09:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:09:24 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:09:27 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:09:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:09:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:09:27 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully
+
+2018-07-23 13:09:27 - [TEST_CASE][PASSED] - Test Cases/Utilities/CatalogSignOut: Test Cases/Utilities/CatalogSignOut
+
+2018-07-23 13:09:27 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:09:30 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:09:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:09:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:09:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:09:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:09:31 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:09:31 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:09:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Landsat8AndOrthosOrder" classname="Test Cases/Landsat8AndOrthosOrder" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:09:31 - [TEST_CASE][PASSED] - Test Cases/Landsat8AndOrthosOrder: Test Cases/Landsat8AndOrthosOrder
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - myColumnSortObject = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort): Finding Test Object with id 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort'
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - ColumnSortXp = myColumnSortObject.findPropertyValue("xpath"): null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:09:32 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:09:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:09:32 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:09:35 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:09:35 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:09:35 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:09:35 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:09:35 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:09:35 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:09:35 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:09:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:09:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:09:37 - [TEST_STEP][PASSED] - setText: Text 'Houston' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-07-23 13:09:37 - [MESSAGE][PASSED] - Text 'Houston' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-07-23 13:09:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-07-23 13:09:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-07-23 13:09:38 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-07-23 13:09:42 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-07-23 13:09:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-07-23 13:09:42 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:09:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:09:42 - [TEST_STEP][PASSED] - productSelection.productSelection.SelectChildProduct: productSelection.productSelection.SelectChildProduct is PASSED
+
+2018-07-23 13:09:42 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ChildProductSelector' is clicked on
+
+2018-07-23 13:09:43 - [MESSAGE][PASSED] - productSelection.productSelection.SelectChildProduct is PASSED
+
+2018-07-23 13:09:43 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-07-23 13:09:43 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-07-23 13:09:43 - [TEST_STEP][PASSED] - productSelection.productSelection.SelectProduct: productSelection.productSelection.SelectProduct is PASSED
+
+2018-07-23 13:09:43 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelector' is clicked on
+
+2018-07-23 13:09:43 - [MESSAGE][PASSED] - productSelection.productSelection.SelectProduct is PASSED
+
+2018-07-23 13:09:43 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-07-23 13:09:43 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-07-23 13:09:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:09:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:09:44 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-07-23 13:09:48 - [TEST_STEP][PASSED] - Statement - Xp = ColumnSortXp.replace("Column", "Name"): null
+
+2018-07-23 13:09:48 - [TEST_STEP][PASSED] - Statement - println("Column Sort Xp = " + Xp): null
+
+2018-07-23 13:09:48 - [TEST_STEP][PASSED] - Statement - tmpObject = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(myColumnSortObject, "xpath", "equals", Xp, true): Modify property of object successfully
+
+2018-07-23 13:09:48 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:09:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort' is clicked on
+
+2018-07-23 13:09:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort' is clicked on
+
+2018-07-23 13:09:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:09:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:09:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort' is clicked on
+
+2018-07-23 13:09:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort' is clicked on
+
+2018-07-23 13:09:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:09:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:09:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:09:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:09:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:09:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:09:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:09:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:09:51 - [TEST_STEP][PASSED] - Statement - date = new java.util.Date(): null
+
+2018-07-23 13:09:51 - [TEST_STEP][PASSED] - Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss): null
+
+2018-07-23 13:09:51 - [TEST_STEP][PASSED] - Statement - aDate = sdf.format(new java.util.Date()): null
+
+2018-07-23 13:09:51 - [TEST_STEP][PASSED] - Statement - OName = "ATPLSandOrthoOrder-" + aDate: null
+
+2018-07-23 13:09:51 - [TEST_STEP][PASSED] - setText: Text 'ATPLSandOrthoOrder-2018-07-23 13:09:51' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:09:52 - [MESSAGE][PASSED] - Text 'ATPLSandOrthoOrder-2018-07-23 13:09:51' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:09:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:09:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:09:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:09:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:09:53 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:09:56 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:09:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:09:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:09:56 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully
+
+2018-07-23 13:09:56 - [TEST_CASE][PASSED] - Test Cases/Utilities/CatalogSignOut: Test Cases/Utilities/CatalogSignOut
+
+2018-07-23 13:09:56 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:09:59 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:09:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:10:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:10:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:10:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:10:02 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:10:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/LidarandOrthosOrder" classname="Test Cases/LidarandOrthosOrder" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:10:02 - [TEST_CASE][PASSED] - Test Cases/LidarandOrthosOrder: Test Cases/LidarandOrthosOrder
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:10:02 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:10:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:10:02 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:10:05 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:10:05 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:10:06 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:10:06 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:10:06 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:10:06 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:10:06 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:10:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:10:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:10:08 - [TEST_STEP][PASSED] - setText: Text 'Houston, TX' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-07-23 13:10:08 - [MESSAGE][PASSED] - Text 'Houston, TX' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-07-23 13:10:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-07-23 13:10:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-07-23 13:10:08 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-07-23 13:10:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-07-23 13:10:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-07-23 13:10:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:10:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:10:13 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-07-23 13:10:13 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-07-23 13:10:13 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-07-23 13:10:13 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-07-23 13:10:13 - [TEST_STEP][PASSED] - productSelection.productSelection.SelectProduct: productSelection.productSelection.SelectProduct is PASSED
+
+2018-07-23 13:10:13 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:10:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelector' is clicked on
+
+2018-07-23 13:10:13 - [MESSAGE][PASSED] - productSelection.productSelection.SelectProduct is PASSED
+
+2018-07-23 13:10:13 - [TEST_STEP][PASSED] - productSelection.productSelection.SelectProduct: productSelection.productSelection.SelectProduct is PASSED
+
+2018-07-23 13:10:13 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:10:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelector' is clicked on
+
+2018-07-23 13:10:14 - [MESSAGE][PASSED] - productSelection.productSelection.SelectProduct is PASSED
+
+2018-07-23 13:10:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:10:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:10:14 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-07-23 13:10:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button' is clicked on
+
+2018-07-23 13:10:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button' is clicked on
+
+2018-07-23 13:10:19 - [TEST_STEP][PASSED] - sendKeys: Keys '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' sent to object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'
+
+2018-07-23 13:10:19 - [MESSAGE][PASSED] - Keys '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' sent to object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'
+
+2018-07-23 13:10:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button' is clicked on
+
+2018-07-23 13:10:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button' is clicked on
+
+2018-07-23 13:10:19 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_Grid' is visible
+
+2018-07-23 13:10:19 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_Grid' is visible
+
+2018-07-23 13:10:19 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:10:22 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:10:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectAll' is clicked on
+
+2018-07-23 13:10:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectAll' is clicked on
+
+2018-07-23 13:10:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:10:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:10:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:10:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:10:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:10:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:10:24 - [TEST_STEP][PASSED] - Statement - date = new java.util.Date(): null
+
+2018-07-23 13:10:24 - [TEST_STEP][PASSED] - Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss): null
+
+2018-07-23 13:10:24 - [TEST_STEP][PASSED] - Statement - aDate = sdf.format(new java.util.Date()): null
+
+2018-07-23 13:10:24 - [TEST_STEP][PASSED] - Statement - OName = "ATPLidarandOrthoOrder-" + aDate: null
+
+2018-07-23 13:10:24 - [TEST_STEP][PASSED] - setText: Text 'ATPLidarandOrthoOrder-2018-07-23 13:10:24' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:10:24 - [MESSAGE][PASSED] - Text 'ATPLidarandOrthoOrder-2018-07-23 13:10:24' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:10:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:10:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:10:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:10:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:10:25 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:10:28 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:10:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:10:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:10:29 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully
+
+2018-07-23 13:10:29 - [TEST_CASE][PASSED] - Test Cases/Utilities/CatalogSignOut: Test Cases/Utilities/CatalogSignOut
+
+2018-07-23 13:10:29 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:10:32 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:10:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:10:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:10:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:10:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:10:33 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:10:33 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:10:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/LidarPostProcessing" classname="Test Cases/LidarPostProcessing" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:10:33 - [TEST_CASE][PASSED] - Test Cases/LidarPostProcessing: Test Cases/LidarPostProcessing
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:10:34 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:10:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:10:34 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:10:36 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:10:36 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://swfwmd.earthsensorportal.com/' successfully
+
+2018-07-23 13:10:37 - [MESSAGE][PASSED] - Navigate to 'https://swfwmd.earthsensorportal.com/' successfully
+
+2018-07-23 13:10:37 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:10:37 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:10:37 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:10:37 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:10:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:10:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:10:39 - [TEST_STEP][PASSED] - setText: Text 'williston, fl' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-07-23 13:10:40 - [MESSAGE][PASSED] - Text 'williston, fl' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-07-23 13:10:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-07-23 13:10:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-07-23 13:10:40 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-07-23 13:10:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-07-23 13:10:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-07-23 13:10:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:10:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:10:45 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-07-23 13:10:45 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-07-23 13:10:45 - [TEST_STEP][PASSED] - productSelection.productSelection.SelectProduct: productSelection.productSelection.SelectProduct is PASSED
+
+2018-07-23 13:10:45 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:10:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelector' is clicked on
+
+2018-07-23 13:10:45 - [MESSAGE][PASSED] - productSelection.productSelection.SelectProduct is PASSED
+
+2018-07-23 13:10:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:10:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:10:45 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-07-23 13:10:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectAll' is clicked on
+
+2018-07-23 13:10:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectAll' is clicked on
+
+2018-07-23 13:10:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:10:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:10:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:10:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:10:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:10:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:10:51 - [TEST_STEP][PASSED] - Statement - date = new java.util.Date(): null
+
+2018-07-23 13:10:51 - [TEST_STEP][PASSED] - Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss): null
+
+2018-07-23 13:10:51 - [TEST_STEP][PASSED] - Statement - aDate = sdf.format(new java.util.Date()): null
+
+2018-07-23 13:10:51 - [TEST_STEP][PASSED] - Statement - OName = "ATPLIdarPostProcessing-" + aDate: null
+
+2018-07-23 13:10:51 - [TEST_STEP][PASSED] - setText: Text 'ATPLIdarPostProcessing-2018-07-23 13:10:51' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:10:51 - [MESSAGE][PASSED] - Text 'ATPLIdarPostProcessing-2018-07-23 13:10:51' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:10:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_Add' is clicked on
+
+2018-07-23 13:10:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_Add' is clicked on
+
+2018-07-23 13:10:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/ClipToAOI_Checkbox' is clicked on
+
+2018-07-23 13:10:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/ClipToAOI_Checkbox' is clicked on
+
+2018-07-23 13:10:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_OK' is clicked on
+
+2018-07-23 13:10:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_OK' is clicked on
+
+2018-07-23 13:10:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_Remove' is clicked on
+
+2018-07-23 13:10:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_Remove' is clicked on
+
+2018-07-23 13:10:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_Add' is clicked on
+
+2018-07-23 13:10:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_Add' is clicked on
+
+2018-07-23 13:10:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/ClipToAOI_Checkbox' is clicked on
+
+2018-07-23 13:10:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/ClipToAOI_Checkbox' is clicked on
+
+2018-07-23 13:10:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/HillshadeImage_CheckBox' is clicked on
+
+2018-07-23 13:10:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/HillshadeImage_CheckBox' is clicked on
+
+2018-07-23 13:10:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/IntensityImage_checkbox' is clicked on
+
+2018-07-23 13:10:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/IntensityImage_checkbox' is clicked on
+
+2018-07-23 13:10:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/SlopeImage_checkbox' is clicked on
+
+2018-07-23 13:10:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/SlopeImage_checkbox' is clicked on
+
+2018-07-23 13:10:54 - [TEST_STEP][PASSED] - setText: Text '4' is set on object 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/LidarImagePixelSize_field'
+
+2018-07-23 13:10:54 - [MESSAGE][PASSED] - Text '4' is set on object 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/LidarImagePixelSize_field'
+
+2018-07-23 13:10:54 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:10:57 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:10:57 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_OK' is clicked on
+
+2018-07-23 13:10:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_OK' is clicked on
+
+2018-07-23 13:10:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:10:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:10:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:10:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:10:59 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:11:02 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:11:02 - [TEST_STEP][NOT_RUN] - click: NOT_RUN: click
+
+2018-07-23 13:11:02 - [MESSAGE][NOT_RUN] - NOT_RUN: click
+
+2018-07-23 13:11:02 - [TEST_STEP][NOT_RUN] - callTestCase: NOT_RUN: callTestCase
+
+2018-07-23 13:11:02 - [MESSAGE][NOT_RUN] - NOT_RUN: callTestCase]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/NAIPFilteredOrder" classname="Test Cases/NAIPFilteredOrder" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:11:02 - [TEST_CASE][PASSED] - Test Cases/NAIPFilteredOrder: Test Cases/NAIPFilteredOrder
+
+2018-07-23 13:11:02 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:11:02 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:11:02 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:11:02 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:11:02 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:11:02 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:11:02 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:11:02 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:11:02 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:11:02 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:11:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:11:02 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:11:02 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-07-23 13:11:05 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:11:05 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:11:06 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:11:06 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:11:06 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:11:06 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:11:06 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:11:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:11:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:11:08 - [TEST_STEP][PASSED] - setText: Text 'Miami Beach' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-07-23 13:11:08 - [MESSAGE][PASSED] - Text 'Miami Beach' is set on object 'Object Repository/Page_Earth Sensor Portal/CesiumSearchField'
+
+2018-07-23 13:11:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-07-23 13:11:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/CesiumSearchButton' is clicked on
+
+2018-07-23 13:11:08 - [TEST_STEP][PASSED] - Statement - java.lang.Thread.sleep(4000): null
+
+2018-07-23 13:11:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-07-23 13:11:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button' is clicked on
+
+2018-07-23 13:11:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:11:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:11:13 - [TEST_STEP][PASSED] - productSelection.productSelection.SelectChildProduct: productSelection.productSelection.SelectChildProduct is PASSED
+
+2018-07-23 13:11:13 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:11:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ChildProductSelector' is clicked on
+
+2018-07-23 13:11:14 - [MESSAGE][PASSED] - productSelection.productSelection.SelectChildProduct is PASSED
+
+2018-07-23 13:11:14 - [TEST_STEP][PASSED] - productAttributeFiltering.attributeFiltering.SetAttributeFilter: productAttributeFiltering.attributeFiltering.SetAttributeFilter is PASSED
+
+2018-07-23 13:11:14 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:11:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductFilter' is clicked on
+
+2018-07-23 13:11:14 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button' is clickable
+
+2018-07-23 13:11:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button' is clicked on
+
+2018-07-23 13:11:14 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:11:14 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' is present
+
+2018-07-23 13:11:14 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:11:16 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' located by 'By.xpath: //div[@class='form-group'][2]' not found
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369475785.png]]
+
+2018-07-23 13:11:16 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' located by 'By.xpath: //div[@class='form-group'][2]' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369476135.png]]
+
+2018-07-23 13:11:16 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:11:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterAttributeName_Dropdown' is clicked on
+
+2018-07-23 13:11:16 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:11:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterOperator' is clicked on
+
+2018-07-23 13:11:16 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:11:17 - [MESSAGE][PASSED] - Text '01/01/2014' is set on object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterDateValue_Field'
+
+2018-07-23 13:11:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterOK_Button' is clicked on
+
+2018-07-23 13:11:17 - [MESSAGE][PASSED] - productAttributeFiltering.attributeFiltering.SetAttributeFilter is PASSED
+
+2018-07-23 13:11:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:11:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:11:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:11:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:11:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:11:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:11:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:11:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:11:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:11:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:11:19 - [TEST_STEP][PASSED] - Statement - date = new java.util.Date(): null
+
+2018-07-23 13:11:19 - [TEST_STEP][PASSED] - Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss): null
+
+2018-07-23 13:11:19 - [TEST_STEP][PASSED] - Statement - aDate = sdf.format(new java.util.Date()): null
+
+2018-07-23 13:11:19 - [TEST_STEP][PASSED] - Statement - OName = "ATPNaipFilteredOrder-" + aDate: null
+
+2018-07-23 13:11:19 - [TEST_STEP][PASSED] - setText: Text 'ATPNaipFilteredOrder-2018-07-23 13:11:19' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:11:20 - [MESSAGE][PASSED] - Text 'ATPNaipFilteredOrder-2018-07-23 13:11:19' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:11:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipAdd_Button' is clicked on
+
+2018-07-23 13:11:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipAdd_Button' is clicked on
+
+2018-07-23 13:11:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipResampling_Checkbox' is clicked on
+
+2018-07-23 13:11:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipResampling_Checkbox' is clicked on
+
+2018-07-23 13:11:20 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value 'cubic' are selected in object 'Object Repository/Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipResamplingType_Field' 
+
+2018-07-23 13:11:21 - [MESSAGE][PASSED] - All options with value 'cubic' are selected in object 'Object Repository/Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipResamplingType_Field' 
+
+2018-07-23 13:11:21 - [TEST_STEP][PASSED] - setText: Text '2' is set on object 'Object Repository/Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipResamplePixelSize_Field'
+
+2018-07-23 13:11:21 - [MESSAGE][PASSED] - Text '2' is set on object 'Object Repository/Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipResamplePixelSize_Field'
+
+2018-07-23 13:11:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipOK_Button' is clicked on
+
+2018-07-23 13:11:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/PostProcessingNaip/PostProcessingNaipOK_Button' is clicked on
+
+2018-07-23 13:11:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:11:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:11:21 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:11:23 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:11:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:11:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:11:24 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:11:27 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:11:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:11:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:11:27 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully
+
+2018-07-23 13:11:27 - [TEST_CASE][PASSED] - Test Cases/Utilities/CatalogSignOut: Test Cases/Utilities/CatalogSignOut
+
+2018-07-23 13:11:27 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:11:30 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:11:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:11:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:11:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:11:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:11:31 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:11:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/OrderHistoryAddToCart" classname="Test Cases/OrderHistoryAddToCart" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:11:31 - [TEST_CASE][PASSED] - Test Cases/OrderHistoryAddToCart: Test Cases/OrderHistoryAddToCart
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:11:31 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:11:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:11:31 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:11:34 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:11:34 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-23 13:11:34 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-23 13:11:34 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:11:35 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:11:35 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:11:35 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:11:35 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:11:35 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:11:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:11:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:11:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:11:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:11:38 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button' is clickable
+
+2018-07-23 13:11:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2018-07-23 13:11:38 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button' is clickable
+
+2018-07-23 13:11:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button' is clicked on
+
+2018-07-23 13:11:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button' is clicked on
+
+2018-07-23 13:11:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/ToggleColumnsButton' is clicked on
+
+2018-07-23 13:11:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/ToggleColumnsButton' is clicked on
+
+2018-07-23 13:11:39 - [TEST_STEP][PASSED] - uncheck: Object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/ToggleCheckBox_dateSubmitted' is un-checked
+
+2018-07-23 13:11:39 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/ToggleCheckBox_dateSubmitted' is un-checked
+
+2018-07-23 13:11:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_OrderNameFilter' is clicked on
+
+2018-07-23 13:11:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_OrderNameFilter' is clicked on
+
+2018-07-23 13:11:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox' is clicked on
+
+2018-07-23 13:11:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox' is clicked on
+
+2018-07-23 13:11:40 - [TEST_STEP][PASSED] - setText: Text 'ATPLS' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox'
+
+2018-07-23 13:11:40 - [MESSAGE][PASSED] - Text 'ATPLS' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox'
+
+2018-07-23 13:11:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_StatusFIlter' is clicked on
+
+2018-07-23 13:11:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_StatusFIlter' is clicked on
+
+2018-07-23 13:11:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/Status_LikeBox' is clicked on
+
+2018-07-23 13:11:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/Status_LikeBox' is clicked on
+
+2018-07-23 13:11:41 - [TEST_STEP][PASSED] - setText: Text 'SUCCESS' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/Status_LikeBox'
+
+2018-07-23 13:11:41 - [MESSAGE][PASSED] - Text 'SUCCESS' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/Status_LikeBox'
+
+2018-07-23 13:11:41 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:11:44 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:11:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistoryAddtoCartButton' is clicked on
+
+2018-07-23 13:11:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistoryAddtoCartButton' is clicked on
+
+2018-07-23 13:11:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_XButton' is clicked on
+
+2018-07-23 13:11:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_XButton' is clicked on
+
+2018-07-23 13:11:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:11:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:11:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartRemoveFromCart' is clicked on
+
+2018-07-23 13:11:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartRemoveFromCart' is clicked on
+
+2018-07-23 13:11:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:11:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:11:46 - [TEST_STEP][PASSED] - Statement - date = new java.util.Date(): null
+
+2018-07-23 13:11:46 - [TEST_STEP][PASSED] - Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss): null
+
+2018-07-23 13:11:46 - [TEST_STEP][PASSED] - Statement - aDate = sdf.format(new java.util.Date()): null
+
+2018-07-23 13:11:46 - [TEST_STEP][PASSED] - Statement - OName = "ATPOrderCartReOrderTest-" + aDate: null
+
+2018-07-23 13:11:46 - [TEST_STEP][PASSED] - setText: Text 'ATPOrderCartReOrderTest-2018-07-23 13:11:46' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:11:46 - [MESSAGE][PASSED] - Text 'ATPOrderCartReOrderTest-2018-07-23 13:11:46' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:11:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:11:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:11:46 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:11:48 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:11:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:11:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:11:48 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:11:51 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:11:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:11:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:11:52 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully
+
+2018-07-23 13:11:52 - [TEST_CASE][PASSED] - Test Cases/Utilities/CatalogSignOut: Test Cases/Utilities/CatalogSignOut
+
+2018-07-23 13:11:52 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:11:55 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:11:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:11:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:11:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:11:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:11:55 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:11:56 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:11:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/OrderHistorySanityTest" classname="Test Cases/OrderHistorySanityTest" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:11:56 - [TEST_CASE][PASSED] - Test Cases/OrderHistorySanityTest: Test Cases/OrderHistorySanityTest
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:11:56 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:11:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:11:56 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:11:58 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:11:59 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-23 13:11:59 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-23 13:11:59 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:12:01 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:12:01 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:12:01 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:12:01 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:12:01 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:12:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:12:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:12:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:12:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:12:04 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button' is clickable
+
+2018-07-23 13:12:04 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button' is clickable
+
+2018-07-23 13:12:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button' is clicked on
+
+2018-07-23 13:12:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button' is clicked on
+
+2018-07-23 13:12:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/ToggleColumnsButton' is clicked on
+
+2018-07-23 13:12:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/ToggleColumnsButton' is clicked on
+
+2018-07-23 13:12:05 - [TEST_STEP][PASSED] - uncheck: Object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/ToggleCheckBox_dateSubmitted' is un-checked
+
+2018-07-23 13:12:05 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/ToggleCheckBox_dateSubmitted' is un-checked
+
+2018-07-23 13:12:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_OrderNameFilter' is clicked on
+
+2018-07-23 13:12:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_OrderNameFilter' is clicked on
+
+2018-07-23 13:12:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox' is clicked on
+
+2018-07-23 13:12:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox' is clicked on
+
+2018-07-23 13:12:06 - [TEST_STEP][PASSED] - setText: Text 'ATP' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox'
+
+2018-07-23 13:12:06 - [MESSAGE][PASSED] - Text 'ATP' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox'
+
+2018-07-23 13:12:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_StatusFIlter' is clicked on
+
+2018-07-23 13:12:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_StatusFIlter' is clicked on
+
+2018-07-23 13:12:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/Status_LikeBox' is clicked on
+
+2018-07-23 13:12:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/Status_LikeBox' is clicked on
+
+2018-07-23 13:12:07 - [TEST_STEP][PASSED] - setText: Text 'SUCCESS' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/Status_LikeBox'
+
+2018-07-23 13:12:07 - [MESSAGE][PASSED] - Text 'SUCCESS' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderHistory/Status_LikeBox'
+
+2018-07-23 13:12:07 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:12:10 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:12:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_ZoomToOrderButton' is clicked on
+
+2018-07-23 13:12:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_ZoomToOrderButton' is clicked on
+
+2018-07-23 13:12:10 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:12:12 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:12:12 - [TEST_STEP][PASSED] - mouseOver: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_Row1SelectBox' is hovered
+
+2018-07-23 13:12:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_Row1SelectBox' is hovered
+
+2018-07-23 13:12:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_Row1SelectBox' is clicked on
+
+2018-07-23 13:12:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_Row1SelectBox' is clicked on
+
+2018-07-23 13:12:13 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:12:16 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:12:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_DetailsButton' is clicked on
+
+2018-07-23 13:12:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_DetailsButton' is clicked on
+
+2018-07-23 13:12:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderDetails_PopupImageButton' is clicked on
+
+2018-07-23 13:12:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderDetails_PopupImageButton' is clicked on
+
+2018-07-23 13:12:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderDetailsPopup_XButton' is clicked on
+
+2018-07-23 13:12:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderDetailsPopup_XButton' is clicked on
+
+2018-07-23 13:12:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderDetails_XButton' is clicked on
+
+2018-07-23 13:12:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderDetails_XButton' is clicked on
+
+2018-07-23 13:12:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_XButton' is clicked on
+
+2018-07-23 13:12:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderHistory/OrderHistory_XButton' is clicked on
+
+2018-07-23 13:12:18 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully
+
+2018-07-23 13:12:18 - [TEST_CASE][PASSED] - Test Cases/Utilities/CatalogSignOut: Test Cases/Utilities/CatalogSignOut
+
+2018-07-23 13:12:18 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:12:21 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:12:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:12:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:12:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:12:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:12:21 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:12:22 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:12:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PreviewSanity" classname="Test Cases/PreviewSanity" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:12:22 - [TEST_CASE][PASSED] - Test Cases/PreviewSanity: Test Cases/PreviewSanity
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:12:22 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:12:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:12:22 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:12:25 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:12:25 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:12:25 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:12:25 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:12:25 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:12:25 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:12:25 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:12:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:12:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:12:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:12:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:12:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button' is clicked on
+
+2018-07-23 13:12:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button' is clicked on
+
+2018-07-23 13:12:28 - [TEST_STEP][PASSED] - sendKeys: Keys '\\diskstation1\Data\esp\test_data\miamibeachshapfile.zip' sent to object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'
+
+2018-07-23 13:12:28 - [MESSAGE][PASSED] - Keys '\\diskstation1\Data\esp\test_data\miamibeachshapfile.zip' sent to object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'
+
+2018-07-23 13:12:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button' is clicked on
+
+2018-07-23 13:12:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button' is clicked on
+
+2018-07-23 13:12:29 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:12:32 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:12:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:12:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:12:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox' is clicked on
+
+2018-07-23 13:12:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox' is clicked on
+
+2018-07-23 13:12:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:12:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:12:33 - [TEST_STEP][PASSED] - waitForElementVisible: Web element with id: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_Grid' located by 'By.cssSelector: #searchResult' not found
+
+2018-07-23 13:12:34 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_Grid' located by 'By.cssSelector: #searchResult' not found
+
+2018-07-23 13:12:34 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/MapDataSource_DropDown' is clicked on
+
+2018-07-23 13:12:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/MapDataSource_DropDown' is clicked on
+
+2018-07-23 13:12:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/MapDataSourceSearch Results_Item' is clicked on
+
+2018-07-23 13:12:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/MapDataSourceSearch Results_Item' is clicked on
+
+2018-07-23 13:12:35 - [TEST_STEP][PASSED] - searchResults.searchResults.LikeFilterOnColumn: searchResults.searchResults.LikeFilterOnColumn is PASSED
+
+2018-07-23 13:12:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:12:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnFilter' is clicked on
+
+2018-07-23 13:12:36 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:12:37 - [MESSAGE][PASSED] - Text 'LC80150422014082LGN00' is set on object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/LikeFilter'
+
+2018-07-23 13:12:37 - [MESSAGE][PASSED] - searchResults.searchResults.LikeFilterOnColumn is PASSED
+
+2018-07-23 13:12:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRow_Globe' is clicked on
+
+2018-07-23 13:12:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRow_Globe' is clicked on
+
+2018-07-23 13:12:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRowZoomToItem_Button' is clicked on
+
+2018-07-23 13:12:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRowZoomToItem_Button' is clicked on
+
+2018-07-23 13:12:38 - [TEST_STEP][PASSED] - delay: Delayed 10 second(s)
+
+2018-07-23 13:12:48 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2018-07-23 13:12:48 - [TEST_STEP][PASSED] - Statement - filelocation = ScreenShotFile + "\miamilidar.png": null
+
+2018-07-23 13:12:48 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-07-23 13:12:48 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\dglenn\\AppData\\Local\\Temp\\miamilidar.png]]
+
+2018-07-23 13:12:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsClose_Button' is clicked on
+
+2018-07-23 13:12:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsClose_Button' is clicked on
+
+2018-07-23 13:12:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:12:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:12:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionNAIPNDVI_CheckBox' is clicked on
+
+2018-07-23 13:12:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelectionNAIPNDVI_CheckBox' is clicked on
+
+2018-07-23 13:12:53 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:12:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:12:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox' is clicked on
+
+2018-07-23 13:12:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox' is clicked on
+
+2018-07-23 13:12:56 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:12:58 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:12:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:12:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:12:59 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_Grid' is visible
+
+2018-07-23 13:13:00 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_Grid' is visible
+
+2018-07-23 13:13:00 - [TEST_STEP][PASSED] - searchResults.searchResults.LikeFilterOnColumn: searchResults.searchResults.LikeFilterOnColumn is PASSED
+
+2018-07-23 13:13:00 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnFilter' is clicked on
+
+2018-07-23 13:13:00 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:00 - [MESSAGE][PASSED] - Text 'FL_2508007_se_17_1_20131018' is set on object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/LikeFilter'
+
+2018-07-23 13:13:00 - [MESSAGE][PASSED] - searchResults.searchResults.LikeFilterOnColumn is PASSED
+
+2018-07-23 13:13:00 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-07-23 13:13:01 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-07-23 13:13:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRow_Globe' is clicked on
+
+2018-07-23 13:13:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRow_Globe' is clicked on
+
+2018-07-23 13:13:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRowZoomToItem_Button' is clicked on
+
+2018-07-23 13:13:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRowZoomToItem_Button' is clicked on
+
+2018-07-23 13:13:02 - [TEST_STEP][PASSED] - delay: Delayed 10 second(s)
+
+2018-07-23 13:13:12 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2018-07-23 13:13:12 - [TEST_STEP][PASSED] - Statement - filelocation = ScreenShotFile + "\miaminaip.png": null
+
+2018-07-23 13:13:12 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-07-23 13:13:13 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\dglenn\\AppData\\Local\\Temp\\miaminaip.png]]
+
+2018-07-23 13:13:13 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully
+
+2018-07-23 13:13:13 - [TEST_CASE][PASSED] - Test Cases/Utilities/CatalogSignOut: Test Cases/Utilities/CatalogSignOut
+
+2018-07-23 13:13:13 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:13:16 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:13:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:13:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:13:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:13:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:13:17 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:13:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SearchResultsSanity" classname="Test Cases/SearchResultsSanity" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:13:17 - [TEST_CASE][PASSED] - Test Cases/SearchResultsSanity: Test Cases/SearchResultsSanity
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:13:17 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:13:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:13:17 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:13:20 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:13:20 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-23 13:13:20 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-23 13:13:20 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:13:20 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:13:20 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:13:21 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:13:21 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:13:21 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:13:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:13:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:13:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:13:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:13:23 - [TEST_STEP][PASSED] - Statement - Try: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:13:23 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/NamedSearchExists' successfully
+
+2018-07-23 13:13:23 - [TEST_CASE][PASSED] - Test Cases/Utilities/NamedSearchExists: Test Cases/Utilities/NamedSearchExists
+
+2018-07-23 13:13:23 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clickable
+
+2018-07-23 13:13:23 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clickable
+
+2018-07-23 13:13:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clicked on
+
+2018-07-23 13:13:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clicked on
+
+2018-07-23 13:13:24 - [TEST_STEP][PASSED] - Statement - Try: All options with label 'ATPSearchResultsSanity' are selected in object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-23 13:13:24 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label 'ATPSearchResultsSanity' are selected in object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-23 13:13:24 - [MESSAGE][PASSED] - All options with label 'ATPSearchResultsSanity' are selected in object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-23 13:13:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/NamedSearchExists' successfully
+
+2018-07-23 13:13:24 - [TEST_STEP][PASSED] - Statement - println("Named Search ATPSearchResultsSanity does exist, we will delete it and recreate it"): null
+
+2018-07-23 13:13:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_DeleteButton' is clicked on
+
+2018-07-23 13:13:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_DeleteButton' is clicked on
+
+2018-07-23 13:13:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:13:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:13:25 - [TEST_STEP][PASSED] - verifyElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clickable
+
+2018-07-23 13:13:25 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clickable
+
+2018-07-23 13:13:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:13:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:13:25 - [TEST_STEP][PASSED] - productSelection.productSelection.SelectProduct: productSelection.productSelection.SelectProduct is PASSED
+
+2018-07-23 13:13:25 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelector' is clicked on
+
+2018-07-23 13:13:26 - [MESSAGE][PASSED] - productSelection.productSelection.SelectProduct is PASSED
+
+2018-07-23 13:13:26 - [TEST_STEP][PASSED] - productAttributeFiltering.attributeFiltering.SetAttributeFilter: productAttributeFiltering.attributeFiltering.SetAttributeFilter is PASSED
+
+2018-07-23 13:13:26 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductFilter' is clicked on
+
+2018-07-23 13:13:26 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button' is clickable
+
+2018-07-23 13:13:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button' is clicked on
+
+2018-07-23 13:13:26 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:26 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' is present
+
+2018-07-23 13:13:26 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:28 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' located by 'By.xpath: //div[@class='form-group'][2]' not found
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369607679.png]]
+
+2018-07-23 13:13:28 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' located by 'By.xpath: //div[@class='form-group'][2]' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369608077.png]]
+
+2018-07-23 13:13:28 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterAttributeName_Dropdown' is clicked on
+
+2018-07-23 13:13:28 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterOperator' is clicked on
+
+2018-07-23 13:13:28 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:29 - [MESSAGE][PASSED] - Text 'DavCo_A' is set on object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterValue_Field'
+
+2018-07-23 13:13:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterOK_Button' is clicked on
+
+2018-07-23 13:13:29 - [MESSAGE][PASSED] - productAttributeFiltering.attributeFiltering.SetAttributeFilter is PASSED
+
+2018-07-23 13:13:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:13:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:13:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button' is clicked on
+
+2018-07-23 13:13:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button' is clicked on
+
+2018-07-23 13:13:29 - [TEST_STEP][PASSED] - sendKeys: Keys '\\diskstation1\Data\Rob_MUSES\Shapefile_test_datasets\Davidson_County_Digitized.zip' sent to object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'
+
+2018-07-23 13:13:29 - [MESSAGE][PASSED] - Keys '\\diskstation1\Data\Rob_MUSES\Shapefile_test_datasets\Davidson_County_Digitized.zip' sent to object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'
+
+2018-07-23 13:13:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button' is clicked on
+
+2018-07-23 13:13:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button' is clicked on
+
+2018-07-23 13:13:30 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_Grid' is visible
+
+2018-07-23 13:13:32 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_Grid' is visible
+
+2018-07-23 13:13:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogSaveNamedSearch_Button' is clicked on
+
+2018-07-23 13:13:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogSaveNamedSearch_Button' is clicked on
+
+2018-07-23 13:13:32 - [TEST_STEP][PASSED] - setText: Text 'ATPSearchResultsSanity' is set on object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearchSaveName_Field'
+
+2018-07-23 13:13:32 - [MESSAGE][PASSED] - Text 'ATPSearchResultsSanity' is set on object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearchSaveName_Field'
+
+2018-07-23 13:13:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/NamedSearch/SaveNamedSearchSave_Button' is clicked on
+
+2018-07-23 13:13:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/NamedSearch/SaveNamedSearchSave_Button' is clicked on
+
+2018-07-23 13:13:33 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying' are matched.
+
+2018-07-23 13:13:33 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying' are matched.
+
+2018-07-23 13:13:33 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFieldsToggle_button' is clicked on
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFieldsToggle_button' is clicked on
+
+2018-07-23 13:13:34 - [TEST_STEP][PASSED] - Statement - nameIndex = CustomKeywords.searchResults.searchResults.GetSetColumn("Name"): searchResults.searchResults.GetSetColumn is PASSED
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Date Acquired'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'true'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'LAS Version'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Nominal Point Spacing'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Total Number Of Points'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'true'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Accuracy Level'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Accuracy Description'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Point Density'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:34 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Name'
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is checked
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - searchResults.searchResults.GetSetColumn is PASSED
+
+2018-07-23 13:13:35 - [TEST_STEP][PASSED] - Statement - println("Index for Name = " + nameIndex): null
+
+2018-07-23 13:13:35 - [TEST_STEP][PASSED] - Statement - totPtsIndex = CustomKeywords.searchResults.searchResults.GetSetColumn("Total Number Of Points"): searchResults.searchResults.GetSetColumn is PASSED
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Date Acquired'
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'true'
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'LAS Version'
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Nominal Point Spacing'
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Total Number Of Points'
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is checked
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - searchResults.searchResults.GetSetColumn is PASSED
+
+2018-07-23 13:13:35 - [TEST_STEP][PASSED] - Statement - println("Index for Total Number Of Points = " + nameIndex): null
+
+2018-07-23 13:13:35 - [TEST_STEP][PASSED] - searchResults.searchResults.sortByName: searchResults.searchResults.sortByName is PASSED
+
+2018-07-23 13:13:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort' is clicked on
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - searchResults.searchResults.sortByName is PASSED
+
+2018-07-23 13:13:36 - [TEST_STEP][PASSED] - Statement - nameIndex = nameIndex + 2: null
+
+2018-07-23 13:13:36 - [TEST_STEP][PASSED] - searchResults.searchResults.VerifyValueInGrid: searchResults.searchResults.VerifyValueInGrid is PASSED
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFieldsToggle_button' is clicked on
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Date Acquired'
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'true'
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'LAS Version'
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Nominal Point Spacing'
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:36 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Total Number Of Points'
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'true'
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Accuracy Level'
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Accuracy Description'
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Point Density'
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Name'
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is checked
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/GridValue' is: 'DavCo_AG28'
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/GridValue' are matched.
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - searchResults.searchResults.VerifyValueInGrid is PASSED
+
+2018-07-23 13:13:37 - [TEST_STEP][PASSED] - searchResults.searchResults.sortByName: searchResults.searchResults.sortByName is PASSED
+
+2018-07-23 13:13:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort' is clicked on
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - searchResults.searchResults.sortByName is PASSED
+
+2018-07-23 13:13:38 - [TEST_STEP][PASSED] - searchResults.searchResults.VerifyValueInGrid: searchResults.searchResults.VerifyValueInGrid is PASSED
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsFieldsToggle_button' is clicked on
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Date Acquired'
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'true'
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'LAS Version'
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Nominal Point Spacing'
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Total Number Of Points'
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'true'
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Accuracy Level'
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Accuracy Description'
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Point Density'
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Attribute 'checked' of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is: 'null'
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel' is: 'Name'
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox' is checked
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/GridValue' is: 'DavCo_AZ33'
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/GridValue' are matched.
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - searchResults.searchResults.VerifyValueInGrid is PASSED
+
+2018-07-23 13:13:39 - [TEST_STEP][PASSED] - searchResults.searchResults.LikeFilterOnColumn: searchResults.searchResults.LikeFilterOnColumn is PASSED
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnFilter' is clicked on
+
+2018-07-23 13:13:39 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:40 - [MESSAGE][PASSED] - Text 'DavCo_AZ' is set on object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/LikeFilter'
+
+2018-07-23 13:13:40 - [MESSAGE][PASSED] - searchResults.searchResults.LikeFilterOnColumn is PASSED
+
+2018-07-23 13:13:40 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying' are matched.
+
+2018-07-23 13:13:40 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying' are matched.
+
+2018-07-23 13:13:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsClearAllFilters_Button' is clicked on
+
+2018-07-23 13:13:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsClearAllFilters_Button' is clicked on
+
+2018-07-23 13:13:40 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying' are matched.
+
+2018-07-23 13:13:40 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying' are matched.
+
+2018-07-23 13:13:40 - [TEST_STEP][PASSED] - searchResults.searchResults.NumericFilterOnColumn: searchResults.searchResults.NumericFilterOnColumn is PASSED
+
+2018-07-23 13:13:40 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnFilter' is clicked on
+
+2018-07-23 13:13:40 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:41 - [MESSAGE][PASSED] - Text '3500000' is set on object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/NumericFilter'
+
+2018-07-23 13:13:41 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:41 - [MESSAGE][PASSED] - Text '4000000' is set on object 'Object Repository/Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/NumericFilter'
+
+2018-07-23 13:13:41 - [MESSAGE][PASSED] - searchResults.searchResults.NumericFilterOnColumn is PASSED
+
+2018-07-23 13:13:41 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying' are matched.
+
+2018-07-23 13:13:41 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying' are matched.
+
+2018-07-23 13:13:41 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully
+
+2018-07-23 13:13:41 - [TEST_CASE][PASSED] - Test Cases/Utilities/CatalogSignOut: Test Cases/Utilities/CatalogSignOut
+
+2018-07-23 13:13:41 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:13:44 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:13:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:13:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:13:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:13:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:13:45 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:13:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SmokeTest01" classname="Test Cases/SmokeTest01" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:13:45 - [TEST_CASE][PASSED] - Test Cases/SmokeTest01: Test Cases/SmokeTest01
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:13:45 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:13:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:13:45 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:13:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:13:48 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-23 13:13:48 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-23 13:13:48 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:13:49 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com' successfully
+
+2018-07-23 13:13:49 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:13:49 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:13:49 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:13:49 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:13:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:13:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:13:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:13:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:13:51 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clickable
+
+2018-07-23 13:13:51 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clickable
+
+2018-07-23 13:13:51 - [TEST_STEP][PASSED] - Statement - Try: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:13:51 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/NamedSearchExists' successfully
+
+2018-07-23 13:13:52 - [TEST_CASE][PASSED] - Test Cases/Utilities/NamedSearchExists: Test Cases/Utilities/NamedSearchExists
+
+2018-07-23 13:13:52 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clickable
+
+2018-07-23 13:13:52 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clickable
+
+2018-07-23 13:13:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clicked on
+
+2018-07-23 13:13:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button' is clicked on
+
+2018-07-23 13:13:52 - [TEST_STEP][PASSED] - Statement - Try: All options with label 'SmokeTest01' are selected in object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-23 13:13:52 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label 'SmokeTest01' are selected in object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-23 13:13:53 - [MESSAGE][PASSED] - All options with label 'SmokeTest01' are selected in object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-23 13:13:53 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/NamedSearchExists' successfully
+
+2018-07-23 13:13:53 - [TEST_STEP][PASSED] - Statement - println("Named Search SmokeTest01 does exist, we will delete it and recreate it"): null
+
+2018-07-23 13:13:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_DeleteButton' is clicked on
+
+2018-07-23 13:13:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearch_DeleteButton' is clicked on
+
+2018-07-23 13:13:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:13:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:13:53 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clickable
+
+2018-07-23 13:13:53 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clickable
+
+2018-07-23 13:13:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:13:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogProducts_Button' is clicked on
+
+2018-07-23 13:13:54 - [TEST_STEP][PASSED] - productSelection.productSelection.SelectChildProduct: productSelection.productSelection.SelectChildProduct is PASSED
+
+2018-07-23 13:13:54 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ChildProductSelector' is clicked on
+
+2018-07-23 13:13:54 - [MESSAGE][PASSED] - productSelection.productSelection.SelectChildProduct is PASSED
+
+2018-07-23 13:13:54 - [TEST_STEP][PASSED] - productAttributeFiltering.attributeFiltering.SetAttributeFilter: productAttributeFiltering.attributeFiltering.SetAttributeFilter is PASSED
+
+2018-07-23 13:13:54 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductFilter' is clicked on
+
+2018-07-23 13:13:54 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button' is clickable
+
+2018-07-23 13:13:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button' is clicked on
+
+2018-07-23 13:13:55 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:55 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' is present
+
+2018-07-23 13:13:55 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:56 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' located by 'By.xpath: //div[@class='form-group'][2]' not found
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369636040.png]]
+
+2018-07-23 13:13:56 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause' located by 'By.xpath: //div[@class='form-group'][2]' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\User\\20180723_130838\\1532369636459.png]]
+
+2018-07-23 13:13:56 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterAttributeName_Dropdown' is clicked on
+
+2018-07-23 13:13:57 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterOperator' is clicked on
+
+2018-07-23 13:13:57 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-23 13:13:57 - [MESSAGE][PASSED] - Text '06/01/2017' is set on object 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterDateValue_Field'
+
+2018-07-23 13:13:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/AttributeFilterOK_Button' is clicked on
+
+2018-07-23 13:13:57 - [MESSAGE][PASSED] - productAttributeFiltering.attributeFiltering.SetAttributeFilter is PASSED
+
+2018-07-23 13:13:57 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:13:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK' is clicked on
+
+2018-07-23 13:13:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button' is clicked on
+
+2018-07-23 13:13:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button' is clicked on
+
+2018-07-23 13:13:58 - [TEST_STEP][PASSED] - sendKeys: Keys '\\diskstation1\Data\Rob_MUSES\Shapefile_test_datasets\rob_coloradio.shp_file_lp360.zip' sent to object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'
+
+2018-07-23 13:13:58 - [MESSAGE][PASSED] - Keys '\\diskstation1\Data\Rob_MUSES\Shapefile_test_datasets\rob_coloradio.shp_file_lp360.zip' sent to object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'
+
+2018-07-23 13:13:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button' is clicked on
+
+2018-07-23 13:13:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button' is clicked on
+
+2018-07-23 13:13:58 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_Grid' is visible
+
+2018-07-23 13:13:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2018-07-23 13:14:02 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_Grid' is visible
+
+2018-07-23 13:14:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramShowHideFilters_button' is clicked on
+
+2018-07-23 13:14:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramShowHideFilters_button' is clicked on
+
+2018-07-23 13:14:02 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramFiltersList_Button' is clickable
+
+2018-07-23 13:14:02 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '5'
+
+2018-07-23 13:14:02 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramFiltersList_Button' is clickable
+
+2018-07-23 13:14:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramFiltersList_Button' is clicked on
+
+2018-07-23 13:14:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramFiltersList_Button' is clicked on
+
+2018-07-23 13:14:03 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramCloudCoverageFull_CheckBox' is checked
+
+2018-07-23 13:14:03 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramCloudCoverageFull_CheckBox' is checked
+
+2018-07-23 13:14:03 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramSunElevation_CheckBox' is checked
+
+2018-07-23 13:14:03 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramSunElevation_CheckBox' is checked
+
+2018-07-23 13:14:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:14:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:14:05 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-23 13:14:10 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-23 13:14:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramSunElevation_button' is clicked on
+
+2018-07-23 13:14:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramSunElevation_button' is clicked on
+
+2018-07-23 13:14:10 - [TEST_STEP][PASSED] - setText: Text '60' is set on object 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramOpenFilterFirstValue_input'
+
+2018-07-23 13:14:10 - [MESSAGE][PASSED] - Text '60' is set on object 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramOpenFilterFirstValue_input'
+
+2018-07-23 13:14:10 - [TEST_STEP][PASSED] - setText: Text '70' is set on object 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramOpenFilterSecondvalue_Field'
+
+2018-07-23 13:14:11 - [MESSAGE][PASSED] - Text '70' is set on object 'Object Repository/Page_Earth Sensor Portal/Histograms/HistogramOpenFilterSecondvalue_Field'
+
+2018-07-23 13:14:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:14:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:14:12 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogSaveNamedSearch_Button' is clickable
+
+2018-07-23 13:14:12 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogSaveNamedSearch_Button' is clickable
+
+2018-07-23 13:14:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogSaveNamedSearch_Button' is clicked on
+
+2018-07-23 13:14:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogSaveNamedSearch_Button' is clicked on
+
+2018-07-23 13:14:12 - [TEST_STEP][PASSED] - setText: Text 'SmokeTest01' is set on object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearchSaveName_Field'
+
+2018-07-23 13:14:12 - [MESSAGE][PASSED] - Text 'SmokeTest01' is set on object 'Object Repository/Page_Earth Sensor Portal/NamedSearch/NamedSearchSaveName_Field'
+
+2018-07-23 13:14:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/NamedSearch/SaveNamedSearchSave_Button' is clicked on
+
+2018-07-23 13:14:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/NamedSearch/SaveNamedSearchSave_Button' is clicked on
+
+2018-07-23 13:14:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:14:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow' is clicked on
+
+2018-07-23 13:14:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:14:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button' is clicked on
+
+2018-07-23 13:14:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:14:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCart_Button' is clicked on
+
+2018-07-23 13:14:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:14:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button' is clicked on
+
+2018-07-23 13:14:15 - [TEST_STEP][PASSED] - Statement - date = new java.util.Date(): null
+
+2018-07-23 13:14:15 - [TEST_STEP][PASSED] - Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss): null
+
+2018-07-23 13:14:15 - [TEST_STEP][PASSED] - Statement - aDate = sdf.format(new java.util.Date()): null
+
+2018-07-23 13:14:15 - [TEST_STEP][PASSED] - Statement - OName = "ATPSmokeTestOrder" + aDate: null
+
+2018-07-23 13:14:15 - [TEST_STEP][PASSED] - setText: Text 'ATPSmokeTestOrder2018-07-23 13:14:15' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:14:15 - [MESSAGE][PASSED] - Text 'ATPSmokeTestOrder2018-07-23 13:14:15' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'
+
+2018-07-23 13:14:15 - [TEST_STEP][PASSED] - setText: Text 'ATPSmokeTestOrder2018-07-23 13:14:15' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderDescription_Field'
+
+2018-07-23 13:14:16 - [MESSAGE][PASSED] - Text 'ATPSmokeTestOrder2018-07-23 13:14:15' is set on object 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartOrderDescription_Field'
+
+2018-07-23 13:14:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:14:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button' is clicked on
+
+2018-07-23 13:14:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:14:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button' is clicked on
+
+2018-07-23 13:14:17 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:14:19 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:14:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:14:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:14:20 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully
+
+2018-07-23 13:14:20 - [TEST_CASE][PASSED] - Test Cases/Utilities/CatalogSignOut: Test Cases/Utilities/CatalogSignOut
+
+2018-07-23 13:14:20 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:14:23 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:14:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:14:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:14:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:14:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout' is clicked on
+
+2018-07-23 13:14:25 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:14:25 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:14:25 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CatalogSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-23 13:08:44 - [TEST_SUITE][PASSED] - User: Test Cases/SmokeTest01]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

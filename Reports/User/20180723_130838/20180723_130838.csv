@@ -1,0 +1,402 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+User,Firefox 61.0,,2018-07-23 13:08:44,2018-07-23 13:14:25,5m - 41.310s,PASSED
+,,,,,,
+Test Cases/Landsat8AndNAIPOrder,Firefox 61.0,"Submits an order by taking the first landsat item and the first NAIP item from the search results,  found using an AOI set by the view centered on Birmingham AL\n\nRequires standard USER group",2018-07-23 13:08:44,2018-07-23 13:09:31,47.242s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:08:45,2018-07-23 13:08:46,1.027s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:08:46,2018-07-23 13:08:50,4.009s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:08:50,2018-07-23 13:08:50,0.653s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:08:50,2018-07-23 13:08:50,0.117s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:08:50,2018-07-23 13:08:50,0.073s,PASSED
+click,Firefox 61.0,,2018-07-23 13:08:50,2018-07-23 13:08:53,2.192s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:08:53,2018-07-23 13:08:53,0.103s,PASSED
+click,Firefox 61.0,,2018-07-23 13:08:53,2018-07-23 13:08:53,0.487s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 61.0,,2018-07-23 13:08:53,2018-07-23 13:08:57,4.005s,PASSED
+click,Firefox 61.0,,2018-07-23 13:08:57,2018-07-23 13:08:58,0.347s,PASSED
+click,Firefox 61.0,,2018-07-23 13:08:58,2018-07-23 13:08:58,0.295s,PASSED
+check,Firefox 61.0,,2018-07-23 13:08:58,2018-07-23 13:08:58,0.001s,NOT_RUN
+productSelection.productSelection.SelectChildProduct,Firefox 61.0,,2018-07-23 13:08:58,2018-07-23 13:08:59,0.655s,PASSED
+click,Firefox 61.0,,2018-07-23 13:08:59,2018-07-23 13:08:59,0.300s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 61.0,,2018-07-23 13:08:59,2018-07-23 13:09:03,4.000s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:03,2018-07-23 13:09:04,0.716s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:04,2018-07-23 13:09:04,0.617s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:04,2018-07-23 13:09:05,0.682s,PASSED
+productSelection.productSelection.clearAllProducts,Firefox 61.0,,2018-07-23 13:09:05,2018-07-23 13:09:15,10.043s,PASSED
+productSelection.productSelection.SelectChildProduct,Firefox 61.0,,2018-07-23 13:09:15,2018-07-23 13:09:16,1.090s,PASSED
+check,Firefox 61.0,,2018-07-23 13:09:16,2018-07-23 13:09:16,0.000s,NOT_RUN
+uncheck,Firefox 61.0,,2018-07-23 13:09:16,2018-07-23 13:09:16,0.001s,NOT_RUN
+click,Firefox 61.0,,2018-07-23 13:09:16,2018-07-23 13:09:17,1.080s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 61.0,,2018-07-23 13:09:17,2018-07-23 13:09:21,4.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:21,2018-07-23 13:09:21,0.329s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:21,2018-07-23 13:09:22,0.408s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:22,2018-07-23 13:09:22,0.501s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:22,2018-07-23 13:09:23,0.315s,PASSED
+Statement - date = new java.util.Date(),Firefox 61.0,,2018-07-23 13:09:23,2018-07-23 13:09:23,0.004s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Firefox 61.0,,2018-07-23 13:09:23,2018-07-23 13:09:23,0.001s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Firefox 61.0,,2018-07-23 13:09:23,2018-07-23 13:09:23,0.000s,PASSED
+"Statement - OName = ""ATPLSandNAIP-"" + aDate",Firefox 61.0,,2018-07-23 13:09:23,2018-07-23 13:09:23,0.000s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:09:23,2018-07-23 13:09:23,0.260s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:23,2018-07-23 13:09:23,0.452s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:23,2018-07-23 13:09:24,0.334s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:09:24,2018-07-23 13:09:27,3.005s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:27,2018-07-23 13:09:27,0.339s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:09:27,2018-07-23 13:09:31,4.433s,PASSED
+,,,,,,
+Test Cases/Landsat8AndOrthosOrder,Firefox 61.0,"Submits an order for 1 landsat image and one NAIP image taken from the Houston area, taking the first item from the search results grid fo each\n\nRequires standard USER group",2018-07-23 13:09:31,2018-07-23 13:10:02,30.617s,PASSED
+Statement - myColumnSortObject = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort),Firefox 61.0,,2018-07-23 13:09:32,2018-07-23 13:09:32,0.000s,PASSED
+"Statement - ColumnSortXp = myColumnSortObject.findPropertyValue(""xpath"")",Firefox 61.0,,2018-07-23 13:09:32,2018-07-23 13:09:32,0.000s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:09:32,2018-07-23 13:09:32,0.141s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:09:32,2018-07-23 13:09:35,2.810s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:09:35,2018-07-23 13:09:35,0.532s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:09:35,2018-07-23 13:09:35,0.077s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:09:35,2018-07-23 13:09:35,0.048s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:35,2018-07-23 13:09:37,2.039s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:09:37,2018-07-23 13:09:37,0.071s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:37,2018-07-23 13:09:38,0.347s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 61.0,,2018-07-23 13:09:38,2018-07-23 13:09:42,4.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:42,2018-07-23 13:09:42,0.352s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:42,2018-07-23 13:09:42,0.279s,PASSED
+productSelection.productSelection.SelectChildProduct,Firefox 61.0,,2018-07-23 13:09:42,2018-07-23 13:09:43,0.284s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:43,2018-07-23 13:09:43,0.000s,NOT_RUN
+productSelection.productSelection.SelectProduct,Firefox 61.0,,2018-07-23 13:09:43,2018-07-23 13:09:43,0.578s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:43,2018-07-23 13:09:43,0.000s,NOT_RUN
+click,Firefox 61.0,,2018-07-23 13:09:43,2018-07-23 13:09:44,0.307s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 61.0,,2018-07-23 13:09:44,2018-07-23 13:09:48,4.001s,PASSED
+"Statement - Xp = ColumnSortXp.replace(""Column"", ""Name"")",Firefox 61.0,,2018-07-23 13:09:48,2018-07-23 13:09:48,0.001s,PASSED
+"Statement - println(""Column Sort Xp = "" + Xp)",Firefox 61.0,,2018-07-23 13:09:48,2018-07-23 13:09:48,0.001s,PASSED
+"Statement - tmpObject = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.modifyObjectProperty(myColumnSortObject, ""xpath"", ""equals"", Xp, true)",Firefox 61.0,,2018-07-23 13:09:48,2018-07-23 13:09:48,0.000s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:48,2018-07-23 13:09:48,0.478s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:48,2018-07-23 13:09:48,0.497s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:48,2018-07-23 13:09:49,0.470s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:49,2018-07-23 13:09:49,0.448s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:49,2018-07-23 13:09:50,0.642s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:50,2018-07-23 13:09:51,0.554s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:51,2018-07-23 13:09:51,0.551s,PASSED
+Statement - date = new java.util.Date(),Firefox 61.0,,2018-07-23 13:09:51,2018-07-23 13:09:51,0.000s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Firefox 61.0,,2018-07-23 13:09:51,2018-07-23 13:09:51,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Firefox 61.0,,2018-07-23 13:09:51,2018-07-23 13:09:51,0.000s,PASSED
+"Statement - OName = ""ATPLSandOrthoOrder-"" + aDate",Firefox 61.0,,2018-07-23 13:09:51,2018-07-23 13:09:51,0.000s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:09:51,2018-07-23 13:09:52,0.402s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:52,2018-07-23 13:09:52,0.570s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:52,2018-07-23 13:09:53,0.619s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:09:53,2018-07-23 13:09:56,3.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:09:56,2018-07-23 13:09:56,0.571s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:09:56,2018-07-23 13:10:02,5.743s,PASSED
+,,,,,,
+Test Cases/LidarandOrthosOrder,Firefox 61.0,Orders Lidar and Orthos from Houston Bay area using an imported AOI: \\\\diskstation1\\Data\\esp\\test_data\\HoustonBayArea.zip\n\nOrders all of the items found in this search\nRequires standard USER group,2018-07-23 13:10:02,2018-07-23 13:10:33,31.311s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:10:02,2018-07-23 13:10:02,0.110s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:10:02,2018-07-23 13:10:05,2.795s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:10:05,2018-07-23 13:10:06,0.629s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:10:06,2018-07-23 13:10:06,0.071s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:10:06,2018-07-23 13:10:06,0.060s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:06,2018-07-23 13:10:08,2.110s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:10:08,2018-07-23 13:10:08,0.086s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:08,2018-07-23 13:10:08,0.321s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 61.0,,2018-07-23 13:10:08,2018-07-23 13:10:12,4.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:12,2018-07-23 13:10:13,0.364s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:13,2018-07-23 13:10:13,0.289s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:13,2018-07-23 13:10:13,0.000s,NOT_RUN
+click,Firefox 61.0,,2018-07-23 13:10:13,2018-07-23 13:10:13,0.000s,NOT_RUN
+productSelection.productSelection.SelectProduct,Firefox 61.0,,2018-07-23 13:10:13,2018-07-23 13:10:13,0.280s,PASSED
+productSelection.productSelection.SelectProduct,Firefox 61.0,,2018-07-23 13:10:13,2018-07-23 13:10:14,0.558s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:14,2018-07-23 13:10:14,0.315s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 61.0,,2018-07-23 13:10:14,2018-07-23 13:10:18,4.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:18,2018-07-23 13:10:19,0.437s,PASSED
+sendKeys,Firefox 61.0,,2018-07-23 13:10:19,2018-07-23 13:10:19,0.091s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:19,2018-07-23 13:10:19,0.428s,PASSED
+waitForElementVisible,Firefox 61.0,,2018-07-23 13:10:19,2018-07-23 13:10:19,0.117s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:10:19,2018-07-23 13:10:22,3.000s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:22,2018-07-23 13:10:23,0.422s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:23,2018-07-23 13:10:23,0.432s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:23,2018-07-23 13:10:24,0.549s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:24,2018-07-23 13:10:24,0.488s,PASSED
+Statement - date = new java.util.Date(),Firefox 61.0,,2018-07-23 13:10:24,2018-07-23 13:10:24,0.001s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Firefox 61.0,,2018-07-23 13:10:24,2018-07-23 13:10:24,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Firefox 61.0,,2018-07-23 13:10:24,2018-07-23 13:10:24,0.001s,PASSED
+"Statement - OName = ""ATPLidarandOrthoOrder-"" + aDate",Firefox 61.0,,2018-07-23 13:10:24,2018-07-23 13:10:24,0.000s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:10:24,2018-07-23 13:10:24,0.269s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:24,2018-07-23 13:10:25,0.634s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:25,2018-07-23 13:10:25,0.410s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:10:25,2018-07-23 13:10:28,3.002s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:28,2018-07-23 13:10:29,0.365s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:10:29,2018-07-23 13:10:33,4.512s,PASSED
+,,,,,,
+Test Cases/LidarPostProcessing,Firefox 61.0,"Orders Lidar from Williston FL, using the SWFWMD company, adds post processing for Clipping and images (Hillshade, Intensity, Slope)\n\nRequires standard USER group",2018-07-23 13:10:33,2018-07-23 13:11:02,28.418s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:10:34,2018-07-23 13:10:34,0.087s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:10:34,2018-07-23 13:10:36,2.782s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:10:36,2018-07-23 13:10:37,0.781s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:10:37,2018-07-23 13:10:37,0.191s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:10:37,2018-07-23 13:10:37,0.076s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:37,2018-07-23 13:10:39,1.963s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:10:39,2018-07-23 13:10:40,0.126s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:40,2018-07-23 13:10:40,0.329s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 61.0,,2018-07-23 13:10:40,2018-07-23 13:10:44,4.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:44,2018-07-23 13:10:44,0.379s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:44,2018-07-23 13:10:45,0.297s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:45,2018-07-23 13:10:45,0.000s,NOT_RUN
+productSelection.productSelection.SelectProduct,Firefox 61.0,,2018-07-23 13:10:45,2018-07-23 13:10:45,0.545s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:45,2018-07-23 13:10:45,0.335s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 61.0,,2018-07-23 13:10:45,2018-07-23 13:10:49,4.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:49,2018-07-23 13:10:50,0.356s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:50,2018-07-23 13:10:50,0.336s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:50,2018-07-23 13:10:51,0.487s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:51,2018-07-23 13:10:51,0.299s,PASSED
+Statement - date = new java.util.Date(),Firefox 61.0,,2018-07-23 13:10:51,2018-07-23 13:10:51,0.001s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Firefox 61.0,,2018-07-23 13:10:51,2018-07-23 13:10:51,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Firefox 61.0,,2018-07-23 13:10:51,2018-07-23 13:10:51,0.001s,PASSED
+"Statement - OName = ""ATPLIdarPostProcessing-"" + aDate",Firefox 61.0,,2018-07-23 13:10:51,2018-07-23 13:10:51,0.000s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:10:51,2018-07-23 13:10:51,0.193s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:51,2018-07-23 13:10:51,0.384s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:51,2018-07-23 13:10:52,0.320s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:52,2018-07-23 13:10:53,0.802s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:53,2018-07-23 13:10:53,0.347s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:53,2018-07-23 13:10:53,0.357s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:53,2018-07-23 13:10:54,0.305s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:54,2018-07-23 13:10:54,0.270s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:54,2018-07-23 13:10:54,0.282s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:54,2018-07-23 13:10:54,0.283s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:10:54,2018-07-23 13:10:54,0.070s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:10:54,2018-07-23 13:10:57,3.000s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:57,2018-07-23 13:10:58,0.503s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:58,2018-07-23 13:10:58,0.480s,PASSED
+click,Firefox 61.0,,2018-07-23 13:10:58,2018-07-23 13:10:59,0.317s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:10:59,2018-07-23 13:11:02,3.000s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:02,2018-07-23 13:11:02,0.000s,NOT_RUN
+callTestCase,Firefox 61.0,,2018-07-23 13:11:02,2018-07-23 13:11:02,0.000s,NOT_RUN
+,,,,,,
+Test Cases/NAIPFilteredOrder,Firefox 61.0,"Orders One NAIP file from the MIAMI beach area, search results filterd in product selection to only show items where acquisition data > 01/01/2014\n\nRequires standard USER group",2018-07-23 13:11:02,2018-07-23 13:11:31,29.384s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:11:02,2018-07-23 13:11:02,0.104s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:11:02,2018-07-23 13:11:05,3.112s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:11:05,2018-07-23 13:11:06,0.616s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:11:06,2018-07-23 13:11:06,0.069s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:11:06,2018-07-23 13:11:06,0.081s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:06,2018-07-23 13:11:08,2.056s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:11:08,2018-07-23 13:11:08,0.084s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:08,2018-07-23 13:11:08,0.331s,PASSED
+Statement - java.lang.Thread.sleep(4000),Firefox 61.0,,2018-07-23 13:11:08,2018-07-23 13:11:12,4.000s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:12,2018-07-23 13:11:13,0.357s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:13,2018-07-23 13:11:13,0.318s,PASSED
+productSelection.productSelection.SelectChildProduct,Firefox 61.0,,2018-07-23 13:11:13,2018-07-23 13:11:14,0.538s,PASSED
+productAttributeFiltering.attributeFiltering.SetAttributeFilter,Firefox 61.0,,2018-07-23 13:11:14,2018-07-23 13:11:17,3.355s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:17,2018-07-23 13:11:17,0.332s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:17,2018-07-23 13:11:18,1.027s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:18,2018-07-23 13:11:19,0.367s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:19,2018-07-23 13:11:19,0.453s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:19,2018-07-23 13:11:19,0.293s,PASSED
+Statement - date = new java.util.Date(),Firefox 61.0,,2018-07-23 13:11:19,2018-07-23 13:11:19,0.000s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Firefox 61.0,,2018-07-23 13:11:19,2018-07-23 13:11:19,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Firefox 61.0,,2018-07-23 13:11:19,2018-07-23 13:11:19,0.000s,PASSED
+"Statement - OName = ""ATPNaipFilteredOrder-"" + aDate",Firefox 61.0,,2018-07-23 13:11:19,2018-07-23 13:11:19,0.000s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:11:19,2018-07-23 13:11:20,0.224s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:20,2018-07-23 13:11:20,0.389s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:20,2018-07-23 13:11:20,0.278s,PASSED
+selectOptionByValue,Firefox 61.0,,2018-07-23 13:11:20,2018-07-23 13:11:21,0.412s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:11:21,2018-07-23 13:11:21,0.077s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:21,2018-07-23 13:11:21,0.345s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:21,2018-07-23 13:11:21,0.295s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:11:21,2018-07-23 13:11:23,2.000s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:23,2018-07-23 13:11:24,0.318s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:11:24,2018-07-23 13:11:27,3.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:27,2018-07-23 13:11:27,0.267s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:11:27,2018-07-23 13:11:31,4.166s,PASSED
+,,,,,,
+Test Cases/OrderHistoryAddToCart,Firefox 61.0,Finds the first order in the order history beginning with ATPLS and having a status of SUCCESS and adds its contents to the order cart. Then deletes the first item from the order cart and places an order for the one remaining item\n\nRequires Standard USER group,2018-07-23 13:11:31,2018-07-23 13:11:56,24.361s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:11:31,2018-07-23 13:11:31,0.089s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:11:31,2018-07-23 13:11:34,2.781s,PASSED
+maximizeWindow,Firefox 61.0,,2018-07-23 13:11:34,2018-07-23 13:11:34,0.024s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:11:34,2018-07-23 13:11:35,0.567s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:11:35,2018-07-23 13:11:35,0.069s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:11:35,2018-07-23 13:11:35,0.062s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:35,2018-07-23 13:11:38,2.628s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:38,2018-07-23 13:11:38,0.320s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:11:38,2018-07-23 13:11:38,0.068s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:38,2018-07-23 13:11:39,0.604s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:39,2018-07-23 13:11:39,0.395s,PASSED
+uncheck,Firefox 61.0,,2018-07-23 13:11:39,2018-07-23 13:11:39,0.356s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:39,2018-07-23 13:11:40,0.285s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:40,2018-07-23 13:11:40,0.267s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:11:40,2018-07-23 13:11:40,0.151s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:40,2018-07-23 13:11:40,0.329s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:40,2018-07-23 13:11:41,0.285s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:11:41,2018-07-23 13:11:41,0.157s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:11:41,2018-07-23 13:11:44,3.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:44,2018-07-23 13:11:44,0.337s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:44,2018-07-23 13:11:44,0.326s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:44,2018-07-23 13:11:45,0.601s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:45,2018-07-23 13:11:45,0.333s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:45,2018-07-23 13:11:46,0.298s,PASSED
+Statement - date = new java.util.Date(),Firefox 61.0,,2018-07-23 13:11:46,2018-07-23 13:11:46,0.001s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Firefox 61.0,,2018-07-23 13:11:46,2018-07-23 13:11:46,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Firefox 61.0,,2018-07-23 13:11:46,2018-07-23 13:11:46,0.000s,PASSED
+"Statement - OName = ""ATPOrderCartReOrderTest-"" + aDate",Firefox 61.0,,2018-07-23 13:11:46,2018-07-23 13:11:46,0.000s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:11:46,2018-07-23 13:11:46,0.170s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:46,2018-07-23 13:11:46,0.314s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:11:46,2018-07-23 13:11:48,2.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:48,2018-07-23 13:11:48,0.299s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:11:48,2018-07-23 13:11:51,3.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:11:51,2018-07-23 13:11:52,0.240s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:11:52,2018-07-23 13:11:56,3.892s,PASSED
+,,,,,,
+Test Cases/OrderHistorySanityTest,Firefox 61.0,"Opens order History, manipulates the columns displayed, filters on orders beginning with ATP, selects the first one and zooms to it, then opens the details for it, selects the popup details icon and dismisses it\n\nRequires standard USER group",2018-07-23 13:11:56,2018-07-23 13:12:22,26.249s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:11:56,2018-07-23 13:11:56,0.086s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:11:56,2018-07-23 13:11:59,2.784s,PASSED
+maximizeWindow,Firefox 61.0,,2018-07-23 13:11:59,2018-07-23 13:11:59,0.003s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:11:59,2018-07-23 13:12:01,2.770s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:12:01,2018-07-23 13:12:01,0.073s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:12:01,2018-07-23 13:12:01,0.047s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:01,2018-07-23 13:12:03,2.067s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:03,2018-07-23 13:12:04,0.355s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:12:04,2018-07-23 13:12:04,0.031s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:04,2018-07-23 13:12:04,0.590s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:04,2018-07-23 13:12:05,0.422s,PASSED
+uncheck,Firefox 61.0,,2018-07-23 13:12:05,2018-07-23 13:12:05,0.430s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:05,2018-07-23 13:12:06,0.269s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:06,2018-07-23 13:12:06,0.264s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:12:06,2018-07-23 13:12:06,0.146s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:06,2018-07-23 13:12:06,0.335s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:06,2018-07-23 13:12:07,0.274s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:12:07,2018-07-23 13:12:07,0.206s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:12:07,2018-07-23 13:12:10,3.000s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:10,2018-07-23 13:12:10,0.319s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:12:10,2018-07-23 13:12:12,2.001s,PASSED
+mouseOver,Firefox 61.0,,2018-07-23 13:12:12,2018-07-23 13:12:12,0.284s,PASSED
+click,Firefox 61.0,click on header just to allow tooltip to clear,2018-07-23 13:12:12,2018-07-23 13:12:13,0.433s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:12:13,2018-07-23 13:12:16,3.002s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:16,2018-07-23 13:12:16,0.350s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:16,2018-07-23 13:12:17,0.474s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:17,2018-07-23 13:12:17,0.351s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:17,2018-07-23 13:12:17,0.338s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:17,2018-07-23 13:12:18,0.350s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:12:18,2018-07-23 13:12:22,4.105s,PASSED
+,,,,,,
+Test Cases/PreviewSanity,Firefox 61.0,"Preview Landsat, Naip using the AOI: \\\\diskstation1\\Data\\esp\\test_data\\miamibeachshapfile.zip, taking a screenshot when each preview is done and saving it as a png file in local user temp folder\n\nRequires standard USER group",2018-07-23 13:12:22,2018-07-23 13:13:17,55.167s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:12:22,2018-07-23 13:12:22,0.092s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:12:22,2018-07-23 13:12:25,2.775s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:12:25,2018-07-23 13:12:25,0.523s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:12:25,2018-07-23 13:12:25,0.059s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:12:25,2018-07-23 13:12:25,0.072s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:25,2018-07-23 13:12:28,2.135s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:28,2018-07-23 13:12:28,0.313s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:28,2018-07-23 13:12:28,0.391s,PASSED
+sendKeys,Firefox 61.0,,2018-07-23 13:12:28,2018-07-23 13:12:28,0.118s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:28,2018-07-23 13:12:29,0.297s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:12:29,2018-07-23 13:12:32,3.002s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:32,2018-07-23 13:12:32,0.363s,PASSED
+click,Firefox 61.0,Preview for Landsat,2018-07-23 13:12:32,2018-07-23 13:12:32,0.320s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:32,2018-07-23 13:12:33,0.421s,PASSED
+waitForElementVisible,Firefox 61.0,,2018-07-23 13:12:33,2018-07-23 13:12:34,1.155s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:34,2018-07-23 13:12:35,0.739s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:35,2018-07-23 13:12:35,0.675s,PASSED
+searchResults.searchResults.LikeFilterOnColumn,Firefox 61.0,,2018-07-23 13:12:35,2018-07-23 13:12:37,1.355s,PASSED
+click,Firefox 61.0,Display the preview of this data item in the map,2018-07-23 13:12:37,2018-07-23 13:12:37,0.737s,PASSED
+click,Firefox 61.0,zoom to the item,2018-07-23 13:12:37,2018-07-23 13:12:38,0.579s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:12:38,2018-07-23 13:12:48,10.001s,PASSED
+"Statement - filelocation = ScreenShotFile + ""\miamilidar.png""",Firefox 61.0,,2018-07-23 13:12:48,2018-07-23 13:12:48,0.000s,PASSED
+takeScreenshot,Firefox 61.0,Take a screenshot,2018-07-23 13:12:48,2018-07-23 13:12:48,0.313s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:48,2018-07-23 13:12:50,1.260s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:50,2018-07-23 13:12:51,1.510s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:51,2018-07-23 13:12:53,1.401s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:12:53,2018-07-23 13:12:55,2.002s,PASSED
+click,Firefox 61.0,Turn Lidar Off,2018-07-23 13:12:55,2018-07-23 13:12:56,1.145s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:12:56,2018-07-23 13:12:58,2.000s,PASSED
+click,Firefox 61.0,,2018-07-23 13:12:58,2018-07-23 13:12:59,1.186s,PASSED
+waitForElementVisible,Firefox 61.0,,2018-07-23 13:12:59,2018-07-23 13:13:00,0.758s,PASSED
+searchResults.searchResults.LikeFilterOnColumn,Firefox 61.0,,2018-07-23 13:13:00,2018-07-23 13:13:00,0.719s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:13:00,2018-07-23 13:13:01,1.001s,PASSED
+click,Firefox 61.0,Display the preview of this data item in the map,2018-07-23 13:13:01,2018-07-23 13:13:02,0.372s,PASSED
+click,Firefox 61.0,zoom to the item,2018-07-23 13:13:02,2018-07-23 13:13:02,0.456s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:13:02,2018-07-23 13:13:12,10.001s,PASSED
+"Statement - filelocation = ScreenShotFile + ""\miaminaip.png""",Firefox 61.0,,2018-07-23 13:13:12,2018-07-23 13:13:12,0.000s,PASSED
+takeScreenshot,Firefox 61.0,Take a screenshot,2018-07-23 13:13:12,2018-07-23 13:13:13,0.422s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:13:13,2018-07-23 13:13:17,4.381s,PASSED
+,,,,,,
+Test Cases/SearchResultsSanity,Firefox 61.0,"Exercises filtering, sorting, etc. for a fixed set of data from Davidson county",2018-07-23 13:13:17,2018-07-23 13:13:45,28.313s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:13:17,2018-07-23 13:13:17,0.090s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:13:17,2018-07-23 13:13:20,2.759s,PASSED
+maximizeWindow,Firefox 61.0,,2018-07-23 13:13:20,2018-07-23 13:13:20,0.003s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:13:20,2018-07-23 13:13:20,0.573s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:13:20,2018-07-23 13:13:21,0.064s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:13:21,2018-07-23 13:13:21,0.063s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:21,2018-07-23 13:13:23,2.094s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:23,2018-07-23 13:13:23,0.289s,PASSED
+Statement - Try,Firefox 61.0,,2018-07-23 13:13:23,2018-07-23 13:13:25,2.027s,PASSED
+verifyElementClickable,Firefox 61.0,,2018-07-23 13:13:25,2018-07-23 13:13:25,0.032s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:25,2018-07-23 13:13:25,0.265s,PASSED
+productSelection.productSelection.SelectProduct,Firefox 61.0,,2018-07-23 13:13:25,2018-07-23 13:13:26,0.251s,PASSED
+productAttributeFiltering.attributeFiltering.SetAttributeFilter,Firefox 61.0,,2018-07-23 13:13:26,2018-07-23 13:13:29,3.272s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:29,2018-07-23 13:13:29,0.284s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:29,2018-07-23 13:13:29,0.294s,PASSED
+sendKeys,Firefox 61.0,,2018-07-23 13:13:29,2018-07-23 13:13:29,0.045s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:29,2018-07-23 13:13:30,0.268s,PASSED
+waitForElementVisible,Firefox 61.0,,2018-07-23 13:13:30,2018-07-23 13:13:32,2.073s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:32,2018-07-23 13:13:32,0.408s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:13:32,2018-07-23 13:13:32,0.178s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:32,2018-07-23 13:13:33,0.414s,PASSED
+verifyElementText,Firefox 61.0,Search Results Sanity Starts Here,2018-07-23 13:13:33,2018-07-23 13:13:33,0.316s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:33,2018-07-23 13:13:34,0.394s,PASSED
+"Statement - nameIndex = CustomKeywords.searchResults.searchResults.GetSetColumn(""Name"")",Firefox 61.0,,2018-07-23 13:13:34,2018-07-23 13:13:35,1.030s,PASSED
+"Statement - println(""Index for Name = "" + nameIndex)",Firefox 61.0,,2018-07-23 13:13:35,2018-07-23 13:13:35,0.000s,PASSED
+"Statement - totPtsIndex = CustomKeywords.searchResults.searchResults.GetSetColumn(""Total Number Of Points"")",Firefox 61.0,,2018-07-23 13:13:35,2018-07-23 13:13:35,0.630s,PASSED
+"Statement - println(""Index for Total Number Of Points = "" + nameIndex)",Firefox 61.0,,2018-07-23 13:13:35,2018-07-23 13:13:35,0.000s,PASSED
+searchResults.searchResults.sortByName,Firefox 61.0,,2018-07-23 13:13:35,2018-07-23 13:13:36,0.404s,PASSED
+Statement - nameIndex = nameIndex + 2,Firefox 61.0,,2018-07-23 13:13:36,2018-07-23 13:13:36,0.000s,PASSED
+searchResults.searchResults.VerifyValueInGrid,Firefox 61.0,,2018-07-23 13:13:36,2018-07-23 13:13:37,1.681s,PASSED
+searchResults.searchResults.sortByName,Firefox 61.0,,2018-07-23 13:13:37,2018-07-23 13:13:38,0.380s,PASSED
+searchResults.searchResults.VerifyValueInGrid,Firefox 61.0,,2018-07-23 13:13:38,2018-07-23 13:13:39,1.348s,PASSED
+searchResults.searchResults.LikeFilterOnColumn,Firefox 61.0,,2018-07-23 13:13:39,2018-07-23 13:13:40,0.583s,PASSED
+verifyElementText,Firefox 61.0,,2018-07-23 13:13:40,2018-07-23 13:13:40,0.097s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:40,2018-07-23 13:13:40,0.345s,PASSED
+verifyElementText,Firefox 61.0,,2018-07-23 13:13:40,2018-07-23 13:13:40,0.048s,PASSED
+searchResults.searchResults.NumericFilterOnColumn,Firefox 61.0,,2018-07-23 13:13:40,2018-07-23 13:13:41,0.805s,PASSED
+verifyElementText,Firefox 61.0,,2018-07-23 13:13:41,2018-07-23 13:13:41,0.103s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:13:41,2018-07-23 13:13:45,4.295s,PASSED
+,,,,,,
+Test Cases/SmokeTest01,Firefox 61.0,"delete smoketest01 named search if it exists, then recreate it using aoi: \\\\diskstation1\\Data\\Rob_MUSES\\Shapefile_test_datasets\\AL.kmz, landsat ndvi, histogram filters on sun elevation, cloud coverage, save the named search, select the first item from the search results, add it the order cart and submit the job. Requires standard USER group",2018-07-23 13:13:45,2018-07-23 13:14:25,39.906s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:13:45,2018-07-23 13:13:45,0.074s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:13:45,2018-07-23 13:13:48,2.811s,PASSED
+maximizeWindow,Firefox 61.0,,2018-07-23 13:13:48,2018-07-23 13:13:48,0.002s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:13:48,2018-07-23 13:13:49,0.631s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:13:49,2018-07-23 13:13:49,0.075s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:13:49,2018-07-23 13:13:49,0.048s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:49,2018-07-23 13:13:51,2.106s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:51,2018-07-23 13:13:51,0.292s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:13:51,2018-07-23 13:13:51,0.015s,PASSED
+Statement - Try,Firefox 61.0,,2018-07-23 13:13:51,2018-07-23 13:13:53,1.913s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:13:53,2018-07-23 13:13:53,0.023s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:53,2018-07-23 13:13:54,0.280s,PASSED
+productSelection.productSelection.SelectChildProduct,Firefox 61.0,,2018-07-23 13:13:54,2018-07-23 13:13:54,0.263s,PASSED
+productAttributeFiltering.attributeFiltering.SetAttributeFilter,Firefox 61.0,,2018-07-23 13:13:54,2018-07-23 13:13:57,3.416s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:57,2018-07-23 13:13:58,0.318s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:58,2018-07-23 13:13:58,0.313s,PASSED
+sendKeys,Firefox 61.0,,2018-07-23 13:13:58,2018-07-23 13:13:58,0.047s,PASSED
+click,Firefox 61.0,,2018-07-23 13:13:58,2018-07-23 13:13:58,0.281s,PASSED
+waitForElementVisible,Firefox 61.0,,2018-07-23 13:13:58,2018-07-23 13:14:02,3.494s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:02,2018-07-23 13:14:02,0.396s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:14:02,2018-07-23 13:14:02,0.061s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:02,2018-07-23 13:14:03,0.322s,PASSED
+check,Firefox 61.0,,2018-07-23 13:14:03,2018-07-23 13:14:03,0.395s,PASSED
+check,Firefox 61.0,,2018-07-23 13:14:03,2018-07-23 13:14:03,0.389s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:03,2018-07-23 13:14:05,1.173s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:14:05,2018-07-23 13:14:10,5.000s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:10,2018-07-23 13:14:10,0.597s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:14:10,2018-07-23 13:14:10,0.342s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:14:10,2018-07-23 13:14:11,0.458s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:11,2018-07-23 13:14:12,0.745s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:14:12,2018-07-23 13:14:12,0.038s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:12,2018-07-23 13:14:12,0.335s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:14:12,2018-07-23 13:14:12,0.287s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:12,2018-07-23 13:14:13,0.413s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:13,2018-07-23 13:14:13,0.299s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:13,2018-07-23 13:14:14,0.585s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:14,2018-07-23 13:14:14,0.702s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:14,2018-07-23 13:14:15,0.511s,PASSED
+Statement - date = new java.util.Date(),Firefox 61.0,,2018-07-23 13:14:15,2018-07-23 13:14:15,0.001s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Firefox 61.0,,2018-07-23 13:14:15,2018-07-23 13:14:15,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Firefox 61.0,,2018-07-23 13:14:15,2018-07-23 13:14:15,0.000s,PASSED
+"Statement - OName = ""ATPSmokeTestOrder"" + aDate",Firefox 61.0,,2018-07-23 13:14:15,2018-07-23 13:14:15,0.000s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:14:15,2018-07-23 13:14:15,0.548s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:14:15,2018-07-23 13:14:16,0.525s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:16,2018-07-23 13:14:17,0.625s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:17,2018-07-23 13:14:17,0.719s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:14:17,2018-07-23 13:14:19,2.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:14:19,2018-07-23 13:14:20,0.636s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:14:20,2018-07-23 13:14:25,5.291s,PASSED

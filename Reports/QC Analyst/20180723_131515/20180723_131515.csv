@@ -1,0 +1,101 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+QC Analyst,Firefox 61.0,User must have QC Analyst role,2018-07-23 13:15:21,2018-07-23 13:17:26,2m - 4.664s,PASSED
+,,,,,,
+Test Cases/DavidsonQueryTest,Firefox 61.0,Opens the Davidson Project in the QC analyst environment and checks the Project Items grid to be sure '1072' items are found\n\nRequires QCAnalyst role,2018-07-23 13:15:21,2018-07-23 13:15:45,23.709s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:15:22,2018-07-23 13:15:23,1.205s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:15:23,2018-07-23 13:15:27,4.062s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:15:27,2018-07-23 13:15:28,0.598s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:15:28,2018-07-23 13:15:28,0.109s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:15:28,2018-07-23 13:15:28,0.084s,PASSED
+click,Firefox 61.0,,2018-07-23 13:15:28,2018-07-23 13:15:33,5.269s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:15:33,2018-07-23 13:15:36,2.522s,PASSED
+click,Firefox 61.0,,2018-07-23 13:15:36,2018-07-23 13:15:36,0.471s,PASSED
+click,Firefox 61.0,,2018-07-23 13:15:36,2018-07-23 13:15:37,0.470s,PASSED
+click,Firefox 61.0,,2018-07-23 13:15:37,2018-07-23 13:15:37,0.342s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:15:37,2018-07-23 13:15:37,0.125s,PASSED
+click,Firefox 61.0,,2018-07-23 13:15:37,2018-07-23 13:15:37,0.326s,PASSED
+check,Firefox 61.0,,2018-07-23 13:15:37,2018-07-23 13:15:38,0.989s,PASSED
+verifyElementText,Firefox 61.0,,2018-07-23 13:15:38,2018-07-23 13:15:41,2.394s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:15:41,2018-07-23 13:15:45,4.372s,PASSED
+,,,,,,
+Test Cases/CreateProjectWithFootprint,Firefox 61.0,"Calls create project to create ATPProjectFootprint with HoustonBayArea as footprint. Deletes project if it exists, then recreates it\n\nRequires System Admin role (in order to delete the project if it already exists)",2018-07-23 13:15:45,2018-07-23 13:16:11,25.975s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:15:45,2018-07-23 13:15:45,0.150s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:15:45,2018-07-23 13:15:48,2.802s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:15:48,2018-07-23 13:15:49,0.541s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:15:49,2018-07-23 13:15:49,0.083s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:15:49,2018-07-23 13:15:49,0.067s,PASSED
+click,Firefox 61.0,,2018-07-23 13:15:49,2018-07-23 13:15:51,2.116s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:15:51,2018-07-23 13:15:51,0.017s,PASSED
+click,Firefox 61.0,,2018-07-23 13:15:51,2018-07-23 13:15:51,0.281s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:15:51,2018-07-23 13:16:07,15.989s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:16:07,2018-07-23 13:16:11,3.824s,PASSED
+,,,,,,
+Test Cases/GeneratePyramids,Firefox 61.0,"Opens the Davidson project, clears the working set, filters the project itesm to a small set using name='DavCo_AA', adds them to the working set, opens the working set and executes the generate pyramids process\n\nRequires QCAnalyst role",2018-07-23 13:16:11,2018-07-23 13:16:33,22.058s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:16:11,2018-07-23 13:16:11,0.120s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:16:11,2018-07-23 13:16:14,2.800s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:16:14,2018-07-23 13:16:15,0.556s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:16:15,2018-07-23 13:16:15,0.072s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:16:15,2018-07-23 13:16:15,0.063s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:15,2018-07-23 13:16:17,2.125s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:16:17,2018-07-23 13:16:17,0.019s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:17,2018-07-23 13:16:17,0.277s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:17,2018-07-23 13:16:18,0.397s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:18,2018-07-23 13:16:18,0.336s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:16:18,2018-07-23 13:16:18,0.096s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:18,2018-07-23 13:16:18,0.307s,PASSED
+check,Firefox 61.0,,2018-07-23 13:16:18,2018-07-23 13:16:19,0.987s,PASSED
+waitForElementVisible,Firefox 61.0,,2018-07-23 13:16:19,2018-07-23 13:16:21,2.074s,PASSED
+Statement - Try,Firefox 61.0,,2018-07-23 13:16:21,2018-07-23 13:16:23,1.316s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:23,2018-07-23 13:16:23,0.382s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:16:23,2018-07-23 13:16:24,0.409s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:24,2018-07-23 13:16:24,0.456s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:24,2018-07-23 13:16:24,0.350s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:16:24,2018-07-23 13:16:24,0.051s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:24,2018-07-23 13:16:25,0.381s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:25,2018-07-23 13:16:25,0.359s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:25,2018-07-23 13:16:26,0.438s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:26,2018-07-23 13:16:26,0.396s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:26,2018-07-23 13:16:26,0.436s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:16:26,2018-07-23 13:16:27,0.050s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:27,2018-07-23 13:16:27,0.294s,PASSED
+delay,Firefox 61.0,,2018-07-23 13:16:27,2018-07-23 13:16:29,2.001s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:29,2018-07-23 13:16:29,0.311s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:16:29,2018-07-23 13:16:33,4.044s,PASSED
+,,,,,,
+Test Cases/LidarLoader,Firefox 61.0,"Executes Lidar Loader to catalog files found in the S3 bucket gcesp-lidar/ATP, using an ATPLIdar prefix, and loading into the project ATPLidarProject, without copying the data into ESP, using an SRS file: Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs\nRequires standard USER group + CanExecuteLidarLoader",2018-07-23 13:16:33,2018-07-23 13:17:01,27.578s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:16:33,2018-07-23 13:16:33,0.111s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:16:33,2018-07-23 13:16:36,2.789s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:16:36,2018-07-23 13:16:37,0.565s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:16:37,2018-07-23 13:16:37,0.083s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:16:37,2018-07-23 13:16:37,0.051s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:37,2018-07-23 13:16:39,2.148s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:16:39,2018-07-23 13:16:39,0.021s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:39,2018-07-23 13:16:39,0.283s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:16:39,2018-07-23 13:16:52,13.112s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:52,2018-07-23 13:16:53,0.284s,PASSED
+setText,Firefox 61.0,2 laz files from swfwmd/Hernando,2018-07-23 13:16:53,2018-07-23 13:16:53,0.681s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:16:53,2018-07-23 13:16:54,0.173s,PASSED
+click,Firefox 61.0,,2018-07-23 13:16:54,2018-07-23 13:16:54,0.259s,PASSED
+selectOptionByValue,Firefox 61.0,,2018-07-23 13:16:54,2018-07-23 13:16:54,0.317s,PASSED
+sendKeys,Firefox 61.0,,2018-07-23 13:16:54,2018-07-23 13:16:54,0.052s,PASSED
+Statement - Try,Firefox 61.0,,2018-07-23 13:16:54,2018-07-23 13:16:57,2.709s,PASSED
+Statement - Finally,Firefox 61.0,,2018-07-23 13:16:57,2018-07-23 13:17:01,3.822s,PASSED
+,,,,,,
+Test Cases/OrthoLoader,Firefox 61.0,"Loads the orthos in the test folder into a new project. If the project exists, it deletes it and recreates it.\nRequires standard USER group + CanExecuteOrthoLoader",2018-07-23 13:17:01,2018-07-23 13:17:26,24.997s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:17:01,2018-07-23 13:17:01,0.102s,PASSED
+openBrowser,Firefox 61.0,,2018-07-23 13:17:01,2018-07-23 13:17:04,2.775s,PASSED
+navigateToUrl,Firefox 61.0,,2018-07-23 13:17:04,2018-07-23 13:17:04,0.578s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:17:04,2018-07-23 13:17:04,0.083s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:17:04,2018-07-23 13:17:04,0.052s,PASSED
+click,Firefox 61.0,,2018-07-23 13:17:04,2018-07-23 13:17:07,2.169s,PASSED
+waitForElementClickable,Firefox 61.0,,2018-07-23 13:17:07,2018-07-23 13:17:07,0.022s,PASSED
+click,Firefox 61.0,,2018-07-23 13:17:07,2018-07-23 13:17:07,0.278s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:17:07,2018-07-23 13:17:20,13.151s,PASSED
+click,Firefox 61.0,,2018-07-23 13:17:20,2018-07-23 13:17:20,0.283s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:17:20,2018-07-23 13:17:21,0.165s,PASSED
+setText,Firefox 61.0,,2018-07-23 13:17:21,2018-07-23 13:17:21,0.161s,PASSED
+click,Firefox 61.0,,2018-07-23 13:17:21,2018-07-23 13:17:21,0.247s,PASSED
+sendKeys,Firefox 61.0,,2018-07-23 13:17:21,2018-07-23 13:17:21,0.000s,NOT_RUN
+click,Firefox 61.0,,2018-07-23 13:17:21,2018-07-23 13:17:21,0.274s,PASSED
+click,Firefox 61.0,,2018-07-23 13:17:21,2018-07-23 13:17:22,0.754s,PASSED
+callTestCase,Firefox 61.0,,2018-07-23 13:17:22,2018-07-23 13:17:26,3.791s,PASSED

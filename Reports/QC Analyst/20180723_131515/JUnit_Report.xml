@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="QC Analyst" time="124" tests="5" failures="0" errors="0">
+   <testsuite name="QC Analyst" tests="5" failures="0" errors="0" time="124" timestamp="2018-07-23 13:15:21" hostname="DGlenn - MUSES-David.local.niirs10.com" id="Test Suites/QC Analyst">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180723_131515"/>
+         <property name="logFiles" value="D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180723_131515\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DGlenn - MUSES-David.local.niirs10.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Firefox 61.0"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="aeca39d5-19c8-4afc-a63b-907731857805"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/DavidsonQueryTest" classname="Test Cases/DavidsonQueryTest" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:15:21 - [TEST_CASE][PASSED] - Test Cases/DavidsonQueryTest: Test Cases/DavidsonQueryTest
+
+2018-07-23 13:15:22 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:15:22 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:15:22 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:15:23 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:15:23 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:15:27 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:15:27 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/qc' successfully
+
+2018-07-23 13:15:28 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/qc' successfully
+
+2018-07-23 13:15:28 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:15:28 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:15:28 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:15:28 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:15:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:15:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:15:33 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/canvas' is clickable
+
+2018-07-23 13:15:36 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/canvas' is clickable
+
+2018-07-23 13:15:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:15:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:15:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-23 13:15:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-23 13:15:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine' is clicked on
+
+2018-07-23 13:15:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine' is clicked on
+
+2018-07-23 13:15:37 - [TEST_STEP][PASSED] - setText: Text 'Davidson' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'
+
+2018-07-23 13:15:37 - [MESSAGE][PASSED] - Text 'Davidson' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'
+
+2018-07-23 13:15:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:15:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:15:37 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsOpenFirstItem' is checked
+
+2018-07-23 13:15:38 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsOpenFirstItem' is checked
+
+2018-07-23 13:15:38 - [TEST_STEP][PASSED] - verifyElementText: Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsCountLabel' are matched.
+
+2018-07-23 13:15:41 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsCountLabel' are matched.
+
+2018-07-23 13:15:41 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully
+
+2018-07-23 13:15:41 - [TEST_CASE][PASSED] - Test Cases/Utilities/QCAnalystSignOut: Test Cases/Utilities/QCAnalystSignOut
+
+2018-07-23 13:15:41 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:15:44 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:15:44 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-23 13:15:44 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-23 13:15:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:15:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:15:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:15:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:15:45 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:15:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CreateProjectWithFootprint" classname="Test Cases/CreateProjectWithFootprint" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:15:45 - [TEST_CASE][PASSED] - Test Cases/CreateProjectWithFootprint: Test Cases/CreateProjectWithFootprint
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:15:45 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:15:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:15:45 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:15:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:15:48 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/qc' successfully
+
+2018-07-23 13:15:49 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/qc' successfully
+
+2018-07-23 13:15:49 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:15:49 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:15:49 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:15:49 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:15:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:15:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:15:51 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/canvas' is clickable
+
+2018-07-23 13:15:51 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/canvas' is clickable
+
+2018-07-23 13:15:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:15:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:15:51 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateProject' successfully
+
+2018-07-23 13:15:51 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateProject: Test Cases/Utilities/CreateProject
+
+2018-07-23 13:15:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-23 13:15:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-23 13:15:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine' is clicked on
+
+2018-07-23 13:15:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine' is clicked on
+
+2018-07-23 13:15:52 - [TEST_STEP][PASSED] - setText: Text 'ATPProjectWithFootprint' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'
+
+2018-07-23 13:15:52 - [MESSAGE][PASSED] - Text 'ATPProjectWithFootprint' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'
+
+2018-07-23 13:15:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:15:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:15:53 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-23 13:15:53 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsNoRecordsFound' is present
+
+2018-07-23 13:15:53 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsNoRecordsFound' is present
+
+2018-07-23 13:15:53 - [TEST_STEP][PASSED] - Statement - println(ProjectName + " does not exist, we will create it"): null
+
+2018-07-23 13:15:53 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:15:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:15:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProjectButton' is clicked on
+
+2018-07-23 13:15:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProjectButton' is clicked on
+
+2018-07-23 13:15:55 - [TEST_STEP][PASSED] - setText: Text 'ATPProjectWithFootprint' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputName'
+
+2018-07-23 13:15:55 - [MESSAGE][PASSED] - Text 'ATPProjectWithFootprint' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputName'
+
+2018-07-23 13:15:55 - [TEST_STEP][PASSED] - setText: Text 'ATPFoot' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputPrefix'
+
+2018-07-23 13:15:55 - [MESSAGE][PASSED] - Text 'ATPFoot' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputPrefix'
+
+2018-07-23 13:15:55 - [TEST_STEP][PASSED] - Statement - If (ProductType == "Lidar"): Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar' is clicked on
+
+2018-07-23 13:15:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar' is clicked on
+
+2018-07-23 13:15:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar' is clicked on
+
+2018-07-23 13:15:56 - [TEST_STEP][PASSED] - setText: Text 'ATP Project for Lidar Loading' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputDescription'
+
+2018-07-23 13:15:56 - [MESSAGE][PASSED] - Text 'ATP Project for Lidar Loading' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputDescription'
+
+2018-07-23 13:15:56 - [TEST_STEP][PASSED] - Statement - println("FootprintFile = " + FootprintFile): null
+
+2018-07-23 13:15:56 - [TEST_STEP][PASSED] - Statement - If (FootprintFile != null && FootprintFile.length() > 0): Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:15:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectImportFootprintSingleFile_Tab' is clicked on
+
+2018-07-23 13:15:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectImportFootprintSingleFile_Tab' is clicked on
+
+2018-07-23 13:15:56 - [TEST_STEP][PASSED] - setText: Text '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField'
+
+2018-07-23 13:15:56 - [MESSAGE][PASSED] - Text '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField'
+
+2018-07-23 13:15:56 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:15:58 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:15:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectFootprintImport_Button' is clicked on
+
+2018-07-23 13:15:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectFootprintImport_Button' is clicked on
+
+2018-07-23 13:15:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/button_OK' is clicked on
+
+2018-07-23 13:15:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/button_OK' is clicked on
+
+2018-07-23 13:15:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave' is clicked on
+
+2018-07-23 13:15:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave' is clicked on
+
+2018-07-23 13:15:59 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:16:02 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:16:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:02 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-23 13:16:07 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-23 13:16:07 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:16:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateProject' successfully
+
+2018-07-23 13:16:07 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully
+
+2018-07-23 13:16:07 - [TEST_CASE][PASSED] - Test Cases/Utilities/QCAnalystSignOut: Test Cases/Utilities/QCAnalystSignOut
+
+2018-07-23 13:16:07 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:16:10 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:16:10 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-23 13:16:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-23 13:16:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:16:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:16:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:16:11 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:16:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/GeneratePyramids" classname="Test Cases/GeneratePyramids" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:16:11 - [TEST_CASE][PASSED] - Test Cases/GeneratePyramids: Test Cases/GeneratePyramids
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:16:11 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:16:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:16:11 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:16:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:16:14 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/qc' successfully
+
+2018-07-23 13:16:15 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/qc' successfully
+
+2018-07-23 13:16:15 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:16:15 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:16:15 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:16:15 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:16:15 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:16:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:16:17 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/canvas' is clickable
+
+2018-07-23 13:16:17 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/canvas' is clickable
+
+2018-07-23 13:16:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:16:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:16:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-23 13:16:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-23 13:16:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine' is clicked on
+
+2018-07-23 13:16:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine' is clicked on
+
+2018-07-23 13:16:18 - [TEST_STEP][PASSED] - setText: Text 'Davidson' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'
+
+2018-07-23 13:16:18 - [MESSAGE][PASSED] - Text 'Davidson' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'
+
+2018-07-23 13:16:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:18 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsOpenFirstItem' is checked
+
+2018-07-23 13:16:19 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsOpenFirstItem' is checked
+
+2018-07-23 13:16:19 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsCountLabel' is visible
+
+2018-07-23 13:16:21 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsCountLabel' is visible
+
+2018-07-23 13:16:21 - [TEST_STEP][PASSED] - Statement - Try: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetDismiss_Button' is clicked on
+
+2018-07-23 13:16:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge' is clicked on
+
+2018-07-23 13:16:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge' is clicked on
+
+2018-07-23 13:16:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetClearSet_Button' is clicked on
+
+2018-07-23 13:16:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetClearSet_Button' is clicked on
+
+2018-07-23 13:16:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetDismiss_Button' is clicked on
+
+2018-07-23 13:16:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetDismiss_Button' is clicked on
+
+2018-07-23 13:16:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsNameFilter_Button' is clicked on
+
+2018-07-23 13:16:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsNameFilter_Button' is clicked on
+
+2018-07-23 13:16:23 - [TEST_STEP][PASSED] - setText: Text 'DavCo_AA' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsNameLike_Field'
+
+2018-07-23 13:16:24 - [MESSAGE][PASSED] - Text 'DavCo_AA' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsNameLike_Field'
+
+2018-07-23 13:16:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsSelectAll' is clicked on
+
+2018-07-23 13:16:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsSelectAll' is clicked on
+
+2018-07-23 13:16:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsAddtoWorkingSet' is clicked on
+
+2018-07-23 13:16:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsAddtoWorkingSet' is clicked on
+
+2018-07-23 13:16:24 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge' is clickable
+
+2018-07-23 13:16:24 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge' is clickable
+
+2018-07-23 13:16:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge' is clicked on
+
+2018-07-23 13:16:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge' is clicked on
+
+2018-07-23 13:16:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetSelectProcess' is clicked on
+
+2018-07-23 13:16:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetSelectProcess' is clicked on
+
+2018-07-23 13:16:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetGeneratePyramidsRadio' is clicked on
+
+2018-07-23 13:16:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetGeneratePyramidsRadio' is clicked on
+
+2018-07-23 13:16:26 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetExecuteProcess' is clicked on
+
+2018-07-23 13:16:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetExecuteProcess' is clicked on
+
+2018-07-23 13:16:26 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:26 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/ReadyToExecuteOKButton' is clickable
+
+2018-07-23 13:16:27 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/ReadyToExecuteOKButton' is clickable
+
+2018-07-23 13:16:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/ReadyToExecuteOKButton' is clicked on
+
+2018-07-23 13:16:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/WorkingSet/ReadyToExecuteOKButton' is clicked on
+
+2018-07-23 13:16:27 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:16:29 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:16:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:29 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully
+
+2018-07-23 13:16:29 - [TEST_CASE][PASSED] - Test Cases/Utilities/QCAnalystSignOut: Test Cases/Utilities/QCAnalystSignOut
+
+2018-07-23 13:16:29 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:16:32 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:16:32 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-23 13:16:32 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-23 13:16:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:16:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:16:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:16:33 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:16:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/LidarLoader" classname="Test Cases/LidarLoader" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:16:33 - [TEST_CASE][PASSED] - Test Cases/LidarLoader: Test Cases/LidarLoader
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:16:33 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:16:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:16:33 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:16:36 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:16:36 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/qc' successfully
+
+2018-07-23 13:16:37 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/qc' successfully
+
+2018-07-23 13:16:37 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:16:37 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:16:37 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:16:37 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:16:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:16:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:16:39 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/canvas' is clickable
+
+2018-07-23 13:16:39 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/canvas' is clickable
+
+2018-07-23 13:16:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:16:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:16:39 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateProject' successfully
+
+2018-07-23 13:16:39 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateProject: Test Cases/Utilities/CreateProject
+
+2018-07-23 13:16:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-23 13:16:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-23 13:16:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine' is clicked on
+
+2018-07-23 13:16:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine' is clicked on
+
+2018-07-23 13:16:40 - [TEST_STEP][PASSED] - setText: Text 'ATPLidarProject' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'
+
+2018-07-23 13:16:40 - [MESSAGE][PASSED] - Text 'ATPLidarProject' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'
+
+2018-07-23 13:16:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:41 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-23 13:16:41 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsNoRecordsFound' is present
+
+2018-07-23 13:16:41 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsNoRecordsFound' is present
+
+2018-07-23 13:16:41 - [TEST_STEP][PASSED] - Statement - println(ProjectName + " does not exist, we will create it"): null
+
+2018-07-23 13:16:41 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:16:43 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:16:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProjectButton' is clicked on
+
+2018-07-23 13:16:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProjectButton' is clicked on
+
+2018-07-23 13:16:43 - [TEST_STEP][PASSED] - setText: Text 'ATPLidarProject' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputName'
+
+2018-07-23 13:16:43 - [MESSAGE][PASSED] - Text 'ATPLidarProject' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputName'
+
+2018-07-23 13:16:43 - [TEST_STEP][PASSED] - setText: Text 'ATPLidar' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputPrefix'
+
+2018-07-23 13:16:43 - [MESSAGE][PASSED] - Text 'ATPLidar' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputPrefix'
+
+2018-07-23 13:16:43 - [TEST_STEP][PASSED] - Statement - If (ProductType == "Lidar"): Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar' is clicked on
+
+2018-07-23 13:16:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar' is clicked on
+
+2018-07-23 13:16:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar' is clicked on
+
+2018-07-23 13:16:43 - [TEST_STEP][PASSED] - setText: Text 'ATP Project for Lidar Loading' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputDescription'
+
+2018-07-23 13:16:44 - [MESSAGE][PASSED] - Text 'ATP Project for Lidar Loading' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputDescription'
+
+2018-07-23 13:16:44 - [TEST_STEP][PASSED] - Statement - println("FootprintFile = " + FootprintFile): null
+
+2018-07-23 13:16:44 - [TEST_STEP][PASSED] - Statement - If (FootprintFile != null && FootprintFile.length() > 0): null
+
+2018-07-23 13:16:44 - [TEST_STEP][PASSED] - Statement - Else: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave' is clicked on
+
+2018-07-23 13:16:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave' is clicked on
+
+2018-07-23 13:16:44 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:16:47 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:16:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:47 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-23 13:16:52 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-23 13:16:52 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:16:52 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateProject' successfully
+
+2018-07-23 13:16:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoaderButton' is clicked on
+
+2018-07-23 13:16:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoaderButton' is clicked on
+
+2018-07-23 13:16:53 - [TEST_STEP][PASSED] - setText: Text 'gcesp-testing' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderInputBucketName'
+
+2018-07-23 13:16:53 - [MESSAGE][PASSED] - Text 'gcesp-testing' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderInputBucketName'
+
+2018-07-23 13:16:53 - [TEST_STEP][PASSED] - setText: Text 'production/atp/lidar' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderIInputS3Prefix'
+
+2018-07-23 13:16:54 - [MESSAGE][PASSED] - Text 'production/atp/lidar' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderIInputS3Prefix'
+
+2018-07-23 13:16:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderSelectATPProject' is clicked on
+
+2018-07-23 13:16:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderSelectATPProject' is clicked on
+
+2018-07-23 13:16:54 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '2' are selected in object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderSelectHillshade' 
+
+2018-07-23 13:16:54 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderSelectHillshade' 
+
+2018-07-23 13:16:54 - [TEST_STEP][PASSED] - sendKeys: Keys 'Z:\ESP\Test_data\swfwmd\Hernando\stplanFLWest.srs' sent to object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderSRSFilename'
+
+2018-07-23 13:16:54 - [MESSAGE][PASSED] - Keys 'Z:\ESP\Test_data\swfwmd\Hernando\stplanFLWest.srs' sent to object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderSRSFilename'
+
+2018-07-23 13:16:54 - [TEST_STEP][PASSED] - Statement - Try: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:54 - [TEST_STEP][PASSED] - Statement - notPresent = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderFailedToReadTheFile), 2): Web element with id: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderFailedToReadTheFile' located by 'By.xpath: //span[(text() = 'Failed to read the file.' or . = 'Failed to read the file.')]' is not present after '2' second(s)
+
+2018-07-23 13:16:54 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderFailedToReadTheFile' located by 'By.xpath: //span[(text() = 'Failed to read the file.' or . = 'Failed to read the file.')]' is not present after '2' second(s)
+
+2018-07-23 13:16:54 - [TEST_STEP][PASSED] - Statement - If (notPresent): Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:54 - [TEST_STEP][PASSED] - Statement - println("No problem with the SRS/PRJ file"): null
+
+2018-07-23 13:16:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderExecute' is clicked on
+
+2018-07-23 13:16:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderExecute' is clicked on
+
+2018-07-23 13:16:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:16:57 - [TEST_STEP][PASSED] - Statement - Finally: Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully
+
+2018-07-23 13:16:57 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully
+
+2018-07-23 13:16:57 - [TEST_CASE][PASSED] - Test Cases/Utilities/QCAnalystSignOut: Test Cases/Utilities/QCAnalystSignOut
+
+2018-07-23 13:16:57 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:17:00 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:17:00 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-23 13:17:00 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-23 13:17:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:17:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:17:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:17:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:17:01 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:17:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/OrthoLoader" classname="Test Cases/OrthoLoader" status="PASSED">
+         <system-out><![CDATA[2018-07-23 13:17:01 - [TEST_CASE][PASSED] - Test Cases/OrthoLoader: Test Cases/OrthoLoader
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:17:01 - [TEST_CASE][PASSED] - Test Cases/Utilities/GetLoginInfo: Test Cases/Utilities/GetLoginInfo
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - rowNdx == 1: null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:17:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/GetLoginInfo' successfully
+
+2018-07-23 13:17:01 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-07-23 13:17:04 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-07-23 13:17:04 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'https://geocue.earthsensorportal.com/qc' successfully
+
+2018-07-23 13:17:04 - [MESSAGE][PASSED] - Navigate to 'https://geocue.earthsensorportal.com/qc' successfully
+
+2018-07-23 13:17:04 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:17:04 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Email'
+
+2018-07-23 13:17:04 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:17:04 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Page_Earth Sensor Portal/input_Password'
+
+2018-07-23 13:17:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:17:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Signin_Button' is clicked on
+
+2018-07-23 13:17:07 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/canvas' is clickable
+
+2018-07-23 13:17:07 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/canvas' is clickable
+
+2018-07-23 13:17:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:17:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/Canvas' is clicked on
+
+2018-07-23 13:17:07 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateProject' successfully
+
+2018-07-23 13:17:07 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateProject: Test Cases/Utilities/CreateProject
+
+2018-07-23 13:17:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-23 13:17:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-23 13:17:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine' is clicked on
+
+2018-07-23 13:17:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine' is clicked on
+
+2018-07-23 13:17:08 - [TEST_STEP][PASSED] - setText: Text 'ATPOrthoProject' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'
+
+2018-07-23 13:17:08 - [MESSAGE][PASSED] - Text 'ATPOrthoProject' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'
+
+2018-07-23 13:17:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:17:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:17:08 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-23 13:17:08 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsNoRecordsFound' is present
+
+2018-07-23 13:17:08 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsNoRecordsFound' is present
+
+2018-07-23 13:17:08 - [TEST_STEP][PASSED] - Statement - println(ProjectName + " does not exist, we will create it"): null
+
+2018-07-23 13:17:08 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-23 13:17:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-23 13:17:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProjectButton' is clicked on
+
+2018-07-23 13:17:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProjectButton' is clicked on
+
+2018-07-23 13:17:10 - [TEST_STEP][PASSED] - setText: Text 'ATPOrthoProject' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputName'
+
+2018-07-23 13:17:11 - [MESSAGE][PASSED] - Text 'ATPOrthoProject' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputName'
+
+2018-07-23 13:17:11 - [TEST_STEP][PASSED] - setText: Text 'ATPOrthos' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputPrefix'
+
+2018-07-23 13:17:11 - [MESSAGE][PASSED] - Text 'ATPOrthos' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputPrefix'
+
+2018-07-23 13:17:11 - [TEST_STEP][PASSED] - Statement - If (ProductType == "Lidar"): null
+
+2018-07-23 13:17:11 - [TEST_STEP][PASSED] - Statement - Else: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeOrtho' is clicked on
+
+2018-07-23 13:17:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeOrtho' is clicked on
+
+2018-07-23 13:17:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeOrtho' is clicked on
+
+2018-07-23 13:17:11 - [TEST_STEP][PASSED] - setText: Text 'ATP Project for Orthos Loading' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputDescription'
+
+2018-07-23 13:17:11 - [MESSAGE][PASSED] - Text 'ATP Project for Orthos Loading' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectInputDescription'
+
+2018-07-23 13:17:11 - [TEST_STEP][PASSED] - Statement - println("FootprintFile = " + FootprintFile): null
+
+2018-07-23 13:17:11 - [TEST_STEP][PASSED] - Statement - If (FootprintFile != null && FootprintFile.length() > 0): null
+
+2018-07-23 13:17:11 - [TEST_STEP][PASSED] - Statement - Else: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:17:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave' is clicked on
+
+2018-07-23 13:17:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/CreateProject/CreateProjectSave' is clicked on
+
+2018-07-23 13:17:12 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:17:15 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:17:15 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:17:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:17:15 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:17:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:17:15 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-23 13:17:20 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-23 13:17:20 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-23 13:17:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateProject' successfully
+
+2018-07-23 13:17:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/OrthoLoaderButton' is clicked on
+
+2018-07-23 13:17:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/OrthoLoaderButton' is clicked on
+
+2018-07-23 13:17:20 - [TEST_STEP][PASSED] - setText: Text 'gcesp-testing' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderInputBucketName'
+
+2018-07-23 13:17:21 - [MESSAGE][PASSED] - Text 'gcesp-testing' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderInputBucketName'
+
+2018-07-23 13:17:21 - [TEST_STEP][PASSED] - setText: Text 'production/atp/orthos' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderInputS3Prefix'
+
+2018-07-23 13:17:21 - [MESSAGE][PASSED] - Text 'production/atp/orthos' is set on object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderInputS3Prefix'
+
+2018-07-23 13:17:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderSelectATPProject' is clicked on
+
+2018-07-23 13:17:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderSelectATPProject' is clicked on
+
+2018-07-23 13:17:21 - [TEST_STEP][NOT_RUN] - sendKeys: NOT_RUN: sendKeys
+
+2018-07-23 13:17:21 - [MESSAGE][NOT_RUN] - NOT_RUN: sendKeys
+
+2018-07-23 13:17:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderExecute' is clicked on
+
+2018-07-23 13:17:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderExecute' is clicked on
+
+2018-07-23 13:17:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:17:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/OKButton' is clicked on
+
+2018-07-23 13:17:22 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully
+
+2018-07-23 13:17:22 - [TEST_CASE][PASSED] - Test Cases/Utilities/QCAnalystSignOut: Test Cases/Utilities/QCAnalystSignOut
+
+2018-07-23 13:17:22 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-23 13:17:25 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-23 13:17:25 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-23 13:17:25 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-23 13:17:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:17:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:17:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:17:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-23 13:17:26 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-23 13:17:26 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-23 13:17:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-23 13:15:21 - [TEST_SUITE][PASSED] - QC Analyst: Test Cases/OrthoLoader]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

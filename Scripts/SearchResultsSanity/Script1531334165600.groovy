@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
+import com.kms.katalon.core.exception.StepFailedException
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -36,19 +37,24 @@ WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalV
 
 WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+WebUI.waitForPageLoad(5)
+
+WebUI.click(findTestObject('Page_Earth Sensor Portal/canvas'))
+
+def boolean found = null
 
 /* if named Search ATPSearchResultsSanity exists, delete it and recreate it */
-try {
-    WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : 'ATPSearchResultsSanity'], FailureHandling.STOP_ON_FAILURE)
+found = WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : 'ATPSearchResultsSanity'], FailureHandling.STOP_ON_FAILURE)
 
+if (found) {
+	
     println('Named Search ATPSearchResultsSanity does exist, we will delete it and recreate it')
 
     WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearch_DeleteButton'), FailureHandling.OPTIONAL)
 
     WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'), FailureHandling.STOP_ON_FAILURE)
 }
-catch (Exception e) {
+else {
     println('Named Search ATPSearchResultsSanity does not exist, we will create it')
 
     WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearchesCancel_Button'))
@@ -83,6 +89,8 @@ WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/
 'Search Results Sanity Starts Here'
 WebUiBuiltInKeywords.verifyElementText(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsField_Displaying'), 
     'Displaying 486 of 486 Item(s)')
+
+WebUI.verifyElementClickable(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFieldsToggle_button'))
 
 /* make sure the Name and Total Number of Points columns are enabled */
 WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFieldsToggle_button'))
