@@ -20,59 +20,45 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "User"], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser('')
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.navigateToUrl(GlobalVariable.GeoCueCompanySite)
+WebUI.setText(findTestObject('Cesium/CesiumSearchField'), 'Houston, TX')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.click(findTestObject('Cesium/CesiumSearchButton'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+WebUI.click(findTestObject('Catalog/Main/CatalogAOIAsView_Button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/CesiumSearchField'), 'Houston, TX')
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/CesiumSearchButton'))
-
-//zoom time
-Thread.sleep(4000)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
-
-not_run: WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionAirborne_Lidar_Checkbox'))
-
-not_run: WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionOrthoImages_Checkbox'))
+WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
 CustomKeywords.'productSelection.productSelection.SelectProduct'('OrthoImages')
 
 CustomKeywords.'productSelection.productSelection.SelectProduct'('Airborne LIDAR')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
+WebUI.click(findTestObject('Catalog/ProductSelection/ProductSelection_OK'))
 
-Thread.sleep(4000)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button'))
+WebUI.click(findTestObject('Catalog/Main/CatalogAOIImport_Button'))
 
-WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\esp\\test_data\\HoustonBayArea.zip')
+WebUI.sendKeys(findTestObject('Catalog/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\esp\\test_data\\HoustonBayArea.zip')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button'))
+WebUI.click(findTestObject('Catalog/AOI/AOIExecutetheImport_button'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_Grid'), 5)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResults_SelectAll'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_SelectAll'))
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsAddSelectedToCart_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCart_Button'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
 def date = new Date()
 
@@ -82,15 +68,15 @@ String aDate = sdf.format(new Date())
 
 String OName = 'ATPLidarandOrthoOrder-' + aDate
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'), OName)
+WebUI.setText(findTestObject('Catalog/OrderCart/OrderCartOrderName_Field'), OName)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPreviewOrder_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPlaceOrder_Button'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.click(findTestObject('OKButton'))
 
 WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

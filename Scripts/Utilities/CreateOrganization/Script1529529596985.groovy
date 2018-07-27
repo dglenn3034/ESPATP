@@ -19,49 +19,45 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/a_ Organizations'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Organizations/a_ Organizations'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterButton'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Name')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNameFilterLikeBox'), Name)
+WebUI.setText(findTestObject('Grid/LikeFilter'), Name)
 
 try {
-    WebUI.verifyElementText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationNoRecordsText'), 
-        'No Records found.')
+    WebUI.verifyElementPresent(findTestObject('Grid/NoRecordsExist'), 2)
+
     println(Name + 'does not exist, will create')
 }
 catch (Exception e) {
     println(Name + ' already exists skipping creation')
+
     return null
 } 
-
 finally { 
 }
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/AddOrganizationButton'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Organizations/AddOrganizationButton'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationName'), Name)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationName'), Name)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/textarea_description'), 
-    Description)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationDescription'), Description)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeliveryBucket'), 
-    GlobalVariable.GeoCueDeliveryBucket)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationDeliveryBucket'), GlobalVariable.GeoCueDeliveryBucket)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDeliveryPrefix'), 
-    GlobalVariable.GeoCueDeliveryPrefix)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationDeliveryPrefix'), GlobalVariable.GeoCueDeliveryPrefix)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationGroupPulldown'), 
-    Group)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationGroupPulldown'), Group)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationDomainField'), 'airgon.com')
+WebUI.setText(findTestObject('Admin Console/Organizations/OrganizationDomain'), 'airgon.com')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationSaveButton'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Organizations/OrganizationSaveButton'))
 
 'Wait on success message to clear'
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Organizations/OrganizationRefresh_Button'))
+WebUI.click(findTestObject('Admin Console/Organizations/OrganizationRefresh_Button'))
 
-WebUiBuiltInKeywords.delay(2)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 

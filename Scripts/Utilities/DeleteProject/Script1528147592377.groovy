@@ -19,45 +19,46 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button'))
+WebUI.click(findTestObject('QCAnalyst/QCAnalystProjects_Button'))
 
-/* check to see if Name filter field is already open , if so delete it*/
 try {
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterDeleteLine1'))
+    WebUI.verifyElementPresent(findTestObject('QCAnalyst/Projects/ProjectFilterDeleteLine1'), 1)
+
+    WebUI.click(findTestObject('QCAnalyst/Projects/ProjectFilterDeleteLine1'))
 }
 catch (Exception e) {
 } 
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine'))
+WebUI.click(findTestObject('QCAnalyst/Projects/ProjectAddLine'))
 
 /* assuming that the first line added is the Name field... Not good */
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterAttributeName_Dropdown'))
+WebUI.click(findTestObject('QCAnalyst/Projects/ProjectFilterAttributeName_Dropdown'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'), ProjectName)
+WebUI.setText(findTestObject('QCAnalyst/Projects/ProjectFilterProjectName_field'), ProjectName)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.click(findTestObject('OKButton'))
 
 /* 
 'If filter is already set, skip to delete, otherwise create filter'
 try {
-    WebUI.verifyElementVisible(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsDeleteFirstFilterRow_Button'))
+    WebUI.verifyElementVisible(findTestObject('QCAnalyst/Projects/ProjectsDeleteFirstFilterRow_Button'))
 
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+    WebUI.click(findTestObject('OKButton'))
 }
 catch (Exception e) {
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine'))
+    WebUI.click(findTestObject('QCAnalyst/Projects/ProjectAddLine'))
 
-    WebUI.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'), ProjectName)
+    WebUI.setText(findTestObject('QCAnalyst/Projects/ProjectFilterProjectName_field'), ProjectName)
 
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+    WebUI.click(findTestObject('OKButton'))
 } 
 */
 try {
-    WebUI.verifyElementText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/NoRecordsExist'), 'No Records found.')
+    WebUI.verifyElementText(findTestObject('Grid/NoRecordsExist'), 'No Records found.')
 
     println(ProjectName + 'does not exist')
 
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsCloseDialog_Button'))
+    WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsCloseDialog_Button'))
 
     /* dismiss projects grid */
     return null
@@ -70,20 +71,26 @@ finally {
 
 WebUI.delay(2)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsGridRow1DeleteButton'))
+CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Delete')
 
-WebUI.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/input_isDeleteFromCatalog'))
+WebUI.check(findTestObject('QCAnalyst/Projects/input_isDeleteFromCatalog'))
 
-WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/input_isDeleteFromS3Source'))
+WebUiBuiltInKeywords.check(findTestObject('QCAnalyst/Projects/input_isDeleteFromS3Source'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/button_Delete'))
+WebUI.click(findTestObject('QCAnalyst/Projects/button_Delete'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
 WebUiBuiltInKeywords.delay(5)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsCloseDialog_Button'))
+WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsCloseDialog_Button'))
 
-return
+return null
+
+try {
+}
+finally { 
+}
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LogMeIn</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c4fb1f96-345d-46e7-86e2-7358bed02a45</testCaseGuid>
+   <variable>
+      <defaultValue>'Admin'</defaultValue>
+      <description>Company Admin role is default</description>
+      <id>1369e8d8-577f-4cd6-8e16-5643b122eadf</id>
+      <masked>false</masked>
+      <name>Role</name>
+   </variable>
+   <variable>
+      <defaultValue>'GeoCue'</defaultValue>
+      <description>Company name to use in URL</description>
+      <id>c9f01bf6-2acf-4939-bfc0-8442196a30a4</id>
+      <masked>false</masked>
+      <name>Company</name>
+   </variable>
+</TestCaseEntity>

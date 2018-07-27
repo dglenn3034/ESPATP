@@ -19,90 +19,47 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "User", ('Company') : ""], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.openBrowser('')
+WebUiBuiltInKeywords.click(findTestObject('Cesium/canvas'))
 
-WebUI.navigateToUrl(GlobalVariable.site)
+WebUI.click(findTestObject('Catalog/Main/MapDataSource_DropDown'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/MapDataSourceSearch Results_Item'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+WebUI.click(findTestObject('Catalog/Main/CatalogAOIImport_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+WebUI.sendKeys(findTestObject('Catalog/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\esp\\test_data\\miamibeachshapfile.zip')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+WebUI.click(findTestObject('Catalog/AOI/AOIExecutetheImport_button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\esp\\test_data\\miamibeachshapfile.zip')
+WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button'))
+CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8', 'NDVI')
 
-WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
+WebUiBuiltInKeywords.click(findTestObject('Catalog/ProductSelection/ProductSelection_OK'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-'Preview for Landsat'
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox'))
+CustomKeywords.'searchResults.searchResults.SetSearchResultsColumnFirst'('Name')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
-
-WebUiBuiltInKeywords.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_Grid'), 
-    1)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/MapDataSource_DropDown'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/MapDataSourceSearch Results_Item'))
-
-CustomKeywords.'searchResults.searchResults.LikeFilterOnColumn'('Name', 'LC80150422014082LGN00')
+CustomKeywords.'searchResults.searchResults.LikeFilterOnColumn'('Name', 'LC801504')
 
 'Display the preview of this data item in the map'
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRow_Globe'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/SearchResults/SearchResultsFirstRow_Globe'))
 
 'zoom to the item'
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRowZoomToItem_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/SearchResults/SearchResultsFirstRowZoomToItem_Button'))
 
-WebUiBuiltInKeywords.delay(10)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsClose_Button'))
 
 String filelocation = GlobalVariable.ScreenShotFile + '\\miamilidar.png'
-
-'Take a screenshot'
-WebUI.takeScreenshot(filelocation)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsClose_Button'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionNAIPNDVI_CheckBox'))
-
-WebUI.delay(2)
-
-'Turn Lidar Off'
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox'))
-
-WebUI.delay(2)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
-
-WebUiBuiltInKeywords.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_Grid'), 
-    1)
-
-CustomKeywords.'searchResults.searchResults.LikeFilterOnColumn'('Name', 'FL_2508007_se_17_1_20131018')
-
-WebUI.delay(1)
-
-'Display the preview of this data item in the map'
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRow_Globe'))
-
-'zoom to the item'
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFirstRowZoomToItem_Button'))
-
-WebUiBuiltInKeywords.delay(10)
-
-filelocation = (GlobalVariable.ScreenShotFile + '\\miaminaip.png')
 
 'Take a screenshot'
 WebUI.takeScreenshot(filelocation)

@@ -54,13 +54,13 @@ public class attributeFiltering {
 		SetAttributeValue (AttributeValue, IsDate, clsNdx)
 
 		/* OK */
-		WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterOK_Button'))
+		WebUI.click(findTestObject('Catalog/ProductSelection/AttributeFilterOK_Button'))
 	}
 
 	def SetProductFilter (String ProductName) {
 		def String Xp = null
 		def TestObject tmpObject = null
-		def TestObject myObj = findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductFilter')
+		def TestObject myObj = findTestObject('Catalog/ProductSelection/ProductFilter')
 		def String FilterXp = myObj.findPropertyValue('xpath')
 		def Integer clsNdx = 1
 
@@ -68,15 +68,15 @@ public class attributeFiltering {
 		Xp = FilterXp.replace('PRODUCT', ProductName)
 		tmpObject = WebUI.modifyObjectProperty(myObj, 'xpath', 'equals', Xp, true)
 		WebUiBuiltInKeywords.click(tmpObject)
-		
+
 		/* wait on dialog (for some reason) */
-		WebUI.verifyElementClickable(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button'))
-		
+		WebUI.verifyElementClickable(findTestObject('Catalog/ProductSelection/AttributeFilterAddLine_Button'))
+
 		/* add a clause */
-		WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button'))
+		WebUI.click(findTestObject('Catalog/ProductSelection/AttributeFilterAddLine_Button'))
 
 		/* get the number of clauses now added */
-		myObj = findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterNextClause')
+		myObj = findTestObject('Catalog/ProductSelection/AttributeFilterNextClause')
 		FilterXp = myObj.findPropertyValue('xpath')
 		Xp = FilterXp.replace('ROWNDX','1')
 		tmpObject = WebUI.modifyObjectProperty(myObj, 'xpath', 'equals', Xp, true)
@@ -108,7 +108,7 @@ public class attributeFiltering {
 
 
 		/* set the attribute name */
-		myObj = findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAttributeName_Dropdown')
+		myObj = findTestObject('Catalog/ProductSelection/AttributeFilterAttributeName_Dropdown')
 		FilterXp = myObj.findPropertyValue('xpath')
 		Xp = FilterXp.replace('ROWNDX', clsNdx.toString())
 		Xp = Xp.replace('ATTNAME', AttributeName)
@@ -123,7 +123,7 @@ public class attributeFiltering {
 		def String Xp = null
 
 		/* set the operator */
-		myObj = findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterOperator')
+		myObj = findTestObject('Catalog/ProductSelection/AttributeFilterOperator')
 		FilterXp = myObj.findPropertyValue('xpath')
 		Xp = FilterXp.replace('ROWNDX', clsNdx.toString())
 		Xp = Xp.replace('OPERATOR', Operator)
@@ -139,10 +139,10 @@ public class attributeFiltering {
 
 		/* set the value */
 		if (IsDate == true) {
-			myObj = findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterDateValue_Field')
+			myObj = findTestObject('Catalog/ProductSelection/AttributeFilterDateValue_Field')
 		}
 		else {
-			myObj = findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterValue_Field')
+			myObj = findTestObject('Catalog/ProductSelection/AttributeFilterValue_Field')
 		}
 		FilterXp = myObj.findPropertyValue('xpath')
 		Xp = FilterXp.replace('ROWNDX', clsNdx.toString())

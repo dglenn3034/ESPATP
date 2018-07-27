@@ -19,40 +19,30 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "QC Analyst", ('Company') : ""], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'), 5)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPOrthoProject', ('ProductType') : 'Orthos'
         , ('ProjectPrefix') : 'ATPOrthos'], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoaderButton'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/OrthoLoaderButton'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderInputBucketName'), 
-    GlobalVariable.S3SourceOrthoBucket)
+WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderInputBucketName'), GlobalVariable.S3SourceOrthoBucket)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderInputS3Prefix'), 
-    GlobalVariable.S3SourceOrthoPrefix)
+WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderInputS3Prefix'), GlobalVariable.S3SourceOrthoPrefix)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderSelectATPProject'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderSelectATPProject'))
 
-not_run: WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
+not_run: WebUI.sendKeys(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/OrthoLoader/OrthoLoaderExecute'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderExecute'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.click(findTestObject('OKButton'))
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

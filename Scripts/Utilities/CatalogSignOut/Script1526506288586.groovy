@@ -21,9 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.delay(3)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Dropdown'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogUserAccount_Dropdown'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogUserAccount_Signout'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogUserAccount_Signout'))
 
 WebUiBuiltInKeywords.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

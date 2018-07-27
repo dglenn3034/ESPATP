@@ -19,21 +19,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "QC Analyst"], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'), 10)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+'Click here to get Cesium Canvas to disappear'
+WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPProjectWithFootprint', ('FootprintFile') : '\\\\diskstation1\\Data\\esp\\test_data\\HoustonBayArea.zip'
         , ('ProductType') : 'Lidar', ('ProjectPrefix') : 'ATPFoot'], FailureHandling.STOP_ON_FAILURE)

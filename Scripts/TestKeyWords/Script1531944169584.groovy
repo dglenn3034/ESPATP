@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
@@ -28,17 +28,17 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.site)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.setText(findTestObject('Catalog/input_Email'), GlobalVariable.User)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+WebUI.setText(findTestObject('Catalog/input_Password'), GlobalVariable.pwd)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+WebUI.click(findTestObject('Catalog/Signin_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+WebUI.click(findTestObject('Catalog/Canvas'))
 
-WebUI.verifyElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
+WebUI.verifyElementClickable(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
 not_run: CustomKeywords.'productSelection.productSelection.SelectProduct'('OrthoImages')
 

@@ -21,11 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.delay(3)
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown'), 10)
+WebUI.waitForElementClickable(findTestObject('QCAnalyst/QCAnalystUserAccount_Dropdown'), 10)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/QCAnalystUserAccount_Dropdown'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystUserAccount_Dropdown'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/QCAnalystUserAccount_Dropdown'))
 
 WebUiBuiltInKeywords.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>DEV</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>User name for ESP Staging</description>
+      <initValue>'dummy.com'</initValue>
+      <name>User</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ESP StagingUser Password</description>
+      <initValue>'dummy'</initValue>
+      <name>pwd</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ESP Geocue DEV Site</description>
+      <initValue>'http://dev.localhost:38251'</initValue>
+      <name>site</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>GeoCue QC site ESP Staging</description>
+      <initValue>'http://dev.localhost:38251/qc'</initValue>
+      <name>QCSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Users\\myname\\AppData\\Local\\Temp'</initValue>
+      <name>ScreenShotFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>ESP Account Geocue Company</description>
+      <initValue>'http://dev.localhost:38251'</initValue>
+      <name>GeoCueCompanySite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Lidar site SWFWMD</description>
+      <initValue>'http://dev.localhost:38251'</initValue>
+      <name>LidarSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Admin Site Geocue</description>
+      <initValue>'http://dev.localhost:38251/admin'</initValue>
+      <name>AdminSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-testing'</initValue>
+      <name>S3SourceLidarBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Staging/atp/lidar'</initValue>
+      <name>S3SourceLidarPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-testing'</initValue>
+      <name>S3SourceOrthoBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Staging/atp/orthos'</initValue>
+      <name>S3SourceOrthoPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-geocue-orders'</initValue>
+      <name>GeoCueDeliveryBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ATPOrders'</initValue>
+      <name>GeoCueDeliveryPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1</initValue>
+      <name>SRSRowNdx</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Houston, TX'</initValue>
+      <name>LidarLocation</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

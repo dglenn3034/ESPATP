@@ -20,45 +20,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser('')
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.navigateToUrl(GlobalVariable.LidarSite)
+WebUI.setText(findTestObject('Cesium/CesiumSearchField'), GlobalVariable.LidarLocation)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.click(findTestObject('Cesium/CesiumSearchButton'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+WebUI.click(findTestObject('Catalog/Main/CatalogAOIAsView_Button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/CesiumSearchField'), 'williston, fl')
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/CesiumSearchButton'))
-
-//zoom time
-Thread.sleep(4000)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
-
-not_run: WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionAirborne_Lidar_Checkbox'))
+WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
 CustomKeywords.'productSelection.productSelection.SelectProduct'('Airborne LIDAR')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
+WebUI.click(findTestObject('Catalog/ProductSelection/ProductSelection_OK'))
 
-Thread.sleep(4000)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_SelectAll'))
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResults_SelectAll'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button'))
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsAddSelectedToCart_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCart_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
 def date = new Date()
 
@@ -68,39 +58,39 @@ String aDate = sdf.format(new Date())
 
 String OName = 'ATPLIdarPostProcessing-' + aDate
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'), OName)
+WebUI.setText(findTestObject('Catalog/OrderCart/OrderCartOrderName_Field'), OName)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_Add'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/PostProcessing_button_Add'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/ClipToAOI_Checkbox'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/ClipToAOI_Checkbox'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_OK'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/PostProcessing_button_OK'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_Remove'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/PostProcessing_button_Remove'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_Add'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/PostProcessing_button_Add'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/ClipToAOI_Checkbox'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/ClipToAOI_Checkbox'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/HillshadeImage_CheckBox'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/HillshadeImage_CheckBox'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/IntensityImage_checkbox'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/IntensityImage_checkbox'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/SlopeImage_checkbox'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/SlopeImage_checkbox'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/LidarImagePixelSize_field'), '4')
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/PostProcessingLidar/PostProcessing_button_OK'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button'))
+WebUI.setText(findTestObject('Catalog/PostProcessingLidar/LidarImagePixelSize_field'), '4')
 
 WebUI.delay(3)
 
-not_run: WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/PostProcessing_button_OK'))
 
-not_run: WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPreviewOrder_Button'))
+
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPlaceOrder_Button'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('OKButton'))
+
+WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

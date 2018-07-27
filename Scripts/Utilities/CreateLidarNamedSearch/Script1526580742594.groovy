@@ -19,36 +19,28 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
+WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
-WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionAirborne_Lidar_Checkbox'))
+CustomKeywords.'productSelection.productSelection.SelectProduct'('Airborne LIDAR')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionAirborneLidar_Filter_button'))
+CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Airborne LIDAR', 'Like', 'Name', 'DavCo_A', 
+    false)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAddLine_Button'))
+WebUI.click(findTestObject('Catalog/ProductSelection/ProductSelection_OK', [('variable') : '']))
 
-WebUI.selectOptionByLabel(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterAttributeName_Dropdown'), 
-    'Name', false, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Catalog/Main/CatalogAOIImport_Button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/ProductSelection/AttributeFilterValue_Field'), 'DavCo_BH')
+WebUI.sendKeys(findTestObject('Catalog/AOI/AOIFIlePath_Field'), 'Z:\\ESP\\Test_data\\Davidson_County_Digitized.zip')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.click(findTestObject('Catalog/AOI/AOIExecutetheImport_button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK', [('variable') : '']))
+WebUI.waitForElementVisible(findTestObject('Catalog/SearchResults/SearchResults_Grid'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button'))
+WebUI.waitForElementClickable(findTestObject('Catalog/Main/CatalogSaveNamedSearch_Button'), 2)
 
-WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'), 'Z:\\ESP\\Test_data\\Davidson_County_Digitized.zip')
+WebUI.click(findTestObject('Catalog/Main/CatalogSaveNamedSearch_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button'))
+WebUI.setText(findTestObject('Catalog/NamedSearch/NamedSearchSaveName_Field'), NamedSearch)
 
-WebUI.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_Grid'), 0)
-
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogSaveNamedSearch_Button'), 2)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogSaveNamedSearch_Button'))
-
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearchSaveName_Field'), NamedSearch)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/SaveNamedSearchSave_Button'))
+WebUI.click(findTestObject('Catalog/NamedSearch/SaveNamedSearchSave_Button'))
 

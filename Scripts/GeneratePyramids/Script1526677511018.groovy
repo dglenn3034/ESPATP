@@ -19,74 +19,69 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+WebUI.click(findTestObject('Cesium/canvas'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+WebUI.click(findTestObject('QCAnalyst/QCAnalystProjects_Button'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'), 5)
+WebUI.click(findTestObject('QCAnalyst/Projects/ProjectAddLine'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+WebUI.setText(findTestObject('QCAnalyst/Projects/ProjectFilterProjectName_field'), 'Davidson')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button'))
+WebUI.click(findTestObject('OKButton'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine'))
+CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Open')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'), 'Davidson')
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
-
-WebUI.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsOpenFirstItem'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsCountLabel'), 5)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 try {
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge'))
+    WebUI.click(findTestObject('QCAnalyst/WorkingSet/WorkingSetCountBadge'))
 
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetClearSet_Button'))
+    WebUI.click(findTestObject('QCAnalyst/WorkingSet/WorkingSetClearSet_Button'))
 
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetDismiss_Button'))
+    WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
+    WebUI.click(findTestObject('QCAnalyst/WorkingSet/WorkingSetDismiss_Button'))
 }
 catch (Exception e) {
     /* do nothing if working set is empty */
     println('working set is empty to start with')
 } 
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsNameFilter_Button'))
+CustomKeywords.'genericGrid.gridOperations.SetGridFirstColumn'('Name')
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsNameLike_Field'), 
-    'DavCo_AA')
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Name')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsSelectAll'))
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'DavCo_AA')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsAddtoWorkingSet'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/ProjectItems/ProjectItemsSelectAll'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge'), 3)
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/ProjectItems/ProjectItemsAddtoWorkingSet'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSetCountBadge'))
+WebUI.waitForElementVisible(findTestObject('QCAnalyst/WorkingSet/WorkingSetCountBadge'), 3)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetSelectProcess'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/WorkingSet/WorkingSetCountBadge'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetGeneratePyramidsRadio'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/WorkingSet/WorkingSetSelectProcess'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/WorkingSetExecuteProcess'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/WorkingSet/WorkingSetGeneratePyramidsRadio'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/WorkingSet/WorkingSetExecuteProcess'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/ReadyToExecuteOKButton'), 5)
+WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/WorkingSet/ReadyToExecuteOKButton'))
+WebUI.waitForElementClickable(findTestObject('QCAnalyst/WorkingSet/ReadyToExecuteOKButton'), 5)
 
-WebUI.delay(2)
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/WorkingSet/ReadyToExecuteOKButton'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
+WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -20,65 +20,49 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-myColumnSortObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort')
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
 
-ColumnSortXp = myColumnSortObject.findPropertyValue('xpath')
+WebUI.setText(findTestObject('Cesium/CesiumSearchField'), 'Houston')
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.openBrowser('')
+WebUI.click(findTestObject('Cesium/CesiumSearchButton'))
 
-WebUI.navigateToUrl(GlobalVariable.GeoCueCompanySite)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.click(findTestObject('Catalog/Main/CatalogAOIAsView_Button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/CesiumSearchField'), 'Houston')
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/CesiumSearchButton'))
-
-//zoom time
-Thread.sleep(4000)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8', 'NDVI')
 
-not_run: WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductselectionLandsat8NDVI_Checkbox'))
-
 CustomKeywords.'productSelection.productSelection.SelectProduct'('OrthoImages')
 
-not_run: WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionOrthoImages_Checkbox'))
+WebUI.click(findTestObject('Catalog/ProductSelection/ProductSelection_OK'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-Thread.sleep(4000)
+CustomKeywords.'searchResults.searchResults.SetSearchResultsColumnFirst'('Product Name')
 
-Xp = ColumnSortXp.replace('Column', 'Name')
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
 
-println('Column Sort Xp = ' + Xp)
+CustomKeywords.'searchResults.searchResults.sortByName'('Product Name')
 
-tmpObject = WebUI.modifyObjectProperty(myColumnSortObject, 'xpath', 'equals', Xp, true)
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResults_SelectFirstRow'))
 
-WebUiBuiltInKeywords.click(tmpObject)
+CustomKeywords.'searchResults.searchResults.sortByName'('Product Name')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow'))
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResults_SelectFirstRow'))
 
-WebUiBuiltInKeywords.click(tmpObject)
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsAddSelectedToCart_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow'))
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsDismissButton'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCart_Button'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
 def date = new Date()
 
@@ -88,15 +72,15 @@ String aDate = sdf.format(new Date())
 
 String OName = 'ATPLSandOrthoOrder-' + aDate
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'), OName)
+WebUI.setText(findTestObject('Catalog/OrderCart/OrderCartOrderName_Field'), OName)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPreviewOrder_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPlaceOrder_Button'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.click(findTestObject('OKButton'))
 
 WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

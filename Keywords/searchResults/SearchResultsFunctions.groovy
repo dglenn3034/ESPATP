@@ -32,7 +32,7 @@ public class searchResults {
 	@Keyword
 	def sortByName (String columnName) {
 		println ('Sorting on ' + columnName)
-		def TestObject myColumnSortObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnSort')
+		def TestObject myColumnSortObject = findTestObject('Catalog/SearchResults/CoveredAreasTab/ColumnSort')
 		def String ColumnSortXp = myColumnSortObject.findPropertyValue('xpath')
 		println('ColumnSortXp = ' + ColumnSortXp)
 		def String Xp = ColumnSortXp.replace('Column', columnName)
@@ -45,14 +45,14 @@ public class searchResults {
 	def LikeFilterOnColumn (String columnName, String nameValue) {
 		println ('Filtering on ' + columnName + ' for ' + nameValue)
 
-		def TestObject myColumnFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnFilter')
+		def TestObject myColumnFilterObject = findTestObject('Catalog/SearchResults/CoveredAreasTab/ColumnFilter')
 		def String ColumnFilterXp = myColumnFilterObject.findPropertyValue('xpath')
 		def String Xp = ColumnFilterXp.replace('Column', columnName)
 		println('Modified Column Filter Xp = ' + Xp)
 		def TestObject tmpObject = WebUI.modifyObjectProperty(myColumnFilterObject, 'xpath', 'equals', Xp, true)
 		WebUiBuiltInKeywords.click(tmpObject)
 
-		def TestObject myLikeFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/LikeFilter')
+		def TestObject myLikeFilterObject = findTestObject('Grid/LikeFilter')
 		def String LikeFilterXp = myLikeFilterObject.findPropertyValue('xpath')
 
 		Xp = LikeFilterXp.replace('Column', columnName)
@@ -65,47 +65,48 @@ public class searchResults {
 	def NumericFilterOnColumn (String columnName, String GTValue, String LTValue) {
 		println ('Filtering on ' + columnName + ' [' + GTValue + ',' + LTValue + ']')
 
-		def TestObject myColumnFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnFilter')
+		def TestObject myColumnFilterObject = findTestObject('Catalog/SearchResults/CoveredAreasTab/ColumnFilter')
 		def String ColumnFilterXp = myColumnFilterObject.findPropertyValue('xpath')
 		def String Xp = ColumnFilterXp.replace('Column', columnName)
 		println('Modified Column Filter Xp = ' + Xp)
 		def TestObject tmpObject = WebUI.modifyObjectProperty(myColumnFilterObject, 'xpath', 'equals', Xp, true)
 		WebUiBuiltInKeywords.click(tmpObject)
 
-		def TestObject myNumericFilterObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/NumericFilter')
+		def TestObject myNumericFilterObject = findTestObject('Catalog/SearchResults/CoveredAreasTab/NumericFilter')
 		def String NumericFilterXp = myNumericFilterObject.findPropertyValue('xpath')
-		Xp = NumericFilterXp.replace('Column', columnName)
+
+		Xp = NumericFilterXp.replace('OPERATOR', '≥ ')
 		println('Modified Column Filter Xp = ' + Xp)
-		Xp = Xp.replace('#', '1')
-		println('Numeric Xp[1] = ' + Xp)
 		tmpObject = WebUI.modifyObjectProperty(myNumericFilterObject, 'xpath', 'equals', Xp, true)
 		WebUiBuiltInKeywords.setText(tmpObject, GTValue)
-		Xp = Xp.replace('[1]', '[2]')
-		println('Numeric Xp[2] = ' + Xp)
+
+		Xp = NumericFilterXp.replace('OPERATOR', '≤ ')
+		println('Modified Column Filter Xp = ' + Xp)
 		tmpObject = WebUI.modifyObjectProperty(myNumericFilterObject, 'xpath', 'equals', Xp, true)
 		WebUiBuiltInKeywords.setText(tmpObject, LTValue)
 	}
 
 	@Keyword
-	def VerifyValueInGrid (String columnName, Integer rowIndex, String aValue) {
+	def VerifyValueInGrid (Integer colNdx, Integer rowIndex, String aValue) {
 
-		println ('Verifying that row ' + rowIndex.toString() + ' for column ' + columnName + ' has value = ' + aValue)
+		println ('Verifying that row ' + rowIndex.toString() + ' for column ' + colNdx.toString() + ' has value = ' + aValue)
 
-		/* make sure the column is present */
-		WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsFieldsToggle_button'))
+		/* make sure the column is present 
+		 WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
+		 */
 
-		/* 'check' the column */
-		/* 		def Integer colIndex = WebUI.callTestCase(findTestCase('Utilities/GetColumnIndex'), [('ColumnName') : columnName], FailureHandling.STOP_ON_FAILURE) */
-		def Integer colIndex = GetSetColumn (columnName)
-		println ('Index for column = ' + colIndex)
+		/* 'check' the column 
+		 def Integer colIndex = GetSetColumn (columnName)
+		 println ('Index for column = ' + colIndex)
+		 */
 
-		colIndex = colIndex + 2 /* bump over to skip first two columns of icons */
+		/* colIndex = colIndex + 2 bump over to skip first two columns of icons */
 
 		/* validate the value is in the field specified */
-		def TestObject myValueObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/GridValue')
+		def TestObject myValueObject = findTestObject('Catalog/SearchResults/CoveredAreasTab/GridValue')
 		def String ValXp = myValueObject.findPropertyValue('xpath')
 
-		def String Xp = ValXp.replace('COLNDX', colIndex.toString())
+		def String Xp = ValXp.replace('COLNDX', colNdx.toString())
 		Xp = Xp.replace('ROWNDX', rowIndex.toString())
 		println('Value Xp = ' + Xp)
 		def TestObject tmpValObject = WebUI.modifyObjectProperty(myValueObject, 'xpath', 'equals', Xp, true)
@@ -118,10 +119,10 @@ public class searchResults {
 		println ('Searching for index for ' + columnName)
 
 
-		def TestObject myCheckBoxObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckbox')
+		def TestObject myCheckBoxObject = findTestObject('Catalog/SearchResults/CoveredAreasTab/ColumnCheckbox')
 		def String ChkBoxXp = myCheckBoxObject.findPropertyValue('xpath')
 
-		def TestObject myCheckBoxLabelObject = findTestObject('Page_Earth Sensor Portal/SearchResults/CoveredAreasTab/ColumnCheckboxLabel')
+		def TestObject myCheckBoxLabelObject = findTestObject('Catalog/SearchResults/CoveredAreasTab/ColumnCheckboxLabel')
 		def String ChkBoxLabelXp = myCheckBoxLabelObject.findPropertyValue('xpath')
 
 		def Integer checkedCount = 0
@@ -129,6 +130,8 @@ public class searchResults {
 		def Integer colNdx = 0
 		def String sndx, Xp
 
+		WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
+		
 		/* arbitrary stop point of 10 for ndx */
 		while (colNdx < 1 && ndx < 10) {
 
@@ -160,10 +163,60 @@ public class searchResults {
 			ndx = ndx + 1
 		}
 
+		WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
+
 		if (ndx == 10) {
 			throw new com.kms.katalon.core.exception.StepFailedException('Failed to find column name = ' + columnName)
 		}
 
 		return colNdx
+	}
+	@Keyword
+	def SetSearchResultsColumnFirst (String columnName) {
+		println ('Setting SR Grid to one column' + columnName)
+		def TestObject myCheckBoxObject = findTestObject('Catalog/SearchResults/CoveredAreasTab/ColumnCheckbox')
+		def String ChkBoxXp = myCheckBoxObject.findPropertyValue('xpath')
+
+		def TestObject myCheckBoxLabelObject = findTestObject('Catalog/SearchResults/CoveredAreasTab/ColumnCheckboxLabel')
+		def String ChkBoxLabelXp = myCheckBoxLabelObject.findPropertyValue('xpath')
+
+		def Integer checkedCount = 0
+		def Integer ndx = 1
+		def String sndx, Xp
+		def boolean found = false
+
+		WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
+
+		/* arbitrary stop point of 20 for ndx */
+		while (ndx < 20 && found == false) {
+			sndx = ndx.toString()
+			Xp = ChkBoxLabelXp.replace('NDX', sndx)
+			println ('Xpath for next Check Box Label = ' + Xp)
+			def TestObject myObjLabel = WebUI.modifyObjectProperty(myCheckBoxLabelObject, 'xpath', 'equals', Xp, true)
+
+			Xp = ChkBoxXp.replace('NDX', sndx)
+			def TestObject myObjBox = WebUI.modifyObjectProperty(myCheckBoxObject, 'xpath', 'equals', Xp, true)
+
+			def String cName = WebUI.getText(myObjLabel)
+			println ('retrieved text for column ' + sndx + ' = ' + cName)
+
+			if (cName == columnName) {
+
+				/* check the box */
+				WebUiBuiltInKeywords.check(myObjBox)
+				found = true
+			}
+			else {
+				WebUiBuiltInKeywords.uncheck(myObjBox)
+			}
+			ndx = ndx + 1
+		}
+
+		WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
+
+		if (ndx == 20) {
+			throw new com.kms.katalon.core.exception.StepFailedException('Failed to find column name = ' + columnName)
+		}
+		return ndx
 	}
 }

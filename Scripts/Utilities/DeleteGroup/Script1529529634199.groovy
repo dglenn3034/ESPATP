@@ -19,19 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/a_ Groups'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Groups/a_ Groups'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilter_Button'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Name')
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilterLikeBox'), Name)
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), Name)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupDeleteRow1_Button'))
+CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Delete')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
-
-WebUiBuiltInKeywords.delay(2)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupsRefresh_Button'))
+WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
 WebUiBuiltInKeywords.delay(2)
+
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Groups/GroupsRefresh_Button'))
+
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 

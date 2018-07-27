@@ -20,41 +20,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd', ('Role') : 'System Admin'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd', ('Role') : 'System Admin'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "Company Admin"], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.AdminSite)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Users'), 1)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Groups'), 1)
 
-WebUiBuiltInKeywords.waitForPageLoad(2)
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Organizations'), 1)
 
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/div_Users'), 1)
-
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/div_Groups'), 1)
-
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/div_Organizations'), 1)
-
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/div_Access Restriction'), 
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Access Restriction'), 
     1)
 
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/div_Basemaps'), 1)
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Basemaps'), 1)
 
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/div_Reports'), 1)
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Reports'), 1)
 
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/a_ System Information'), 
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/a_ System Information'), 
     1)
 
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/a_ActivityLog'), 1)
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/a_ActivityLog'), 1)
 
 WebUI.callTestCase(findTestCase('Utilities/AdminConsoleSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

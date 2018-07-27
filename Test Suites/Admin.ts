@@ -19,18 +19,6 @@ Assumes the user had Company Admin access</description>
       <testCaseId>Test Cases/AdminGUISanity</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8fd783bc-e149-4568-8333-8b69fb79c125</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/AddATPOrganization</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9edb9047-0b40-4ced-8d1a-fe3f695ff326</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/DeleteATPOrganization</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>0cf29bd8-6fe5-49d5-9e88-48bd0643626f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

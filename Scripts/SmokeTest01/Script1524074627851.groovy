@@ -21,96 +21,82 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser('')
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Cesium/canvas'))
 
-WebUI.navigateToUrl(GlobalVariable.site)
+found = WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : 'SmokeTest01'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+if (found == true) {
+    println('Named Search is found, deleting it...')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+    WebUI.click(findTestObject('Catalog/NamedSearch/NamedSearch_DeleteButton'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+    WebUI.click(findTestObject('OKButton'))
+} else {
+    println(' No such named Search')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
-
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogNamedSearch_Button'), 3)
-
-try {
-    WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : 'SmokeTest01'], FailureHandling.STOP_ON_FAILURE)
-
-    println('Named Search SmokeTest01 does exist, we will delete it and recreate it')
-
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearch_DeleteButton'), FailureHandling.OPTIONAL)
-
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('Catalog/NamedSearch/NamedSearchesCancel_Button'))
 }
-catch (Exception e) {
-    println('Named Search SmokeTest01 does not exist, we will create it')
 
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearchesCancel_Button'))
-} 
-
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'), 3)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
+WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
 CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8', 'NDVI')
 
 CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('Landsat8', '>=', 'Date Acquired', '06/01/2017', 
     true)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK', [('variable') : '']))
+WebUI.click(findTestObject('Catalog/ProductSelection/ProductSelection_OK', [('variable') : '']))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIImport_Button'))
+WebUI.click(findTestObject('Catalog/Main/CatalogAOIImport_Button'))
 
-WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\Rob_MUSES\\Shapefile_test_datasets\\rob_coloradio.shp_file_lp360.zip')
+WebUI.sendKeys(findTestObject('Catalog/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\Rob_MUSES\\Shapefile_test_datasets\\rob_coloradio.shp_file_lp360.zip')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/AOI/AOIExecutetheImport_button'))
+WebUI.click(findTestObject('Catalog/AOI/AOIExecutetheImport_button'))
 
-WebUI.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_Grid'), 0)
+WebUI.waitForElementVisible(findTestObject('Catalog/SearchResults/SearchResults_Grid'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramShowHideFilters_button'))
+WebUI.click(findTestObject('Catalog/Histograms/HistogramShowHideFilters_button'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramFiltersList_Button'), 0)
+WebUI.waitForElementClickable(findTestObject('Catalog/Histograms/HistogramFiltersList_Button'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramFiltersList_Button'))
+WebUI.click(findTestObject('Catalog/Histograms/HistogramFiltersList_Button'))
 
-WebUI.check(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramCloudCoverageFull_CheckBox'))
+WebUI.check(findTestObject('Catalog/Histograms/HistogramCloudCoverageFull_CheckBox'))
 
-WebUI.check(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramSunElevation_CheckBox'))
+WebUI.check(findTestObject('Catalog/Histograms/HistogramSunElevation_CheckBox'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.click(findTestObject('OKButton'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramSunElevation_button'))
+WebUI.click(findTestObject('Catalog/Histograms/HistogramSunElevation_button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramOpenFilterFirstValue_input'), '60')
+WebUI.setText(findTestObject('Catalog/Histograms/HistogramOpenFilterFirstValue_input'), '60')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/Histograms/HistogramOpenFilterSecondvalue_Field'), '70')
+WebUI.setText(findTestObject('Catalog/Histograms/HistogramOpenFilterSecondvalue_Field'), '70')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.click(findTestObject('OKButton'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogSaveNamedSearch_Button'), 2)
+WebUI.waitForElementClickable(findTestObject('Catalog/Main/CatalogSaveNamedSearch_Button'), 2)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogSaveNamedSearch_Button'))
+WebUI.click(findTestObject('Catalog/Main/CatalogSaveNamedSearch_Button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/NamedSearch/NamedSearchSaveName_Field'), 'SmokeTest01')
+WebUI.setText(findTestObject('Catalog/NamedSearch/NamedSearchSaveName_Field'), 'SmokeTest01')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/NamedSearch/SaveNamedSearchSave_Button'))
+WebUI.click(findTestObject('Catalog/NamedSearch/SaveNamedSearchSave_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button'))
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResults_SelectFirstRow'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCart_Button'))
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsAddSelectedToCart_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
+
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
 def date = new Date()
 
@@ -120,17 +106,17 @@ String aDate = sdf.format(new Date())
 
 String OName = 'ATPSmokeTestOrder' + aDate
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'), OName)
+WebUI.setText(findTestObject('Catalog/OrderCart/OrderCartOrderName_Field'), OName)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartOrderDescription_Field'), OName)
+WebUI.setText(findTestObject('Catalog/OrderCart/OrderCartOrderDescription_Field'), OName)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPreviewOrder_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPlaceOrder_Button'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.click(findTestObject('OKButton'))
 
 WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

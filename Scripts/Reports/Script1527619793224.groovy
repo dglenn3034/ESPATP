@@ -19,61 +19,65 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'Company Admin', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.AdminSite)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
-
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 5)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsViewDetails'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsViewDetails'))
 
 'GeoCue Organization in GeoCue company'
-WebUiBuiltInKeywords.selectOptionByValue(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsOrderReportOrganization'), 
-    '70CDF0F3358140198A4A473F1B915CCF', false)
+WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Admin Console/Reports/ReportsOrderReportOrganization'), 'Geocue', 
+    false)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsDatePickEnd'), '04/01/2018')
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePickStart'), '04/01/2018')
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsDatePickStart'), '06/01/2018')
+'To clear date picker box'
+WebUI.click(findTestObject('Admin Console/Reports/OrderReportHeader'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsOrderReportPreview'))
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePickEnd'), '06/01/2018')
 
-WebUiBuiltInKeywords.delay(5)
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsOrderReportPreview'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsDismissOrderPreview'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsOrderReportEmail'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsDismissOrderPreview'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsOKButton'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsOrderReportEmail'))
 
-WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 5)
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsOKButton'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/a_Users'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
+'Wait on Report submitted message to clear'
+WebUI.delay(5)
+
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/a_Users'))
+
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Admin Console/Reports/UserReportHeader'))
 
 'GeoCue Organization in GeoCue company'
-WebUiBuiltInKeywords.selectOptionByValue(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsUserReportOrganization'), 
-    '70CDF0F3358140198A4A473F1B915CCF', false)
+WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Admin Console/Reports/ReportsUserReportOrganization'), 'Geocue', 
+    false)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsUserReportPreview'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsUserReportPreview'))
 
-WebUiBuiltInKeywords.delay(5)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsDismissOrderPreview'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsDismissOrderPreview'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsUserReportsEmail'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsUserReportsEmail'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Reports/ReportsOKButton'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsOKButton'))
 
-WebUiBuiltInKeywords.delay(5)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
+WebUI.delay(3)
 
 WebUI.callTestCase(findTestCase('Utilities/AdminConsoleSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

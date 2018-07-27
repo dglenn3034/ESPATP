@@ -20,49 +20,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "User"], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser('')
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.navigateToUrl(GlobalVariable.site)
+WebUiBuiltInKeywords.click(findTestObject('Catalog/Canvas'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.setText(findTestObject('Cesium/CesiumSearchField'), 'France')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
-
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/CesiumSearchField'), 'France')
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/CesiumSearchButton'))
+WebUI.click(findTestObject('Cesium/CesiumSearchButton'))
 
 WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogAOIAsView_Button'))
+WebUI.click(findTestObject('Catalog/Main/CatalogAOIAsView_Button'))
 
 WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogProducts_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
 CustomKeywords.'productSelection.productSelection.SelectChildProduct'('DESIS-30', 'L2A')
 
-not_run: WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionDESIS-L2A_Checkbox'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/ProductSelection/ProductSelection_OK'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelection_OK'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUiBuiltInKeywords.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_Grid'), 
-    1)
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResults_SelectFirstRow'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResults_SelectFirstRow'))
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsAddSelectedToCart_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/SearchResults/SearchResultsAddSelectedToCart_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCart_Button'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
 def date = new Date()
 
@@ -72,15 +60,15 @@ String aDate = sdf.format(new Date())
 
 String OName = 'ATPDESISCatalogOrder-' + aDate
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'), OName)
+WebUiBuiltInKeywords.setText(findTestObject('Catalog/OrderCart/OrderCartOrderName_Field'), OName)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPreviewOrder_Button'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderCart/OrderCartPlaceOrder_Button'))
 
 WebUiBuiltInKeywords.delay(2)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
 WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -19,33 +19,28 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+'Click here to get Cesium Help to disappear'
+WebUI.click(findTestObject('Cesium/canvas'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+WebUI.click(findTestObject('QCAnalyst/QCAnalystProjects_Button'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'), 5)
+WebUI.click(findTestObject('QCAnalyst/Projects/ProjectAddLine'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+WebUI.click(findTestObject('QCAnalyst/Projects/ProjectFilterAttributeName_Dropdown'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/QCAnalystProjects_Button'))
+WebUI.setText(findTestObject('QCAnalyst/Projects/ProjectFilterProjectName_field'), 'Davidson')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectAddLine'))
+WebUI.click(findTestObject('OKButton'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectFilterProjectName_field'), 'Davidson')
+CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Open')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
-
-WebUI.check(findTestObject('Page_Earth Sensor Portal/QCAnalyst/Projects/ProjectsOpenFirstItem'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/ProjectItems/ProjectItemsCountLabel'), 'Displaying 1072 of 1072 Item(s)')
+WebUI.verifyElementText(findTestObject('Grid/DisplayCount'), 'Displaying 1072 of 1072 Item(s)')
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

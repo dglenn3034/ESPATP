@@ -19,27 +19,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/SystemInfoTableContainer'))
+WebUI.click(findTestObject('Admin Console/SystemInformation/SystemInfoTableContainer'))
 
-ordername = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/NameofOrderInRowone_Field'))
+ordername = WebUI.getText(findTestObject('Admin Console/SystemInformation/NameofOrderInRowone_Field'))
 
 
 
 'Delete Order Button'
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/RowDelete_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/SystemInformation/RowDelete_Button'))
 
-WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/DeleteFromBucket_CheckBox'))
+WebUiBuiltInKeywords.check(findTestObject('Admin Console/SystemInformation/DeleteFromBucket_CheckBox'))
 
-WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/SubtractFromQuota_CheckBox'))
+WebUiBuiltInKeywords.check(findTestObject('Admin Console/SystemInformation/SubtractFromQuota_CheckBox'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/DeleteOrderContinue_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/SystemInformation/DeleteOrderContinue_Button'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/input_orderName'), 
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/SystemInformation/input_orderName'), 
     ordername)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/button_Confirm'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/SystemInformation/button_Confirm'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
 println('Deleted ' + ordername)
 

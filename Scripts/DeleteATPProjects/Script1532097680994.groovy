@@ -19,22 +19,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "System Admin"], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'), 10)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : 'ATPLidarProject'], FailureHandling.STOP_ON_FAILURE)
 
@@ -44,7 +35,7 @@ WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : '
 
 WebUI.delay(5)
 
-WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : "ATPProjectWithFootprint"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : 'ATPProjectWithFootprint'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

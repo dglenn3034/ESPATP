@@ -20,54 +20,39 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser('')
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Cesium/canvas'))
 
-WebUI.navigateToUrl(GlobalVariable.site)
+WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogOrderHistory_button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+CustomKeywords.'genericGrid.gridOperations.SetGridJustOneColumn'('Order Name')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Status')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Order Name')
 
-WebUiBuiltInKeywords.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button'), 
-    0)
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'ATPLS')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Status')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/ToggleColumnsButton'))
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'SUCCESS')
 
-WebUI.uncheck(findTestObject('Page_Earth Sensor Portal/OrderHistory/ToggleCheckBox_dateSubmitted'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_OrderNameFilter'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderHistory/OrderHistoryAddtoCartButton'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderHistory/OrderHistory_XButton'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox'), 'ATPLS')
+WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_StatusFIlter'))
+CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Remove')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/Status_LikeBox'))
-
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/OrderHistory/Status_LikeBox'), 'SUCCESS')
-
-WebUiBuiltInKeywords.delay(3)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistoryAddtoCartButton'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_XButton'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCart_Button'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartRemoveFromCart'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartCheckout_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
 def date = new Date()
 
@@ -77,17 +62,17 @@ String aDate = sdf.format(new Date())
 
 String OName = 'ATPOrderCartReOrderTest-' + aDate
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartOrderName_Field'), OName)
+WebUI.setText(findTestObject('Catalog/OrderCart/OrderCartOrderName_Field'), OName)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPreviewOrder_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPreviewOrder_Button'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderCart/OrderCartPlaceOrder_Button'))
+WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPlaceOrder_Button'))
 
 WebUiBuiltInKeywords.delay(3)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUI.click(findTestObject('OKButton'))
 
 WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -19,63 +19,46 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'System Admin'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.AdminSite)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/a_ System Information'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUiBuiltInKeywords.waitForPageLoad(10)
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Order Name')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/a_ System Information'))
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'ATP')
 
-WebUiBuiltInKeywords.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/RowDelete_Button'), 
-    20)
+'Added to allow first Like box to be removed'
+WebUI.delay(2)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/OrderNameFIlter_Button'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Company Name')
 
-WebUI.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/OrderNameFIlter_LikeField'), 
-    3)
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'GeoCue')
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/OrderNameFIlter_LikeField'), 
-    'ATP')
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Status')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/CompanyNameFilter_Button'))
+WebUI.waitForElementClickable(findTestObject('Admin Console/SystemInformation/Status_CREATEDCheckbox'), 3)
 
-WebUiBuiltInKeywords.waitForElementVisible(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/CompanyNameFilter_LikeField'), 
-    3)
+WebUI.uncheck(findTestObject('Admin Console/SystemInformation/Status_CREATEDCheckbox'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/CompanyNameFilter_LikeField'), 
-    'GeoCue')
+WebUiBuiltInKeywords.uncheck(findTestObject('Admin Console/SystemInformation/Status_STARTEDCheckbox'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/OrderStatusFilter_Button'))
+WebUiBuiltInKeywords.uncheck(findTestObject('Admin Console/SystemInformation/Status_SUBMITTEDCheckbox'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_CREATEDCheckbox'), 
-    3)
+WebUiBuiltInKeywords.uncheck(findTestObject('Admin Console/SystemInformation/Status_FAILURECheckbox'))
 
-WebUI.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_CREATEDCheckbox'))
+WebUiBuiltInKeywords.uncheck(findTestObject('Admin Console/SystemInformation/Status_WARNINGCheckbox'))
 
-WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_STARTEDCheckbox'))
+WebUiBuiltInKeywords.uncheck(findTestObject('Admin Console/SystemInformation/Status_CANCELEDCheckbox'))
 
-WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_SUBMITTEDCheckbox'))
+WebUiBuiltInKeywords.uncheck(findTestObject('Admin Console/SystemInformation/Status_REJECTEDCheckbox'))
 
-WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_FAILURECheckbox'))
-
-WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_WARNINGCheckbox'))
-
-WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_CANCELEDCheckbox'))
-
-WebUiBuiltInKeywords.uncheck(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/Status_REJECTEDCheckbox'))
-
-countOrders = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/TotalOrders_Field'))
+countOrders = WebUI.getText(findTestObject('Admin Console/SystemInformation/TotalOrders_Field'))
 
 int iCountOrders = Integer.parseInt(countOrders)
 
@@ -84,7 +67,7 @@ while (iCountOrders > 0) {
 
     WebUI.callTestCase(findTestCase('Utilities/JustDeleteOneATPOrder'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    countOrders2 = WebUI.getText(findTestObject('Page_Earth Sensor Portal/Admin Console/SystemInformation/TotalOrders_Field'))
+    countOrders2 = WebUI.getText(findTestObject('Admin Console/SystemInformation/TotalOrders_Field'))
 
     int iCountOrders2 = Integer.parseInt(countOrders2)
 

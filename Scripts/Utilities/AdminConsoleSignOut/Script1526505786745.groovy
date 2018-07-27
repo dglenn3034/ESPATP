@@ -21,11 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.delay(3)
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown'), 10)
+WebUI.waitForElementClickable(findTestObject('Admin Console/UserAccount_Dropdown'), 10)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/UserAccount_Dropdown'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/UserAccount_Dropdown'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/UserAccountSignout_Field'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/UserAccountSignout_Field'))
 
 WebUiBuiltInKeywords.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

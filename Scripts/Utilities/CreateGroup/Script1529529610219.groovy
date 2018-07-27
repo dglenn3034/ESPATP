@@ -19,38 +19,38 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/a_ Groups'))
+WebUI.click(findTestObject('Admin Console/Groups/a_ Groups'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilter_Button'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Name')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupNameFilterLikeBox'), Name)
+WebUI.setText(findTestObject('Grid/LikeFilter'), Name)
 
 try {
-    WebUI.verifyElementText(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupNoRecordsText'), 'No Records found.')
+    WebUI.verifyElementPresent(findTestObject('Grid/NoRecordsExist'), 2)
 
     println(Name + 'does not exist, will create')
 }
 catch (Exception e) {
-	println(Name + ' already exists skipping creation')
-	return
+    println(Name + ' already exists skipping creation')
+
+    return null
 } 
 finally { 
 }
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupsAddGroup_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Groups/GroupsAddGroup_Button'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupsName_Field'), Name)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Groups/GroupsName_Field'), Name)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupsDescription_Field'), Description)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Groups/GroupsDescription_Field'), Description)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupsCopyfromUserGroup_Option'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Groups/GroupsCopyfromUserGroup_Option'), FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupsAddGroupSave_Button'))
-
-WebUiBuiltInKeywords.delay(2)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Groups/GroupsRefresh_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Groups/GroupsAddGroupSave_Button'))
 
 WebUiBuiltInKeywords.delay(2)
+
+WebUI.click(findTestObject('Admin Console/Groups/GroupsRefresh_Button'))
+
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 

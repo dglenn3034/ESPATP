@@ -19,51 +19,42 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "QC Analyst"], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser('')
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/canvas'), 10)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPLidarProject', ('ProjectPrefix') : 'ATPLidar'
         , ('ProductType') : 'Lidar', ('FootprintFile') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoaderButton'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/LidarLoaderButton'))
 
 '2 laz files from swfwmd/Hernando'
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderInputBucketName'), 
-    GlobalVariable.S3SourceLidarBucket)
+WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/LidarLoader/LidarLoaderInputBucketName'), GlobalVariable.S3SourceLidarBucket)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderIInputS3Prefix'), 
-    GlobalVariable.S3SourceLidarPrefix)
+WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/LidarLoader/LidarLoaderIInputS3Prefix'), GlobalVariable.S3SourceLidarPrefix)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderSelectATPProject'))
+WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSelectATPProject'))
 
-WebUiBuiltInKeywords.selectOptionByValue(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderSelectHillshade'), 
-    '2', false)
+WebUiBuiltInKeywords.selectOptionByValue(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSelectHillshade'), '2', false)
 
-WebUI.sendKeys(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
+WebUI.sendKeys(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
 
 try {
-    notPresent = WebUiBuiltInKeywords.verifyElementNotPresent(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderFailedToReadTheFile'), 
+    notPresent = WebUiBuiltInKeywords.verifyElementNotPresent(findTestObject('QCAnalyst/LidarLoader/LidarLoaderFailedToReadTheFile'), 
         2)
 
     if (notPresent) {
         println('No problem with the SRS/PRJ file')
 
-        WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderExecute'))
+        WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/LidarLoader/LidarLoaderExecute'))
 
-        WebUI.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+        WebUI.click(findTestObject('OKButton'))
     } else {
         throw new com.kms.katalon.core.exception.StepFailedException('Failed to read SRS/PRJ file')
     }
@@ -71,7 +62,7 @@ try {
 catch (Exception e) {
     println('Problem reading the SRS/PRJ file')
 
-    WebUI.click(findTestObject('Page_Earth Sensor Portal/QCAnalyst/LidarLoader/LidarLoaderCancel'))
+    WebUI.click(findTestObject('QCAnalyst/LidarLoader/LidarLoaderCancel'))
 
     throw new com.kms.katalon.core.exception.StepFailedException('Failed to read SRS/PRJ file')
 } 

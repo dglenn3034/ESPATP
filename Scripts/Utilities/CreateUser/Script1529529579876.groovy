@@ -19,44 +19,45 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/a_Users'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/a_Users'))
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilter_Button'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Email')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilterLikeBox'), email)
+WebUI.setText(findTestObject('Grid/LikeFilter'), email)
 
 try {
-    WebUI.verifyElementText(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersNoRecordsText'), 'No Records found.')
-    println (email + 'does not exist, will create')
+    WebUI.verifyElementPresent(findTestObject('Grid/NoRecordsExist'), 2)
+
+    println(email + 'does not exist, will create')
 }
 catch (Exception e) {
-    println (email + ' already exists skipping creation')
+    println(email + ' already exists skipping creation')
+
     return null
 } 
 finally { 
 }
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersAddUser_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/UsersAddUser_Button'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersEmail_Field'), email)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Users/UsersEmail_Field'), email)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersSelect Organization_Option'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/UsersSelect Organization_Option'), FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersdeliveryBucket_Field'), GlobalVariable.GeoCueDeliveryBucket)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Users/UsersdeliveryBucket_Field'), GlobalVariable.GeoCueDeliveryBucket)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersDeliveryPrefix_Field'), GlobalVariable.GeoCueDeliveryPrefix)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Users/UsersDeliveryPrefix_Field'), GlobalVariable.GeoCueDeliveryPrefix)
 
-WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersSelectUserGroup_CheckBox'))
+WebUiBuiltInKeywords.check(findTestObject('Admin Console/Users/UsersSelectUserGroup_CheckBox'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersGroupsAssign_Arrow'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/UsersGroupsAssign_Arrow'))
 
 'Save'
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersAddUserSave_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/UsersAddUserSave_Button'))
 
 WebUiBuiltInKeywords.delay(2)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersRefresh_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/UsersRefresh_Button'))
 
-WebUiBuiltInKeywords.delay(2)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 

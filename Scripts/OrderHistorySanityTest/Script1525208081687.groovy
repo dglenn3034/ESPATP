@@ -19,66 +19,47 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser('')
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Cesium/canvas'))
 
-WebUI.navigateToUrl(GlobalVariable.GeoCueCompanySite)
+WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogOrderHistory_button'))
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
+CustomKeywords.'genericGrid.gridOperations.SetGridJustOneColumn'('Order Name')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
+CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Status')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Order Name')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'ATP')
 
-WebUiBuiltInKeywords.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button'), 
-    5)
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Status')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Catalog/CatalogOrderHistory_button'))
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'SUCCESS')
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/ToggleColumnsButton'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.uncheck(findTestObject('Page_Earth Sensor Portal/OrderHistory/ToggleCheckBox_dateSubmitted'))
+CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Zoom')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_OrderNameFilter'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox'))
+CustomKeywords.'genericGrid.gridOperations.SelectRow'(1, true)
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderName_LikeBox'), 'ATP')
+CustomKeywords.'genericGrid.gridOperations.SelectRow'(1, false)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_StatusFIlter'))
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/Status_LikeBox'))
+CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Details')
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/OrderHistory/Status_LikeBox'), 'SUCCESS')
+CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Popup')
 
-WebUiBuiltInKeywords.delay(3)
+WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderHistory/OrderDetailsPopup_XButton'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_ZoomToOrderButton'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderHistory/OrderDetails_XButton'))
 
-WebUiBuiltInKeywords.delay(2)
-
-WebUI.mouseOver(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_Row1SelectBox'))
-
-'click on header just to allow tooltip to clear'
-WebUI.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_Row1SelectBox'))
-
-WebUI.delay(3)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_DetailsButton'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderDetails_PopupImageButton'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderDetailsPopup_XButton'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderDetails_XButton'))
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OrderHistory/OrderHistory_XButton'))
+WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderHistory/OrderHistory_XButton'))
 
 WebUI.callTestCase(findTestCase('Utilities/CatalogSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

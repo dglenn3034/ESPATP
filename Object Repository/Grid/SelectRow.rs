@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SelectRow</name>
+   <tag></tag>
+   <elementGuidId>fc53d866-2e3a-433d-89f7-457d2961521d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='fixedDataTableRowLayout_rowWrapper'][ROWNDX]/descendant::input[@type='checkbox']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='fixedDataTableRowLayout_rowWrapper'][ROWNDX]/descendant::input[@type='checkbox']</value>
+   </webElementProperties>
+</WebElementEntity>

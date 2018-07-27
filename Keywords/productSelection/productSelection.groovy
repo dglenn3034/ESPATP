@@ -28,7 +28,7 @@ public class productSelection {
 	@Keyword
 	def clearAllProducts () {
 		println ('Clearing all products')
-		def TestObject myObj = findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelectionAnyCheckBox')
+		def TestObject myObj = findTestObject('Catalog/ProductSelection/ProductSelectionAnyCheckBox')
 		def String FilterXp = myObj.findPropertyValue('xpath')
 		def Integer ndx=1
 		def String Xp = null
@@ -58,7 +58,7 @@ public class productSelection {
 	@Keyword
 	def SelectProduct (String productName) {
 		println ('Set Product Selection for ' + productName)
-		def TestObject myObj = findTestObject('Page_Earth Sensor Portal/ProductSelection/ProductSelector')
+		def TestObject myObj = findTestObject('Catalog/ProductSelection/ProductSelector')
 		def String FilterXp = myObj.findPropertyValue('xpath')
 		def String Xp = FilterXp.replace('PRODUCT', productName)
 		println('Modified Product Filter Xp = ' + Xp)
@@ -70,7 +70,7 @@ public class productSelection {
 	@Keyword
 	def SelectChildProduct (String productName, String childName) {
 		println ('Set Product Child Selection for ' + productName + ' - ' + childName)
-		def TestObject myObj = findTestObject('Page_Earth Sensor Portal/ProductSelection/ChildProductSelector')
+		def TestObject myObj = findTestObject('Catalog/ProductSelection/ChildProductSelector')
 		def String FilterXp = myObj.findPropertyValue('xpath')
 		def String Xp = null
 		def TestObject tmpObject = null

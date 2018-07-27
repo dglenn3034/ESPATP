@@ -19,19 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/a_Users'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/a_Users'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilter_Button'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Email')
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersEmailFilterLikeBox'), UserId)
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), UserId)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersFirstRowDelete_Button'))
+CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Delete')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
-
-WebUiBuiltInKeywords.delay(2)
-
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Users/UsersRefresh_Button'))
+WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
 WebUiBuiltInKeywords.delay(2)
+
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/UsersRefresh_Button'))
+
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 

@@ -21,89 +21,75 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 /* begin here */
-WebUI.callTestCase(findTestCase('Utilities/GetLoginInfo'), [('Site') : 'dummy.com', ('username') : '', ('pwd') : 'pwd'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'Company Admin'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.openBrowser('')
+boolean found = false
 
-WebUI.maximizeWindow()
+found = WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : 'ATPLidarNS'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl(GlobalVariable.GeoCueCompanySite)
-
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Email'), GlobalVariable.User)
-
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/input_Password'), GlobalVariable.pwd)
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Signin_Button'))
-
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Canvas'))
-
-try {
-    WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : 'ATPLidarNS'], FailureHandling.STOP_ON_FAILURE)
-
+if (found == true) {
     println('Named Search is found')
-}
-catch (Exception e) {
+
+    WebUI.click(findTestObject('Catalog/NamedSearch/NamedSearchesCancel_Button'))
+} else {
     println(' No such named Search')
+
+    WebUI.click(findTestObject('Catalog/NamedSearch/NamedSearchesCancel_Button'))
 
     WebUI.callTestCase(findTestCase('Utilities/CreateLidarNamedSearch'), [('NamedSearch') : 'ATPLidarNS'], FailureHandling.STOP_ON_FAILURE)
 
     println(' Created ATPLidarNS')
-} 
+}
 
 WebUI.navigateToUrl(GlobalVariable.AdminSite)
 
-WebUI.waitForPageLoad(10)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Admin Console/a_ Custom Base Maps'), 20)
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/a_ Custom Base Maps'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/a_ Custom Base Maps'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Name')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsNameFilter_Button'))
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'ATPBasemap')
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsNameFilterInput_Field'), 
-    'ATPBasemap')
+'Allow time for first Like box to be removed from DOM'
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilter_Button'))
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Status')
 
-WebUI.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsStatusFilterInput_Field'), 'COMPLETE')
+WebUI.setText(findTestObject('Grid/LikeFilter'), 'COMPLETE')
 
 try {
-    WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/NoRecordsFound_Label'), 
-        1)
+    WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Grid/NoRecordsExist'), 1)
 
     println('Basemap Does not exist')
 }
 catch (Exception e) {
     println('Basemap does exist, we will delete it')
 
-    WebUI.check(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapsDeleteFirstBasemap_checkbox'))
+    CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Delete')
 
-    WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+    WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 } 
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 5)
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/CreateBasemap_Button'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Basemaps/CreateBasemap_Button'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapName_Field'), 'ATPBasemap')
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Basemaps/BasemapName_Field'), 'ATPBasemap')
 
-WebUiBuiltInKeywords.setText(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapDescription_Field'), 
-    'ATPBasemap for Testing')
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Basemaps/BasemapDescription_Field'), 'ATPBasemap for Testing')
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapNamedSearchOption_ATPLidarNS'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Basemaps/BasemapNamedSearchOption_ATPLidarNS'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapMaxDetailOption_14'), 
-    FailureHandling.STOP_ON_FAILURE)
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Basemaps/BasemapMaxDetailOption_14'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapisPublic_Checkbox'), 
-    10)
+WebUI.waitForElementClickable(findTestObject('Admin Console/Basemaps/BasemapisPublic_Checkbox'), 10)
 
-WebUiBuiltInKeywords.check(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapisPublic_Checkbox'))
+WebUiBuiltInKeywords.check(findTestObject('Admin Console/Basemaps/BasemapisPublic_Checkbox'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/Admin Console/Basemaps/BasemapCreate_button'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Basemaps/BasemapCreate_button'))
 
-WebUiBuiltInKeywords.click(findTestObject('Page_Earth Sensor Portal/OKButton'))
+WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
 'Allow completion message to clear'
 WebUI.delay(5)

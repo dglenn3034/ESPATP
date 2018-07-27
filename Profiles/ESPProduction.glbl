@@ -76,7 +76,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>1</initValue>
-      <name>EnvDataRowIndex</name>
+      <initValue>2</initValue>
+      <name>SRSRowNdx</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Williston, FL'</initValue>
+      <name>LidarLocation</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
