@@ -53,7 +53,7 @@ catch (Exception e) {
     println('working set is empty to start with')
 } 
 
-CustomKeywords.'genericGrid.gridOperations.SetGridFirstColumn'('Name')
+CustomKeywords.'genericGrid.gridOperations.SetGridJustOneColumn'('Name')
 
 CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Name')
 

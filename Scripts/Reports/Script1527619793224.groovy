@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'Company Admin
 
 WebUI.navigateToUrl(GlobalVariable.AdminSite)
 
-WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 5)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsViewDetails'))
 
@@ -40,7 +40,7 @@ WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePi
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsOrderReportPreview'))
 
-WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsDismissOrderPreview'))
 
@@ -67,7 +67,7 @@ WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Admin Console/Reports/R
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsUserReportPreview'))
 
-WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsDismissOrderPreview'))
 
