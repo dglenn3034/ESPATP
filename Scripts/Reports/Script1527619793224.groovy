@@ -42,7 +42,7 @@ WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsOrderRep
 
 WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsDismissOrderPreview'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsDismissPreview'))
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsOrderReportEmail'))
 
@@ -69,7 +69,7 @@ WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsUserRepo
 
 WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsDismissOrderPreview'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsDismissPreview'))
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsUserReportsEmail'))
 

@@ -51,10 +51,10 @@ CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Name')
 
 WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'ATPBasemap')
 
-'Allow time for first Like box to be removed from DOM'
-WebUI.delay(2)
-
 CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Status')
+
+'Wait until there is only one LIKE box in the DOM'
+WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Grid/LikeFilter'), 'COMPLETE')
 

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Admin" time="16" tests="0" failures="4" errors="0">
+   <testsuite name="Admin" tests="0" failures="4" errors="0" time="16" timestamp="2018-07-27 16:08:56" hostname="DGlenn - MUSES-David.local.niirs10.com" id="Test Suites/Admin">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160850"/>
+         <property name="logFiles" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160850\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DGlenn - MUSES-David.local.niirs10.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Firefox 61.0"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="aa6baa66-74b1-4179-b165-b558c482dc2e"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/AdminGUISanity" classname="Test Cases/AdminGUISanity" status="FAILED">
+         <failure type="FAILED" message="Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//dev.localhost%3A38251/&amp;c=UTF-8&amp;f=regular&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10740, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a9c63a0-da06-4d52-85a2-65500b2df0ac)"/>
+         <system-out><![CDATA[2018-07-27 16:08:57 - [TEST_CASE][FAILED] - Test Cases/AdminGUISanity: Test Cases/AdminGUISanity FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10740, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a9c63a0-da06-4d52-85a2-65500b2df0ac)
+
+2018-07-27 16:08:57 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Utilities/LogMeIn' (Root cause: Call Test Case 'Test Cases/Utilities/LogMeIn' failed)
+
+2018-07-27 16:08:57 - [TEST_CASE][FAILED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10740, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a9c63a0-da06-4d52-85a2-65500b2df0ac)
+
+2018-07-27 16:08:57 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-27 16:08:58 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:08:58 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-27 16:08:58 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:08:58 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-27 16:08:58 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-27 16:08:58 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-27 16:08:58 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-27 16:08:58 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-27 16:08:58 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-27 16:08:58 - [TEST_STEP][FAILED] - openBrowser: Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10740, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a9c63a0-da06-4d52-85a2-65500b2df0ac)
+
+2018-07-27 16:09:03 - [MESSAGE][FAILED] - Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10740, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a9c63a0-da06-4d52-85a2-65500b2df0ac)
+
+2018-07-27 16:09:03 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Utilities/LogMeIn' (Root cause: Call Test Case 'Test Cases/Utilities/LogMeIn' failed)]]></system-out>
+         <system-err><![CDATA[2018-07-27 16:08:57 - [TEST_CASE][FAILED] - Test Cases/AdminGUISanity: Test Cases/AdminGUISanity FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10740, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a9c63a0-da06-4d52-85a2-65500b2df0ac)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/AdminBasics" classname="Test Cases/AdminBasics" status="FAILED">
+         <failure type="FAILED" message="Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//dev.localhost%3A38251/&amp;c=UTF-8&amp;f=regular&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11432, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a8af9ee-0fa6-4e37-9215-a45ae728fad3)"/>
+         <system-out><![CDATA[2018-07-27 16:09:03 - [TEST_CASE][FAILED] - Test Cases/AdminBasics: Test Cases/AdminBasics FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11432, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a8af9ee-0fa6-4e37-9215-a45ae728fad3)
+
+2018-07-27 16:09:03 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Utilities/LogMeIn' (Root cause: Call Test Case 'Test Cases/Utilities/LogMeIn' failed)
+
+2018-07-27 16:09:03 - [TEST_CASE][FAILED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11432, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a8af9ee-0fa6-4e37-9215-a45ae728fad3)
+
+2018-07-27 16:09:03 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-27 16:09:03 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:09:03 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-27 16:09:03 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:09:03 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-27 16:09:03 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-27 16:09:03 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-27 16:09:03 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-27 16:09:03 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-27 16:09:03 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-27 16:09:03 - [TEST_STEP][FAILED] - openBrowser: Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11432, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a8af9ee-0fa6-4e37-9215-a45ae728fad3)
+
+2018-07-27 16:09:03 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-07-27 16:09:06 - [MESSAGE][FAILED] - Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11432, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a8af9ee-0fa6-4e37-9215-a45ae728fad3)
+
+2018-07-27 16:09:06 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Utilities/LogMeIn' (Root cause: Call Test Case 'Test Cases/Utilities/LogMeIn' failed)]]></system-out>
+         <system-err><![CDATA[2018-07-27 16:09:03 - [TEST_CASE][FAILED] - Test Cases/AdminBasics: Test Cases/AdminBasics FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11432, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a8af9ee-0fa6-4e37-9215-a45ae728fad3)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Reports" classname="Test Cases/Reports" status="FAILED">
+         <failure type="FAILED" message="Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//dev.localhost%3A38251/&amp;c=UTF-8&amp;f=regular&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8388, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d8112def-aef0-4c10-a299-3c026ff0c8b5)"/>
+         <system-out><![CDATA[2018-07-27 16:09:06 - [TEST_CASE][FAILED] - Test Cases/Reports: Test Cases/Reports FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8388, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d8112def-aef0-4c10-a299-3c026ff0c8b5)
+
+2018-07-27 16:09:06 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Utilities/LogMeIn' (Root cause: Call Test Case 'Test Cases/Utilities/LogMeIn' failed)
+
+2018-07-27 16:09:06 - [TEST_CASE][FAILED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8388, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d8112def-aef0-4c10-a299-3c026ff0c8b5)
+
+2018-07-27 16:09:06 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-27 16:09:06 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:09:06 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-27 16:09:06 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:09:06 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-27 16:09:06 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-27 16:09:06 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-27 16:09:06 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-27 16:09:06 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-27 16:09:06 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-27 16:09:06 - [TEST_STEP][FAILED] - openBrowser: Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8388, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d8112def-aef0-4c10-a299-3c026ff0c8b5)
+
+2018-07-27 16:09:06 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-07-27 16:09:09 - [MESSAGE][FAILED] - Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8388, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d8112def-aef0-4c10-a299-3c026ff0c8b5)
+
+2018-07-27 16:09:09 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Utilities/LogMeIn' (Root cause: Call Test Case 'Test Cases/Utilities/LogMeIn' failed)]]></system-out>
+         <system-err><![CDATA[2018-07-27 16:09:06 - [TEST_CASE][FAILED] - Test Cases/Reports: Test Cases/Reports FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8388, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d8112def-aef0-4c10-a299-3c026ff0c8b5)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/BasemapSanity" classname="Test Cases/BasemapSanity" status="FAILED">
+         <failure type="FAILED" message="Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&amp;u=http%3A//dev.localhost%3A38251/&amp;c=UTF-8&amp;f=regular&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: aa6baa66-74b1-4179-b165-b558c482dc2e)"/>
+         <system-out><![CDATA[2018-07-27 16:09:09 - [TEST_CASE][FAILED] - Test Cases/BasemapSanity: Test Cases/BasemapSanity FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: aa6baa66-74b1-4179-b165-b558c482dc2e)
+
+2018-07-27 16:09:09 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Utilities/LogMeIn' (Root cause: Call Test Case 'Test Cases/Utilities/LogMeIn' failed)
+
+2018-07-27 16:09:09 - [TEST_CASE][FAILED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: aa6baa66-74b1-4179-b165-b558c482dc2e)
+
+2018-07-27 16:09:09 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-27 16:09:09 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:09:09 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-27 16:09:09 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:09:09 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-27 16:09:09 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-27 16:09:09 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-27 16:09:09 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-27 16:09:09 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-27 16:09:09 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-27 16:09:09 - [TEST_STEP][FAILED] - openBrowser: Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: aa6baa66-74b1-4179-b165-b558c482dc2e)
+
+2018-07-27 16:09:09 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-07-27 16:09:12 - [MESSAGE][FAILED] - Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: aa6baa66-74b1-4179-b165-b558c482dc2e)
+
+2018-07-27 16:09:12 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Utilities/LogMeIn' (Root cause: Call Test Case 'Test Cases/Utilities/LogMeIn' failed)]]></system-out>
+         <system-err><![CDATA[2018-07-27 16:09:09 - [TEST_CASE][FAILED] - Test Cases/BasemapSanity: Test Cases/BasemapSanity FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8880, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: aa6baa66-74b1-4179-b165-b558c482dc2e)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-27 16:08:56 - [TEST_SUITE][FAILED] - Admin: Test Cases/AdminGUISanity FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10740, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a9c63a0-da06-4d52-85a2-65500b2df0ac)]]></system-out>
+      <system-err><![CDATA[2018-07-27 16:08:56 - [TEST_SUITE][FAILED] - Admin: Test Cases/AdminGUISanity FAILED because (of) Unable to open browser with url: 'http://dev.localhost:38251' (Root cause: org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=http%3A//dev.localhost%3A38251/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20dev.localhost.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10740, moz:profile: C:\Users\DGlenn\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2a9c63a0-da06-4d52-85a2-65500b2df0ac)]]></system-err>
+   </testsuite>
+</testsuites>

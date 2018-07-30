@@ -1,0 +1,60 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Admin,Chrome 67.0.3396.99,This test suite exercises the functions in the Admin Console.\nAssumes the user had Company Admin access,2018-07-27 16:09:27,2018-07-27 16:12:17,2m - 50.294s,FAILED
+,,,,,,
+Test Cases/AdminGUISanity,Chrome 67.0.3396.99,Tests presence of GUI section in Admin Console for System Admin login\nRequires System Admin role,2018-07-27 16:09:27,2018-07-27 16:09:54,26.546s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-27 16:09:28,2018-07-27 16:09:42,13.820s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-27 16:09:42,2018-07-27 16:09:43,1.110s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-27 16:09:43,2018-07-27 16:09:49,6.677s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-27 16:09:49,2018-07-27 16:09:49,0.058s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-27 16:09:49,2018-07-27 16:09:49,0.026s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-27 16:09:49,2018-07-27 16:09:49,0.027s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-27 16:09:49,2018-07-27 16:09:49,0.016s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-27 16:09:49,2018-07-27 16:09:49,0.028s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-27 16:09:49,2018-07-27 16:09:49,0.041s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-27 16:09:49,2018-07-27 16:09:50,0.019s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-27 16:09:50,2018-07-27 16:09:50,0.038s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-27 16:09:50,2018-07-27 16:09:54,4.434s,PASSED
+,,,,,,
+Test Cases/AdminBasics,Chrome 67.0.3396.99,"Add and delete a User, Group and Organization\nRequires Company Admin Role",2018-07-27 16:09:54,2018-07-27 16:10:59,1m - 4.919s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-27 16:09:54,2018-07-27 16:10:06,11.544s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-27 16:10:06,2018-07-27 16:10:07,1.131s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-27 16:10:07,2018-07-27 16:10:13,6.671s,PASSED
+callTestCase,Chrome 67.0.3396.99, Add Group,2018-07-27 16:10:13,2018-07-27 16:10:22,8.301s,PASSED
+callTestCase,Chrome 67.0.3396.99,Add Organization,2018-07-27 16:10:22,2018-07-27 16:10:30,8.689s,PASSED
+callTestCase,Chrome 67.0.3396.99,Add user,2018-07-27 16:10:30,2018-07-27 16:10:34,3.417s,PASSED
+callTestCase,Chrome 67.0.3396.99,delete User,2018-07-27 16:10:34,2018-07-27 16:10:40,6.461s,PASSED
+callTestCase,Chrome 67.0.3396.99,Delete Organization,2018-07-27 16:10:40,2018-07-27 16:10:47,7.156s,PASSED
+callTestCase,Chrome 67.0.3396.99,delete group,2018-07-27 16:10:47,2018-07-27 16:10:55,7.109s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-27 16:10:55,2018-07-27 16:10:59,4.331s,PASSED
+,,,,,,
+Test Cases/Reports,Chrome 67.0.3396.99,Generates report for order for Geocue between 04/01/18 and 06/01/18\nGenerates report for users for Geocue\n\nRequires Admin Role System or company or Organization,2018-07-27 16:10:59,2018-07-27 16:11:17,18.486s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-07-27 16:10:59,2018-07-27 16:11:11,11.658s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-27 16:11:11,2018-07-27 16:11:12,1.112s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-27 16:11:12,2018-07-27 16:11:17,5.124s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-27 16:11:17,2018-07-27 16:11:17,0.383s,FAILED
+,,,,,,
+Test Cases/BasemapSanity,Chrome 67.0.3396.99,Creates a new basemap named ATPBasemap using the ATPLIdarNS named search. Deletes the basemap if it exists.\n\nRequires Company Admin role,2018-07-27 16:11:17,2018-07-27 16:12:17,59.176s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-07-27 16:11:18,2018-07-27 16:11:30,12.067s,PASSED
+Statement - found = false,Chrome 67.0.3396.99,,2018-07-27 16:11:30,2018-07-27 16:11:30,0.000s,PASSED
+"Statement - found = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Utilities/NamedSearchExists), [""NamedSearch"":""ATPLidarNS""], STOP_ON_FAILURE)",Chrome 67.0.3396.99,,2018-07-27 16:11:30,2018-07-27 16:11:38,8.587s,PASSED
+Statement - If (found == true),Chrome 67.0.3396.99,,2018-07-27 16:11:38,2018-07-27 16:11:38,0.092s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-27 16:11:38,2018-07-27 16:11:39,1.120s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-27 16:11:39,2018-07-27 16:11:46,6.653s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-27 16:11:46,2018-07-27 16:11:46,0.306s,PASSED
+genericGrid.gridOperations.ColumnFilter,Chrome 67.0.3396.99,,2018-07-27 16:11:46,2018-07-27 16:11:46,0.084s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-27 16:11:46,2018-07-27 16:11:47,0.393s,PASSED
+delay,Chrome 67.0.3396.99,Allow time for first Like box to be removed from DOM,2018-07-27 16:11:47,2018-07-27 16:11:49,2.002s,PASSED
+genericGrid.gridOperations.ColumnFilter,Chrome 67.0.3396.99,,2018-07-27 16:11:49,2018-07-27 16:11:49,0.093s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-27 16:11:49,2018-07-27 16:11:49,0.105s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-27 16:11:49,2018-07-27 16:11:51,1.616s,FAILED
+Statement - Catch (Exception e),Chrome 67.0.3396.99,,2018-07-27 16:11:51,2018-07-27 16:11:51,0.178s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-27 16:11:51,2018-07-27 16:11:52,1.542s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-27 16:11:52,2018-07-27 16:11:53,0.137s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-27 16:11:53,2018-07-27 16:11:53,0.199s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-27 16:11:53,2018-07-27 16:11:53,0.308s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-27 16:11:53,2018-07-27 16:12:01,7.710s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-27 16:12:01,2018-07-27 16:12:01,0.059s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,,2018-07-27 16:12:01,2018-07-27 16:12:01,0.032s,PASSED
+check,Chrome 67.0.3396.99,,2018-07-27 16:12:01,2018-07-27 16:12:01,0.100s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-27 16:12:01,2018-07-27 16:12:01,0.082s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-27 16:12:01,2018-07-27 16:12:17,15.582s,FAILED

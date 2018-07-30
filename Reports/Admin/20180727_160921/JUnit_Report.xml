@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Admin" time="170" tests="2" failures="2" errors="0">
+   <testsuite name="Admin" tests="2" failures="2" errors="0" time="170" timestamp="2018-07-27 16:09:27" hostname="DGlenn - MUSES-David.local.niirs10.com" id="Test Suites/Admin">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921"/>
+         <property name="logFiles" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\execution0.log"/>
+         <property name="attachments" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725833758.png, D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725834058.png, D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725877579.png, D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725910555.png, D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725910852.png, D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725936767.png"/>
+         <property name="hostName" value="DGlenn - MUSES-David.local.niirs10.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="688639c0e369bef52abfc88a0f2f971d"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/AdminGUISanity" classname="Test Cases/AdminGUISanity" status="PASSED">
+         <system-out><![CDATA[2018-07-27 16:09:27 - [TEST_CASE][PASSED] - Test Cases/AdminGUISanity: Test Cases/AdminGUISanity
+
+2018-07-27 16:09:28 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-27 16:09:28 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-27 16:09:28 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-27 16:09:29 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:09:29 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-27 16:09:29 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:09:29 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-27 16:09:29 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-27 16:09:29 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-27 16:09:29 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-27 16:09:29 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-27 16:09:29 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-27 16:09:29 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-27 16:09:33 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-27 16:09:33 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-27 16:09:34 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-27 16:09:34 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-27 16:09:34 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-27 16:09:34 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-27 16:09:34 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-27 16:09:34 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-27 16:09:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-27 16:09:38 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:09:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:09:41 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:09:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-27 16:09:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-27 16:09:42 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-27 16:09:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-27 16:09:42 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-27 16:09:43 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-27 16:09:43 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:09:43 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:09:49 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:09:49 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Users' is present
+
+2018-07-27 16:09:49 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Users' is present
+
+2018-07-27 16:09:49 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Groups' is present
+
+2018-07-27 16:09:49 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Groups' is present
+
+2018-07-27 16:09:49 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Organizations' is present
+
+2018-07-27 16:09:49 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Organizations' is present
+
+2018-07-27 16:09:49 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Access Restriction' is present
+
+2018-07-27 16:09:49 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Access Restriction' is present
+
+2018-07-27 16:09:49 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Basemaps' is present
+
+2018-07-27 16:09:49 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Basemaps' is present
+
+2018-07-27 16:09:49 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Reports' is present
+
+2018-07-27 16:09:49 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Reports' is present
+
+2018-07-27 16:09:49 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/a_ System Information' is present
+
+2018-07-27 16:09:50 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/a_ System Information' is present
+
+2018-07-27 16:09:50 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/a_ActivityLog' is present
+
+2018-07-27 16:09:50 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/a_ActivityLog' is present
+
+2018-07-27 16:09:50 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-27 16:09:50 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-27 16:09:50 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-27 16:09:53 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-27 16:09:53 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-27 16:09:53 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-27 16:09:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-27 16:09:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-27 16:09:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-27 16:09:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-27 16:09:53 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-27 16:09:54 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-27 16:09:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/AdminBasics" classname="Test Cases/AdminBasics" status="PASSED">
+         <system-out><![CDATA[2018-07-27 16:09:54 - [TEST_CASE][PASSED] - Test Cases/AdminBasics: Test Cases/AdminBasics
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-27 16:09:54 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-27 16:09:54 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-27 16:09:57 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-27 16:09:57 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-27 16:09:58 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-27 16:09:58 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-27 16:09:58 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-27 16:09:58 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-27 16:09:58 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-27 16:09:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-27 16:10:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-27 16:10:01 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:01 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:10:05 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-27 16:10:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-27 16:10:06 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-27 16:10:06 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-27 16:10:06 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-27 16:10:07 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-27 16:10:07 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:07 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:10:13 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:13 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateGroup' successfully
+
+2018-07-27 16:10:14 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateGroup: Test Cases/Utilities/CreateGroup
+
+2018-07-27 16:10:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-27 16:10:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-27 16:10:14 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:14 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:10:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-27 16:10:14 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:14 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:14 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:14 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-27 16:10:14 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Grid/NoRecordsExist' is present
+
+2018-07-27 16:10:14 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/NoRecordsExist' is present
+
+2018-07-27 16:10:14 - [TEST_STEP][PASSED] - Statement - println(Name + "does not exist, will create"): null
+
+2018-07-27 16:10:14 - [TEST_STEP][PASSED] - Statement - Finally: null
+
+2018-07-27 16:10:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/GroupsAddGroup_Button' is clicked on
+
+2018-07-27 16:10:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/GroupsAddGroup_Button' is clicked on
+
+2018-07-27 16:10:15 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Admin Console/Groups/GroupsName_Field'
+
+2018-07-27 16:10:15 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Admin Console/Groups/GroupsName_Field'
+
+2018-07-27 16:10:15 - [TEST_STEP][PASSED] - setText: Text 'Test Group for ATP based on User' is set on object 'Object Repository/Admin Console/Groups/GroupsDescription_Field'
+
+2018-07-27 16:10:15 - [MESSAGE][PASSED] - Text 'Test Group for ATP based on User' is set on object 'Object Repository/Admin Console/Groups/GroupsDescription_Field'
+
+2018-07-27 16:10:15 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/GroupsCopyfromUserGroup_Option' is clicked on
+
+2018-07-27 16:10:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/GroupsCopyfromUserGroup_Option' is clicked on
+
+2018-07-27 16:10:15 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/GroupsAddGroupSave_Button' is clicked on
+
+2018-07-27 16:10:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/GroupsAddGroupSave_Button' is clicked on
+
+2018-07-27 16:10:16 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-27 16:10:18 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-27 16:10:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-27 16:10:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-27 16:10:18 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:10:22 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateGroup' successfully
+
+2018-07-27 16:10:22 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateOrganization' successfully
+
+2018-07-27 16:10:22 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateOrganization: Test Cases/Utilities/CreateOrganization
+
+2018-07-27 16:10:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-27 16:10:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-27 16:10:22 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:22 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:10:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-27 16:10:22 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:22 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:23 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:23 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-27 16:10:23 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Grid/NoRecordsExist' is present
+
+2018-07-27 16:10:23 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/NoRecordsExist' is present
+
+2018-07-27 16:10:23 - [TEST_STEP][PASSED] - Statement - println(Name + "does not exist, will create"): null
+
+2018-07-27 16:10:23 - [TEST_STEP][PASSED] - Statement - Finally: null
+
+2018-07-27 16:10:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Organizations/AddOrganizationButton' is clicked on
+
+2018-07-27 16:10:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Organizations/AddOrganizationButton' is clicked on
+
+2018-07-27 16:10:23 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Admin Console/Organizations/OrganizationName'
+
+2018-07-27 16:10:23 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Admin Console/Organizations/OrganizationName'
+
+2018-07-27 16:10:23 - [TEST_STEP][PASSED] - setText: Text 'ATP Test Organization' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDescription'
+
+2018-07-27 16:10:23 - [MESSAGE][PASSED] - Text 'ATP Test Organization' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDescription'
+
+2018-07-27 16:10:23 - [TEST_STEP][PASSED] - setText: Text 'esp-geocue-orders' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDeliveryBucket'
+
+2018-07-27 16:10:24 - [MESSAGE][PASSED] - Text 'esp-geocue-orders' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDeliveryBucket'
+
+2018-07-27 16:10:24 - [TEST_STEP][PASSED] - setText: Text 'ATPOrders' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDeliveryPrefix'
+
+2018-07-27 16:10:24 - [MESSAGE][PASSED] - Text 'ATPOrders' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDeliveryPrefix'
+
+2018-07-27 16:10:24 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Admin Console/Organizations/OrganizationGroupPulldown'
+
+2018-07-27 16:10:24 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Admin Console/Organizations/OrganizationGroupPulldown'
+
+2018-07-27 16:10:24 - [TEST_STEP][PASSED] - setText: Text 'airgon.com' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDomain'
+
+2018-07-27 16:10:24 - [MESSAGE][PASSED] - Text 'airgon.com' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDomain'
+
+2018-07-27 16:10:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Organizations/OrganizationSaveButton' is clicked on
+
+2018-07-27 16:10:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Organizations/OrganizationSaveButton' is clicked on
+
+2018-07-27 16:10:24 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-27 16:10:26 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-27 16:10:26 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Organizations/OrganizationRefresh_Button' is clicked on
+
+2018-07-27 16:10:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Organizations/OrganizationRefresh_Button' is clicked on
+
+2018-07-27 16:10:26 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:10:30 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateOrganization' successfully
+
+2018-07-27 16:10:30 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateUser' successfully
+
+2018-07-27 16:10:30 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateUser: Test Cases/Utilities/CreateUser
+
+2018-07-27 16:10:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/a_Users' is clicked on
+
+2018-07-27 16:10:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/a_Users' is clicked on
+
+2018-07-27 16:10:31 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:31 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:10:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-27 16:10:31 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:31 - [TEST_STEP][PASSED] - setText: Text 'dglenn@airgon.com' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:31 - [MESSAGE][PASSED] - Text 'dglenn@airgon.com' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:31 - [TEST_STEP][FAILED] - Statement - Try: Unable to verify object 'Object Repository/Grid/NoRecordsExist' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found)
+
+2018-07-27 16:10:31 - [TEST_STEP][FAILED] - verifyElementPresent: Unable to verify object 'Object Repository/Grid/NoRecordsExist' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found)
+
+2018-07-27 16:10:34 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725833758.png]]
+
+2018-07-27 16:10:34 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Grid/NoRecordsExist' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725834058.png]]
+
+2018-07-27 16:10:34 - [TEST_STEP][PASSED] - Statement - Catch (Exception e): null
+
+2018-07-27 16:10:34 - [TEST_STEP][PASSED] - Statement - println(email + " already exists skipping creation"): null
+
+2018-07-27 16:10:34 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-27 16:10:34 - [TEST_STEP][PASSED] - Statement - Finally: null
+
+2018-07-27 16:10:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateUser' successfully
+
+2018-07-27 16:10:34 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/DeleteUser' successfully
+
+2018-07-27 16:10:34 - [TEST_CASE][PASSED] - Test Cases/Utilities/DeleteUser: Test Cases/Utilities/DeleteUser
+
+2018-07-27 16:10:34 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/a_Users' is clicked on
+
+2018-07-27 16:10:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/a_Users' is clicked on
+
+2018-07-27 16:10:34 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:34 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:10:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-27 16:10:34 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:34 - [TEST_STEP][PASSED] - setText: Text 'dglenn@airgon.com' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:35 - [MESSAGE][PASSED] - Text 'dglenn@airgon.com' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:35 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ExecuteGridFunction: genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-27 16:10:35 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:10:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/GridRowFunctions' is clicked on
+
+2018-07-27 16:10:35 - [MESSAGE][PASSED] - genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-27 16:10:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-27 16:10:36 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-27 16:10:36 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-27 16:10:38 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-27 16:10:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-27 16:10:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-27 16:10:38 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:10:40 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/DeleteUser' successfully
+
+2018-07-27 16:10:40 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/DeleteOrganization' successfully
+
+2018-07-27 16:10:40 - [TEST_CASE][PASSED] - Test Cases/Utilities/DeleteOrganization: Test Cases/Utilities/DeleteOrganization
+
+2018-07-27 16:10:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-27 16:10:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-27 16:10:41 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:41 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:10:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-27 16:10:41 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:41 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:41 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:41 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ExecuteGridFunction: genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-27 16:10:41 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:10:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/GridRowFunctions' is clicked on
+
+2018-07-27 16:10:41 - [MESSAGE][PASSED] - genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-27 16:10:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-27 16:10:41 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-27 16:10:41 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-27 16:10:43 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-27 16:10:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-27 16:10:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-27 16:10:43 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:43 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:10:47 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:47 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/DeleteOrganization' successfully
+
+2018-07-27 16:10:47 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/DeleteGroup' successfully
+
+2018-07-27 16:10:48 - [TEST_CASE][PASSED] - Test Cases/Utilities/DeleteGroup: Test Cases/Utilities/DeleteGroup
+
+2018-07-27 16:10:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-27 16:10:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-27 16:10:48 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:48 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:10:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-27 16:10:48 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:10:48 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:48 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:10:48 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ExecuteGridFunction: genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-27 16:10:48 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:10:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/GridRowFunctions' is clicked on
+
+2018-07-27 16:10:48 - [MESSAGE][PASSED] - genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-27 16:10:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-27 16:10:48 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-27 16:10:48 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-27 16:10:50 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-27 16:10:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-27 16:10:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-27 16:10:50 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:50 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:10:55 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:10:55 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/DeleteGroup' successfully
+
+2018-07-27 16:10:55 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-27 16:10:55 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-27 16:10:55 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-27 16:10:58 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-27 16:10:58 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-27 16:10:58 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-27 16:10:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-27 16:10:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-27 16:10:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-27 16:10:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-27 16:10:58 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-27 16:10:59 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-27 16:10:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Reports" classname="Test Cases/Reports" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Admin Console/Reports/ReportsViewDetails' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element &lt;span class=&quot;pull-left&quot;>...&lt;/span> is not clickable at point (684, 458). Other element would receive the click: &lt;div class=&quot;loading-mask&quot;>...&lt;/div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: dd60fc8947068d5fe2efaf7303648653)"/>
+         <system-out><![CDATA[2018-07-27 16:10:59 - [TEST_CASE][FAILED] - Test Cases/Reports: Test Cases/Reports FAILED because (of) Unable to click on object 'Object Repository/Admin Console/Reports/ReportsViewDetails' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <span class="pull-left">...</span> is not clickable at point (684, 458). Other element would receive the click: <div class="loading-mask">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: dd60fc8947068d5fe2efaf7303648653)
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-27 16:10:59 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-27 16:10:59 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-27 16:11:02 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-27 16:11:02 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-27 16:11:03 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-27 16:11:03 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-27 16:11:03 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-27 16:11:03 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-27 16:11:03 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-27 16:11:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-27 16:11:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-27 16:11:06 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:11:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:11:11 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:11:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-27 16:11:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-27 16:11:11 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-27 16:11:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-27 16:11:11 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-27 16:11:12 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-27 16:11:12 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is present after '5' second(s)
+
+2018-07-27 16:11:17 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is present after '5' second(s)
+
+2018-07-27 16:11:17 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Admin Console/Reports/ReportsViewDetails' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <span class="pull-left">...</span> is not clickable at point (684, 458). Other element would receive the click: <div class="loading-mask">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: dd60fc8947068d5fe2efaf7303648653)
+
+2018-07-27 16:11:17 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Admin Console/Reports/ReportsViewDetails' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <span class="pull-left">...</span> is not clickable at point (684, 458). Other element would receive the click: <div class="loading-mask">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: dd60fc8947068d5fe2efaf7303648653)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725877579.png]]]]></system-out>
+         <system-err><![CDATA[2018-07-27 16:10:59 - [TEST_CASE][FAILED] - Test Cases/Reports: Test Cases/Reports FAILED because (of) Unable to click on object 'Object Repository/Admin Console/Reports/ReportsViewDetails' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <span class="pull-left">...</span> is not clickable at point (684, 458). Other element would receive the click: <div class="loading-mask">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: dd60fc8947068d5fe2efaf7303648653)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/BasemapSanity" classname="Test Cases/BasemapSanity" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/OKButton' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/OKButton' located by 'By.xpath: //button[@type = 'button' and (text() = 'OK' or . = 'OK')]' not found)"/>
+         <system-out><![CDATA[2018-07-27 16:11:17 - [TEST_CASE][FAILED] - Test Cases/BasemapSanity: Test Cases/BasemapSanity FAILED because (of) Unable to click on object 'Object Repository/OKButton' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/OKButton' located by 'By.xpath: //button[@type = 'button' and (text() = 'OK' or . = 'OK')]' not found)
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-27 16:11:18 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-27 16:11:18 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-27 16:11:18 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-07-27 16:11:21 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-27 16:11:21 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-27 16:11:22 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-27 16:11:22 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-27 16:11:22 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-27 16:11:22 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-27 16:11:22 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-27 16:11:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-27 16:11:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-27 16:11:25 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:11:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:11:29 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:11:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-27 16:11:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-27 16:11:30 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-27 16:11:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-27 16:11:30 - [TEST_STEP][PASSED] - Statement - found = false: null
+
+2018-07-27 16:11:30 - [TEST_STEP][PASSED] - Statement - found = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Utilities/NamedSearchExists), ["NamedSearch":"ATPLidarNS"], STOP_ON_FAILURE): Call Test Case 'Test Cases/Utilities/NamedSearchExists' successfully
+
+2018-07-27 16:11:30 - [TEST_CASE][PASSED] - Test Cases/Utilities/NamedSearchExists: Test Cases/Utilities/NamedSearchExists
+
+2018-07-27 16:11:30 - [TEST_STEP][PASSED] - Statement - found = true: null
+
+2018-07-27 16:11:30 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Catalog/Main/CatalogNamedSearch_Button' is clickable
+
+2018-07-27 16:11:30 - [MESSAGE][PASSED] - Object 'Object Repository/Catalog/Main/CatalogNamedSearch_Button' is clickable
+
+2018-07-27 16:11:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Main/CatalogNamedSearch_Button' is clicked on
+
+2018-07-27 16:11:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Main/CatalogNamedSearch_Button' is clicked on
+
+2018-07-27 16:11:30 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:11:30 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:11:38 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:11:38 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-27 16:11:38 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label 'ATPLidarNS' are selected in object 'Object Repository/Catalog/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-27 16:11:38 - [MESSAGE][PASSED] - All options with label 'ATPLidarNS' are selected in object 'Object Repository/Catalog/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-27 16:11:38 - [TEST_STEP][PASSED] - Statement - found = true: null
+
+2018-07-27 16:11:38 - [TEST_STEP][PASSED] - Statement - return found: null
+
+2018-07-27 16:11:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/NamedSearchExists' successfully
+
+2018-07-27 16:11:38 - [TEST_STEP][PASSED] - Statement - If (found == true): Object: 'Object Repository/Catalog/NamedSearch/NamedSearchesCancel_Button' is clicked on
+
+2018-07-27 16:11:38 - [TEST_STEP][PASSED] - Statement - println("Named Search is found"): null
+
+2018-07-27 16:11:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/NamedSearch/NamedSearchesCancel_Button' is clicked on
+
+2018-07-27 16:11:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/NamedSearch/NamedSearchesCancel_Button' is clicked on
+
+2018-07-27 16:11:38 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-27 16:11:39 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-27 16:11:39 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:11:39 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-27 16:11:46 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-27 16:11:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/a_ Custom Base Maps' is clicked on
+
+2018-07-27 16:11:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/a_ Custom Base Maps' is clicked on
+
+2018-07-27 16:11:46 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:11:46 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:11:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-27 16:11:46 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:11:46 - [TEST_STEP][PASSED] - setText: Text 'ATPBasemap' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:11:47 - [MESSAGE][PASSED] - Text 'ATPBasemap' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:11:47 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-27 16:11:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-27 16:11:49 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:11:49 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:11:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-27 16:11:49 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-27 16:11:49 - [TEST_STEP][PASSED] - setText: Text 'COMPLETE' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:11:49 - [MESSAGE][PASSED] - Text 'COMPLETE' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-27 16:11:49 - [TEST_STEP][FAILED] - Statement - Try: Unable to verify object 'Object Repository/Grid/NoRecordsExist' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found)
+
+2018-07-27 16:11:49 - [TEST_STEP][FAILED] - verifyElementPresent: Unable to verify object 'Object Repository/Grid/NoRecordsExist' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found)
+
+2018-07-27 16:11:50 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725910555.png]]
+
+2018-07-27 16:11:51 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Grid/NoRecordsExist' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725910852.png]]
+
+2018-07-27 16:11:51 - [TEST_STEP][PASSED] - Statement - Catch (Exception e): Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-27 16:11:51 - [TEST_STEP][PASSED] - Statement - println("Basemap does exist, we will delete it"): null
+
+2018-07-27 16:11:51 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ExecuteGridFunction: genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-27 16:11:51 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-27 16:11:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/GridRowFunctions' is clicked on
+
+2018-07-27 16:11:51 - [MESSAGE][PASSED] - genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-27 16:11:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-27 16:11:51 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-27 16:11:51 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-27 16:11:52 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-27 16:11:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Basemaps/CreateBasemap_Button' is clicked on
+
+2018-07-27 16:11:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Basemaps/CreateBasemap_Button' is clicked on
+
+2018-07-27 16:11:53 - [TEST_STEP][PASSED] - setText: Text 'ATPBasemap' is set on object 'Object Repository/Admin Console/Basemaps/BasemapName_Field'
+
+2018-07-27 16:11:53 - [MESSAGE][PASSED] - Text 'ATPBasemap' is set on object 'Object Repository/Admin Console/Basemaps/BasemapName_Field'
+
+2018-07-27 16:11:53 - [TEST_STEP][PASSED] - setText: Text 'ATPBasemap for Testing' is set on object 'Object Repository/Admin Console/Basemaps/BasemapDescription_Field'
+
+2018-07-27 16:11:53 - [MESSAGE][PASSED] - Text 'ATPBasemap for Testing' is set on object 'Object Repository/Admin Console/Basemaps/BasemapDescription_Field'
+
+2018-07-27 16:11:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Basemaps/BasemapNamedSearchOption_ATPLidarNS' is clicked on
+
+2018-07-27 16:12:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Basemaps/BasemapNamedSearchOption_ATPLidarNS' is clicked on
+
+2018-07-27 16:12:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Basemaps/BasemapMaxDetailOption_14' is clicked on
+
+2018-07-27 16:12:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Basemaps/BasemapMaxDetailOption_14' is clicked on
+
+2018-07-27 16:12:01 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Console/Basemaps/BasemapisPublic_Checkbox' is clickable
+
+2018-07-27 16:12:01 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/Basemaps/BasemapisPublic_Checkbox' is clickable
+
+2018-07-27 16:12:01 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Admin Console/Basemaps/BasemapisPublic_Checkbox' is checked
+
+2018-07-27 16:12:01 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/Basemaps/BasemapisPublic_Checkbox' is checked
+
+2018-07-27 16:12:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Basemaps/BasemapCreate_button' is clicked on
+
+2018-07-27 16:12:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Basemaps/BasemapCreate_button' is clicked on
+
+2018-07-27 16:12:01 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/OKButton' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/OKButton' located by 'By.xpath: //button[@type = 'button' and (text() = 'OK' or . = 'OK')]' not found)
+
+2018-07-27 16:12:17 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/OKButton' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/OKButton' located by 'By.xpath: //button[@type = 'button' and (text() = 'OK' or . = 'OK')]' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\Admin\\20180727_160921\\1532725936767.png]]]]></system-out>
+         <system-err><![CDATA[2018-07-27 16:11:17 - [TEST_CASE][FAILED] - Test Cases/BasemapSanity: Test Cases/BasemapSanity FAILED because (of) Unable to click on object 'Object Repository/OKButton' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/OKButton' located by 'By.xpath: //button[@type = 'button' and (text() = 'OK' or . = 'OK')]' not found)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-27 16:09:27 - [TEST_SUITE][FAILED] - Admin: Test Cases/Reports FAILED because (of) Unable to click on object 'Object Repository/Admin Console/Reports/ReportsViewDetails' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <span class="pull-left">...</span> is not clickable at point (684, 458). Other element would receive the click: <div class="loading-mask">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: dd60fc8947068d5fe2efaf7303648653)]]></system-out>
+      <system-err><![CDATA[2018-07-27 16:09:27 - [TEST_SUITE][FAILED] - Admin: Test Cases/Reports FAILED because (of) Unable to click on object 'Object Repository/Admin Console/Reports/ReportsViewDetails' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <span class="pull-left">...</span> is not clickable at point (684, 458). Other element would receive the click: <div class="loading-mask">...</div>
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: dd60fc8947068d5fe2efaf7303648653)]]></system-err>
+   </testsuite>
+</testsuites>

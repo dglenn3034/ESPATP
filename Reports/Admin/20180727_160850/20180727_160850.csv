@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Admin,Firefox 61.0,This test suite exercises the functions in the Admin Console.\nAssumes the user had Company Admin access,2018-07-27 16:08:56,2018-07-27 16:09:13,16.306s,FAILED
+,,,,,,
+Test Cases/AdminGUISanity,Firefox 61.0,Tests presence of GUI section in Admin Console for System Admin login\nRequires System Admin role,2018-07-27 16:08:57,2018-07-27 16:09:03,5.849s,FAILED
+callTestCase,Firefox 61.0,,2018-07-27 16:08:57,2018-07-27 16:09:03,5.540s,FAILED
+,,,,,,
+Test Cases/AdminBasics,Firefox 61.0,"Add and delete a User, Group and Organization\nRequires Company Admin Role",2018-07-27 16:09:03,2018-07-27 16:09:06,3.332s,FAILED
+callTestCase,Firefox 61.0,,2018-07-27 16:09:03,2018-07-27 16:09:06,3.173s,FAILED
+,,,,,,
+Test Cases/Reports,Firefox 61.0,Generates report for order for Geocue between 04/01/18 and 06/01/18\nGenerates report for users for Geocue\n\nRequires Admin Role System or company or Organization,2018-07-27 16:09:06,2018-07-27 16:09:09,3.252s,FAILED
+callTestCase,Firefox 61.0,,2018-07-27 16:09:06,2018-07-27 16:09:09,3.108s,FAILED
+,,,,,,
+Test Cases/BasemapSanity,Firefox 61.0,Creates a new basemap named ATPBasemap using the ATPLIdarNS named search. Deletes the basemap if it exists.\n\nRequires Company Admin role,2018-07-27 16:09:09,2018-07-27 16:09:12,3.328s,FAILED
+callTestCase,Firefox 61.0,,2018-07-27 16:09:09,2018-07-27 16:09:12,3.155s,FAILED
