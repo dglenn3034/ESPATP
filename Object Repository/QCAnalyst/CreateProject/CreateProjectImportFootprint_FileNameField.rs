@@ -4,7 +4,17 @@
    <name>CreateProjectImportFootprint_FileNameField</name>
    <tag></tag>
    <elementGuidId>a4d32575-a4d5-4dfe-8c25-0d8dbc11caa0</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='importAoiTab-pane-2']/descendant::input[@id='singleFileInput']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@type = 'file' and @id = 'singleFileInput']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

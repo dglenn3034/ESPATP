@@ -19,23 +19,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "System Admin"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'System Admin'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Cesium/canvas'))
-
 WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : 'ATPLidarProject'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(5)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : 'ATPOrthoProject'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(5)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : 'ATPProjectWithFootprint'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

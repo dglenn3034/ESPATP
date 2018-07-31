@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "User", ('Company') : ""], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
@@ -36,6 +36,8 @@ WebUI.sendKeys(findTestObject('Catalog/AOI/AOIFIlePath_Field'), '\\\\diskstation
 WebUI.click(findTestObject('Catalog/AOI/AOIExecutetheImport_button'))
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
+WebUI.delay(3)
 
 WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 

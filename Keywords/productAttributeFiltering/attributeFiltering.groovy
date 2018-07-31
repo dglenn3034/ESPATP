@@ -108,7 +108,7 @@ public class attributeFiltering {
 
 
 		/* set the attribute name */
-		myObj = findTestObject('Catalog/ProductSelection/AttributeFilterAttributeName_Dropdown')
+		myObj = findTestObject('Catalog/ProductSelection/AttributeFilterAttributeNameDropdown')
 		FilterXp = myObj.findPropertyValue('xpath')
 		Xp = FilterXp.replace('ROWNDX', clsNdx.toString())
 		Xp = Xp.replace('ATTNAME', AttributeName)

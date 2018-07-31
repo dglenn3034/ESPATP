@@ -20,7 +20,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "User"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
@@ -29,6 +29,9 @@ WebUI.setText(findTestObject('Cesium/CesiumSearchField'), 'Atlanta, GA')
 WebUI.click(findTestObject('Cesium/CesiumSearchButton'))
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
+'Not sure why this is needed, but we have to wait until Cesium search is finished resetting the view before we can rest the AOI to the view '
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Catalog/Main/CatalogAOIAsView_Button'))
 

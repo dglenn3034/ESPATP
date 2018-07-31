@@ -30,6 +30,9 @@ WebUI.click(findTestObject('Cesium/CesiumSearchButton'))
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
+'Not sure why this is needed, but we have to wait until Cesium search is finished resetting the view before we can rest the AOI to the view '
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Catalog/Main/CatalogAOIAsView_Button'))
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
@@ -62,7 +65,7 @@ WebUI.setText(findTestObject('Catalog/OrderCart/OrderCartOrderName_Field'), ONam
 
 WebUI.click(findTestObject('Catalog/PostProcessingLidar/PostProcessing_button_Add'))
 
-WebUI.click(findTestObject('Catalog/PostProcessingLidar/ClipToAOI_Checkbox'))
+WebUI.check(findTestObject('Catalog/PostProcessingLidar/ClipToAOI_Checkbox'))
 
 WebUI.click(findTestObject('Catalog/PostProcessingLidar/PostProcessing_button_OK'))
 
@@ -70,7 +73,7 @@ WebUI.click(findTestObject('Catalog/PostProcessingLidar/PostProcessing_button_Re
 
 WebUI.click(findTestObject('Catalog/PostProcessingLidar/PostProcessing_button_Add'))
 
-WebUI.click(findTestObject('Catalog/PostProcessingLidar/ClipToAOI_Checkbox'))
+WebUI.check(findTestObject('Catalog/PostProcessingLidar/ClipToAOI_Checkbox'))
 
 WebUI.click(findTestObject('Catalog/PostProcessingLidar/HillshadeImage_CheckBox'))
 

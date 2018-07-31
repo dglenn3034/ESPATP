@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="QC Analyst" time="186" tests="3" failures="2" errors="0">
+   <testsuite name="QC Analyst" tests="3" failures="2" errors="0" time="186" timestamp="2018-07-30 16:55:15" hostname="DGlenn - MUSES-David.local.niirs10.com" id="Test Suites/QC Analyst">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509"/>
+         <property name="logFiles" value="D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\execution0.log"/>
+         <property name="attachments" value="D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987756252.png, D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987757217.png, D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987783437.png, D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987826723.png, D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987861809.png, D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987862516.png, D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987892735.png, D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987893476.png"/>
+         <property name="hostName" value="DGlenn - MUSES-David.local.niirs10.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="386b4c9017c7dd59b4ebd8a91f030381"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/DavidsonQueryTest" classname="Test Cases/DavidsonQueryTest" status="FAILED">
+         <failure type="FAILED" message="Verify element text of test object 'Object Repository/Grid/DisplayCount' FAILED. (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/DisplayCount' located by 'By.xpath: //div[@id='genericGridContainer']/div/b' not found)"/>
+         <system-out><![CDATA[2018-07-30 16:55:15 - [TEST_CASE][FAILED] - Test Cases/DavidsonQueryTest: Test Cases/DavidsonQueryTest FAILED because (of) Verify element text of test object 'Object Repository/Grid/DisplayCount' FAILED. (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/DisplayCount' located by 'By.xpath: //div[@id='genericGridContainer']/div/b' not found)
+
+2018-07-30 16:55:15 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:55:15 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - rowNdx == 5: null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-30 16:55:16 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:55:21 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:55:21 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-30 16:55:22 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 16:55:22 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:55:22 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:55:22 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:55:22 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:55:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:55:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:55:26 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:55:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:55:30 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:55:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:55:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:55:30 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:55:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:55:30 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/qc' successfully
+
+2018-07-30 16:55:32 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/qc' successfully
+
+2018-07-30 16:55:32 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:55:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:55:37 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:55:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:55:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:55:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-30 16:55:37 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-30 16:55:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/Projects/ProjectAddLine' is clicked on
+
+2018-07-30 16:55:37 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/Projects/ProjectAddLine' is clicked on
+
+2018-07-30 16:55:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/Projects/ProjectFilterAttributeName_Dropdown' is clicked on
+
+2018-07-30 16:55:38 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/Projects/ProjectFilterAttributeName_Dropdown' is clicked on
+
+2018-07-30 16:55:38 - [TEST_STEP][PASSED] - setText: Text 'Davidson' is set on object 'Object Repository/QCAnalyst/Projects/ProjectFilterProjectName_field'
+
+2018-07-30 16:55:38 - [MESSAGE][PASSED] - Text 'Davidson' is set on object 'Object Repository/QCAnalyst/Projects/ProjectFilterProjectName_field'
+
+2018-07-30 16:55:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:55:38 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:55:38 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ExecuteGridFunction: genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:55:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:55:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/GridRowFunctions' is clicked on
+
+2018-07-30 16:55:39 - [MESSAGE][PASSED] - genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:55:39 - [TEST_STEP][FAILED] - verifyElementText: Verify element text of test object 'Object Repository/Grid/DisplayCount' FAILED. (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/DisplayCount' located by 'By.xpath: //div[@id='genericGridContainer']/div/b' not found)
+
+2018-07-30 16:55:57 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/DisplayCount' located by 'By.xpath: //div[@id='genericGridContainer']/div/b' not found
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987756252.png]]
+
+2018-07-30 16:55:58 - [MESSAGE][FAILED] - Verify element text of test object 'Object Repository/Grid/DisplayCount' FAILED. (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/DisplayCount' located by 'By.xpath: //div[@id='genericGridContainer']/div/b' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987757217.png]]]]></system-out>
+         <system-err><![CDATA[2018-07-30 16:55:15 - [TEST_CASE][FAILED] - Test Cases/DavidsonQueryTest: Test Cases/DavidsonQueryTest FAILED because (of) Verify element text of test object 'Object Repository/Grid/DisplayCount' FAILED. (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/DisplayCount' located by 'By.xpath: //div[@id='genericGridContainer']/div/b' not found)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/CreateProjectWithFootprint" classname="Test Cases/CreateProjectWithFootprint" status="FAILED">
+         <failure type="FAILED" message="Unable to set text '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' of object 'Object Repository/QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 33d550f257bd00a26b8278314f44f0cb)"/>
+         <system-out><![CDATA[2018-07-30 16:55:58 - [TEST_CASE][FAILED] - Test Cases/CreateProjectWithFootprint: Test Cases/CreateProjectWithFootprint FAILED because (of) Unable to set text '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' of object 'Object Repository/QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 33d550f257bd00a26b8278314f44f0cb)
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:55:58 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - rowNdx == 5: null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-30 16:55:58 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:55:58 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-07-30 16:56:01 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:56:01 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-30 16:56:02 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 16:56:02 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:56:03 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:56:03 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:56:03 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:56:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:56:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:56:06 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:56:10 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:56:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:56:10 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:56:10 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:56:10 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/qc' successfully
+
+2018-07-30 16:56:13 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/qc' successfully
+
+2018-07-30 16:56:13 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:13 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:56:17 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:56:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:56:17 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Utilities/CreateProject' (Root cause: Call Test Case 'Test Cases/Utilities/CreateProject' failed)
+
+2018-07-30 16:56:17 - [TEST_CASE][FAILED] - Test Cases/Utilities/CreateProject: Test Cases/Utilities/CreateProject FAILED because (of) Unable to set text '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' of object 'Object Repository/QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 33d550f257bd00a26b8278314f44f0cb)
+
+2018-07-30 16:56:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-30 16:56:18 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-30 16:56:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/Projects/ProjectAddLine' is clicked on
+
+2018-07-30 16:56:18 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/Projects/ProjectAddLine' is clicked on
+
+2018-07-30 16:56:18 - [TEST_STEP][PASSED] - setText: Text 'ATPProjectWithFootprint' is set on object 'Object Repository/QCAnalyst/Projects/ProjectFilterProjectName_field'
+
+2018-07-30 16:56:18 - [MESSAGE][PASSED] - Text 'ATPProjectWithFootprint' is set on object 'Object Repository/QCAnalyst/Projects/ProjectFilterProjectName_field'
+
+2018-07-30 16:56:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:56:18 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:56:18 - [TEST_STEP][PASSED] - Statement - Try: Object: 'Object Repository/QCAnalyst/Projects/ProjectsCloseDialog_Button' is clicked on
+
+2018-07-30 16:56:18 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' is present
+
+2018-07-30 16:56:19 - [MESSAGE][PASSED] - Object 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' is present
+
+2018-07-30 16:56:19 - [TEST_STEP][PASSED] - Statement - println(ProjectName + " does not exist, we will create it"): null
+
+2018-07-30 16:56:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/Projects/ProjectsCloseDialog_Button' is clicked on
+
+2018-07-30 16:56:19 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/Projects/ProjectsCloseDialog_Button' is clicked on
+
+2018-07-30 16:56:19 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-30 16:56:21 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-30 16:56:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/CreateProjectButton' is clicked on
+
+2018-07-30 16:56:22 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/CreateProjectButton' is clicked on
+
+2018-07-30 16:56:22 - [TEST_STEP][PASSED] - setText: Text 'ATPProjectWithFootprint' is set on object 'Object Repository/QCAnalyst/CreateProject/CreateProjectInputName'
+
+2018-07-30 16:56:22 - [MESSAGE][PASSED] - Text 'ATPProjectWithFootprint' is set on object 'Object Repository/QCAnalyst/CreateProject/CreateProjectInputName'
+
+2018-07-30 16:56:22 - [TEST_STEP][PASSED] - setText: Text 'ATPFoot' is set on object 'Object Repository/QCAnalyst/CreateProject/CreateProjectInputPrefix'
+
+2018-07-30 16:56:22 - [MESSAGE][PASSED] - Text 'ATPFoot' is set on object 'Object Repository/QCAnalyst/CreateProject/CreateProjectInputPrefix'
+
+2018-07-30 16:56:22 - [TEST_STEP][PASSED] - Statement - If (ProductType == "Lidar"): Object: 'Object Repository/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar' is clicked on
+
+2018-07-30 16:56:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar' is clicked on
+
+2018-07-30 16:56:22 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar' is clicked on
+
+2018-07-30 16:56:22 - [TEST_STEP][PASSED] - setText: Text 'ATP Project for Lidar Loading' is set on object 'Object Repository/QCAnalyst/CreateProject/CreateProjectInputDescription'
+
+2018-07-30 16:56:23 - [MESSAGE][PASSED] - Text 'ATP Project for Lidar Loading' is set on object 'Object Repository/QCAnalyst/CreateProject/CreateProjectInputDescription'
+
+2018-07-30 16:56:23 - [TEST_STEP][PASSED] - Statement - println("FootprintFile = " + FootprintFile): null
+
+2018-07-30 16:56:23 - [TEST_STEP][FAILED] - Statement - If (FootprintFile != null && FootprintFile.length() > 0): Unable to set text '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' of object 'Object Repository/QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 33d550f257bd00a26b8278314f44f0cb)
+
+2018-07-30 16:56:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/CreateProject/CreateProjectImportFootprintSingleFile_Tab' is clicked on
+
+2018-07-30 16:56:23 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/CreateProject/CreateProjectImportFootprintSingleFile_Tab' is clicked on
+
+2018-07-30 16:56:23 - [TEST_STEP][FAILED] - setText: Unable to set text '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' of object 'Object Repository/QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 33d550f257bd00a26b8278314f44f0cb)
+
+2018-07-30 16:56:24 - [MESSAGE][FAILED] - Unable to set text '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' of object 'Object Repository/QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 33d550f257bd00a26b8278314f44f0cb)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987783437.png]]
+
+2018-07-30 16:56:24 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Utilities/CreateProject' (Root cause: Call Test Case 'Test Cases/Utilities/CreateProject' failed)]]></system-out>
+         <system-err><![CDATA[2018-07-30 16:55:58 - [TEST_CASE][FAILED] - Test Cases/CreateProjectWithFootprint: Test Cases/CreateProjectWithFootprint FAILED because (of) Unable to set text '\\diskstation1\Data\esp\test_data\HoustonBayArea.zip' of object 'Object Repository/QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField' (Root cause: org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'MUSES-DAVID', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\DGlenn\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 33d550f257bd00a26b8278314f44f0cb)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/GeneratePyramids" classname="Test Cases/GeneratePyramids" status="PASSED">
+         <system-out><![CDATA[2018-07-30 16:56:24 - [TEST_CASE][PASSED] - Test Cases/GeneratePyramids: Test Cases/GeneratePyramids
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:56:24 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - rowNdx == 5: null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-30 16:56:24 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:56:24 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-07-30 16:56:27 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:56:27 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-30 16:56:28 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 16:56:28 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:56:28 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:56:28 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:56:28 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:56:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:56:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:56:32 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:56:36 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:56:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:56:36 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:56:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:56:36 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/qc' successfully
+
+2018-07-30 16:56:38 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/qc' successfully
+
+2018-07-30 16:56:38 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:56:43 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:56:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:56:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-30 16:56:43 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-30 16:56:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/Projects/ProjectAddLine' is clicked on
+
+2018-07-30 16:56:43 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/Projects/ProjectAddLine' is clicked on
+
+2018-07-30 16:56:43 - [TEST_STEP][PASSED] - setText: Text 'Davidson' is set on object 'Object Repository/QCAnalyst/Projects/ProjectFilterProjectName_field'
+
+2018-07-30 16:56:43 - [MESSAGE][PASSED] - Text 'Davidson' is set on object 'Object Repository/QCAnalyst/Projects/ProjectFilterProjectName_field'
+
+2018-07-30 16:56:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:56:43 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:56:43 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ExecuteGridFunction: genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:56:43 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:56:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/GridRowFunctions' is clicked on
+
+2018-07-30 16:56:45 - [MESSAGE][PASSED] - genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:56:45 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:56:47 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:47 - [TEST_STEP][PASSED] - Statement - Try: Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetDismiss_Button' is clicked on
+
+2018-07-30 16:56:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetCountBadge' is clicked on
+
+2018-07-30 16:56:48 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetCountBadge' is clicked on
+
+2018-07-30 16:56:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetClearSet_Button' is clicked on
+
+2018-07-30 16:56:49 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetClearSet_Button' is clicked on
+
+2018-07-30 16:56:49 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:49 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetDismiss_Button' is clicked on
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetDismiss_Button' is clicked on
+
+2018-07-30 16:56:50 - [TEST_STEP][PASSED] - genericGrid.gridOperations.SetGridJustOneColumn: genericGrid.gridOperations.SetGridJustOneColumn is PASSED
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnToggleGear' is clicked on
+
+2018-07-30 16:56:50 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/ColumnDropdowncheckbox' is un-checked
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/ColumnDropdowncheckbox' is un-checked
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/ColumnDropdowncheckbox' is un-checked
+
+2018-07-30 16:56:50 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/ColumnDropdowncheckbox' is un-checked
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/ColumnDropdowncheckbox' is un-checked
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/ColumnDropdowncheckbox' is un-checked
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/ColumnDropdowncheckbox' is un-checked
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/ColumnDropdowncheckbox' is un-checked
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/ColumnDropdowncheckbox' is un-checked
+
+2018-07-30 16:56:51 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][FAILED] - Unable to un-check object 'Object Repository/Grid/ColumnDropdowncheckbox' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/ColumnDropdowncheckbox' located by 'By.xpath: (//div[@class='dropdown-menu']/descendant::input[@type = 'checkbox'])[10]' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987826723.png]]
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnToggleGear' is clicked on
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnToggleGear' is clicked on
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/Grid/ColumnDropdownLabel' is: 'Date Acquired'
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/Grid/ColumnDropdownLabel' is: 'LAS Version'
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/Grid/ColumnDropdownLabel' is: 'Nominal Point Spacing'
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/Grid/ColumnDropdownLabel' is: 'Total Number Of Points'
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/Grid/ColumnDropdownLabel' is: 'Accuracy Level'
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:07 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Text of object 'Object Repository/Grid/ColumnDropdownLabel' is: 'Accuracy Description'
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Text of object 'Object Repository/Grid/ColumnDropdownLabel' is: 'Point Density'
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Text of object 'Object Repository/Grid/ColumnDropdownLabel' is: 'Name'
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/ColumnDropdowncheckbox' is checked
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnToggleGear' is clicked on
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - genericGrid.gridOperations.SetGridJustOneColumn is PASSED
+
+2018-07-30 16:57:08 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:57:08 - [TEST_STEP][PASSED] - setText: Text 'DavCo_AA' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Text 'DavCo_AA' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:57:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/ProjectItems/ProjectItemsSelectAll' is clicked on
+
+2018-07-30 16:57:08 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/ProjectItems/ProjectItemsSelectAll' is clicked on
+
+2018-07-30 16:57:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/ProjectItems/ProjectItemsAddtoWorkingSet' is clicked on
+
+2018-07-30 16:57:09 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/ProjectItems/ProjectItemsAddtoWorkingSet' is clicked on
+
+2018-07-30 16:57:09 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/QCAnalyst/WorkingSet/WorkingSetCountBadge' is visible
+
+2018-07-30 16:57:10 - [MESSAGE][PASSED] - Object 'Object Repository/QCAnalyst/WorkingSet/WorkingSetCountBadge' is visible
+
+2018-07-30 16:57:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetCountBadge' is clicked on
+
+2018-07-30 16:57:10 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetCountBadge' is clicked on
+
+2018-07-30 16:57:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetSelectProcess' is clicked on
+
+2018-07-30 16:57:11 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetSelectProcess' is clicked on
+
+2018-07-30 16:57:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetGeneratePyramidsRadio' is clicked on
+
+2018-07-30 16:57:11 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetGeneratePyramidsRadio' is clicked on
+
+2018-07-30 16:57:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetExecuteProcess' is clicked on
+
+2018-07-30 16:57:11 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/WorkingSet/WorkingSetExecuteProcess' is clicked on
+
+2018-07-30 16:57:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:57:12 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:57:12 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/QCAnalyst/WorkingSet/ReadyToExecuteOKButton' is clickable
+
+2018-07-30 16:57:12 - [MESSAGE][PASSED] - Object 'Object Repository/QCAnalyst/WorkingSet/ReadyToExecuteOKButton' is clickable
+
+2018-07-30 16:57:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/WorkingSet/ReadyToExecuteOKButton' is clicked on
+
+2018-07-30 16:57:13 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/WorkingSet/ReadyToExecuteOKButton' is clicked on
+
+2018-07-30 16:57:13 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:57:13 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:57:16 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:57:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:57:16 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:57:16 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully
+
+2018-07-30 16:57:16 - [TEST_CASE][PASSED] - Test Cases/Utilities/QCAnalystSignOut: Test Cases/Utilities/QCAnalystSignOut
+
+2018-07-30 16:57:16 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-30 16:57:19 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-30 16:57:19 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-30 16:57:19 - [MESSAGE][PASSED] - Object 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-30 16:57:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:57:19 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:57:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:57:19 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:57:19 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-30 16:57:20 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-30 16:57:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/LidarLoader" classname="Test Cases/LidarLoader" status="PASSED">
+         <system-out><![CDATA[2018-07-30 16:57:20 - [TEST_CASE][PASSED] - Test Cases/LidarLoader: Test Cases/LidarLoader
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:57:20 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - rowNdx == 5: null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-30 16:57:20 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:57:23 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:57:23 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-30 16:57:24 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 16:57:24 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:57:24 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:57:24 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:57:24 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:57:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:57:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:57:27 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:57:27 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:57:32 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:57:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:57:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:57:32 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:57:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:57:32 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:57:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:57:32 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:57:32 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/qc' successfully
+
+2018-07-30 16:57:34 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/qc' successfully
+
+2018-07-30 16:57:34 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:57:34 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:57:38 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:57:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:57:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:57:39 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateProject' successfully
+
+2018-07-30 16:57:39 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateProject: Test Cases/Utilities/CreateProject
+
+2018-07-30 16:57:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-30 16:57:39 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-30 16:57:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/Projects/ProjectAddLine' is clicked on
+
+2018-07-30 16:57:39 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/Projects/ProjectAddLine' is clicked on
+
+2018-07-30 16:57:39 - [TEST_STEP][PASSED] - setText: Text 'ATPLidarProject' is set on object 'Object Repository/QCAnalyst/Projects/ProjectFilterProjectName_field'
+
+2018-07-30 16:57:39 - [MESSAGE][PASSED] - Text 'ATPLidarProject' is set on object 'Object Repository/QCAnalyst/Projects/ProjectFilterProjectName_field'
+
+2018-07-30 16:57:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:57:39 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:57:39 - [TEST_STEP][FAILED] - Statement - Try: Unable to verify object 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' located by 'By.xpath: //div[@class='row no-record-container']' not found)
+
+2018-07-30 16:57:39 - [TEST_STEP][FAILED] - verifyElementPresent: Unable to verify object 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' located by 'By.xpath: //div[@class='row no-record-container']' not found)
+
+2018-07-30 16:57:42 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' located by 'By.xpath: //div[@class='row no-record-container']' not found
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987861809.png]]
+
+2018-07-30 16:57:43 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' located by 'By.xpath: //div[@class='row no-record-container']' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987862516.png]]
+
+2018-07-30 16:57:43 - [TEST_STEP][PASSED] - Statement - Catch (Exception e): null
+
+2018-07-30 16:57:43 - [TEST_STEP][PASSED] - Statement - println(ProjectName + " does exist"): null
+
+2018-07-30 16:57:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/Projects/ProjectsCloseDialog_Button' is clicked on
+
+2018-07-30 16:57:43 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/Projects/ProjectsCloseDialog_Button' is clicked on
+
+2018-07-30 16:57:43 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:57:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateProject' successfully
+
+2018-07-30 16:57:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/LidarLoaderButton' is clicked on
+
+2018-07-30 16:57:43 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/LidarLoaderButton' is clicked on
+
+2018-07-30 16:57:43 - [TEST_STEP][PASSED] - setText: Text 'esp-testing' is set on object 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderInputBucketName'
+
+2018-07-30 16:57:44 - [MESSAGE][PASSED] - Text 'esp-testing' is set on object 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderInputBucketName'
+
+2018-07-30 16:57:44 - [TEST_STEP][PASSED] - setText: Text 'Staging/atp/lidar' is set on object 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderIInputS3Prefix'
+
+2018-07-30 16:57:45 - [MESSAGE][PASSED] - Text 'Staging/atp/lidar' is set on object 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderIInputS3Prefix'
+
+2018-07-30 16:57:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderSelectATPProject' is clicked on
+
+2018-07-30 16:57:45 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderSelectATPProject' is clicked on
+
+2018-07-30 16:57:45 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '2' are selected in object 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderSelectHillshade' 
+
+2018-07-30 16:57:45 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderSelectHillshade' 
+
+2018-07-30 16:57:45 - [TEST_STEP][PASSED] - sendKeys: Keys 'Z:\ESP\Test_data\swfwmd\Hernando\stplanFLWest.srs' sent to object: 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderSRSFilename'
+
+2018-07-30 16:57:45 - [MESSAGE][PASSED] - Keys 'Z:\ESP\Test_data\swfwmd\Hernando\stplanFLWest.srs' sent to object: 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderSRSFilename'
+
+2018-07-30 16:57:45 - [TEST_STEP][PASSED] - Statement - Try: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:57:45 - [TEST_STEP][PASSED] - Statement - notPresent = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementNotPresent(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(QCAnalyst/LidarLoader/LidarLoaderFailedToReadTheFile), 2): Web element with id: 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderFailedToReadTheFile' located by 'By.xpath: //span[(text() = 'Failed to read the file.' or . = 'Failed to read the file.')]' is not present after '2' second(s)
+
+2018-07-30 16:57:45 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderFailedToReadTheFile' located by 'By.xpath: //span[(text() = 'Failed to read the file.' or . = 'Failed to read the file.')]' is not present after '2' second(s)
+
+2018-07-30 16:57:45 - [TEST_STEP][PASSED] - Statement - If (notPresent): Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:57:45 - [TEST_STEP][PASSED] - Statement - println("No problem with the SRS/PRJ file"): null
+
+2018-07-30 16:57:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderExecute' is clicked on
+
+2018-07-30 16:57:45 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/LidarLoader/LidarLoaderExecute' is clicked on
+
+2018-07-30 16:57:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:57:47 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:57:47 - [TEST_STEP][PASSED] - Statement - Finally: Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully
+
+2018-07-30 16:57:47 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully
+
+2018-07-30 16:57:47 - [TEST_CASE][PASSED] - Test Cases/Utilities/QCAnalystSignOut: Test Cases/Utilities/QCAnalystSignOut
+
+2018-07-30 16:57:47 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-30 16:57:50 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-30 16:57:50 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-30 16:57:50 - [MESSAGE][PASSED] - Object 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-30 16:57:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:57:50 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:57:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:57:50 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:57:50 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-30 16:57:51 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-30 16:57:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/OrthoLoader" classname="Test Cases/OrthoLoader" status="PASSED">
+         <system-out><![CDATA[2018-07-30 16:57:51 - [TEST_CASE][PASSED] - Test Cases/OrthoLoader: Test Cases/OrthoLoader
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:57:51 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - Else If (Role == "User"): null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - Else If (Role == "System Admin"): null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - Else If (Role == "Organization Admin"): null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - Else If (Role == "QC Analyst"): null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - rowNdx == 5: null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-30 16:57:51 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:57:54 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:57:54 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-30 16:57:55 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 16:57:55 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:57:55 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:57:55 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:57:55 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:57:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:57:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:57:58 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:57:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:58:03 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:58:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:58:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:58:03 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:58:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:58:03 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/qc' successfully
+
+2018-07-30 16:58:05 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/qc' successfully
+
+2018-07-30 16:58:05 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:58:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:58:09 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:58:09 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:58:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:58:09 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateProject' successfully
+
+2018-07-30 16:58:10 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateProject: Test Cases/Utilities/CreateProject
+
+2018-07-30 16:58:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-30 16:58:10 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystProjects_Button' is clicked on
+
+2018-07-30 16:58:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/Projects/ProjectAddLine' is clicked on
+
+2018-07-30 16:58:10 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/Projects/ProjectAddLine' is clicked on
+
+2018-07-30 16:58:10 - [TEST_STEP][PASSED] - setText: Text 'ATPOrthoProject' is set on object 'Object Repository/QCAnalyst/Projects/ProjectFilterProjectName_field'
+
+2018-07-30 16:58:10 - [MESSAGE][PASSED] - Text 'ATPOrthoProject' is set on object 'Object Repository/QCAnalyst/Projects/ProjectFilterProjectName_field'
+
+2018-07-30 16:58:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:58:10 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:58:10 - [TEST_STEP][FAILED] - Statement - Try: Unable to verify object 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' located by 'By.xpath: //div[@class='row no-record-container']' not found)
+
+2018-07-30 16:58:10 - [TEST_STEP][FAILED] - verifyElementPresent: Unable to verify object 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' located by 'By.xpath: //div[@class='row no-record-container']' not found)
+
+2018-07-30 16:58:13 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' located by 'By.xpath: //div[@class='row no-record-container']' not found
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987892735.png]]
+
+2018-07-30 16:58:14 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/QCAnalyst/Projects/ProjectsNoRecordsFound' located by 'By.xpath: //div[@class='row no-record-container']' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\QC Analyst\\20180730_165509\\1532987893476.png]]
+
+2018-07-30 16:58:14 - [TEST_STEP][PASSED] - Statement - Catch (Exception e): null
+
+2018-07-30 16:58:14 - [TEST_STEP][PASSED] - Statement - println(ProjectName + " does exist"): null
+
+2018-07-30 16:58:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/Projects/ProjectsCloseDialog_Button' is clicked on
+
+2018-07-30 16:58:14 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/Projects/ProjectsCloseDialog_Button' is clicked on
+
+2018-07-30 16:58:14 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:58:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateProject' successfully
+
+2018-07-30 16:58:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/OrthoLoaderButton' is clicked on
+
+2018-07-30 16:58:14 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/OrthoLoaderButton' is clicked on
+
+2018-07-30 16:58:14 - [TEST_STEP][PASSED] - setText: Text 'esp-testing' is set on object 'Object Repository/QCAnalyst/OrthoLoader/OrthoLoaderInputBucketName'
+
+2018-07-30 16:58:15 - [MESSAGE][PASSED] - Text 'esp-testing' is set on object 'Object Repository/QCAnalyst/OrthoLoader/OrthoLoaderInputBucketName'
+
+2018-07-30 16:58:15 - [TEST_STEP][PASSED] - setText: Text 'Staging/atp/orthos' is set on object 'Object Repository/QCAnalyst/OrthoLoader/OrthoLoaderInputS3Prefix'
+
+2018-07-30 16:58:16 - [MESSAGE][PASSED] - Text 'Staging/atp/orthos' is set on object 'Object Repository/QCAnalyst/OrthoLoader/OrthoLoaderInputS3Prefix'
+
+2018-07-30 16:58:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/OrthoLoader/OrthoLoaderSelectATPProject' is clicked on
+
+2018-07-30 16:58:16 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/OrthoLoader/OrthoLoaderSelectATPProject' is clicked on
+
+2018-07-30 16:58:16 - [TEST_STEP][NOT_RUN] - sendKeys: NOT_RUN: sendKeys
+
+2018-07-30 16:58:16 - [MESSAGE][NOT_RUN] - NOT_RUN: sendKeys
+
+2018-07-30 16:58:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/OrthoLoader/OrthoLoaderExecute' is clicked on
+
+2018-07-30 16:58:16 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/OrthoLoader/OrthoLoaderExecute' is clicked on
+
+2018-07-30 16:58:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:58:17 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:58:17 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully
+
+2018-07-30 16:58:17 - [TEST_CASE][PASSED] - Test Cases/Utilities/QCAnalystSignOut: Test Cases/Utilities/QCAnalystSignOut
+
+2018-07-30 16:58:17 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-30 16:58:20 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-30 16:58:20 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-30 16:58:20 - [MESSAGE][PASSED] - Object 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clickable
+
+2018-07-30 16:58:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:58:20 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:58:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:58:21 - [MESSAGE][PASSED] - Object: 'Object Repository/QCAnalyst/QCAnalystUserAccount_Dropdown' is clicked on
+
+2018-07-30 16:58:21 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-30 16:58:21 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-30 16:58:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/QCAnalystSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-30 16:55:15 - [TEST_SUITE][FAILED] - QC Analyst: Test Cases/DavidsonQueryTest FAILED because (of) Verify element text of test object 'Object Repository/Grid/DisplayCount' FAILED. (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/DisplayCount' located by 'By.xpath: //div[@id='genericGridContainer']/div/b' not found)]]></system-out>
+      <system-err><![CDATA[2018-07-30 16:55:15 - [TEST_SUITE][FAILED] - QC Analyst: Test Cases/DavidsonQueryTest FAILED because (of) Verify element text of test object 'Object Repository/Grid/DisplayCount' FAILED. (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/DisplayCount' located by 'By.xpath: //div[@id='genericGridContainer']/div/b' not found)]]></system-err>
+   </testsuite>
+</testsuites>

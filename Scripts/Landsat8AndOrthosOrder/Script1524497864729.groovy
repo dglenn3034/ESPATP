@@ -28,6 +28,9 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUI.click(findTestObject('Cesium/CesiumSearchButton'))
 
+'Not sure why this is needed, but we have to wait until Cesium search is finished resetting the view before we can rest the AOI to the view '
+WebUI.delay(3)
+
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUI.click(findTestObject('Catalog/Main/CatalogAOIAsView_Button'))

@@ -69,13 +69,15 @@ println('FootprintFile = ' + FootprintFile)
 if ((FootprintFile != null) && (FootprintFile.length() > 0)) {
     WebUI.click(findTestObject('QCAnalyst/CreateProject/CreateProjectImportFootprintSingleFile_Tab'))
 
-    WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField'), FootprintFile)
+    WebUI.delay(3)
 
-    WebUI.delay(2)
+    WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField'), FootprintFile)
 
     WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/CreateProject/CreateProjectFootprintImport_Button'))
 
     WebUI.click(findTestObject('QCAnalyst/CreateProject/button_OK'))
+
+    WebUI.delay(3)
 
     WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/CreateProject/CreateProjectSave'))
 
@@ -89,6 +91,9 @@ if ((FootprintFile != null) && (FootprintFile.length() > 0)) {
 
     'This OK is to accept that the project is created with no footprint'
     WebUiBuiltInKeywords.click(findTestObject('OKButton'))
+	
+	WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+	
 
     'This OK is to close the project created confirmation dialog'
     WebUiBuiltInKeywords.click(findTestObject('OKButton'))

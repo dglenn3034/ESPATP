@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Admin" time="206" tests="4" failures="0" errors="0">
+   <testsuite name="Admin" tests="4" failures="0" errors="0" time="206" timestamp="2018-07-30 16:22:33" hostname="DGlenn - MUSES-David.local.niirs10.com" id="Test Suites/Admin">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180730_162227"/>
+         <property name="logFiles" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180730_162227\\execution0.log"/>
+         <property name="attachments" value="D:\\ATPS\\ESPATP\\Reports\\Admin\\20180730_162227\\1532985937052.png, D:\\ATPS\\ESPATP\\Reports\\Admin\\20180730_162227\\1532985937353.png"/>
+         <property name="hostName" value="DGlenn - MUSES-David.local.niirs10.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="abbca0a5c0ff9868855b6a494b94305b"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/AdminGUISanity" classname="Test Cases/AdminGUISanity" status="PASSED">
+         <system-out><![CDATA[2018-07-30 16:22:33 - [TEST_CASE][PASSED] - Test Cases/AdminGUISanity: Test Cases/AdminGUISanity
+
+2018-07-30 16:22:34 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:22:34 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-30 16:22:34 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-30 16:22:35 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:22:35 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-30 16:22:35 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:22:35 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-30 16:22:35 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-30 16:22:35 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-30 16:22:35 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-30 16:22:35 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-30 16:22:35 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-30 16:22:35 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:22:39 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:22:39 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-30 16:22:40 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 16:22:40 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:22:40 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:22:40 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:22:40 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:22:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:22:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:22:44 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:22:44 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:22:48 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:22:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:22:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:22:48 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:22:48 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:22:48 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-30 16:22:50 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-30 16:22:50 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:22:50 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:22:57 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:22:57 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Users' is present
+
+2018-07-30 16:22:57 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Users' is present
+
+2018-07-30 16:22:57 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Groups' is present
+
+2018-07-30 16:22:57 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Groups' is present
+
+2018-07-30 16:22:57 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Organizations' is present
+
+2018-07-30 16:22:57 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Organizations' is present
+
+2018-07-30 16:22:57 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Access Restriction' is present
+
+2018-07-30 16:22:57 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Access Restriction' is present
+
+2018-07-30 16:22:57 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Basemaps' is present
+
+2018-07-30 16:22:57 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Basemaps' is present
+
+2018-07-30 16:22:57 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/div_Reports' is present
+
+2018-07-30 16:22:57 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/div_Reports' is present
+
+2018-07-30 16:22:57 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/a_ System Information' is present
+
+2018-07-30 16:22:57 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/a_ System Information' is present
+
+2018-07-30 16:22:57 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Console/a_ActivityLog' is present
+
+2018-07-30 16:22:57 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/a_ActivityLog' is present
+
+2018-07-30 16:22:57 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-30 16:22:57 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-30 16:22:57 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-30 16:23:00 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-30 16:23:00 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-30 16:23:00 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-30 16:23:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-30 16:23:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-30 16:23:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-30 16:23:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-30 16:23:01 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-30 16:23:01 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-30 16:23:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/AdminBasics" classname="Test Cases/AdminBasics" status="PASSED">
+         <system-out><![CDATA[2018-07-30 16:23:01 - [TEST_CASE][PASSED] - Test Cases/AdminBasics: Test Cases/AdminBasics
+
+2018-07-30 16:23:01 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:23:02 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-30 16:23:02 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:23:04 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:23:04 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-30 16:23:05 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 16:23:05 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:23:05 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:23:05 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:23:05 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:23:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:23:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:23:09 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:09 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:23:13 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:23:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:23:13 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:23:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:23:13 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-30 16:23:14 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-30 16:23:14 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:23:21 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:21 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateGroup' successfully
+
+2018-07-30 16:23:21 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateGroup: Test Cases/Utilities/CreateGroup
+
+2018-07-30 16:23:21 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-30 16:23:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-30 16:23:21 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:23:21 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:23:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-30 16:23:22 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:23:22 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:23:22 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:23:22 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-30 16:23:22 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Grid/NoRecordsExist' is present
+
+2018-07-30 16:23:22 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/NoRecordsExist' is present
+
+2018-07-30 16:23:22 - [TEST_STEP][PASSED] - Statement - println(Name + "does not exist, will create"): null
+
+2018-07-30 16:23:22 - [TEST_STEP][PASSED] - Statement - Finally: null
+
+2018-07-30 16:23:22 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/GroupsAddGroup_Button' is clicked on
+
+2018-07-30 16:23:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/GroupsAddGroup_Button' is clicked on
+
+2018-07-30 16:23:22 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Admin Console/Groups/GroupsName_Field'
+
+2018-07-30 16:23:22 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Admin Console/Groups/GroupsName_Field'
+
+2018-07-30 16:23:22 - [TEST_STEP][PASSED] - setText: Text 'Test Group for ATP based on User' is set on object 'Object Repository/Admin Console/Groups/GroupsDescription_Field'
+
+2018-07-30 16:23:23 - [MESSAGE][PASSED] - Text 'Test Group for ATP based on User' is set on object 'Object Repository/Admin Console/Groups/GroupsDescription_Field'
+
+2018-07-30 16:23:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/GroupsCopyfromUserGroup_Option' is clicked on
+
+2018-07-30 16:23:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/GroupsCopyfromUserGroup_Option' is clicked on
+
+2018-07-30 16:23:23 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/GroupsAddGroupSave_Button' is clicked on
+
+2018-07-30 16:23:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/GroupsAddGroupSave_Button' is clicked on
+
+2018-07-30 16:23:23 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-30 16:23:25 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-30 16:23:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-30 16:23:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-30 16:23:25 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:23:29 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateGroup' successfully
+
+2018-07-30 16:23:29 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateOrganization' successfully
+
+2018-07-30 16:23:29 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateOrganization: Test Cases/Utilities/CreateOrganization
+
+2018-07-30 16:23:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-30 16:23:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-30 16:23:30 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:23:30 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:23:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-30 16:23:30 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:23:30 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:23:30 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:23:30 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-30 16:23:30 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Grid/NoRecordsExist' is present
+
+2018-07-30 16:23:30 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/NoRecordsExist' is present
+
+2018-07-30 16:23:30 - [TEST_STEP][PASSED] - Statement - println(Name + "does not exist, will create"): null
+
+2018-07-30 16:23:30 - [TEST_STEP][PASSED] - Statement - Finally: null
+
+2018-07-30 16:23:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Organizations/AddOrganizationButton' is clicked on
+
+2018-07-30 16:23:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Organizations/AddOrganizationButton' is clicked on
+
+2018-07-30 16:23:30 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Admin Console/Organizations/OrganizationName'
+
+2018-07-30 16:23:31 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Admin Console/Organizations/OrganizationName'
+
+2018-07-30 16:23:31 - [TEST_STEP][PASSED] - setText: Text 'ATP Test Organization' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDescription'
+
+2018-07-30 16:23:31 - [MESSAGE][PASSED] - Text 'ATP Test Organization' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDescription'
+
+2018-07-30 16:23:31 - [TEST_STEP][PASSED] - setText: Text 'esp-geocue-orders' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDeliveryBucket'
+
+2018-07-30 16:23:31 - [MESSAGE][PASSED] - Text 'esp-geocue-orders' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDeliveryBucket'
+
+2018-07-30 16:23:31 - [TEST_STEP][PASSED] - setText: Text 'ATPOrders' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDeliveryPrefix'
+
+2018-07-30 16:23:32 - [MESSAGE][PASSED] - Text 'ATPOrders' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDeliveryPrefix'
+
+2018-07-30 16:23:32 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Admin Console/Organizations/OrganizationGroupPulldown'
+
+2018-07-30 16:23:32 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Admin Console/Organizations/OrganizationGroupPulldown'
+
+2018-07-30 16:23:32 - [TEST_STEP][PASSED] - setText: Text 'airgon.com' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDomain'
+
+2018-07-30 16:23:32 - [MESSAGE][PASSED] - Text 'airgon.com' is set on object 'Object Repository/Admin Console/Organizations/OrganizationDomain'
+
+2018-07-30 16:23:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Organizations/OrganizationSaveButton' is clicked on
+
+2018-07-30 16:23:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Organizations/OrganizationSaveButton' is clicked on
+
+2018-07-30 16:23:32 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-30 16:23:34 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-30 16:23:34 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Organizations/OrganizationRefresh_Button' is clicked on
+
+2018-07-30 16:23:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Organizations/OrganizationRefresh_Button' is clicked on
+
+2018-07-30 16:23:34 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:34 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:23:38 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateOrganization' successfully
+
+2018-07-30 16:23:38 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/CreateUser' successfully
+
+2018-07-30 16:23:38 - [TEST_CASE][PASSED] - Test Cases/Utilities/CreateUser: Test Cases/Utilities/CreateUser
+
+2018-07-30 16:23:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/a_Users' is clicked on
+
+2018-07-30 16:23:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/a_Users' is clicked on
+
+2018-07-30 16:23:38 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:23:38 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:23:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-30 16:23:38 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:23:38 - [TEST_STEP][PASSED] - setText: Text 'dglenn@airgon.com' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:23:39 - [MESSAGE][PASSED] - Text 'dglenn@airgon.com' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:23:39 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-30 16:23:39 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Grid/NoRecordsExist' is present
+
+2018-07-30 16:23:39 - [MESSAGE][PASSED] - Object 'Object Repository/Grid/NoRecordsExist' is present
+
+2018-07-30 16:23:39 - [TEST_STEP][PASSED] - Statement - println(email + "does not exist, will create"): null
+
+2018-07-30 16:23:39 - [TEST_STEP][PASSED] - Statement - Finally: null
+
+2018-07-30 16:23:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/UsersAddUser_Button' is clicked on
+
+2018-07-30 16:23:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/UsersAddUser_Button' is clicked on
+
+2018-07-30 16:23:39 - [TEST_STEP][PASSED] - setText: Text 'dglenn@airgon.com' is set on object 'Object Repository/Admin Console/Users/UsersEmail_Field'
+
+2018-07-30 16:23:39 - [MESSAGE][PASSED] - Text 'dglenn@airgon.com' is set on object 'Object Repository/Admin Console/Users/UsersEmail_Field'
+
+2018-07-30 16:23:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/UsersSelect Organization_Option' is clicked on
+
+2018-07-30 16:23:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/UsersSelect Organization_Option' is clicked on
+
+2018-07-30 16:23:39 - [TEST_STEP][PASSED] - setText: Text 'esp-geocue-orders' is set on object 'Object Repository/Admin Console/Users/UsersdeliveryBucket_Field'
+
+2018-07-30 16:23:40 - [MESSAGE][PASSED] - Text 'esp-geocue-orders' is set on object 'Object Repository/Admin Console/Users/UsersdeliveryBucket_Field'
+
+2018-07-30 16:23:40 - [TEST_STEP][PASSED] - setText: Text 'ATPOrders' is set on object 'Object Repository/Admin Console/Users/UsersDeliveryPrefix_Field'
+
+2018-07-30 16:23:40 - [MESSAGE][PASSED] - Text 'ATPOrders' is set on object 'Object Repository/Admin Console/Users/UsersDeliveryPrefix_Field'
+
+2018-07-30 16:23:40 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Admin Console/Users/UsersSelectUserGroup_CheckBox' is checked
+
+2018-07-30 16:23:41 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/Users/UsersSelectUserGroup_CheckBox' is checked
+
+2018-07-30 16:23:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/UsersGroupsAssign_Arrow' is clicked on
+
+2018-07-30 16:23:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/UsersGroupsAssign_Arrow' is clicked on
+
+2018-07-30 16:23:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/UsersAddUserSave_Button' is clicked on
+
+2018-07-30 16:23:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/UsersAddUserSave_Button' is clicked on
+
+2018-07-30 16:23:41 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-30 16:23:43 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-30 16:23:43 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-30 16:23:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-30 16:23:45 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:45 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:23:47 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:47 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/CreateUser' successfully
+
+2018-07-30 16:23:47 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/DeleteUser' successfully
+
+2018-07-30 16:23:47 - [TEST_CASE][PASSED] - Test Cases/Utilities/DeleteUser: Test Cases/Utilities/DeleteUser
+
+2018-07-30 16:23:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/a_Users' is clicked on
+
+2018-07-30 16:23:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/a_Users' is clicked on
+
+2018-07-30 16:23:47 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:23:47 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:23:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-30 16:23:47 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:23:47 - [TEST_STEP][PASSED] - setText: Text 'dglenn@airgon.com' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:23:48 - [MESSAGE][PASSED] - Text 'dglenn@airgon.com' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:23:48 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ExecuteGridFunction: genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:23:48 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:23:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/GridRowFunctions' is clicked on
+
+2018-07-30 16:23:48 - [MESSAGE][PASSED] - genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:23:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:23:49 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:23:49 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-30 16:23:51 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-30 16:23:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-30 16:23:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-30 16:23:51 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:51 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/DeleteUser' successfully
+
+2018-07-30 16:23:54 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/DeleteOrganization' successfully
+
+2018-07-30 16:23:54 - [TEST_CASE][PASSED] - Test Cases/Utilities/DeleteOrganization: Test Cases/Utilities/DeleteOrganization
+
+2018-07-30 16:23:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Organizations/a_ Organizations' is clicked on
+
+2018-07-30 16:23:54 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:23:54 - [TEST_STEP][PASSED] - setText: Text 'ATPOrganization' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - Text 'ATPOrganization' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:23:54 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ExecuteGridFunction: genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/GridRowFunctions' is clicked on
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:23:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:23:54 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:23:54 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-30 16:23:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-30 16:23:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-30 16:23:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Users/UsersRefresh_Button' is clicked on
+
+2018-07-30 16:23:56 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:23:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/DeleteOrganization' successfully
+
+2018-07-30 16:24:01 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/DeleteGroup' successfully
+
+2018-07-30 16:24:01 - [TEST_CASE][PASSED] - Test Cases/Utilities/DeleteGroup: Test Cases/Utilities/DeleteGroup
+
+2018-07-30 16:24:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/a_ Groups' is clicked on
+
+2018-07-30 16:24:01 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:24:01 - [TEST_STEP][PASSED] - setText: Text 'ATPUser2' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - Text 'ATPUser2' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:24:01 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ExecuteGridFunction: genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/GridRowFunctions' is clicked on
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:24:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:24:01 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:24:01 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-07-30 16:24:03 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-07-30 16:24:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-30 16:24:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Groups/GroupsRefresh_Button' is clicked on
+
+2018-07-30 16:24:04 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:24:08 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:08 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/DeleteGroup' successfully
+
+2018-07-30 16:24:08 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-30 16:24:08 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-30 16:24:08 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-30 16:24:11 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-30 16:24:11 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-30 16:24:11 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-30 16:24:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-30 16:24:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-30 16:24:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-30 16:24:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-30 16:24:11 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-30 16:24:12 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-30 16:24:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Reports" classname="Test Cases/Reports" status="PASSED">
+         <system-out><![CDATA[2018-07-30 16:24:12 - [TEST_CASE][PASSED] - Test Cases/Reports: Test Cases/Reports
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:24:12 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-30 16:24:12 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:24:15 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:24:15 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-30 16:24:16 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 16:24:16 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:24:16 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:24:16 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:24:16 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:24:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:24:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:24:20 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:24:24 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:24:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:24:24 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:24:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:24:24 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-30 16:24:25 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-30 16:24:25 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:24:32 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/ReportsViewDetails' is clicked on
+
+2018-07-30 16:24:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/ReportsViewDetails' is clicked on
+
+2018-07-30 16:24:32 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label 'Geocue' are selected in object 'Object Repository/Admin Console/Reports/ReportsOrderReportOrganization' 
+
+2018-07-30 16:24:32 - [MESSAGE][PASSED] - All options with label 'Geocue' are selected in object 'Object Repository/Admin Console/Reports/ReportsOrderReportOrganization' 
+
+2018-07-30 16:24:32 - [TEST_STEP][PASSED] - setText: Text '04/01/2018' is set on object 'Object Repository/Admin Console/Reports/ReportsDatePickStart'
+
+2018-07-30 16:24:32 - [MESSAGE][PASSED] - Text '04/01/2018' is set on object 'Object Repository/Admin Console/Reports/ReportsDatePickStart'
+
+2018-07-30 16:24:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/OrderReportHeader' is clicked on
+
+2018-07-30 16:24:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/OrderReportHeader' is clicked on
+
+2018-07-30 16:24:32 - [TEST_STEP][PASSED] - setText: Text '06/01/2018' is set on object 'Object Repository/Admin Console/Reports/ReportsDatePickEnd'
+
+2018-07-30 16:24:32 - [MESSAGE][PASSED] - Text '06/01/2018' is set on object 'Object Repository/Admin Console/Reports/ReportsDatePickEnd'
+
+2018-07-30 16:24:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/ReportsOrderReportPreview' is clicked on
+
+2018-07-30 16:24:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/ReportsOrderReportPreview' is clicked on
+
+2018-07-30 16:24:32 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-30 16:24:37 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-30 16:24:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/ReportsDismissPreview' is clicked on
+
+2018-07-30 16:24:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/ReportsDismissPreview' is clicked on
+
+2018-07-30 16:24:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/ReportsOrderReportEmail' is clicked on
+
+2018-07-30 16:24:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/ReportsOrderReportEmail' is clicked on
+
+2018-07-30 16:24:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/ReportsOKButton' is clicked on
+
+2018-07-30 16:24:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/ReportsOKButton' is clicked on
+
+2018-07-30 16:24:38 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:38 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:24:39 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:39 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-30 16:24:44 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-30 16:24:44 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/a_Users' is clicked on
+
+2018-07-30 16:24:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/a_Users' is clicked on
+
+2018-07-30 16:24:44 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:44 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:24:44 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:44 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-30 16:24:47 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-30 16:24:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/UserReportHeader' is clicked on
+
+2018-07-30 16:24:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/UserReportHeader' is clicked on
+
+2018-07-30 16:24:47 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label 'Geocue' are selected in object 'Object Repository/Admin Console/Reports/ReportsUserReportOrganization' 
+
+2018-07-30 16:24:48 - [MESSAGE][PASSED] - All options with label 'Geocue' are selected in object 'Object Repository/Admin Console/Reports/ReportsUserReportOrganization' 
+
+2018-07-30 16:24:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/ReportsUserReportPreview' is clicked on
+
+2018-07-30 16:24:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/ReportsUserReportPreview' is clicked on
+
+2018-07-30 16:24:48 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-30 16:24:53 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-30 16:24:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/ReportsDismissPreview' is clicked on
+
+2018-07-30 16:24:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/ReportsDismissPreview' is clicked on
+
+2018-07-30 16:24:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/ReportsUserReportsEmail' is clicked on
+
+2018-07-30 16:24:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/ReportsUserReportsEmail' is clicked on
+
+2018-07-30 16:24:53 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Reports/ReportsOKButton' is clicked on
+
+2018-07-30 16:24:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Reports/ReportsOKButton' is clicked on
+
+2018-07-30 16:24:53 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:24:56 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:24:56 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-30 16:24:59 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-30 16:24:59 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-30 16:24:59 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-30 16:24:59 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-30 16:25:02 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-30 16:25:02 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-30 16:25:02 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-30 16:25:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-30 16:25:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-30 16:25:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-30 16:25:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-30 16:25:03 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-30 16:25:03 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-30 16:25:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/BasemapSanity" classname="Test Cases/BasemapSanity" status="PASSED">
+         <system-out><![CDATA[2018-07-30 16:25:03 - [TEST_CASE][PASSED] - Test Cases/BasemapSanity: Test Cases/BasemapSanity
+
+2018-07-30 16:25:03 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:25:04 - [TEST_CASE][PASSED] - Test Cases/Utilities/LogMeIn: Test Cases/Utilities/LogMeIn
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - Statement - envData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(LoginData): Reading excel file with source file 'D:\ATPS\TestData\logins.xlsx' and sheet name 'Test1'
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - Statement - If (Role == "Company Admin"): null
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - Statement - rowNdx = 1: null
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - Statement - User = envData.getValue(2, rowNdx): null
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - Statement - pwd = envData.getValue(3, rowNdx): null
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - Statement - ScreenShotFile = envData.getValue(4, rowNdx): null
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - Statement - theSite = GeoCueCompanySite: null
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - Statement - If (Company != null): null
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - Statement - theSite = theSite.replace("geocue", Company): null
+
+2018-07-30 16:25:04 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:25:06 - [MESSAGE][PASSED] - Browser is opened with url: 'http://dev.localhost:38251'
+
+2018-07-30 16:25:06 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-07-30 16:25:07 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 16:25:07 - [TEST_STEP][PASSED] - setText: Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:25:07 - [MESSAGE][PASSED] - Text 'dglenn@geocue.com' is set on object 'Object Repository/Catalog/input_Email'
+
+2018-07-30 16:25:07 - [TEST_STEP][PASSED] - setText: Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:25:07 - [MESSAGE][PASSED] - Text 'David123!' is set on object 'Object Repository/Catalog/input_Password'
+
+2018-07-30 16:25:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:25:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Signin_Button' is clicked on
+
+2018-07-30 16:25:11 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:25:11 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:25:15 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:25:15 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:25:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Cesium/canvas' is clicked on
+
+2018-07-30 16:25:15 - [TEST_STEP][PASSED] - Statement - return null: null
+
+2018-07-30 16:25:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/LogMeIn' successfully
+
+2018-07-30 16:25:15 - [TEST_STEP][PASSED] - Statement - found = false: null
+
+2018-07-30 16:25:15 - [TEST_STEP][PASSED] - Statement - found = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Utilities/NamedSearchExists), ["NamedSearch":"ATPLidarNS"], STOP_ON_FAILURE): Call Test Case 'Test Cases/Utilities/NamedSearchExists' successfully
+
+2018-07-30 16:25:15 - [TEST_CASE][PASSED] - Test Cases/Utilities/NamedSearchExists: Test Cases/Utilities/NamedSearchExists
+
+2018-07-30 16:25:15 - [TEST_STEP][PASSED] - Statement - found = true: null
+
+2018-07-30 16:25:15 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Catalog/Main/CatalogNamedSearch_Button' is clickable
+
+2018-07-30 16:25:15 - [MESSAGE][PASSED] - Object 'Object Repository/Catalog/Main/CatalogNamedSearch_Button' is clickable
+
+2018-07-30 16:25:15 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/Main/CatalogNamedSearch_Button' is clicked on
+
+2018-07-30 16:25:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/Main/CatalogNamedSearch_Button' is clicked on
+
+2018-07-30 16:25:15 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:25:15 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:25:24 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:25:24 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-07-30 16:25:24 - [TEST_STEP][PASSED] - selectOptionByLabel: All options with label 'ATPLidarNS' are selected in object 'Object Repository/Catalog/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-30 16:25:24 - [MESSAGE][PASSED] - All options with label 'ATPLidarNS' are selected in object 'Object Repository/Catalog/NamedSearch/NamedSearch_SelectField' 
+
+2018-07-30 16:25:24 - [TEST_STEP][PASSED] - Statement - found = true: null
+
+2018-07-30 16:25:24 - [TEST_STEP][PASSED] - Statement - return found: null
+
+2018-07-30 16:25:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/NamedSearchExists' successfully
+
+2018-07-30 16:25:24 - [TEST_STEP][PASSED] - Statement - If (found == true): Object: 'Object Repository/Catalog/NamedSearch/NamedSearchesCancel_Button' is clicked on
+
+2018-07-30 16:25:24 - [TEST_STEP][PASSED] - Statement - println("Named Search is found"): null
+
+2018-07-30 16:25:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Catalog/NamedSearch/NamedSearchesCancel_Button' is clicked on
+
+2018-07-30 16:25:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Catalog/NamedSearch/NamedSearchesCancel_Button' is clicked on
+
+2018-07-30 16:25:24 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-30 16:25:25 - [MESSAGE][PASSED] - Navigate to 'http://dev.localhost:38251/admin' successfully
+
+2018-07-30 16:25:25 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:25:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '15'
+
+2018-07-30 16:25:31 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '15' second(s)
+
+2018-07-30 16:25:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/a_ Custom Base Maps' is clicked on
+
+2018-07-30 16:25:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/a_ Custom Base Maps' is clicked on
+
+2018-07-30 16:25:32 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:25:32 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:25:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-30 16:25:32 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:25:32 - [TEST_STEP][PASSED] - setText: Text 'ATPBasemap' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:25:32 - [MESSAGE][PASSED] - Text 'ATPBasemap' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:25:32 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ColumnFilter: genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:25:32 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:25:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/ColumnFilter' is clicked on
+
+2018-07-30 16:25:32 - [MESSAGE][PASSED] - genericGrid.gridOperations.ColumnFilter is PASSED
+
+2018-07-30 16:25:32 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-30 16:25:35 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-30 16:25:35 - [TEST_STEP][PASSED] - setText: Text 'COMPLETE' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:25:36 - [MESSAGE][PASSED] - Text 'COMPLETE' is set on object 'Object Repository/Grid/LikeFilter'
+
+2018-07-30 16:25:36 - [TEST_STEP][FAILED] - Statement - Try: Unable to verify object 'Object Repository/Grid/NoRecordsExist' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found)
+
+2018-07-30 16:25:36 - [TEST_STEP][FAILED] - verifyElementPresent: Unable to verify object 'Object Repository/Grid/NoRecordsExist' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found)
+
+2018-07-30 16:25:37 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\Admin\\20180730_162227\\1532985937052.png]]
+
+2018-07-30 16:25:37 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Grid/NoRecordsExist' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Grid/NoRecordsExist' located by 'By.xpath: //div[(contains(@class,'no-record'))]' not found)
+[[ATTACHMENT|D:\\ATPS\\ESPATP\\Reports\\Admin\\20180730_162227\\1532985937353.png]]
+
+2018-07-30 16:25:37 - [TEST_STEP][PASSED] - Statement - Catch (Exception e): Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:25:37 - [TEST_STEP][PASSED] - Statement - println("Basemap does exist, we will delete it"): null
+
+2018-07-30 16:25:37 - [TEST_STEP][PASSED] - genericGrid.gridOperations.ExecuteGridFunction: genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:25:37 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2018-07-30 16:25:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Grid/GridRowFunctions' is clicked on
+
+2018-07-30 16:25:37 - [MESSAGE][PASSED] - genericGrid.gridOperations.ExecuteGridFunction is PASSED
+
+2018-07-30 16:25:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:25:37 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:25:37 - [TEST_STEP][PASSED] - waitForElementNotPresent: Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-30 16:25:39 - [MESSAGE][PASSED] - Web element with id: 'Object Repository/LoadingMask' located by 'By.xpath: //div[@class='loading-mask']' is not present after '5' second(s)
+
+2018-07-30 16:25:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Basemaps/CreateBasemap_Button' is clicked on
+
+2018-07-30 16:25:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Basemaps/CreateBasemap_Button' is clicked on
+
+2018-07-30 16:25:39 - [TEST_STEP][PASSED] - setText: Text 'ATPBasemap' is set on object 'Object Repository/Admin Console/Basemaps/BasemapName_Field'
+
+2018-07-30 16:25:39 - [MESSAGE][PASSED] - Text 'ATPBasemap' is set on object 'Object Repository/Admin Console/Basemaps/BasemapName_Field'
+
+2018-07-30 16:25:39 - [TEST_STEP][PASSED] - setText: Text 'ATPBasemap for Testing' is set on object 'Object Repository/Admin Console/Basemaps/BasemapDescription_Field'
+
+2018-07-30 16:25:39 - [MESSAGE][PASSED] - Text 'ATPBasemap for Testing' is set on object 'Object Repository/Admin Console/Basemaps/BasemapDescription_Field'
+
+2018-07-30 16:25:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Basemaps/BasemapNamedSearchOption_ATPLidarNS' is clicked on
+
+2018-07-30 16:25:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Basemaps/BasemapNamedSearchOption_ATPLidarNS' is clicked on
+
+2018-07-30 16:25:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Basemaps/BasemapMaxDetailOption_14' is clicked on
+
+2018-07-30 16:25:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Basemaps/BasemapMaxDetailOption_14' is clicked on
+
+2018-07-30 16:25:47 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Console/Basemaps/BasemapisPublic_Checkbox' is clickable
+
+2018-07-30 16:25:47 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/Basemaps/BasemapisPublic_Checkbox' is clickable
+
+2018-07-30 16:25:47 - [TEST_STEP][PASSED] - check: Object 'Object Repository/Admin Console/Basemaps/BasemapisPublic_Checkbox' is checked
+
+2018-07-30 16:25:47 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/Basemaps/BasemapisPublic_Checkbox' is checked
+
+2018-07-30 16:25:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/Basemaps/BasemapCreate_button' is clicked on
+
+2018-07-30 16:25:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/Basemaps/BasemapCreate_button' is clicked on
+
+2018-07-30 16:25:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:25:50 - [MESSAGE][PASSED] - Object: 'Object Repository/OKButton' is clicked on
+
+2018-07-30 16:25:50 - [TEST_STEP][PASSED] - delay: Delayed 5 second(s)
+
+2018-07-30 16:25:55 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2018-07-30 16:25:55 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully
+
+2018-07-30 16:25:55 - [TEST_CASE][PASSED] - Test Cases/Utilities/AdminConsoleSignOut: Test Cases/Utilities/AdminConsoleSignOut
+
+2018-07-30 16:25:55 - [TEST_STEP][PASSED] - delay: Delayed 3 second(s)
+
+2018-07-30 16:25:58 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-07-30 16:25:58 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-30 16:25:58 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Console/UserAccount_Dropdown' is clickable
+
+2018-07-30 16:25:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-30 16:25:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccount_Dropdown' is clicked on
+
+2018-07-30 16:25:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-30 16:25:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Console/UserAccountSignout_Field' is clicked on
+
+2018-07-30 16:25:58 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-07-30 16:25:59 - [MESSAGE][PASSED] - Browser is closed
+
+2018-07-30 16:25:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Utilities/AdminConsoleSignOut' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-30 16:22:33 - [TEST_SUITE][PASSED] - Admin: Test Cases/BasemapSanity]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

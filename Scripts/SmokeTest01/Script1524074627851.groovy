@@ -39,9 +39,13 @@ if (found == true) {
     println(' No such named Search')
 
     WebUI.click(findTestObject('Catalog/NamedSearch/NamedSearchesCancel_Button'))
+
+   
 }
 
-WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
+ WebUI.delay(3)
+ 
+ WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
 CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8', 'NDVI')
 
@@ -114,7 +118,7 @@ WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPreviewOrder_Button'))
 
 WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPlaceOrder_Button'))
 
-WebUI.delay(2)
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUI.click(findTestObject('OKButton'))
 

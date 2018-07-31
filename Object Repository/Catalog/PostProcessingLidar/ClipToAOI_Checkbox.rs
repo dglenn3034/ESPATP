@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div/label[(text() = ' AOI ' or . = ' AOI ')]/input[@type = &quot;checkbox&quot;] </value>
+         <value>//div[@class='processClipping form-group']/div/label[ (text()=' AOI ') ]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

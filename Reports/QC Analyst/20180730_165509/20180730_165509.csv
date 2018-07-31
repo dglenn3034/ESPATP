@@ -1,0 +1,82 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+QC Analyst,Chrome 67.0.3396.99,User must have QC Analyst role,2018-07-30 16:55:15,2018-07-30 16:58:21,3m - 6.575s,FAILED
+,,,,,,
+Test Cases/DavidsonQueryTest,Chrome 67.0.3396.99,Opens the Davidson Project in the QC analyst environment and checks the Project Items grid to be sure '1072' items are found\n\nRequires QCAnalyst role,2018-07-30 16:55:15,2018-07-30 16:55:58,42.726s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:55:15,2018-07-30 16:55:30,14.902s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-30 16:55:30,2018-07-30 16:55:32,2.320s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:55:32,2018-07-30 16:55:37,4.661s,PASSED
+click,Chrome 67.0.3396.99,Click here to get Cesium Help to disappear,2018-07-30 16:55:37,2018-07-30 16:55:37,0.133s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:55:37,2018-07-30 16:55:37,0.117s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:55:37,2018-07-30 16:55:37,0.129s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:55:37,2018-07-30 16:55:38,0.066s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:55:38,2018-07-30 16:55:38,0.206s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:55:38,2018-07-30 16:55:38,0.092s,PASSED
+genericGrid.gridOperations.ExecuteGridFunction,Chrome 67.0.3396.99,,2018-07-30 16:55:38,2018-07-30 16:55:39,1.179s,PASSED
+verifyElementText,Chrome 67.0.3396.99,,2018-07-30 16:55:39,2018-07-30 16:55:58,18.599s,FAILED
+,,,,,,
+Test Cases/CreateProjectWithFootprint,Chrome 67.0.3396.99,"Calls create project to create ATPProjectFootprint with HoustonBayArea as footprint. Deletes project if it exists, then recreates it\n\nRequires System Admin role (in order to delete the project if it already exists)",2018-07-30 16:55:58,2018-07-30 16:56:24,26.024s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:55:58,2018-07-30 16:56:10,12.724s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-30 16:56:10,2018-07-30 16:56:13,2.043s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:56:13,2018-07-30 16:56:17,4.676s,PASSED
+click,Chrome 67.0.3396.99,Click here to get Cesium Canvas to disappear,2018-07-30 16:56:17,2018-07-30 16:56:17,0.122s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:56:17,2018-07-30 16:56:24,6.342s,FAILED
+,,,,,,
+Test Cases/GeneratePyramids,Chrome 67.0.3396.99,"Opens the Davidson project, clears the working set, filters the project itesm to a small set using name='DavCo_AA', adds them to the working set, opens the working set and executes the generate pyramids process\n\nRequires QCAnalyst role",2018-07-30 16:56:24,2018-07-30 16:57:20,56.174s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:56:24,2018-07-30 16:56:36,12.190s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-30 16:56:36,2018-07-30 16:56:38,2.056s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:56:38,2018-07-30 16:56:43,4.642s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:56:43,2018-07-30 16:56:43,0.120s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:56:43,2018-07-30 16:56:43,0.119s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:56:43,2018-07-30 16:56:43,0.115s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:56:43,2018-07-30 16:56:43,0.202s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:56:43,2018-07-30 16:56:43,0.094s,PASSED
+genericGrid.gridOperations.ExecuteGridFunction,Chrome 67.0.3396.99,,2018-07-30 16:56:43,2018-07-30 16:56:45,1.333s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:56:45,2018-07-30 16:56:47,2.517s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-30 16:56:47,2018-07-30 16:56:50,2.752s,PASSED
+genericGrid.gridOperations.SetGridJustOneColumn,Chrome 67.0.3396.99,,2018-07-30 16:56:50,2018-07-30 16:57:08,17.766s,PASSED
+genericGrid.gridOperations.ColumnFilter,Chrome 67.0.3396.99,,2018-07-30 16:57:08,2018-07-30 16:57:08,0.101s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:57:08,2018-07-30 16:57:08,0.546s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:08,2018-07-30 16:57:08,0.127s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:08,2018-07-30 16:57:09,0.113s,PASSED
+waitForElementVisible,Chrome 67.0.3396.99,,2018-07-30 16:57:09,2018-07-30 16:57:10,1.583s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:10,2018-07-30 16:57:10,0.193s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:10,2018-07-30 16:57:11,0.163s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:11,2018-07-30 16:57:11,0.114s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:11,2018-07-30 16:57:11,0.096s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:11,2018-07-30 16:57:12,1.635s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,,2018-07-30 16:57:12,2018-07-30 16:57:12,0.060s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:12,2018-07-30 16:57:13,0.108s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:57:13,2018-07-30 16:57:16,3.094s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:16,2018-07-30 16:57:16,0.072s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:57:16,2018-07-30 16:57:20,4.142s,PASSED
+,,,,,,
+Test Cases/LidarLoader,Chrome 67.0.3396.99,"Executes Lidar Loader to catalog files found in the S3 bucket gcesp-lidar/ATP, using an ATPLIdar prefix, and loading into the project ATPLidarProject, without copying the data into ESP, using an SRS file: Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs\nRequires standard USER group + CanExecuteLidarLoader",2018-07-30 16:57:20,2018-07-30 16:57:51,31.191s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:57:20,2018-07-30 16:57:32,11.607s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:57:32,2018-07-30 16:57:32,0.023s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-30 16:57:32,2018-07-30 16:57:34,2.072s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:57:34,2018-07-30 16:57:38,4.679s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:38,2018-07-30 16:57:39,0.165s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:57:39,2018-07-30 16:57:43,4.277s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:43,2018-07-30 16:57:43,0.101s,PASSED
+setText,Chrome 67.0.3396.99,2 laz files from swfwmd/Hernando,2018-07-30 16:57:43,2018-07-30 16:57:44,1.315s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:57:44,2018-07-30 16:57:45,0.332s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:57:45,2018-07-30 16:57:45,0.065s,PASSED
+selectOptionByValue,Chrome 67.0.3396.99,,2018-07-30 16:57:45,2018-07-30 16:57:45,0.140s,PASSED
+sendKeys,Chrome 67.0.3396.99,,2018-07-30 16:57:45,2018-07-30 16:57:45,0.055s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-30 16:57:45,2018-07-30 16:57:47,2.250s,PASSED
+Statement - Finally,Chrome 67.0.3396.99,,2018-07-30 16:57:47,2018-07-30 16:57:51,3.895s,PASSED
+,,,,,,
+Test Cases/OrthoLoader,Chrome 67.0.3396.99,"Loads the orthos in the test folder into a new project. If the project exists, it deletes it and recreates it.\nRequires standard USER group + CanExecuteOrthoLoader",2018-07-30 16:57:51,2018-07-30 16:58:21,30.146s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:57:51,2018-07-30 16:58:03,11.589s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-30 16:58:03,2018-07-30 16:58:05,2.013s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:58:05,2018-07-30 16:58:09,4.667s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:58:09,2018-07-30 16:58:09,0.098s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:58:09,2018-07-30 16:58:14,4.354s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:58:14,2018-07-30 16:58:14,0.097s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:58:14,2018-07-30 16:58:15,1.277s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:58:15,2018-07-30 16:58:16,0.338s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:58:16,2018-07-30 16:58:16,0.072s,PASSED
+sendKeys,Chrome 67.0.3396.99,,2018-07-30 16:58:16,2018-07-30 16:58:16,0.001s,NOT_RUN
+click,Chrome 67.0.3396.99,,2018-07-30 16:58:16,2018-07-30 16:58:16,0.086s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:58:16,2018-07-30 16:58:17,1.596s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:58:17,2018-07-30 16:58:21,3.856s,PASSED

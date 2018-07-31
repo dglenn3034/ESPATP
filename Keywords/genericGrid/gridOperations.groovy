@@ -142,9 +142,10 @@ public class gridOperations {
 		def Integer ndx = 1
 		def String sndx, Xp
 
-		WebUI.click(findTestObject('Grid/ColumnToggleGear'))
 		WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
+		WebUI.click(findTestObject('Grid/ColumnToggleGear'))
+		
 		/* arbitrary stop point of 20 for ndx */
 		while (ndx < 20 ) {
 			sndx = ndx.toString()

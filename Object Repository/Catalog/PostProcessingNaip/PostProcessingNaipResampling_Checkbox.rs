@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='imageResamplingChk col-xs-5']/div/label/input</value>
+         <value>//div[@class='imageResamplingChk col-xs-5']/div/label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

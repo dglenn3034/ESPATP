@@ -81,6 +81,8 @@ WebUI.click(findTestObject('QCAnalyst/Projects/button_Delete'))
 
 WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
 WebUiBuiltInKeywords.click(findTestObject('OKButton'))
 
 WebUiBuiltInKeywords.delay(5)
@@ -88,9 +90,3 @@ WebUiBuiltInKeywords.delay(5)
 WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsCloseDialog_Button'))
 
 return null
-
-try {
-}
-finally { 
-}
-

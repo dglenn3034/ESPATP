@@ -23,7 +23,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.ExcelData as ExcelData
 
 /* Login using credentials from login test object */
-not_run: WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
 
 ExcelData SRSData = findTestData('SearchResultsSanityData')
 
@@ -81,13 +81,15 @@ Integer totPtsIndex = CustomKeywords.'searchResults.searchResults.GetSetColumn'(
 
 'get the current index after adding \'Name\''
 Integer nameIndex = CustomKeywords.'searchResults.searchResults.GetSetColumn'('Name')
+
 println('Index for Name = ' + nameIndex.toString())
+
 println('Index for Total Number Of Points = ' + totPtsIndex.toString())
 
 /* sort on Name column */
 CustomKeywords.'searchResults.searchResults.sortByName'('Name')
 
-nameIndex = nameIndex + 2 /* skip 2 for select and functions */ 
+nameIndex = (nameIndex + 2 /* skip 2 for select and functions */ )
 
 /* Test value of Name field in first row */
 CustomKeywords.'searchResults.searchResults.VerifyValueInGrid'(nameIndex, 2, ValidationString2)

@@ -1,0 +1,86 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Admin,Chrome 67.0.3396.99,This test suite exercises the functions in the Admin Console.\nAssumes the user had Company Admin access,2018-07-30 16:22:33,2018-07-30 16:25:59,3m - 26.368s,PASSED
+,,,,,,
+Test Cases/AdminGUISanity,Chrome 67.0.3396.99,Tests presence of GUI section in Admin Console for System Admin login\nRequires System Admin role,2018-07-30 16:22:33,2018-07-30 16:23:01,28.092s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:22:34,2018-07-30 16:22:48,14.829s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-30 16:22:48,2018-07-30 16:22:50,1.186s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:22:50,2018-07-30 16:22:57,7.185s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-30 16:22:57,2018-07-30 16:22:57,0.051s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-30 16:22:57,2018-07-30 16:22:57,0.022s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-30 16:22:57,2018-07-30 16:22:57,0.021s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-30 16:22:57,2018-07-30 16:22:57,0.022s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-30 16:22:57,2018-07-30 16:22:57,0.021s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-30 16:22:57,2018-07-30 16:22:57,0.022s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-30 16:22:57,2018-07-30 16:22:57,0.023s,PASSED
+verifyElementPresent,Chrome 67.0.3396.99,,2018-07-30 16:22:57,2018-07-30 16:22:57,0.020s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:22:57,2018-07-30 16:23:01,4.420s,PASSED
+,,,,,,
+Test Cases/AdminBasics,Chrome 67.0.3396.99,"Add and delete a User, Group and Organization\nRequires Company Admin Role",2018-07-30 16:23:01,2018-07-30 16:24:12,1m - 10.615s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:23:01,2018-07-30 16:23:13,11.613s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-30 16:23:13,2018-07-30 16:23:14,1.107s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:23:14,2018-07-30 16:23:21,6.659s,PASSED
+callTestCase,Chrome 67.0.3396.99, Add Group,2018-07-30 16:23:21,2018-07-30 16:23:29,8.341s,PASSED
+callTestCase,Chrome 67.0.3396.99,Add Organization,2018-07-30 16:23:29,2018-07-30 16:23:38,8.882s,PASSED
+callTestCase,Chrome 67.0.3396.99,Add user,2018-07-30 16:23:38,2018-07-30 16:23:47,9.029s,PASSED
+callTestCase,Chrome 67.0.3396.99,delete User,2018-07-30 16:23:47,2018-07-30 16:23:54,6.424s,PASSED
+callTestCase,Chrome 67.0.3396.99,Delete Organization,2018-07-30 16:23:54,2018-07-30 16:24:01,7.010s,PASSED
+callTestCase,Chrome 67.0.3396.99,delete group,2018-07-30 16:24:01,2018-07-30 16:24:08,7.090s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:24:08,2018-07-30 16:24:12,4.346s,PASSED
+,,,,,,
+Test Cases/Reports,Chrome 67.0.3396.99,Generates report for order for Geocue between 04/01/18 and 06/01/18\nGenerates report for users for Geocue\n\nRequires Admin Role System or company or Organization,2018-07-30 16:24:12,2018-07-30 16:25:03,51.364s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:24:12,2018-07-30 16:24:24,11.716s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-30 16:24:24,2018-07-30 16:24:25,1.103s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:24:25,2018-07-30 16:24:32,6.650s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:32,2018-07-30 16:24:32,0.194s,PASSED
+selectOptionByLabel,Chrome 67.0.3396.99,GeoCue Organization in GeoCue company,2018-07-30 16:24:32,2018-07-30 16:24:32,0.138s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:24:32,2018-07-30 16:24:32,0.204s,PASSED
+click,Chrome 67.0.3396.99,To clear date picker box,2018-07-30 16:24:32,2018-07-30 16:24:32,0.081s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:24:32,2018-07-30 16:24:32,0.184s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:32,2018-07-30 16:24:32,0.089s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-30 16:24:32,2018-07-30 16:24:37,5.000s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:37,2018-07-30 16:24:38,0.081s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:38,2018-07-30 16:24:38,0.078s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:38,2018-07-30 16:24:38,0.073s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:24:38,2018-07-30 16:24:39,1.547s,PASSED
+delay,Chrome 67.0.3396.99,Wait on Report submitted message to clear,2018-07-30 16:24:39,2018-07-30 16:24:44,5.001s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:44,2018-07-30 16:24:44,0.089s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:24:44,2018-07-30 16:24:44,0.018s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-30 16:24:44,2018-07-30 16:24:47,3.000s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:47,2018-07-30 16:24:47,0.064s,PASSED
+selectOptionByLabel,Chrome 67.0.3396.99,GeoCue Organization in GeoCue company,2018-07-30 16:24:47,2018-07-30 16:24:48,0.099s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:48,2018-07-30 16:24:48,0.070s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-30 16:24:48,2018-07-30 16:24:53,5.000s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:53,2018-07-30 16:24:53,0.068s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:53,2018-07-30 16:24:53,0.076s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:24:53,2018-07-30 16:24:53,0.077s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:24:53,2018-07-30 16:24:56,3.071s,PASSED
+delay,Chrome 67.0.3396.99,,2018-07-30 16:24:56,2018-07-30 16:24:59,3.001s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:24:59,2018-07-30 16:25:03,4.481s,PASSED
+,,,,,,
+Test Cases/BasemapSanity,Chrome 67.0.3396.99,Creates a new basemap named ATPBasemap using the ATPLIdarNS named search. Deletes the basemap if it exists.\n\nRequires Company Admin role,2018-07-30 16:25:03,2018-07-30 16:25:59,55.978s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:25:03,2018-07-30 16:25:15,11.550s,PASSED
+Statement - found = false,Chrome 67.0.3396.99,,2018-07-30 16:25:15,2018-07-30 16:25:15,0.000s,PASSED
+"Statement - found = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Utilities/NamedSearchExists), [""NamedSearch"":""ATPLidarNS""], STOP_ON_FAILURE)",Chrome 67.0.3396.99,,2018-07-30 16:25:15,2018-07-30 16:25:24,8.593s,PASSED
+Statement - If (found == true),Chrome 67.0.3396.99,,2018-07-30 16:25:24,2018-07-30 16:25:24,0.092s,PASSED
+navigateToUrl,Chrome 67.0.3396.99,,2018-07-30 16:25:24,2018-07-30 16:25:25,1.130s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:25:25,2018-07-30 16:25:31,6.649s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:25:31,2018-07-30 16:25:32,0.288s,PASSED
+genericGrid.gridOperations.ColumnFilter,Chrome 67.0.3396.99,,2018-07-30 16:25:32,2018-07-30 16:25:32,0.084s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:25:32,2018-07-30 16:25:32,0.366s,PASSED
+genericGrid.gridOperations.ColumnFilter,Chrome 67.0.3396.99,,2018-07-30 16:25:32,2018-07-30 16:25:32,0.074s,PASSED
+delay,Chrome 67.0.3396.99,Wait until there is only one LIKE box in the DOM,2018-07-30 16:25:32,2018-07-30 16:25:35,3.001s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:25:35,2018-07-30 16:25:36,0.222s,PASSED
+Statement - Try,Chrome 67.0.3396.99,,2018-07-30 16:25:36,2018-07-30 16:25:37,1.622s,FAILED
+Statement - Catch (Exception e),Chrome 67.0.3396.99,,2018-07-30 16:25:37,2018-07-30 16:25:37,0.177s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-07-30 16:25:37,2018-07-30 16:25:39,1.544s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:25:39,2018-07-30 16:25:39,0.112s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:25:39,2018-07-30 16:25:39,0.203s,PASSED
+setText,Chrome 67.0.3396.99,,2018-07-30 16:25:39,2018-07-30 16:25:39,0.310s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:25:39,2018-07-30 16:25:47,7.711s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:25:47,2018-07-30 16:25:47,0.064s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,,2018-07-30 16:25:47,2018-07-30 16:25:47,0.032s,PASSED
+check,Chrome 67.0.3396.99,,2018-07-30 16:25:47,2018-07-30 16:25:47,0.084s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:25:47,2018-07-30 16:25:47,0.096s,PASSED
+click,Chrome 67.0.3396.99,,2018-07-30 16:25:47,2018-07-30 16:25:50,2.256s,PASSED
+delay,Chrome 67.0.3396.99,Allow completion message to clear,2018-07-30 16:25:50,2018-07-30 16:25:55,5.000s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-07-30 16:25:55,2018-07-30 16:25:59,4.603s,PASSED
