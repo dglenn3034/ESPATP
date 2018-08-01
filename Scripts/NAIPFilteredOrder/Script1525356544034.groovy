@@ -46,6 +46,8 @@ CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'
 
 WebUI.click(findTestObject('Catalog/ProductSelection/ProductSelection_OK'))
 
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
 WebUI.click(findTestObject('Catalog/SearchResults/SearchResults_SelectFirstRow'))
 
 WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsAddSelectedToCart_Button'))

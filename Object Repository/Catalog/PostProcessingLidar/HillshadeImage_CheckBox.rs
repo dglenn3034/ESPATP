@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[(text() = 'Hillshade' or . = 'Hillshade')]/input</value>
+         <value>//label[(text() = 'Hillshade' or . = 'Hillshade')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

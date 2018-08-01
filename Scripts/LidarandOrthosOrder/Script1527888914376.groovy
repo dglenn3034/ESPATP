@@ -53,6 +53,8 @@ WebUI.sendKeys(findTestObject('Catalog/AOI/AOIFIlePath_Field'), '\\\\diskstation
 
 WebUI.click(findTestObject('Catalog/AOI/AOIExecutetheImport_button'))
 
+WebUI.delay(3)
+
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUI.click(findTestObject('Catalog/SearchResults/SearchResults_SelectAll'))

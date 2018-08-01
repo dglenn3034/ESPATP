@@ -1,0 +1,302 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+User,Chrome 67.0.3396.99,,2018-08-01 09:13:59,2018-08-01 09:19:42,5m - 42.583s,FAILED
+,,,,,,
+Test Cases/Landsat8AndNAIPOrder,Chrome 67.0.3396.99,"Submits an order by taking the first landsat item and the first NAIP item from the search results,  found using an AOI set by the view centered on Birmingham AL\n\nRequires standard USER group",2018-08-01 09:14:00,2018-08-01 09:14:42,42.421s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:14:00,2018-08-01 09:14:15,14.550s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:14:15,2018-08-01 09:14:15,0.020s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:14:15,2018-08-01 09:14:15,0.162s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:15,2018-08-01 09:14:15,0.109s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:14:15,2018-08-01 09:14:15,0.021s,PASSED
+delay,Chrome 67.0.3396.99,"Not sure why this is needed, but we have to wait until Cesium search is finished resetting the view before we can rest the AOI to the view ",2018-08-01 09:14:15,2018-08-01 09:14:18,3.009s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:18,2018-08-01 09:14:18,0.501s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:14:18,2018-08-01 09:14:19,0.096s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:19,2018-08-01 09:14:19,0.344s,PASSED
+productSelection.productSelection.SelectChildProduct,Chrome 67.0.3396.99,,2018-08-01 09:14:19,2018-08-01 09:14:19,0.153s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:19,2018-08-01 09:14:19,0.177s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:14:19,2018-08-01 09:14:21,2.002s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:21,2018-08-01 09:14:22,0.795s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:22,2018-08-01 09:14:22,0.356s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:22,2018-08-01 09:14:23,0.549s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:23,2018-08-01 09:14:23,0.356s,PASSED
+productSelection.productSelection.clearAllProducts,Chrome 67.0.3396.99,,2018-08-01 09:14:23,2018-08-01 09:14:30,6.587s,PASSED
+productSelection.productSelection.SelectChildProduct,Chrome 67.0.3396.99,,2018-08-01 09:14:30,2018-08-01 09:14:30,0.090s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:30,2018-08-01 09:14:30,0.219s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:14:30,2018-08-01 09:14:31,1.079s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:31,2018-08-01 09:14:32,0.431s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:32,2018-08-01 09:14:32,0.569s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:32,2018-08-01 09:14:33,0.310s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:33,2018-08-01 09:14:33,0.195s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:33,2018-08-01 09:14:33,0.109s,PASSED
+Statement - date = new java.util.Date(),Chrome 67.0.3396.99,,2018-08-01 09:14:33,2018-08-01 09:14:33,0.005s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Chrome 67.0.3396.99,,2018-08-01 09:14:33,2018-08-01 09:14:33,0.008s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Chrome 67.0.3396.99,,2018-08-01 09:14:33,2018-08-01 09:14:33,0.002s,PASSED
+"Statement - OName = ""ATPLSandNAIP-"" + aDate",Chrome 67.0.3396.99,,2018-08-01 09:14:33,2018-08-01 09:14:33,0.000s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:14:33,2018-08-01 09:14:33,0.418s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:33,2018-08-01 09:14:33,0.117s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:33,2018-08-01 09:14:34,0.116s,PASSED
+delay,Chrome 67.0.3396.99,,2018-08-01 09:14:34,2018-08-01 09:14:37,3.000s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:37,2018-08-01 09:14:38,1.101s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:14:38,2018-08-01 09:14:42,4.437s,PASSED
+,,,,,,
+Test Cases/Landsat8AndOrthosOrder,Chrome 67.0.3396.99,"Submits an order for 1 landsat image and one NAIP image taken from the Houston area, taking the first item from the search results grid fo each\n\nRequires standard USER group",2018-08-01 09:14:42,2018-08-01 09:15:16,33.598s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:14:42,2018-08-01 09:14:54,11.508s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:14:54,2018-08-01 09:14:54,0.177s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:14:54,2018-08-01 09:14:54,0.019s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:54,2018-08-01 09:14:54,0.114s,PASSED
+delay,Chrome 67.0.3396.99,"Not sure why this is needed, but we have to wait until Cesium search is finished resetting the view before we can rest the AOI to the view ",2018-08-01 09:14:54,2018-08-01 09:14:57,3.001s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:14:57,2018-08-01 09:14:57,0.134s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:57,2018-08-01 09:14:58,0.303s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:58,2018-08-01 09:14:58,0.242s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:14:58,2018-08-01 09:14:58,0.028s,PASSED
+productSelection.productSelection.SelectChildProduct,Chrome 67.0.3396.99,,2018-08-01 09:14:58,2018-08-01 09:14:58,0.110s,PASSED
+productSelection.productSelection.SelectProduct,Chrome 67.0.3396.99,,2018-08-01 09:14:58,2018-08-01 09:14:58,0.118s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:14:58,2018-08-01 09:14:59,1.022s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:14:59,2018-08-01 09:15:00,1.126s,PASSED
+searchResults.searchResults.SetSearchResultsColumnFirst,Chrome 67.0.3396.99,,2018-08-01 09:15:00,2018-08-01 09:15:04,3.457s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:04,2018-08-01 09:15:04,0.340s,PASSED
+searchResults.searchResults.sortByName,Chrome 67.0.3396.99,,2018-08-01 09:15:04,2018-08-01 09:15:04,0.243s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:04,2018-08-01 09:15:04,0.185s,PASSED
+searchResults.searchResults.sortByName,Chrome 67.0.3396.99,,2018-08-01 09:15:04,2018-08-01 09:15:05,0.172s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:05,2018-08-01 09:15:05,0.172s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:05,2018-08-01 09:15:05,0.202s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:05,2018-08-01 09:15:05,0.243s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:05,2018-08-01 09:15:06,0.546s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:06,2018-08-01 09:15:06,0.105s,PASSED
+Statement - date = new java.util.Date(),Chrome 67.0.3396.99,,2018-08-01 09:15:06,2018-08-01 09:15:06,0.001s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Chrome 67.0.3396.99,,2018-08-01 09:15:06,2018-08-01 09:15:06,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Chrome 67.0.3396.99,,2018-08-01 09:15:06,2018-08-01 09:15:06,0.000s,PASSED
+"Statement - OName = ""ATPLSandOrthoOrder-"" + aDate",Chrome 67.0.3396.99,,2018-08-01 09:15:06,2018-08-01 09:15:06,0.001s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:15:06,2018-08-01 09:15:06,0.317s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:06,2018-08-01 09:15:06,0.235s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:06,2018-08-01 09:15:07,0.157s,PASSED
+delay,Chrome 67.0.3396.99,,2018-08-01 09:15:07,2018-08-01 09:15:10,3.000s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:10,2018-08-01 09:15:10,0.696s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:15:10,2018-08-01 09:15:16,5.454s,PASSED
+,,,,,,
+Test Cases/LidarandOrthosOrder,Chrome 67.0.3396.99,Orders Lidar and Orthos from Houston Bay area using an imported AOI: \\\\diskstation1\\Data\\esp\\test_data\\HoustonBayArea.zip\n\nOrders all of the items found in this search\nRequires standard USER group,2018-08-01 09:15:16,2018-08-01 09:15:36,20.304s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:15:16,2018-08-01 09:15:27,11.617s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:15:27,2018-08-01 09:15:27,0.012s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:15:27,2018-08-01 09:15:28,0.149s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:28,2018-08-01 09:15:28,0.092s,PASSED
+delay,Chrome 67.0.3396.99,"Not sure why this is needed, but we have to wait until Cesium search is finished resetting the view before we can rest the AOI to the view ",2018-08-01 09:15:28,2018-08-01 09:15:31,3.001s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:15:31,2018-08-01 09:15:31,0.105s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:31,2018-08-01 09:15:31,0.233s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:15:31,2018-08-01 09:15:31,0.069s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:31,2018-08-01 09:15:31,0.219s,PASSED
+productSelection.productSelection.SelectProduct,Chrome 67.0.3396.99,,2018-08-01 09:15:31,2018-08-01 09:15:31,0.117s,PASSED
+productSelection.productSelection.SelectProduct,Chrome 67.0.3396.99,,2018-08-01 09:15:31,2018-08-01 09:15:32,0.118s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:32,2018-08-01 09:15:33,1.019s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:15:33,2018-08-01 09:15:34,1.564s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:34,2018-08-01 09:15:34,0.300s,PASSED
+sendKeys,Chrome 67.0.3396.99,,2018-08-01 09:15:34,2018-08-01 09:15:35,0.250s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:35,2018-08-01 09:15:35,0.244s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:15:35,2018-08-01 09:15:35,0.018s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:35,2018-08-01 09:15:36,1.023s,FAILED
+,,,,,,
+Test Cases/LidarPostProcessing,Chrome 67.0.3396.99,"Orders Lidar from Williston FL, using the SWFWMD company, adds post processing for Clipping and images (Hillshade, Intensity, Slope)\n\nRequires standard USER group",2018-08-01 09:15:36,2018-08-01 09:15:57,21.381s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:15:36,2018-08-01 09:15:48,12.149s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:15:48,2018-08-01 09:15:48,0.022s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:15:48,2018-08-01 09:15:48,0.143s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:48,2018-08-01 09:15:49,0.092s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:15:49,2018-08-01 09:15:49,0.014s,PASSED
+delay,Chrome 67.0.3396.99,"Not sure why this is needed, but we have to wait until Cesium search is finished resetting the view before we can rest the AOI to the view ",2018-08-01 09:15:49,2018-08-01 09:15:52,3.002s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:52,2018-08-01 09:15:52,0.264s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:15:52,2018-08-01 09:15:52,0.083s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:52,2018-08-01 09:15:52,0.205s,PASSED
+productSelection.productSelection.SelectProduct,Chrome 67.0.3396.99,,2018-08-01 09:15:52,2018-08-01 09:15:52,0.110s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:52,2018-08-01 09:15:52,0.162s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:15:52,2018-08-01 09:15:54,1.724s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:54,2018-08-01 09:15:54,0.312s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:54,2018-08-01 09:15:55,0.230s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:55,2018-08-01 09:15:55,0.474s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:55,2018-08-01 09:15:55,0.229s,PASSED
+Statement - date = new java.util.Date(),Chrome 67.0.3396.99,,2018-08-01 09:15:55,2018-08-01 09:15:55,0.001s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Chrome 67.0.3396.99,,2018-08-01 09:15:55,2018-08-01 09:15:55,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Chrome 67.0.3396.99,,2018-08-01 09:15:55,2018-08-01 09:15:55,0.001s,PASSED
+"Statement - OName = ""ATPLIdarPostProcessing-"" + aDate",Chrome 67.0.3396.99,,2018-08-01 09:15:55,2018-08-01 09:15:55,0.000s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:15:55,2018-08-01 09:15:56,0.684s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:56,2018-08-01 09:15:56,0.172s,PASSED
+check,Chrome 67.0.3396.99,,2018-08-01 09:15:56,2018-08-01 09:15:56,0.113s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:56,2018-08-01 09:15:56,0.112s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:56,2018-08-01 09:15:57,0.104s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:57,2018-08-01 09:15:57,0.096s,PASSED
+check,Chrome 67.0.3396.99,,2018-08-01 09:15:57,2018-08-01 09:15:57,0.102s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:15:57,2018-08-01 09:15:57,0.608s,FAILED
+,,,,,,
+Test Cases/NAIPFilteredOrder,Chrome 67.0.3396.99,"Orders One NAIP file from the MIAMI beach area, search results filterd in product selection to only show items where acquisition data > 01/01/2014\n\nRequires standard USER group",2018-08-01 09:15:57,2018-08-01 09:16:34,36.684s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:15:58,2018-08-01 09:16:10,12.241s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:16:10,2018-08-01 09:16:10,0.015s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:16:10,2018-08-01 09:16:10,0.139s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:16:10,2018-08-01 09:16:10,0.086s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:16:10,2018-08-01 09:16:10,0.021s,PASSED
+delay,Chrome 67.0.3396.99,"Not sure why this is needed, but we have to wait until Cesium search is finished resetting the view before we can rest the AOI to the view ",2018-08-01 09:16:10,2018-08-01 09:16:13,3.000s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:16:13,2018-08-01 09:16:13,0.123s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:16:13,2018-08-01 09:16:13,0.016s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:16:13,2018-08-01 09:16:13,0.118s,PASSED
+productSelection.productSelection.SelectChildProduct,Chrome 67.0.3396.99,,2018-08-01 09:16:13,2018-08-01 09:16:13,0.111s,PASSED
+productAttributeFiltering.attributeFiltering.SetAttributeFilter,Chrome 67.0.3396.99,,2018-08-01 09:16:13,2018-08-01 09:16:17,3.926s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:16:17,2018-08-01 09:16:17,0.130s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:16:17,2018-08-01 09:16:34,16.627s,FAILED
+,,,,,,
+Test Cases/OrderHistoryAddToCart,Chrome 67.0.3396.99,Finds the first order in the order history beginning with ATPLS and having a status of SUCCESS and adds its contents to the order cart. Then deletes the first item from the order cart and places an order for the one remaining item\n\nRequires Standard USER group,2018-08-01 09:16:34,2018-08-01 09:17:10,36.405s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:16:34,2018-08-01 09:16:47,12.970s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:16:47,2018-08-01 09:16:47,0.013s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:16:47,2018-08-01 09:16:47,0.072s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:16:47,2018-08-01 09:16:47,0.201s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:16:47,2018-08-01 09:16:49,1.149s,PASSED
+genericGrid.gridOperations.SetGridJustOneColumn,Chrome 67.0.3396.99,,2018-08-01 09:16:49,2018-08-01 09:17:07,18.520s,PASSED
+genericGrid.gridOperations.AddOneColumn,Chrome 67.0.3396.99,,2018-08-01 09:17:07,2018-08-01 09:17:07,0.351s,PASSED
+genericGrid.gridOperations.ColumnFilter,Chrome 67.0.3396.99,,2018-08-01 09:17:07,2018-08-01 09:17:08,0.127s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:17:08,2018-08-01 09:17:08,0.394s,PASSED
+genericGrid.gridOperations.ColumnFilter,Chrome 67.0.3396.99,,2018-08-01 09:17:08,2018-08-01 09:17:08,0.082s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:17:08,2018-08-01 09:17:08,0.175s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:17:08,2018-08-01 09:17:08,0.023s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:17:08,2018-08-01 09:17:08,0.143s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:17:08,2018-08-01 09:17:09,0.271s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:17:09,2018-08-01 09:17:09,0.159s,PASSED
+genericGrid.gridOperations.ExecuteGridFunction,Chrome 67.0.3396.99,,2018-08-01 09:17:09,2018-08-01 09:17:09,0.645s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:17:09,2018-08-01 09:17:10,0.074s,PASSED
+Statement - date = new java.util.Date(),Chrome 67.0.3396.99,,2018-08-01 09:17:10,2018-08-01 09:17:10,0.000s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Chrome 67.0.3396.99,,2018-08-01 09:17:10,2018-08-01 09:17:10,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Chrome 67.0.3396.99,,2018-08-01 09:17:10,2018-08-01 09:17:10,0.000s,PASSED
+"Statement - OName = ""ATPOrderCartReOrderTest-"" + aDate",Chrome 67.0.3396.99,,2018-08-01 09:17:10,2018-08-01 09:17:10,0.001s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:17:10,2018-08-01 09:17:10,0.917s,FAILED
+,,,,,,
+Test Cases/OrderHistorySanityTest,Chrome 67.0.3396.99,"Opens order History, manipulates the columns displayed, filters on orders beginning with ATP, selects the first one and zooms to it, then opens the details for it, selects the popup details icon and dismisses it\n\nRequires standard USER group",2018-08-01 09:17:10,2018-08-01 09:17:53,42.235s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:17:11,2018-08-01 09:17:23,12.230s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:17:23,2018-08-01 09:17:23,0.013s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:17:23,2018-08-01 09:17:23,0.078s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:17:23,2018-08-01 09:17:23,0.220s,PASSED
+genericGrid.gridOperations.SetGridJustOneColumn,Chrome 67.0.3396.99,,2018-08-01 09:17:23,2018-08-01 09:17:43,19.651s,PASSED
+genericGrid.gridOperations.AddOneColumn,Chrome 67.0.3396.99,,2018-08-01 09:17:43,2018-08-01 09:17:43,0.349s,PASSED
+genericGrid.gridOperations.ColumnFilter,Chrome 67.0.3396.99,,2018-08-01 09:17:43,2018-08-01 09:17:43,0.114s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:17:43,2018-08-01 09:17:44,0.273s,PASSED
+genericGrid.gridOperations.ColumnFilter,Chrome 67.0.3396.99,,2018-08-01 09:17:44,2018-08-01 09:17:44,0.110s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:17:44,2018-08-01 09:17:44,0.164s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:17:44,2018-08-01 09:17:44,0.033s,PASSED
+genericGrid.gridOperations.ExecuteGridFunction,Chrome 67.0.3396.99,,2018-08-01 09:17:44,2018-08-01 09:17:44,0.120s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:17:44,2018-08-01 09:17:44,0.019s,PASSED
+genericGrid.gridOperations.SelectRow,Chrome 67.0.3396.99,,2018-08-01 09:17:44,2018-08-01 09:17:44,0.080s,PASSED
+genericGrid.gridOperations.SelectRow,Chrome 67.0.3396.99,,2018-08-01 09:17:44,2018-08-01 09:17:44,0.108s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:17:44,2018-08-01 09:17:44,0.014s,PASSED
+genericGrid.gridOperations.ExecuteGridFunction,Chrome 67.0.3396.99,,2018-08-01 09:17:44,2018-08-01 09:17:44,0.113s,PASSED
+genericGrid.gridOperations.ExecuteGridFunction,Chrome 67.0.3396.99,,2018-08-01 09:17:44,2018-08-01 09:17:46,1.654s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:17:46,2018-08-01 09:17:47,1.487s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:17:47,2018-08-01 09:17:48,0.492s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:17:48,2018-08-01 09:17:48,0.442s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:17:48,2018-08-01 09:17:53,4.368s,PASSED
+,,,,,,
+Test Cases/PreviewSanity,Chrome 67.0.3396.99,"Preview Landsat, Naip using the AOI: \\\\diskstation1\\Data\\esp\\test_data\\miamibeachshapfile.zip, taking a screenshot when each preview is done and saving it as a png file in local user temp folder\n\nRequires standard USER group",2018-08-01 09:17:53,2018-08-01 09:18:20,27.290s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:17:53,2018-08-01 09:18:04,11.457s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:18:04,2018-08-01 09:18:04,0.015s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:04,2018-08-01 09:18:04,0.056s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:04,2018-08-01 09:18:04,0.082s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:04,2018-08-01 09:18:05,0.092s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:05,2018-08-01 09:18:05,0.151s,PASSED
+sendKeys,Chrome 67.0.3396.99,,2018-08-01 09:18:05,2018-08-01 09:18:05,0.059s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:05,2018-08-01 09:18:05,0.095s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:18:05,2018-08-01 09:18:05,0.020s,PASSED
+delay,Chrome 67.0.3396.99,,2018-08-01 09:18:05,2018-08-01 09:18:08,3.000s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:08,2018-08-01 09:18:08,0.268s,PASSED
+productSelection.productSelection.SelectChildProduct,Chrome 67.0.3396.99,,2018-08-01 09:18:08,2018-08-01 09:18:08,0.349s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:08,2018-08-01 09:18:09,0.392s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:18:09,2018-08-01 09:18:10,1.045s,PASSED
+searchResults.searchResults.SetSearchResultsColumnFirst,Chrome 67.0.3396.99,,2018-08-01 09:18:10,2018-08-01 09:18:12,1.756s,PASSED
+searchResults.searchResults.LikeFilterOnColumn,Chrome 67.0.3396.99,,2018-08-01 09:18:12,2018-08-01 09:18:12,0.528s,PASSED
+click,Chrome 67.0.3396.99,Display the preview of this data item in the map,2018-08-01 09:18:12,2018-08-01 09:18:12,0.151s,PASSED
+click,Chrome 67.0.3396.99,zoom to the item,2018-08-01 09:18:12,2018-08-01 09:18:13,0.179s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:18:13,2018-08-01 09:18:13,0.655s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:13,2018-08-01 09:18:14,0.514s,PASSED
+"Statement - filelocation = ScreenShotFile + ""\miamilidar.png""",Chrome 67.0.3396.99,,2018-08-01 09:18:14,2018-08-01 09:18:14,0.001s,PASSED
+takeScreenshot,Chrome 67.0.3396.99,Take a screenshot,2018-08-01 09:18:14,2018-08-01 09:18:16,1.884s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:18:16,2018-08-01 09:18:20,4.461s,PASSED
+,,,,,,
+Test Cases/SearchResultsSanity,Chrome 67.0.3396.99,"Exercises filtering, sorting, etc. for a fixed set of data from Davidson county",2018-08-01 09:18:20,2018-08-01 09:18:51,31.356s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:18:20,2018-08-01 09:18:32,11.395s,PASSED
+Statement - SRSData = com.kms.katalon.core.testdata.TestDataFactory.findTestData(SearchResultsSanityData),Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.014s,PASSED
+Statement - rowNdx = 1,Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.000s,PASSED
+Statement - rowNdx = SRSRowNdx,Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.000s,PASSED
+"Statement - ValidationString1 = SRSData.getValue(2, rowNdx)",Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.001s,PASSED
+"Statement - ValidationString2 = SRSData.getValue(3, rowNdx)",Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.000s,PASSED
+"Statement - ValidationString3 = SRSData.getValue(4, rowNdx)",Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.000s,PASSED
+"Statement - ValidationString4 = SRSData.getValue(5, rowNdx)",Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.000s,PASSED
+"Statement - ValidationString5 = SRSData.getValue(6, rowNdx)",Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.000s,PASSED
+"Statement - println(""Validation String 1 = "" + ValidationString1)",Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.002s,PASSED
+"Statement - println(""Validation String 5 = "" + ValidationString5)",Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.001s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.015s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:32,0.057s,PASSED
+delay,Chrome 67.0.3396.99,,2018-08-01 09:18:32,2018-08-01 09:18:33,1.002s,PASSED
+verifyElementClickable,Chrome 67.0.3396.99,,2018-08-01 09:18:33,2018-08-01 09:18:33,0.030s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:33,2018-08-01 09:18:33,0.085s,PASSED
+productSelection.productSelection.SelectProduct,Chrome 67.0.3396.99,,2018-08-01 09:18:33,2018-08-01 09:18:35,2.640s,PASSED
+productAttributeFiltering.attributeFiltering.SetAttributeFilter,Chrome 67.0.3396.99,,2018-08-01 09:18:35,2018-08-01 09:18:39,3.491s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:39,2018-08-01 09:18:39,0.113s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:39,2018-08-01 09:18:39,0.145s,PASSED
+sendKeys,Chrome 67.0.3396.99,,2018-08-01 09:18:39,2018-08-01 09:18:39,0.139s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:39,2018-08-01 09:18:39,0.087s,PASSED
+waitForElementVisible,Chrome 67.0.3396.99,,2018-08-01 09:18:39,2018-08-01 09:18:41,1.751s,PASSED
+verifyElementText,Chrome 67.0.3396.99,Search Results Sanity Starts Here,2018-08-01 09:18:41,2018-08-01 09:18:41,0.052s,PASSED
+searchResults.searchResults.SetSearchResultsColumnFirst,Chrome 67.0.3396.99,,2018-08-01 09:18:41,2018-08-01 09:18:44,2.492s,PASSED
+"Statement - totPtsIndex = CustomKeywords.searchResults.searchResults.GetSetColumn(""Total Number Of Points"")",Chrome 67.0.3396.99,,2018-08-01 09:18:44,2018-08-01 09:18:45,1.207s,PASSED
+"Statement - nameIndex = CustomKeywords.searchResults.searchResults.GetSetColumn(""Name"")",Chrome 67.0.3396.99,get the current index after adding 'Name',2018-08-01 09:18:45,2018-08-01 09:18:45,0.469s,PASSED
+"Statement - println(""Index for Name = "" + nameIndex.toString())",Chrome 67.0.3396.99,,2018-08-01 09:18:45,2018-08-01 09:18:45,0.000s,PASSED
+"Statement - println(""Index for Total Number Of Points = "" + totPtsIndex.toString())",Chrome 67.0.3396.99,,2018-08-01 09:18:45,2018-08-01 09:18:45,0.001s,PASSED
+searchResults.searchResults.sortByName,Chrome 67.0.3396.99,,2018-08-01 09:18:45,2018-08-01 09:18:45,0.112s,PASSED
+Statement - nameIndex = nameIndex + 2,Chrome 67.0.3396.99,,2018-08-01 09:18:45,2018-08-01 09:18:45,0.000s,PASSED
+searchResults.searchResults.VerifyValueInGrid,Chrome 67.0.3396.99,,2018-08-01 09:18:45,2018-08-01 09:18:46,0.088s,PASSED
+searchResults.searchResults.sortByName,Chrome 67.0.3396.99,,2018-08-01 09:18:46,2018-08-01 09:18:46,0.079s,PASSED
+searchResults.searchResults.VerifyValueInGrid,Chrome 67.0.3396.99,,2018-08-01 09:18:46,2018-08-01 09:18:46,0.061s,PASSED
+searchResults.searchResults.LikeFilterOnColumn,Chrome 67.0.3396.99,,2018-08-01 09:18:46,2018-08-01 09:18:46,0.441s,PASSED
+verifyElementText,Chrome 67.0.3396.99,,2018-08-01 09:18:46,2018-08-01 09:18:46,0.025s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:18:46,2018-08-01 09:18:46,0.132s,PASSED
+verifyElementText,Chrome 67.0.3396.99,,2018-08-01 09:18:46,2018-08-01 09:18:46,0.027s,PASSED
+searchResults.searchResults.NumericFilterOnColumn,Chrome 67.0.3396.99,,2018-08-01 09:18:46,2018-08-01 09:18:47,0.683s,PASSED
+verifyElementText,Chrome 67.0.3396.99,,2018-08-01 09:18:47,2018-08-01 09:18:47,0.025s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:18:47,2018-08-01 09:18:51,4.343s,PASSED
+,,,,,,
+Test Cases/SmokeTest01,Chrome 67.0.3396.99,"delete smoketest01 named search if it exists, then recreate it using aoi: \\\\diskstation1\\Data\\Rob_MUSES\\Shapefile_test_datasets\\AL.kmz, landsat ndvi, histogram filters on sun elevation, cloud coverage, save the named search, select the first item from the search results, add it the order cart and submit the job. Requires standard USER group",2018-08-01 09:18:51,2018-08-01 09:19:42,50.570s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:18:51,2018-08-01 09:19:04,12.704s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:19:04,2018-08-01 09:19:04,0.011s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:04,2018-08-01 09:19:04,0.049s,PASSED
+"Statement - found = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Utilities/NamedSearchExists), [""NamedSearch"":""SmokeTest01""], STOP_ON_FAILURE)",Chrome 67.0.3396.99,,2018-08-01 09:19:04,2018-08-01 09:19:13,8.633s,PASSED
+Statement - If (found == true),Chrome 67.0.3396.99,,2018-08-01 09:19:13,2018-08-01 09:19:13,0.216s,PASSED
+delay,Chrome 67.0.3396.99,,2018-08-01 09:19:13,2018-08-01 09:19:16,3.000s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:16,2018-08-01 09:19:16,0.103s,PASSED
+productSelection.productSelection.SelectChildProduct,Chrome 67.0.3396.99,,2018-08-01 09:19:16,2018-08-01 09:19:16,0.097s,PASSED
+productAttributeFiltering.attributeFiltering.SetAttributeFilter,Chrome 67.0.3396.99,,2018-08-01 09:19:16,2018-08-01 09:19:20,3.544s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:20,2018-08-01 09:19:20,0.130s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:20,2018-08-01 09:19:20,0.109s,PASSED
+sendKeys,Chrome 67.0.3396.99,,2018-08-01 09:19:20,2018-08-01 09:19:20,0.050s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:20,2018-08-01 09:19:20,0.092s,PASSED
+waitForElementVisible,Chrome 67.0.3396.99,,2018-08-01 09:19:20,2018-08-01 09:19:22,1.282s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:22,2018-08-01 09:19:23,1.168s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,,2018-08-01 09:19:23,2018-08-01 09:19:23,0.091s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:23,2018-08-01 09:19:23,0.548s,PASSED
+check,Chrome 67.0.3396.99,,2018-08-01 09:19:23,2018-08-01 09:19:24,0.263s,PASSED
+check,Chrome 67.0.3396.99,,2018-08-01 09:19:24,2018-08-01 09:19:24,0.139s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:24,2018-08-01 09:19:24,0.330s,PASSED
+delay,Chrome 67.0.3396.99,,2018-08-01 09:19:24,2018-08-01 09:19:29,5.001s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:29,2018-08-01 09:19:29,0.121s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:19:29,2018-08-01 09:19:29,0.138s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:19:29,2018-08-01 09:19:29,0.159s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:29,2018-08-01 09:19:30,0.211s,PASSED
+waitForElementClickable,Chrome 67.0.3396.99,,2018-08-01 09:19:30,2018-08-01 09:19:30,0.063s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:30,2018-08-01 09:19:30,0.142s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:19:30,2018-08-01 09:19:30,0.305s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:30,2018-08-01 09:19:30,0.095s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:19:30,2018-08-01 09:19:32,1.568s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:32,2018-08-01 09:19:32,0.136s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:32,2018-08-01 09:19:32,0.394s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:32,2018-08-01 09:19:33,0.229s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:33,2018-08-01 09:19:33,0.124s,PASSED
+Statement - date = new java.util.Date(),Chrome 67.0.3396.99,,2018-08-01 09:19:33,2018-08-01 09:19:33,0.001s,PASSED
+Statement - sdf = new java.text.SimpleDateFormat(yyyy-MM-dd HH:mm:ss),Chrome 67.0.3396.99,,2018-08-01 09:19:33,2018-08-01 09:19:33,0.000s,PASSED
+Statement - aDate = sdf.format(new java.util.Date()),Chrome 67.0.3396.99,,2018-08-01 09:19:33,2018-08-01 09:19:33,0.000s,PASSED
+"Statement - OName = ""ATPSmokeTestOrder"" + aDate",Chrome 67.0.3396.99,,2018-08-01 09:19:33,2018-08-01 09:19:33,0.000s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:19:33,2018-08-01 09:19:33,0.456s,PASSED
+setText,Chrome 67.0.3396.99,,2018-08-01 09:19:33,2018-08-01 09:19:34,0.461s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:34,2018-08-01 09:19:34,0.114s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:34,2018-08-01 09:19:34,0.106s,PASSED
+waitForElementNotPresent,Chrome 67.0.3396.99,,2018-08-01 09:19:34,2018-08-01 09:19:37,3.615s,PASSED
+click,Chrome 67.0.3396.99,,2018-08-01 09:19:37,2018-08-01 09:19:38,0.089s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 09:19:38,2018-08-01 09:19:42,4.363s,PASSED
