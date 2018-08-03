@@ -145,7 +145,7 @@ public class gridOperations {
 		WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 		WebUI.click(findTestObject('Grid/ColumnToggleGear'))
-		
+
 		/* arbitrary stop point of 20 for ndx */
 		while (ndx < 20 ) {
 			sndx = ndx.toString()

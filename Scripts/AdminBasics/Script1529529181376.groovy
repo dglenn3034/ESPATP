@@ -26,19 +26,19 @@ WebUI.navigateToUrl(GlobalVariable.AdminSite)
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 ' Add Group'
-WebUI.callTestCase(findTestCase('Utilities/CreateGroup'), [('Name') : 'ATPUser2', ('Description') : 'Test Group for ATP based on User'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/CreateGroup'), [('Name') : 'ATPUser2', ('Description') : 'Test Group for ATP based on User'
+        , ('defaultGroup') : 'User'], FailureHandling.STOP_ON_FAILURE)
 
 'Add Organization'
 WebUI.callTestCase(findTestCase('Utilities/CreateOrganization'), [('Description') : 'ATP Test Organization', ('Group') : 'ATPUser2'
-        , ('Name') : 'ATPOrganization'], FailureHandling.STOP_ON_FAILURE)
+        , ('Name') : 'ATPOrganization', ('Domain') : 'airgon.com'], FailureHandling.STOP_ON_FAILURE)
 
 'Add user'
-WebUI.callTestCase(findTestCase('Utilities/CreateUser'), [('email') : 'dglenn@airgon.com', ('organization') : 'ATPOrganization'], 
+WebUI.callTestCase(findTestCase('Utilities/CreateUser'), [('email') : GlobalVariable.NewUser, ('organization') : 'ATPOrganization'], 
     FailureHandling.STOP_ON_FAILURE)
 
 'delete User'
-WebUI.callTestCase(findTestCase('Utilities/DeleteUser'), [('UserId') : 'dglenn@airgon.com'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/DeleteUser'), [('UserId') : GlobalVariable.NewUser], FailureHandling.STOP_ON_FAILURE)
 
 'Delete Organization'
 WebUI.callTestCase(findTestCase('Utilities/DeleteOrganization'), [('Name') : 'ATPOrganization'], FailureHandling.STOP_ON_FAILURE)

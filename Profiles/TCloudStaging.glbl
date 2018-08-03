@@ -84,4 +84,9 @@
       <initValue>'Williston, FL'</initValue>
       <name>LidarLocation</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>NewUser</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

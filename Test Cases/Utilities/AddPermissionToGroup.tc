@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AddPermissionToGroup</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d901083c-8c96-41b7-b066-d76f404e152c</testCaseGuid>
+   <variable>
+      <defaultValue>'ATPUser2'</defaultValue>
+      <description></description>
+      <id>eceb3b49-3481-48a3-9bf6-123671e1e163</id>
+      <masked>false</masked>
+      <name>Name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>03270355-d050-49c9-8499-c74388ed967e</id>
+      <masked>false</masked>
+      <name>Permission</name>
+   </variable>
+</TestCaseEntity>

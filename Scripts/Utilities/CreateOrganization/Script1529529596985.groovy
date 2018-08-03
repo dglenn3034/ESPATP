@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUiBuiltInKeywords.click(findTestObject('Admin Console/Organizations/a_ Organizations'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Organizations/a_Organizations'))
 
 CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Name')
 
@@ -31,9 +31,14 @@ try {
     println(Name + 'does not exist, will create')
 }
 catch (Exception e) {
-    println(Name + ' already exists skipping creation')
+    println(Name + ' already exists deleting...')
 
-    return null
+    /* todo: add code to delete it */
+    WebUiBuiltInKeywords.click(findTestObject('Admin Console/AdminDeleteRowOne'))
+
+    WebUiBuiltInKeywords.click(findTestObject('OKButton'))
+
+    WebUI.delay(5)
 } 
 finally { 
 }
@@ -48,9 +53,16 @@ WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/Organiz
 
 WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationDeliveryPrefix'), GlobalVariable.GeoCueDeliveryPrefix)
 
-WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationGroupPulldown'), Group)
+/* set default group */
+def TestObject myObject = findTestObject('Admin Console/Organizations/OrganizationGroupPulldown')
+def String Xp = myObject.findPropertyValue('xpath')
+println('Xp = ' + Xp)
+Xp = Xp.replace('GROUP', Group)
+def TestObject tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+WebUiBuiltInKeywords.click(tmpObject, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Admin Console/Organizations/OrganizationDomain'), 'airgon.com')
+
+WebUI.setText(findTestObject('Admin Console/Organizations/OrganizationDomain'), Domain)
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Organizations/OrganizationSaveButton'))
 

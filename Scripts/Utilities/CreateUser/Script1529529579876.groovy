@@ -31,9 +31,13 @@ try {
     println(email + 'does not exist, will create')
 }
 catch (Exception e) {
-    println(email + ' already exists skipping creation')
+    println(email + ' already exists deleting...')
+		
+	WebUiBuiltInKeywords.click(findTestObject('Admin Console/AdminDeleteRowOne'))
 
-    return null
+	WebUiBuiltInKeywords.click(findTestObject('OKButton'))
+	
+	WebUI.delay(5)
 } 
 finally { 
 }
@@ -47,10 +51,6 @@ WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/UsersSelect Organ
 WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Users/UsersdeliveryBucket_Field'), GlobalVariable.GeoCueDeliveryBucket)
 
 WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Users/UsersDeliveryPrefix_Field'), GlobalVariable.GeoCueDeliveryPrefix)
-
-WebUiBuiltInKeywords.check(findTestObject('Admin Console/Users/UsersSelectUserGroup_CheckBox'))
-
-WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/UsersGroupsAssign_Arrow'))
 
 'Save'
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/UsersAddUserSave_Button'))

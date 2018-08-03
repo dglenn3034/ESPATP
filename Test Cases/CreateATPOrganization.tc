@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Add a User, Group and Organization
+Requires Company Admin Role</description>
+   <name>CreateATPOrganization</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4f28ef62-92bc-4b0b-a5d5-c6172439e11c</testCaseGuid>
+</TestCaseEntity>

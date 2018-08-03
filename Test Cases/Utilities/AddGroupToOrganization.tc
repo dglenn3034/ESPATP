@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AddGroupToOrganization</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b02759f-4657-4544-9c17-50f395409b28</testCaseGuid>
+   <variable>
+      <defaultValue>'ATPUser2'</defaultValue>
+      <description></description>
+      <id>26b491aa-1c81-4b47-90a0-87da177efcdb</id>
+      <masked>false</masked>
+      <name>Name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>264111cb-0e6e-4668-a3c9-dcb9a97ef2f5</id>
+      <masked>false</masked>
+      <name>Group</name>
+   </variable>
+</TestCaseEntity>

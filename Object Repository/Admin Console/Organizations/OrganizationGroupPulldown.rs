@@ -4,48 +4,23 @@
    <name>OrganizationGroupPulldown</name>
    <tag></tag>
    <elementGuidId>c6b7c77d-fa21-4c6a-8dc6-49cfad12de8e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//select[@name='groupId']/option[(text()='GROUP')][count(. | //input[@type = 'text' and @placeholder = 'Enter domain' and @id = 'formHorizontalGroup']) = count(//input[@type = 'text' and @placeholder = 'Enter domain' and @id = 'formHorizontalGroup'])]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@name='groupId']/option[(text()='GROUP')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>input</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
-      <type>Main</type>
-      <value>Enter domain</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>formHorizontalGroup</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>form-control</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app&quot;)/div[1]/div[@class=&quot;page-wrapper&quot;]/div[1]/div[@class=&quot;row&quot;]/form[@class=&quot;esp-form form-horizontal&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-3&quot;]/div[1]/div[1]/span[@class=&quot;input-group&quot;]/input[@id=&quot;formHorizontalGroup&quot;]</value>
+      <value>//select[@name='groupId']/option[(text()='GROUP')]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUiBuiltInKeywords.click(findTestObject('Admin Console/Organizations/a_ Organizations'))
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Organizations/a_Organizations'))
 
 CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Name')
 

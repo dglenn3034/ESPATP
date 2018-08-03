@@ -26,6 +26,8 @@ ExcelData envData = findTestData('LoginData')
 
 Integer rowNdx = 1
 
+GlobalVariable.NewUser = envData.getValue(2, 2)
+
 if (Role == 'Company Admin') {
     rowNdx = 1
 } else if (Role == 'User') {
@@ -48,7 +50,8 @@ GlobalVariable.ScreenShotFile = envData.getValue(4, rowNdx)
 
 def String theSite = GlobalVariable.GeoCueCompanySite
 
-if (Company != null) {
+if ( Company ) {
+	println ("Company is specified = " + Company)
 	theSite = theSite.replace('geocue', Company)
 }
 

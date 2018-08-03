@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CreateGroup</name>
+   <name>CreateGroupbackup</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ca1d48a0-ab15-4d5e-afe0-ca1c303be7e2</testCaseGuid>
+   <testCaseGuid>ed4100f1-2a99-4975-9a30-787fb7f92409</testCaseGuid>
    <variable>
       <defaultValue>'ATPUser2'</defaultValue>
       <description></description>
-      <id>f1d75250-751e-462b-9461-5ce487d7eba2</id>
+      <id>a4c33562-c850-43a2-9345-70f9f6f56761</id>
       <masked>false</masked>
       <name>Name</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>00acd5aa-1878-4b32-8a72-b7b6910c6198</id>
+      <id>2902faff-4361-4c6d-a38a-f023db218564</id>
       <masked>false</masked>
       <name>Description</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>dd4f3209-0e28-4d27-8773-61deedfe95b7</id>
-      <masked>false</masked>
-      <name>copyFromGroup</name>
    </variable>
 </TestCaseEntity>

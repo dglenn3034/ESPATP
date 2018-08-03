@@ -84,4 +84,9 @@
       <initValue>'Houston, TX'</initValue>
       <name>LidarLocation</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Email of user to use in Creating a New User</description>
+      <initValue>''</initValue>
+      <name>NewUser</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -28,8 +28,16 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsViewDetails'))
 
 'GeoCue Organization in GeoCue company'
-WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Admin Console/Reports/ReportsOrderReportOrganization'), 'Geocue', 
-    false)
+def TestObject myObject = findTestObject('Admin Console/Reports/ReportsSelectOrganization')
+def String Xp = myObject.findPropertyValue('xpath')
+println('Xp = ' + Xp)
+Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF')
+Xp = Xp.replace('TABNO', '1') /* first tab is orders, 2nd is Users */
+def TestObject tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+WebUiBuiltInKeywords.click(tmpObject, FailureHandling.STOP_ON_FAILURE)
+
+
+
 
 WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePickStart'), '04/01/2018')
 
@@ -62,8 +70,15 @@ WebUI.delay(3)
 WebUI.click(findTestObject('Admin Console/Reports/UserReportHeader'))
 
 'GeoCue Organization in GeoCue company'
-WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Admin Console/Reports/ReportsUserReportOrganization'), 'Geocue', 
-    false)
+myObject = findTestObject('Admin Console/Reports/ReportsSelectOrganization')
+Xp = myObject.findPropertyValue('xpath')
+println('Xp = ' + Xp)
+Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF')
+Xp = Xp.replace('TABNO', '2') /* first tab is orders, 2nd is Users */
+tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+WebUiBuiltInKeywords.click(tmpObject, FailureHandling.STOP_ON_FAILURE)
+
+
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsUserReportPreview'))
 

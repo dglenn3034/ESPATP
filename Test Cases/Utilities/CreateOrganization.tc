@@ -26,4 +26,11 @@
       <masked>false</masked>
       <name>Group</name>
    </variable>
+   <variable>
+      <defaultValue>'geocue.com'</defaultValue>
+      <description></description>
+      <id>18cdbc31-f8c7-43a6-a496-32da50db658a</id>
+      <masked>false</masked>
+      <name>Domain</name>
+   </variable>
 </TestCaseEntity>
