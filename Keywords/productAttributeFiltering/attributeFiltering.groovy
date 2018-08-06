@@ -47,11 +47,11 @@ public class attributeFiltering {
 		/* set the attribute name */
 		SetAttributeName (AttributeName, clsNdx)
 
-		/* set the operator */
-		SetOperatorValue (Operator, clsNdx)
-
 		/* set the value */
 		SetAttributeValue (AttributeValue, IsDate, clsNdx)
+		
+		/* set the operator */
+		SetOperatorValue (Operator, clsNdx)
 
 		/* OK */
 		WebUI.click(findTestObject('Catalog/ProductSelection/AttributeFilterOK_Button'))

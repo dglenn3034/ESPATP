@@ -6,12 +6,12 @@
    <elementGuidId>12c1219d-7229-4747-baa4-372aa2c8791e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
          <value>(//input[@type='text' and @class='form-control'])[ROWNDX]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@type='text' and @class='form-control'])[ROWNDX]</value>
+         <key>BASIC</key>
+         <value>(//input[@type='text' and (contains(@class,'form-control')) ])[ROWNDX]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//input[@type='text' and @class='form-control'])[ROWNDX]</value>
+      <value>(//input[@type='text' and (contains(@class,'form-control')) ])[ROWNDX]</value>
    </webElementProperties>
 </WebElementEntity>

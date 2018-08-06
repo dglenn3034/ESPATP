@@ -6,11 +6,11 @@
    <elementGuidId>65a4beb5-c680-46dd-ab87-af3fe5604fc5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='genericGridContainer']/div/b</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@class='project-item-grid-container']/descendant::b</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
