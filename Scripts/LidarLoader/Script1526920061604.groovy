@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "QC Analyst"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
@@ -42,6 +42,8 @@ WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/LidarLoader/LidarLoaderII
 WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSelectATPProject'))
 
 WebUiBuiltInKeywords.selectOptionByValue(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSelectHillshade'), '2', false)
+
+WebUI.check(findTestObject('QCAnalyst/LidarLoader/LidarLoaderCopytoESPCheckbox'))
 
 WebUI.sendKeys(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
 

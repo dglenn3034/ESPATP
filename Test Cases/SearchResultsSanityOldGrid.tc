@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Exercises filtering, sorting, etc. for a fixed set of data from Davidson county</description>
-   <name>SearchResultsSanityOldGrid</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>0c3b1845-a8ea-42b8-b864-db903f0c7d12</testCaseGuid>
-</TestCaseEntity>

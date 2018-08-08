@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "QC Analyst", ('Company') : ""], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
@@ -37,6 +37,8 @@ WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderIn
 WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderInputS3Prefix'), GlobalVariable.S3SourceOrthoPrefix)
 
 WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderSelectATPProject'))
+
+WebUI.check(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderCopytoESPCheckbox'))
 
 not_run: WebUI.sendKeys(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
 
