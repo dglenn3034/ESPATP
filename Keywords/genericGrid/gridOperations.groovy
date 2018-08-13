@@ -86,10 +86,11 @@ public class gridOperations {
 		ClearColumns()
 
 		/* add one column */
-		AddOneColumn(columnName)
+		Boolean First = false
+		AddOneColumn(columnName, First)
 	}
 	@Keyword
-	def AddOneColumn (String columnName) {
+	def AddOneColumn (String columnName, Boolean First) {
 		println ('Checking column' + columnName)
 		def TestObject myCheckBoxObject = findTestObject('Grid/ColumnDropdowncheckbox')
 		def String ChkBoxXp = myCheckBoxObject.findPropertyValue('xpath')
@@ -123,7 +124,12 @@ public class gridOperations {
 				WebUiBuiltInKeywords.check(myObjBox)
 				found = true
 			}
-			ndx = ndx + 1
+			else {
+				if (First) {
+					WebUiBuiltInKeywords.uncheck(myObjBox)
+				}
+				ndx = ndx + 1
+			}
 		}
 
 		WebUI.click(findTestObject('Grid/ColumnToggleGear'))

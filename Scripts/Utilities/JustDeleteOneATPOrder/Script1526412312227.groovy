@@ -19,14 +19,22 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Admin Console/SystemInformation/SystemInfoTableContainer'))
+def String Ordername
+def String Fieldname
 
-ordername = WebUI.getText(findTestObject('Admin Console/SystemInformation/NameofOrderInRowone_Field'))
+Fieldname = WebUI.getText(findTestObject('Admin Console/SystemInformation/NameofFirstDataColumn'))
 
+if (Fieldname.startsWith('Order Name')) {
+	println ('Grid already set with Order Name first')
+}
+else {
+	println ('Need to set Order Name as first in Grid')
+	CustomKeywords.'genericGrid.gridOperations.SetGridJustOneColumn'('Order Name')
+}
 
+ordername = WebUI.getText(findTestObject('Admin Console/SystemInformation/NameofFirstOrder'))
 
-'Delete Order Button'
-WebUiBuiltInKeywords.click(findTestObject('Admin Console/SystemInformation/RowDelete_Button'))
+CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Delete')
 
 WebUiBuiltInKeywords.check(findTestObject('Admin Console/SystemInformation/DeleteFromBucket_CheckBox'))
 
@@ -34,8 +42,7 @@ WebUiBuiltInKeywords.check(findTestObject('Admin Console/SystemInformation/Subtr
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/SystemInformation/DeleteOrderContinue_Button'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Admin Console/SystemInformation/input_orderName'), 
-    ordername)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/SystemInformation/input_orderName'), ordername)
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/SystemInformation/button_Confirm'))
 

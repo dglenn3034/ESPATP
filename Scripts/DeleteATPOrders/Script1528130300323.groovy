@@ -60,6 +60,8 @@ WebUiBuiltInKeywords.uncheck(findTestObject('Admin Console/SystemInformation/Sta
 
 countOrders = WebUI.getText(findTestObject('Admin Console/SystemInformation/TotalOrders_Field'))
 
+CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Order Name', true)
+
 int iCountOrders = Integer.parseInt(countOrders)
 
 while (iCountOrders > 0) {
@@ -74,10 +76,11 @@ while (iCountOrders > 0) {
     println('Number of Orders after delete = ' + countOrders2)
 
     if (iCountOrders == iCountOrders2) {
-        throw new com.kms.katalon.core.exception.StepFailedException('Delete failed')
-    } else {
+		throw new com.kms.katalon.core.exception.StepFailedException ('Delete Order failed - ')
+		println ('failed to delete order')
+    }
+	else {
         iCountOrders = iCountOrders2
-
         countOrders = countOrders2
     }
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>NameofOrderInRowone_Field</name>
+   <name>NameofFirstDataColumn</name>
    <tag></tag>
    <elementGuidId>be3f9ccb-080f-4096-9bbb-556b309283b4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//table/tbody/tr/td)[5]</value>
+         <value>//div[@class='fixedDataTableLayout_main public_fixedDataTable_main']/div/div[@class='fixedDataTableRowLayout_rowWrapper'][1]/descendant::div[@class='fixedDataTableCellLayout_main public_fixedDataTableCell_main public_fixedDataTableCell_hasReorderHandle'][1]/descendant::a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
