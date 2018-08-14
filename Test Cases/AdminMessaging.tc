@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Sanity Test for the Admin Message command</description>
+   <name>AdminMessaging</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b46de144-bba3-47b4-9116-bb876e793b98</testCaseGuid>
+</TestCaseEntity>

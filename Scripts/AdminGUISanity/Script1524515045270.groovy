@@ -20,7 +20,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "Company Admin"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'Company Admin'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.AdminSite)
 
@@ -32,17 +32,17 @@ WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Grou
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Organizations'), 1)
 
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Access Restriction'), 
-    1)
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Access Restriction'), 1)
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Basemaps'), 1)
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/div_Reports'), 1)
 
-WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/a_ System Information'), 
-    1)
+WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/a_ System Information'), 1)
 
 WebUiBuiltInKeywords.verifyElementPresent(findTestObject('Admin Console/a_ActivityLog'), 1)
+
+WebUI.verifyElementPresent(findTestObject('Admin Console/a_Message'), 1)
 
 WebUI.callTestCase(findTestCase('Utilities/AdminConsoleSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

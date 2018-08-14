@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>MessageLeftTableFirstCheckbox</name>
+   <tag></tag>
+   <elementGuidId>4b998287-9ed6-4cf1-b7db-350e0fedada8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[(contains(@class,'bidirectional-grid-left'))]/div[@class='container-fluid']/descendant::div[@class='public_fixedDataTableCell_cellContent']/input[@type='checkbox']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>
