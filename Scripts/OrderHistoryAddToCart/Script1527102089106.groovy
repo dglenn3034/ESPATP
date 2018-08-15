@@ -32,7 +32,7 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 CustomKeywords.'genericGrid.gridOperations.SetGridJustOneColumn'('Order Name')
 
-CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Status')
+CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Status', false)
 
 CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Order Name')
 

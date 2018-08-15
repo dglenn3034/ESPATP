@@ -5,7 +5,7 @@ Assumes the user had Company Admin access</description>
    <name>Admin</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-08-09T15:08:05</lastRun>
+   <lastRun>2018-08-15T09:49:41</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -47,5 +47,11 @@ Assumes the user had Company Admin access</description>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/DeleteATPOrganization</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bd5bc216-f665-4d5d-94c4-53fc2d18c3a1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/AdminMessaging</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -29,7 +29,7 @@ WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogOrderHistory_butt
 
 CustomKeywords.'genericGrid.gridOperations.SetGridJustOneColumn'('Order Name')
 
-CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Status')
+CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Status', false)
 
 CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Order Name')
 
