@@ -129,11 +129,12 @@ public class searchResults {
 		def Integer ndx = 1
 		def Integer colNdx = 0
 		def String sndx, Xp
-
-		WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
+		def boolean found = false
 		
+		WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
+
 		/* arbitrary stop point of 10 for ndx */
-		while (colNdx < 1 && ndx < 10) {
+		while (colNdx < 1 && ndx < 10 && found == false) {
 
 			sndx = ndx.toString()
 			Xp = ChkBoxLabelXp.replace('NDX', sndx)
@@ -150,7 +151,7 @@ public class searchResults {
 
 				/* check the box */
 				WebUiBuiltInKeywords.check(myObjBox)
-
+				found = true
 				colNdx = checkedCount + 1
 			}
 			else {

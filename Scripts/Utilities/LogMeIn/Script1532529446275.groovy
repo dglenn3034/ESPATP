@@ -26,7 +26,7 @@ ExcelData envData = findTestData('LoginData')
 
 Integer rowNdx = 1
 
-GlobalVariable.NewUser = envData.getValue(6, 2)
+GlobalVariable.NewUser = envData.getValue(2, 6)
 
 if (Role == 'Company Admin') {
     rowNdx = 1
