@@ -66,7 +66,7 @@ String OName = 'ATPNaipFilteredOrder-' + aDate
 
 WebUI.setText(findTestObject('Catalog/OrderCart/OrderCartOrderName_Field'), OName)
 
-WebUI.click(findTestObject('Catalog/PostProcessingNaip/PostProcessingNaipAdd_Button'))
+WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessing_button_Add'))
 
 WebUI.click(findTestObject('Catalog/PostProcessingNaip/PostProcessingNaipResampling_Checkbox'))
 
@@ -75,7 +75,7 @@ WebUI.selectOptionByValue(findTestObject('Catalog/PostProcessingNaip/PostProcess
 
 WebUI.setText(findTestObject('Catalog/PostProcessingNaip/PostProcessingNaipResamplePixelSize_Field'), '2')
 
-WebUI.click(findTestObject('Catalog/PostProcessingNaip/PostProcessingNaipOK_Button'))
+WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessingOK_Button'))
 
 WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPreviewOrder_Button'))
 

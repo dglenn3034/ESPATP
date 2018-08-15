@@ -20,11 +20,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : "User"], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUiBuiltInKeywords.click(findTestObject('Catalog/Canvas'))
+WebUiBuiltInKeywords.click(findTestObject('Cesium/canvas'))
 
 WebUI.setText(findTestObject('Cesium/CesiumSearchField'), 'France')
 
@@ -51,6 +51,19 @@ WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsAddSelectedToCart
 WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
 
 WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
+
+WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessing_button_Add'))
+
+WebUI.selectOptionByLabel(findTestObject('Catalog/PostProcessingDESIS/MapProjection'), 'UTM_Zone_of_Scene_Center(+1)', false)
+
+WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Catalog/PostProcessingDESIS/ImageResampling'), 'Cubic Convolution', 
+    false)
+
+WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Catalog/PostProcessingDESIS/TerrainCorrection'), 'Yes', false)
+
+WebUI.setText(findTestObject('Catalog/PostProcessingDESIS/OzoneValue'), '300')
+
+WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessingOK_Button'))
 
 def date = new Date()
 

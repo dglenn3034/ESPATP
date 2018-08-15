@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PostProcessingNaipOK_Button</name>
+   <name>PostProcessingOK_Button</name>
    <tag></tag>
    <elementGuidId>0edcbcb0-e4c7-485c-b09c-c57fff60fb8e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
