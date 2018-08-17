@@ -30,7 +30,7 @@ WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogOrderHistory_butt
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-CustomKeywords.'genericGrid.gridOperations.SetGridJustOneColumn'('Order Name')
+CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Order Name', true)
 
 CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Status', false)
 
