@@ -67,9 +67,9 @@ WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessing_button_Add'))
 
 WebUI.check(findTestObject('Catalog/PostProcessingLidar/ClipToAOI_Checkbox'))
 
-WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessing_button_OK'))
+WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessingOK_Button'))
 
-WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessing_button_Remove'))
+WebUI.click(findTestObject('Catalog/PostProcessingLidar/PostProcessing_button_Remove'))
 
 WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessing_button_Add'))
 
@@ -85,7 +85,7 @@ WebUI.setText(findTestObject('Catalog/PostProcessingLidar/LidarImagePixelSize_fi
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessing_button_OK'))
+WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessingOK_Button'))
 
 WebUI.click(findTestObject('Catalog/OrderCart/OrderCartPreviewOrder_Button'))
 
