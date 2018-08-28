@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//select[(contains(@class,'operator'))])[ROWNDX]/option[(text()='OPERATOR')]</value>
+         <value>(//select[(contains(@class,'operator'))])[ROWNDX]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//select[(contains(@class,'operator'))])[ROWNDX]/option[(text()='OPERATOR')]</value>
+      <value>(//select[(contains(@class,'operator'))])[ROWNDX]</value>
    </webElementProperties>
 </WebElementEntity>

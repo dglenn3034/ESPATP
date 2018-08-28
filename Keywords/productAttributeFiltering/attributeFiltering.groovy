@@ -49,7 +49,7 @@ public class attributeFiltering {
 
 		/* set the value */
 		SetAttributeValue (AttributeValue, IsDate, clsNdx)
-		
+
 		/* set the operator */
 		SetOperatorValue (Operator, clsNdx)
 
@@ -129,6 +129,8 @@ public class attributeFiltering {
 		Xp = Xp.replace('OPERATOR', Operator)
 		tmpObject = WebUI.modifyObjectProperty(myObj, 'xpath', 'equals', Xp, true)
 		WebUiBuiltInKeywords.click(tmpObject)
+
+		WebUiBuiltInKeywords.selectOptionByValue(tmpObject, Operator, false)
 	}
 
 	def SetAttributeValue (String AttributeValue, Boolean IsDate, Integer clsNdx) {
