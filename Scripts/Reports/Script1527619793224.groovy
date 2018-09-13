@@ -28,23 +28,27 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsViewDetails'))
 
 'GeoCue Organization in GeoCue company'
-def TestObject myObject = findTestObject('Admin Console/Reports/ReportsSelectOrganization')
-def String Xp = myObject.findPropertyValue('xpath')
+TestObject myObject = findTestObject('Admin Console/Reports/ReportsSelectOrganization')
+
+String Xp = myObject.findPropertyValue('xpath')
+
 println('Xp = ' + Xp)
-Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF')
-Xp = Xp.replace('TABNO', '1') /* first tab is orders, 2nd is Users */
-def TestObject tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+
+/* Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF')  */
+Xp = Xp.replace('ORGANIZATIONID', 'B88DAE7F801348858FAAB53D9EDAF34A' /* Dev */ )
+
+Xp = Xp.replace('TABNO', '1' /* first tab is orders, 2nd is Users */ )
+
+TestObject tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+
 WebUiBuiltInKeywords.click(tmpObject, FailureHandling.STOP_ON_FAILURE)
-
-
-
 
 WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePickStart'), '04/01/2018')
 
 'To clear date picker box'
 WebUI.click(findTestObject('Admin Console/Reports/OrderReportHeader'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePickEnd'), '06/01/2018')
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePickEnd'), '09/01/2018')
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsOrderReportPreview'))
 
@@ -71,14 +75,19 @@ WebUI.click(findTestObject('Admin Console/Reports/UserReportHeader'))
 
 'GeoCue Organization in GeoCue company'
 myObject = findTestObject('Admin Console/Reports/ReportsSelectOrganization')
+
 Xp = myObject.findPropertyValue('xpath')
+
 println('Xp = ' + Xp)
-Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF')
-Xp = Xp.replace('TABNO', '2') /* first tab is orders, 2nd is Users */
+
+/* Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF')  */
+Xp = Xp.replace('ORGANIZATIONID', 'B88DAE7F801348858FAAB53D9EDAF34A' /* Dev */ )
+
+Xp = Xp.replace('TABNO', '2' /* first tab is orders, 2nd is Users */ )
+
 tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+
 WebUiBuiltInKeywords.click(tmpObject, FailureHandling.STOP_ON_FAILURE)
-
-
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsUserReportPreview'))
 

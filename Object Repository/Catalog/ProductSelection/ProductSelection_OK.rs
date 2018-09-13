@@ -9,10 +9,14 @@
          <key>BASIC</key>
       </entry>
       <entry>
+         <key>XPATH</key>
+         <value>//button[@type = 'button' and (text() = 'Ok' or . = 'Ok')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value>.prodSelectClose</value>
+         <value>//button[@type = 'button' and (text() = 'Ok' or . = 'Ok')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
