@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CalibrationRequestLatestDate</name>
+   <tag></tag>
+   <elementGuidId>bab60fc8-3c25-4860-aedf-11187314d869</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@class='limitTaskingParameters']/descendant::input[@placeholder='Latest']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Latest</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control datePick react-datepicker-ignore-onclickoutside</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;app&quot;)/div[1]/div[1]/span[@class=&quot;tasking-parameters-container&quot;]/div[@class=&quot;react-draggable&quot;]/div[@class=&quot;draggable-panel panel panel-primary&quot;]/div[@class=&quot;panel-collapse collapse in&quot;]/div[@class=&quot;panel-body&quot;]/span[1]/div[@class=&quot;row&quot;]/form[@class=&quot;limitTaskingParameters&quot;]/div[@class=&quot;taskingFormGroup form-group&quot;]/div[@class=&quot;col-sm-9&quot;]/div[@class=&quot;react-datepicker__input-container react-datepicker__tether-target react-datepicker__tether-element-attached-top react-datepicker__tether-element-attached-left react-datepicker__tether-target-attached-bottom react-datepicker__tether-target-attached-left react-datepicker__tether-enabled&quot;]/input[@class=&quot;form-control datePick react-datepicker-ignore-onclickoutside&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>
