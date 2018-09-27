@@ -34,8 +34,8 @@ String Xp = myObject.findPropertyValue('xpath')
 
 println('Xp = ' + Xp)
 
-/* Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF')  */
-Xp = Xp.replace('ORGANIZATIONID', 'B88DAE7F801348858FAAB53D9EDAF34A' /* Dev */ )
+Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF') 
+/* Xp = Xp.replace('ORGANIZATIONID', 'B88DAE7F801348858FAAB53D9EDAF34A') */
 
 Xp = Xp.replace('TABNO', '1' /* first tab is orders, 2nd is Users */ )
 
@@ -80,8 +80,8 @@ Xp = myObject.findPropertyValue('xpath')
 
 println('Xp = ' + Xp)
 
-/* Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF')  */
-Xp = Xp.replace('ORGANIZATIONID', 'B88DAE7F801348858FAAB53D9EDAF34A' /* Dev */ )
+Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF')
+/* Xp = Xp.replace('ORGANIZATIONID', 'B88DAE7F801348858FAAB53D9EDAF34A'  ) */ /*  Dev */
 
 Xp = Xp.replace('TABNO', '2' /* first tab is orders, 2nd is Users */ )
 

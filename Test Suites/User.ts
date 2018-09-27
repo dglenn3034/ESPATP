@@ -4,7 +4,7 @@
    <name>User</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-09-13T11:01:55</lastRun>
+   <lastRun>2018-09-19T13:28:05</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -160,5 +160,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SmokeTest01</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>30aa71fa-be99-4c50-b160-75fb96a5615f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CalibrationOrder</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
