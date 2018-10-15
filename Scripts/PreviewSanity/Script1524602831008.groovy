@@ -31,7 +31,7 @@ WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/MapDataSourceSearch Resu
 
 WebUI.click(findTestObject('Catalog/Main/CatalogAOIImport_Button'))
 
-WebUI.sendKeys(findTestObject('Catalog/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\esp\\test_data\\miamibeachshapfile.zip')
+WebUI.sendKeys(findTestObject('Catalog/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\esp\\test_data\\shapefiles\\miamibeachshapfile.zip')
 
 WebUI.click(findTestObject('Catalog/AOI/AOIExecutetheImport_button'))
 

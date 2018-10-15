@@ -49,7 +49,7 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUI.click(findTestObject('Catalog/Main/CatalogAOIImport_Button'))
 
-WebUI.sendKeys(findTestObject('Catalog/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\esp\\test_data\\HoustonBayArea.zip')
+WebUI.sendKeys(findTestObject('Catalog/AOI/AOIFIlePath_Field'), '\\\\diskstation1\\Data\\esp\\test_data\\shapefiles\\HoustonBayArea.zip')
 
 WebUI.click(findTestObject('Catalog/AOI/AOIExecutetheImport_button'))
 
