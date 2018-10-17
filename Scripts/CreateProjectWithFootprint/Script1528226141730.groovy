@@ -28,7 +28,7 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 'Click here to get Cesium Canvas to disappear'
 WebUI.click(findTestObject('Cesium/canvas'))
 
-WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPProjectWithFootprint', ('FootprintFile') : '\\\\diskstation1\\Data\\esp\\test_data\\HoustonBayArea.zip'
+WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPProjectWithFootprint', ('FootprintFile') : '\\\\diskstation1\\Data\\esp\\test_data\\shapefiles\\HoustonBayArea.zip'
         , ('ProductType') : 'Lidar', ('ProjectPrefix') : 'ATPFoot'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
