@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import java.text.SimpleDateFormat
 
 WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'Company Admin', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -34,8 +35,7 @@ String Xp = myObject.findPropertyValue('xpath')
 
 println('Xp = ' + Xp)
 
-Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF') 
-/* Xp = Xp.replace('ORGANIZATIONID', 'B88DAE7F801348858FAAB53D9EDAF34A') */
+Xp = Xp.replace('ORGANIZATIONID', GlobalVariable.GeoCueOrganizationID) 
 
 Xp = Xp.replace('TABNO', '1' /* first tab is orders, 2nd is Users */ )
 
@@ -48,7 +48,11 @@ WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePi
 'To clear date picker box'
 WebUI.click(findTestObject('Admin Console/Reports/OrderReportHeader'))
 
-WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePickEnd'), '09/01/2018')
+def date = new Date()
+sdf = new SimpleDateFormat("MM/dd/yyyy")
+endDate = sdf.format(date)
+
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePickEnd'), endDate )
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsOrderReportPreview'))
 
@@ -80,8 +84,7 @@ Xp = myObject.findPropertyValue('xpath')
 
 println('Xp = ' + Xp)
 
-Xp = Xp.replace('ORGANIZATIONID', '70CDF0F3358140198A4A473F1B915CCF')
-/* Xp = Xp.replace('ORGANIZATIONID', 'B88DAE7F801348858FAAB53D9EDAF34A'  ) */ /*  Dev */
+Xp = Xp.replace('ORGANIZATIONID', GlobalVariable.GeoCueOrganizationID) 
 
 Xp = Xp.replace('TABNO', '2' /* first tab is orders, 2nd is Users */ )
 

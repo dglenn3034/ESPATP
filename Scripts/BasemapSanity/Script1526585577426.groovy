@@ -69,6 +69,8 @@ catch (Exception e) {
     CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Delete')
 
     WebUiBuiltInKeywords.click(findTestObject('OKButton'))
+
+    WebUI.verifyElementNotPresent(findTestObject('Admin Console/ErrorPopup'), 2)
 } 
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 5)

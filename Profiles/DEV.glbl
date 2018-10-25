@@ -89,4 +89,9 @@
       <initValue>''</initValue>
       <name>NewUser</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'B88DAE7F801348858FAAB53D9EDAF34A'</initValue>
+      <name>GeoCueOrganizationID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
