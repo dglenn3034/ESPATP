@@ -39,7 +39,8 @@ WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/LidarLoader/LidarLoaderIn
 
 WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/LidarLoader/LidarLoaderIInputS3Prefix'), GlobalVariable.S3SourceLidarPrefix)
 
-WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSelectATPProject'))
+WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSelectProject'), 'ATPLidarProject', 
+    false)
 
 WebUiBuiltInKeywords.selectOptionByValue(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSelectHillshade'), '2', false)
 

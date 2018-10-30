@@ -34,4 +34,11 @@ Simply returns if the project already exists</description>
       <masked>false</masked>
       <name>ProjectPrefix</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>846e6409-b958-4649-9cfa-0ab76178fc72</id>
+      <masked>false</masked>
+      <name>MetadataFile</name>
+   </variable>
 </TestCaseEntity>

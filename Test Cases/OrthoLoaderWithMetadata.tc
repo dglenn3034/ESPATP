@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Loads the orthos in the test folder into a new project. If the project exists, it deletes it and recreates it.
+Requires standard USER group + CanExecuteOrthoLoader</description>
+   <name>OrthoLoaderWithMetadata</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>73fd2b25-8fcc-4ca4-a0c5-f0cc5ef3e6ba</testCaseGuid>
+</TestCaseEntity>

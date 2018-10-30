@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OrthoLoaderSelectATPProject</name>
+   <name>CreateProjectMetadataFile</name>
    <tag></tag>
-   <elementGuidId>192adec2-edb7-4616-97cb-c9090905dd28</elementGuidId>
+   <elementGuidId>a447c033-e185-4cc0-9dc6-559dae2f251f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//option[(text()='ATPOrthoProject')]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//select[@id = 'frmProject' and (text() = 'Select ProjectOrthoTesttest orth with footprintpascoOrthoLoaderTest May 1Ortho test 2 May 1Ortho with footprintortho test 3' or . = 'Select ProjectOrthoTesttest orth with footprintpascoOrthoLoaderTest May 1Ortho test 2 May 1Ortho with footprintortho test 3')]</value>
+         <value>//input[@type = 'file' and @id = 'singleFileInput']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,34 +17,34 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>select</value>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>file</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>frmProject</value>
+      <value>singleFileInput</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>accept</name>
       <type>Main</type>
-      <value>text-box-input form-control</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Select ProjectOrthoTesttest orth with footprintpascoOrthoLoaderTest May 1Ortho test 2 May 1Ortho with footprintortho test 3</value>
+      <value>.xml,txt</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;frmProject&quot;)</value>
+      <value>id(&quot;importAoiTab-pane-1&quot;)/form[@class=&quot;form-horizontal&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;col-sm-8&quot;]/input[@id=&quot;singleFileInput&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

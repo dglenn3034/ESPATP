@@ -37,6 +37,12 @@ public class gridOperations {
 		if (gridFunctionName == 'Open') {
 			Xp = Xp.replace('CLASS', 'fa-folder-open')
 		}
+		else if (gridFunctionName == 'AOI') {
+			Xp = Xp.replace('CLASS', 'fa-crosshairs')
+		}
+		else if (gridFunctionName == 'AddToSearchResults') {
+			Xp = Xp.replace('CLASS', 'fa-folder-open')
+		}
 		else if (gridFunctionName == 'Zoom') {
 			Xp = Xp.replace('CLASS', 'fa-search-plus')
 		}
@@ -79,6 +85,27 @@ public class gridOperations {
 		def TestObject tmpObject = WebUI.modifyObjectProperty(myGridObject, 'xpath', 'equals', Xp, true)
 		WebUiBuiltInKeywords.click(tmpObject)
 	}
+	
+	@Keyword
+	def ColumnFilterByString (String colName, String filterValue ) {
+		def TestObject myGridObject = findTestObject('Grid/ColumnFilter')
+		def String GridXp = myGridObject.findPropertyValue('xpath')
+		println('GridXp = ' + GridXp)
+		def String Xp = GridXp.replace('COLNAME', colName)
+		println('Xp = ' + Xp)
+
+		def TestObject tmpObject = WebUI.modifyObjectProperty(myGridObject, 'xpath', 'equals', Xp, true)
+		WebUiBuiltInKeywords.click(tmpObject)
+		
+		def TestObject myLikeFilterObject = findTestObject('Grid/LikeFilter')
+		def String LikeFilterXp = myLikeFilterObject.findPropertyValue('xpath')
+
+		Xp = LikeFilterXp.replace('Column', colName)
+		println('Like Filter Xp = ' + Xp)
+		tmpObject = WebUI.modifyObjectProperty(myLikeFilterObject, 'xpath', 'equals', Xp, true)
+		WebUiBuiltInKeywords.setText(tmpObject, filterValue)
+	}
+
 	@Keyword
 	def SetGridJustOneColumn (String columnName) {
 

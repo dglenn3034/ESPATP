@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LidarLoaderSelectATPProject</name>
+   <name>OrthoLoaderSelectProject</name>
    <tag></tag>
-   <elementGuidId>40b1012c-7bcd-4094-b278-628530ec6fab</elementGuidId>
+   <elementGuidId>192adec2-edb7-4616-97cb-c9090905dd28</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//option[(text()='ATPLidarProject')]</value>
+         <value>//select[@id='frmProject']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//select[@id = 'frmProject' and (text() = 'Select ProjectMadison CountyDavidson CountyAshley-TestAshley Test 2LidarLoadProcessTestAshley Test 180122al demoWillistonAMTestDebugStringErrorhernando_lidarTest-3-19test 2 3-19TestLidarLoaderAM-EspLogActivityTest1AM-EspActivityLogTest2AM-ActivityLogTest4AM-ActivityLogTest5ATPProject' or . = 'Select ProjectMadison CountyDavidson CountyAshley-TestAshley Test 2LidarLoadProcessTestAshley Test 180122al demoWillistonAMTestDebugStringErrorhernando_lidarTest-3-19test 2 3-19TestLidarLoaderAM-EspLogActivityTest1AM-EspActivityLogTest2AM-ActivityLogTest4AM-ActivityLogTest5ATPProject')]</value>
+         <value>//select[@id = 'frmProject' and (text() = 'Select ProjectOrthoTesttest orth with footprintpascoOrthoLoaderTest May 1Ortho test 2 May 1Ortho with footprintortho test 3' or . = 'Select ProjectOrthoTesttest orth with footprintpascoOrthoLoaderTest May 1Ortho test 2 May 1Ortho with footprintortho test 3')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -42,7 +42,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Select ProjectMadison CountyDavidson CountyAshley-TestAshley Test 2LidarLoadProcessTestAshley Test 180122al demoWillistonAMTestDebugStringErrorhernando_lidarTest-3-19test 2 3-19TestLidarLoaderAM-EspLogActivityTest1AM-EspActivityLogTest2AM-ActivityLogTest4AM-ActivityLogTest5ATPProject</value>
+      <value>Select ProjectOrthoTesttest orth with footprintpascoOrthoLoaderTest May 1Ortho test 2 May 1Ortho with footprintortho test 3</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

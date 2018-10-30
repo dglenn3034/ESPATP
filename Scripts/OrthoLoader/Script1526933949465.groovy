@@ -36,7 +36,8 @@ WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderIn
 
 WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderInputS3Prefix'), GlobalVariable.S3SourceOrthoPrefix)
 
-WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderSelectATPProject'))
+WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderSelectProject'), 'ATPOrthoProject', 
+    false)
 
 WebUI.check(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderCopytoESPCheckbox'))
 

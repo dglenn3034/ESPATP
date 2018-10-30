@@ -130,7 +130,7 @@ public class searchResults {
 		def Integer colNdx = 0
 		def String sndx, Xp
 		def boolean found = false
-		
+
 		WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
 
 		/* arbitrary stop point of 10 for ndx */

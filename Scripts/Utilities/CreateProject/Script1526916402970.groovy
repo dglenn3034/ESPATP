@@ -55,6 +55,10 @@ WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/CreateProject/CreateProje
 
 WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectInputPrefix'), ProjectPrefix)
 
+if (MetadataFile) {
+    WebUI.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectMetadataFile'), MetadataFile)
+}
+
 if (ProductType == 'Lidar') {
     WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/CreateProject/CreateProjectSelectProjectTypeLidar'))
 } else {
@@ -91,9 +95,8 @@ if ((FootprintFile != null) && (FootprintFile.length() > 0)) {
 
     'This OK is to accept that the project is created with no footprint'
     WebUiBuiltInKeywords.click(findTestObject('OKButton'))
-	
-	WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
-	
+
+    WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
     'This OK is to close the project created confirmation dialog'
     WebUiBuiltInKeywords.click(findTestObject('OKButton'))

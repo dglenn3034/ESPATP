@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LidarLoaderSelectProject</name>
+   <tag></tag>
+   <elementGuidId>40b1012c-7bcd-4094-b278-628530ec6fab</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='frmProject']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//select[@id = 'frmProject' and (text() = 'Select ProjectMadison CountyDavidson CountyAshley-TestAshley Test 2LidarLoadProcessTestAshley Test 180122al demoWillistonAMTestDebugStringErrorhernando_lidarTest-3-19test 2 3-19TestLidarLoaderAM-EspLogActivityTest1AM-EspActivityLogTest2AM-ActivityLogTest4AM-ActivityLogTest5ATPProject' or . = 'Select ProjectMadison CountyDavidson CountyAshley-TestAshley Test 2LidarLoadProcessTestAshley Test 180122al demoWillistonAMTestDebugStringErrorhernando_lidarTest-3-19test 2 3-19TestLidarLoaderAM-EspLogActivityTest1AM-EspActivityLogTest2AM-ActivityLogTest4AM-ActivityLogTest5ATPProject')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>frmProject</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text-box-input form-control</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Select ProjectMadison CountyDavidson CountyAshley-TestAshley Test 2LidarLoadProcessTestAshley Test 180122al demoWillistonAMTestDebugStringErrorhernando_lidarTest-3-19test 2 3-19TestLidarLoaderAM-EspLogActivityTest1AM-EspActivityLogTest2AM-ActivityLogTest4AM-ActivityLogTest5ATPProject</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;frmProject&quot;)</value>
+   </webElementProperties>
+</WebElementEntity>

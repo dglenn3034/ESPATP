@@ -59,4 +59,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/OrthoLoader</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>5b0f95d7-3b8e-46ee-9440-100c447e1c46</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/LidarLoaderWithMetadata</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>adade7e6-6513-41d5-8bba-a19a613a9155</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrthoLoaderWithMetadata</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

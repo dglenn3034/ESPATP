@@ -94,4 +94,24 @@
       <initValue>'B88DAE7F801348858FAAB53D9EDAF34A'</initValue>
       <name>GeoCueOrganizationID</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-testing'</initValue>
+      <name>S3SourceLidarWithMetadataBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Dev/Lidar/ATPND_Fargo_2005'</initValue>
+      <name>S3SourceLidarWithMetadataPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'esp-testing'</initValue>
+      <name>S3SourceOrthoWithMetadataBucket</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Dev/Ortho/ATPPasco'</initValue>
+      <name>S3SourceOrthoWithMetadataPrefix</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

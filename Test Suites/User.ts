@@ -4,7 +4,7 @@
    <name>User</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-10-16T11:30:49</lastRun>
+   <lastRun>2018-10-25T09:55:37</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -132,12 +132,6 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>7bb4f580-751b-413a-a416-036929ece49e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/OrderHistoryAddToCart</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>a5ca43c6-0bc2-4693-89b3-c760d2e0c899</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -162,9 +156,15 @@
       <testCaseId>Test Cases/SmokeTest01</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>30aa71fa-be99-4c50-b160-75fb96a5615f</guid>
+      <guid>7bb4f580-751b-413a-a416-036929ece49e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CalibrationOrder</testCaseId>
+      <testCaseId>Test Cases/OrderHistoryAddToCart</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bbdd71f5-2263-470c-a0ec-a95112e0adb1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ProjectsForCatalog</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
