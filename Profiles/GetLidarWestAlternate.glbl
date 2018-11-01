@@ -46,7 +46,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'glesp-testing'</initValue>
+      <initValue>'gcesp-testing'</initValue>
       <name>S3SourceLidarBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -56,7 +56,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'glesp-testing'</initValue>
+      <initValue>'gcesp-testing'</initValue>
       <name>S3SourceOrthoBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -108,10 +108,5 @@
       <description></description>
       <initValue>'Dev/Ortho/ATPPasco'</initValue>
       <name>S3SourceOrthoWithMetadataPrefix</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'70CDF0F3358140198A4A473F1B915CCF'</initValue>
-      <name>GeoCueOrganizationID</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
