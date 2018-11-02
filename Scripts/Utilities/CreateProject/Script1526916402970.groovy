@@ -55,6 +55,8 @@ WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/CreateProject/CreateProje
 
 WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectInputPrefix'), ProjectPrefix)
 
+WebUI.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectInputDescription'), Description)
+
 if (MetadataFile) {
     WebUI.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectMetadataFile'), MetadataFile)
 }
@@ -64,9 +66,6 @@ if (ProductType == 'Lidar') {
 } else {
     WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/CreateProject/CreateProjectSelectProjectTypeOrtho'))
 }
-
-WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectInputDescription'), ('ATP Project for ' + 
-    ProductType) + ' Loading')
 
 println('FootprintFile = ' + FootprintFile)
 
