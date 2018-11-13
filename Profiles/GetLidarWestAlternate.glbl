@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>GetLidar-West Alternate Site</description>
-      <initValue>'https://geocue.getlidar-alternate.com'</initValue>
+      <initValue>'https://getlidar-alternate.com'</initValue>
       <name>site</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -30,13 +30,13 @@
       <name>ScreenShotFile</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>GetLidar-West Geocue Company</description>
+      <description>GetLidar-West PublicLidar Company</description>
       <initValue>'https://geocue.getlidar-alternate.com'</initValue>
       <name>GeoCueCompanySite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Lidar site SWFWMD</description>
-      <initValue>'https://geocue.getlidar-alternate.com'</initValue>
+      <description></description>
+      <initValue>'https://getlidar-alternate.com'</initValue>
       <name>LidarSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -46,7 +46,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'gcesp-testing'</initValue>
+      <initValue>'glesp-testing'</initValue>
       <name>S3SourceLidarBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -56,7 +56,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'gcesp-testing'</initValue>
+      <initValue>'glesp-testing'</initValue>
       <name>S3SourceOrthoBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -66,7 +66,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'gcesp-geocue-orders'</initValue>
+      <initValue>'glesp-geocue-orders'</initValue>
       <name>GeoCueDeliveryBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

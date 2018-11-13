@@ -31,28 +31,41 @@ GlobalVariable.NewUser = envData.getValue(2, 6)
 if (Role == 'Company Admin') {
     rowNdx = 1
 } else if (Role == 'User') {
-    rowNdx == 2
+    rowNdx = 2
 } else if (Role == 'System Admin') {
-    rowNdx == 3
+    rowNdx = 3
 } else if (Role == 'Organization Admin') {
-    rowNdx == 4
+    rowNdx = 4
 } else if (Role == 'QC Analyst') {
-    rowNdx == 5
+    rowNdx = 5
+} else if (Role == 'New User') {
+    rowNdx = 6
 } else {
-    rowNdx == 1
+    rowNdx = 1
 }
 
+println "rowNdx = " + rowNdx.toString()
 GlobalVariable.User = envData.getValue(2, rowNdx)
 
 GlobalVariable.pwd = envData.getValue(3, rowNdx)
+
+println "User = " + GlobalVariable.User
 
 GlobalVariable.ScreenShotFile = envData.getValue(4, rowNdx)
 
 def String theSite = GlobalVariable.GeoCueCompanySite
 
+println "The Site = " + theSite
+
 if ( Company ) {
 	println ("Company is specified = " + Company)
-	theSite = theSite.replace('geocue', Company)
+	if (Company == 'site') {
+		theSite = GlobalVariable.site
+	}
+	else {
+		theSite = theSite.replace('geocue', Company)
+	}
+	println "Site is changed to: " + theSite
 }
 
 /* WebUI.navigateToUrl(theSite) */

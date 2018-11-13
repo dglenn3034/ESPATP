@@ -30,7 +30,7 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPLidarProject', ('ProjectPrefix') : 'ATPLidar'
-        , ('ProductType') : 'Lidar', ('FootprintFile') : ''], FailureHandling.STOP_ON_FAILURE)
+        , ('ProductType') : 'Lidar', ('FootprintFile') : '', ('Description') : 'ATP Lidar Test Project'], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/LidarLoaderButton'))
 

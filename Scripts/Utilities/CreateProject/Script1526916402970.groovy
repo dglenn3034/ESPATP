@@ -21,6 +21,14 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('QCAnalyst/QCAnalystProjects_Button'))
 
+try {
+    WebUI.verifyElementPresent(findTestObject('QCAnalyst/Projects/ProjectFilterDeleteLine1'), 1)
+
+    WebUI.click(findTestObject('QCAnalyst/Projects/ProjectFilterDeleteLine1'))
+}
+catch (Exception e) {
+} 
+
 WebUI.click(findTestObject('QCAnalyst/Projects/ProjectAddLine'))
 
 WebUI.setText(findTestObject('QCAnalyst/Projects/ProjectFilterProjectName_field'), ProjectName)

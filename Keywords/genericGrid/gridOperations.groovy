@@ -85,7 +85,7 @@ public class gridOperations {
 		def TestObject tmpObject = WebUI.modifyObjectProperty(myGridObject, 'xpath', 'equals', Xp, true)
 		WebUiBuiltInKeywords.click(tmpObject)
 	}
-	
+
 	@Keyword
 	def ColumnFilterByString (String colName, String filterValue ) {
 		def TestObject myGridObject = findTestObject('Grid/ColumnFilter')
@@ -96,7 +96,7 @@ public class gridOperations {
 
 		def TestObject tmpObject = WebUI.modifyObjectProperty(myGridObject, 'xpath', 'equals', Xp, true)
 		WebUiBuiltInKeywords.click(tmpObject)
-		
+
 		def TestObject myLikeFilterObject = findTestObject('Grid/LikeFilter')
 		def String LikeFilterXp = myLikeFilterObject.findPropertyValue('xpath')
 

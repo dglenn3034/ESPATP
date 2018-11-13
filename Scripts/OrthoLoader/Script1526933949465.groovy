@@ -28,7 +28,7 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPOrthoProject', ('ProductType') : 'Orthos'
-        , ('ProjectPrefix') : 'ATPOrthos'], FailureHandling.STOP_ON_FAILURE)
+        , ('ProjectPrefix') : 'ATPOrthos', ('Description') : 'ATP Ortho Test Project'], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/OrthoLoaderButton'))
 

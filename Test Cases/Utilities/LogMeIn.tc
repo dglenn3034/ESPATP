@@ -13,8 +13,8 @@
       <name>Role</name>
    </variable>
    <variable>
-      <defaultValue>'GeoCue'</defaultValue>
-      <description>Company name to use in URL</description>
+      <defaultValue>''</defaultValue>
+      <description>Optional company to use</description>
       <id>c9f01bf6-2acf-4939-bfc0-8442196a30a4</id>
       <masked>false</masked>
       <name>Company</name>

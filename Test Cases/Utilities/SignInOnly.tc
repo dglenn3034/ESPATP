@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SignInOnly</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>34d335cf-23e8-4126-af40-a4b868a5feaa</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>922e63ca-c006-4e38-bc80-20d0d73d3b6c</id>
+      <masked>false</masked>
+      <name>Role</name>
+   </variable>
+</TestCaseEntity>

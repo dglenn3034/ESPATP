@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SimpleOrder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>387ca777-f0b0-4dc9-8ffd-20aef1db74f6</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9893f2e1-7055-4a9d-841d-1265cf728fa0</id>
+      <masked>false</masked>
+      <name>Location</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0ab911fc-d960-45dc-b4ce-26e61a09169f</id>
+      <masked>false</masked>
+      <name>Product</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>29729919-9b80-43bd-8f7f-b071cc77c99e</id>
+      <masked>false</masked>
+      <name>ProductType</name>
+   </variable>
+</TestCaseEntity>
