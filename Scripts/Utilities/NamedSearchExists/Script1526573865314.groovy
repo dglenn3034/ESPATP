@@ -18,25 +18,37 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 boolean found = true
 
+println('Named Search to look for = ' + NamedSearch)
+
+WebUI.delay(3)
+
 WebUI.waitForElementClickable(findTestObject('Catalog/Main/CatalogNamedSearch_Button'), 3)
 
-WebUI.click(findTestObject('Catalog/Main/CatalogNamedSearch_Button'))
+WebUI.click(findTestObject('Catalog/Main/CatalogNamedSearch_Button')) 
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 try {
-    WebUI.selectOptionByLabel(findTestObject('Catalog/NamedSearch/NamedSearch_SelectField'), NamedSearch, 
-        false, FailureHandling.STOP_ON_FAILURE)
+    /*	def TestObject myNSObject = findTestObject('Catalog/NamedSearch/NamedSearch_SelectField')
+	def String NSXp = myNSObject.findPropertyValue('xpath')
+	println('NSXp = ' + NSXp)
+	def String Xp = NSXp.replace('NS', NamedSearch)
+	println('Xp = ' + Xp)
+
+	def TestObject tmpObject = WebUI.modifyObjectProperty(myNSObject, 'xpath', 'equals', Xp, true)
+	WebUiBuiltInKeywords.click(tmpObject) */
+    WebUI.selectOptionByLabel(findTestObject('Catalog/NamedSearch/NamedSearch_SelectField'), NamedSearch, false)
 
     found = true
 }
 catch (Exception e) {
     println('No such Named Search')
 
-    found = false /* throw new com.kms.katalon.core.exception.('No such Named Search') */
+    found = false /* throw new com.kms.katalon.core.exception.('No such Named Search') */ 
 } 
 
 return found

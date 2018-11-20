@@ -4,7 +4,7 @@
    <name>User</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-11-01T15:05:08</lastRun>
+   <lastRun>2018-11-19T16:25:09</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -160,11 +160,5 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/OrderHistoryAddToCart</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>bbdd71f5-2263-470c-a0ec-a95112e0adb1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/ProjectsForCatalog</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

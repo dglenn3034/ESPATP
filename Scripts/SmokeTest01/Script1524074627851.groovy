@@ -20,8 +20,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import java.text.SimpleDateFormat as SimpleDateFormat
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User', ('Company') : 'site'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
@@ -39,13 +40,11 @@ if (found == true) {
     println(' No such named Search')
 
     WebUI.click(findTestObject('Catalog/NamedSearch/NamedSearchesCancel_Button'))
-
-   
 }
 
- WebUI.delay(3)
- 
- WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
 CustomKeywords.'productSelection.productSelection.SelectChildProduct'('Landsat8', 'NDVI')
 

@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>GetLidar-West Alternate QC site</description>
-      <initValue>'https://geocue.getlidar-alternate.com/qc'</initValue>
+      <initValue>'https://getlidar-alternate.com/qc'</initValue>
       <name>QCSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

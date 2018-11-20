@@ -23,4 +23,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Sharing</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>69faf3e6-519d-4dde-96f5-dc4d6d16c9bd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ProjectsForCatalog</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
