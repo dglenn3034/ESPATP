@@ -29,4 +29,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/ProjectsForCatalog</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>020e70cd-f55f-4736-8383-3d9fb43aad28</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ProjectsForCatalogFIlterByAOI</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -28,7 +28,7 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUI.click(findTestObject('Cesium/canvas'))
 
-found = WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : 'SmokeTest01'], FailureHandling.STOP_ON_FAILURE)
+found = WebUI.callTestCase(findTestCase('Utilities/NamedSearchExists'), [('NamedSearch') : 'ATPSmokeTest'], FailureHandling.STOP_ON_FAILURE)
 
 if (found == true) {
     println('Named Search is found, deleting it...')
@@ -87,7 +87,7 @@ WebUI.waitForElementClickable(findTestObject('Catalog/Main/CatalogSaveNamedSearc
 
 WebUI.click(findTestObject('Catalog/Main/CatalogSaveNamedSearch_Button'))
 
-WebUI.setText(findTestObject('Catalog/NamedSearch/NamedSearchSaveName_Field'), 'SmokeTest01')
+WebUI.setText(findTestObject('Catalog/NamedSearch/NamedSearchSaveName_Field'), 'ATPSmokeTest')
 
 WebUI.click(findTestObject('Catalog/NamedSearch/SaveNamedSearchSave_Button'))
 

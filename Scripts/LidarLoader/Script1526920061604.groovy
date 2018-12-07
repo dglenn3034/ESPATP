@@ -30,7 +30,8 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPLidarProject', ('ProjectPrefix') : 'ATPLidar'
-        , ('ProductType') : 'Lidar', ('FootprintFile') : '', ('Description') : 'ATP Lidar Test Project'], FailureHandling.STOP_ON_FAILURE)
+        , ('ProductType') : 'Lidar', ('FootprintFile') : '', ('Public') : true, ('DeleteIfExists') : true, ('Description') : 'ATP Lidar Test Project'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/LidarLoaderButton'))
 
@@ -42,7 +43,8 @@ WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/LidarLoader/LidarLoaderII
 WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSelectProject'), 'ATPLidarProject', 
     false)
 
-WebUiBuiltInKeywords.selectOptionByValue(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSelectHillshade'), '2', false)
+not_run: WebUiBuiltInKeywords.selectOptionByValue(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSelectHillshade'), '2', 
+    false)
 
 WebUI.check(findTestObject('QCAnalyst/LidarLoader/LidarLoaderCopytoESPCheckbox'))
 

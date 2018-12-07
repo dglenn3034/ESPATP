@@ -22,4 +22,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/DESIS Catalog</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>00033f22-d1b0-4b3c-b2f5-b70a0b18dfef</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TaskingRequestSetup</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

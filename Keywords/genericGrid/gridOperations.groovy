@@ -34,11 +34,15 @@ public class gridOperations {
 		def String Xp = GridXp.replace('ROWNDX', rowNdx.toString())
 		println('Xp = ' + Xp)
 
+
 		if (gridFunctionName == 'Open') {
 			Xp = Xp.replace('CLASS', 'fa-folder-open')
 		}
 		else if (gridFunctionName == 'AOI') {
 			Xp = Xp.replace('CLASS', 'fa-crosshairs')
+		}
+		else if (gridFunctionName == 'AddToOrderCart') {
+			Xp = Xp.replace('CLASS', 'fa-cart-plus')
 		}
 		else if (gridFunctionName == 'AddToSearchResults') {
 			Xp = Xp.replace('CLASS', 'fa-folder-open')

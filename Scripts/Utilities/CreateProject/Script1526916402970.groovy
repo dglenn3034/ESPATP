@@ -18,6 +18,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('QCAnalyst/QCAnalystProjects_Button'))
 
@@ -47,12 +49,12 @@ catch (Exception e) {
 
     WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsCloseDialog_Button'))
 
-    /*
-    WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName], FailureHandling.STOP_ON_FAILURE)
+    if (DeleteIfExists) {
+        WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName], FailureHandling.STOP_ON_FAILURE)
 
-    println(ProjectName + ' deleted ')
-	*/
-    return null
+        println(ProjectName + ' deleted ')
+    } else {
+    }
 } 
 
 WebUI.delay(2)
@@ -65,6 +67,10 @@ WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/CreateProject/CreateProje
 
 WebUI.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectInputDescription'), Description)
 
+if (Public) {
+    WebUI.click(findTestObject('QCAnalyst/CreateProject/CreateProjectPublicAccessCheckBox'), FailureHandling.STOP_ON_FAILURE)
+}
+
 if (MetadataFile) {
     WebUI.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectMetadataFile'), MetadataFile)
 }
@@ -75,42 +81,26 @@ if (ProductType == 'Lidar') {
     WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/CreateProject/CreateProjectSelectProjectTypeOrtho'))
 }
 
+WebUI.click(findTestObject('QCAnalyst/CreateProject/CreateProjectStartDateField'))
+
+if (StartDate) {
+    WebUI.sendKeys(findTestObject('QCAnalyst/CreateProject/CreateProjectStartDatePicker'), Keys.chord(Keys.CONTROL, 'a'))
+
+    WebUI.sendKeys(findTestObject('QCAnalyst/CreateProject/CreateProjectStartDatePicker'), Keys.chord(Keys.BACK_SPACE))
+
+    WebUI.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectStartDatePicker'), StartDate)
+}
+
 println('FootprintFile = ' + FootprintFile)
 
-if ((FootprintFile != null) && (FootprintFile.length() > 0)) {
-    WebUI.click(findTestObject('QCAnalyst/CreateProject/CreateProjectImportFootprintSingleFile_Tab'))
+WebUI.click(findTestObject('QCAnalyst/CreateProject/CreateProjectSave'))
 
-    WebUI.delay(3)
-
-    WebUiBuiltInKeywords.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectImportFootprint_FileNameField'), FootprintFile)
-
-    WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/CreateProject/CreateProjectFootprintImport_Button'))
-
-    WebUI.click(findTestObject('QCAnalyst/CreateProject/button_OK'))
-
-    WebUI.delay(3)
-
-    WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/CreateProject/CreateProjectSave'))
-
-    WebUI.delay(3)
-
-    WebUiBuiltInKeywords.click(findTestObject('OKButton'))
-} else {
-    WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/CreateProject/CreateProjectSave'))
-
-    WebUI.delay(3)
-
-    'This OK is to accept that the project is created with no footprint'
-    WebUiBuiltInKeywords.click(findTestObject('OKButton'))
-
-    WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
-
-    'This OK is to close the project created confirmation dialog'
-    WebUiBuiltInKeywords.click(findTestObject('OKButton'))
-}
+WebUI.click(findTestObject('OKButton' /* OK off confirmation message */ ))
 
 'Wait on completion message to fade'
 WebUI.delay(5)
+
+WebUI.click(findTestObject('OKButton' /* ok off completion message */ ))
 
 return null
 

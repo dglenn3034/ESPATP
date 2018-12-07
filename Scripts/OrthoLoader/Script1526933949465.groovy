@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -28,7 +29,8 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPOrthoProject', ('ProductType') : 'Orthos'
-        , ('ProjectPrefix') : 'ATPOrthos', ('Description') : 'ATP Ortho Test Project'], FailureHandling.STOP_ON_FAILURE)
+        , ('ProjectPrefix') : 'ATPOrthos', ('Description') : 'ATP Ortho Loader Test Project', ('Public') : true, ('DeleteIfExists') : true], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/OrthoLoaderButton'))
 
@@ -40,6 +42,8 @@ WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('QCAnalyst/OrthoLoader/O
     false)
 
 WebUI.check(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderCopytoESPCheckbox'))
+
+WebUI.check(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderIsPublicCheckbox'))
 
 not_run: WebUI.sendKeys(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
 

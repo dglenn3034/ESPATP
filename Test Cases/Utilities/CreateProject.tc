@@ -48,4 +48,25 @@ Simply returns if the project already exists</description>
       <masked>false</masked>
       <name>Description</name>
    </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>c7b33766-4aa9-430a-9b60-a53b124b6985</id>
+      <masked>false</masked>
+      <name>Public</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>01c85951-59f7-49db-847b-154abc8163f0</id>
+      <masked>false</masked>
+      <name>DeleteIfExists</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>36edb467-41d5-4bef-8408-bcd3af21cdd3</id>
+      <masked>false</masked>
+      <name>StartDate</name>
+   </variable>
 </TestCaseEntity>

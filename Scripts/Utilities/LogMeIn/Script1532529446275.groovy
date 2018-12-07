@@ -21,7 +21,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testdata.ExcelData as ExcelData
 import com.kms.katalon.core.testdata.InternalData as InternalData
 
-
 ExcelData envData = findTestData('LoginData')
 
 Integer rowNdx = 1
@@ -44,32 +43,33 @@ if (Role == 'Company Admin') {
     rowNdx = 1
 }
 
-println "rowNdx = " + rowNdx.toString()
+println('rowNdx = ' + rowNdx.toString())
+
 GlobalVariable.User = envData.getValue(2, rowNdx)
 
 GlobalVariable.pwd = envData.getValue(3, rowNdx)
 
-println "User = " + GlobalVariable.User
+println('User = ' + GlobalVariable.User)
 
 GlobalVariable.ScreenShotFile = envData.getValue(4, rowNdx)
 
-def String theSite = GlobalVariable.GeoCueCompanySite
+String theSite = GlobalVariable.GeoCueCompanySite
 
-println "The Site = " + theSite
+println('The Site = ' + theSite)
 
-if ( Company ) {
-	println ("Company is specified = " + Company)
-	if (Company == 'site') {
-		theSite = GlobalVariable.site
-	}
-	else {
-		theSite = theSite.replace('geocue', Company)
-	}
-	println "Site is changed to: " + theSite
+if (Company) {
+    println('Company is specified = ' + Company)
+
+    if (Company == 'site') {
+        theSite = GlobalVariable.site
+    } else {
+        theSite = theSite.replace('geocue', Company)
+    }
+    
+    println('Site is changed to: ' + theSite)
 }
 
 /* WebUI.navigateToUrl(theSite) */
-
 WebUI.openBrowser(theSite)
 
 WebUI.maximizeWindow()

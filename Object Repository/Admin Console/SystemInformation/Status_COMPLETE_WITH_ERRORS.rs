@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TotalOrders_Field</name>
+   <name>Status_COMPLETE_WITH_ERRORS</name>
    <tag></tag>
-   <elementGuidId>44f230f2-b3af-440a-a392-fc554957f0ae</elementGuidId>
+   <elementGuidId>167e4e13-e9ef-49a6-8a55-88c7ed97d895</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h4[(text()=' Total Orders')]/span</value>
+         <value>//label[(text() = 'COMPLETE_WITH_ERRORS' or . = 'COMPLETE_WITH_ERRORS')]/input
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,27 +18,27 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>num-label label label-default</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>type</name>
       <type>Main</type>
-      <value>264</value>
+      <value>checkbox</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>on</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;sysinfo-tabs-pane-1&quot;)/div[1]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-4 col-sm-12&quot;]/h4[1]/span[@class=&quot;num-label label label-default&quot;]</value>
+      <value>id(&quot;genericGridContainer&quot;)/div[@class=&quot;table-responsive grid-min-height&quot;]/table[@class=&quot;table table-striped table-bordered custom-grid default-hover-style&quot;]/thead[1]/tr[@class=&quot;grid-header-row fit&quot;]/th[@class=&quot;orders-grid-th-background&quot;]/div[@class=&quot;dropdown open btn-group&quot;]/div[@class=&quot;dropdown-menu filter-dropdown discrete-filter-dropdown&quot;]/ul[@class=&quot;list-unstyled&quot;]/div[@class=&quot;checkbox&quot;]/label[1]/input[1]</value>
    </webElementProperties>
 </WebElementEntity>

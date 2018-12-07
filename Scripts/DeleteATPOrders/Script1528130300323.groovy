@@ -46,6 +46,8 @@ WebUI.waitForElementClickable(findTestObject('Admin Console/SystemInformation/St
 
 WebUI.uncheck(findTestObject('Admin Console/SystemInformation/Status_CREATEDCheckbox'))
 
+WebUI.uncheck(findTestObject('Admin Console/SystemInformation/Status_COMPLETE_WITH_ERRORS'))
+
 WebUiBuiltInKeywords.uncheck(findTestObject('Admin Console/SystemInformation/Status_STARTEDCheckbox'))
 
 WebUiBuiltInKeywords.uncheck(findTestObject('Admin Console/SystemInformation/Status_SUBMITTEDCheckbox'))
@@ -76,11 +78,12 @@ while (iCountOrders > 0) {
     println('Number of Orders after delete = ' + countOrders2)
 
     if (iCountOrders == iCountOrders2) {
-		throw new com.kms.katalon.core.exception.StepFailedException ('Delete Order failed - ')
-		println ('failed to delete order')
-    }
-	else {
+        throw new com.kms.katalon.core.exception.StepFailedException('Delete Order failed - ')
+        
+        println('failed to delete order')
+    } else {
         iCountOrders = iCountOrders2
+
         countOrders = countOrders2
     }
 }

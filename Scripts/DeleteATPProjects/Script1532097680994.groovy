@@ -37,5 +37,13 @@ WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : '
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
+WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : 'ATPND_Fargo_2005'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
+WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : 'ATPPasco'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
+
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 
