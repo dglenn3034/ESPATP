@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Company') : 'site', ('Role') : 'QC Analyst'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
@@ -27,11 +27,11 @@ WebUI.navigateToUrl(GlobalVariable.QCSite)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Cesium/canvas'))
+not_run: WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPLidarProject', ('ProjectPrefix') : 'ATPLidar'
-        , ('ProductType') : 'Lidar', ('FootprintFile') : '', ('Public') : true, ('DeleteIfExists') : true, ('Description') : 'ATP Lidar Test Project'], 
-    FailureHandling.STOP_ON_FAILURE)
+        , ('ProductType') : 'Lidar', ('FootprintFile') : '', ('Public') : true, ('DeleteIfExists') : true, ('Description') : 'ATP Lidar Test Project'
+        , ('StartDate') : '01/01/2018'], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/LidarLoaderButton'))
 
@@ -48,7 +48,9 @@ not_run: WebUiBuiltInKeywords.selectOptionByValue(findTestObject('QCAnalyst/Lida
 
 WebUI.check(findTestObject('QCAnalyst/LidarLoader/LidarLoaderCopytoESPCheckbox'))
 
-WebUI.sendKeys(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
+WebUI.check(findTestObject('QCAnalyst/LidarLoader/LidarLoaderIsPubliccheckbox'))
+
+WebUI.sendKeys(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\stplanflwest.srs')
 
 try {
     notPresent = WebUiBuiltInKeywords.verifyElementNotPresent(findTestObject('QCAnalyst/LidarLoader/LidarLoaderFailedToReadTheFile'), 

@@ -19,17 +19,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst', ('Company') : 'site'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 'Click here to get Cesium Canvas to disappear'
-WebUI.click(findTestObject('Cesium/canvas'))
+not_run: WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPProjectWithFootprint', ('FootprintFile') : '\\\\diskstation1\\Data\\esp\\test_data\\shapefiles\\HoustonBayArea.zip'
-        , ('ProductType') : 'Lidar', ('ProjectPrefix') : 'ATPFoot', ('Public') : true], FailureHandling.STOP_ON_FAILURE)
+        , ('ProductType') : 'Lidar', ('ProjectPrefix') : 'ATPFoot', ('Public') : true, ('StartDate') : '01/01/2019', ('DeleteIfExists') : true], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

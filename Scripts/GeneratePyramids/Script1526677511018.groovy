@@ -25,7 +25,7 @@ WebUI.navigateToUrl(GlobalVariable.QCSite)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Cesium/canvas'))
+not_run: WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.click(findTestObject('QCAnalyst/QCAnalystProjects_Button'))
 

@@ -2,10 +2,8 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import org.eclipse.persistence.jpa.jpql.Assert
-import org.eclipse.persistence.jpa.jpql.Assert.AssertException
-
+import org.eclipse.persistence.jpa.jpql.Assert as Assert
+import org.eclipse.persistence.jpa.jpql.Assert.AssertException as AssertException
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -23,7 +21,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst', ('Company') : 'site'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
@@ -44,7 +42,7 @@ WebUI.click(findTestObject('OKButton'))
 
 CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Open')
 
-WebUI.verifyElementText(findTestObject('QCAnalyst/ProjectItems/DisplayCount'), 'Displaying 1072 of 1072 Item(s)')
-
+WebUI.verifyElementText(findTestObject('QCAnalyst/ProjectItems/DisplayCount'), 'Displaying 999 of 999 Item(s)')
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
+

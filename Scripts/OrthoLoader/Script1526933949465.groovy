@@ -20,17 +20,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst', ('Company') : 'site'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.click(findTestObject('Cesium/canvas'))
+not_run: WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.callTestCase(findTestCase('Utilities/CreateProject'), [('ProjectName') : 'ATPOrthoProject', ('ProductType') : 'Orthos'
-        , ('ProjectPrefix') : 'ATPOrthos', ('Description') : 'ATP Ortho Loader Test Project', ('Public') : true, ('DeleteIfExists') : true], 
-    FailureHandling.STOP_ON_FAILURE)
+        , ('ProjectPrefix') : 'ATPOrthos', ('Description') : 'ATP Ortho Loader Test Project', ('Public') : true, ('DeleteIfExists') : true
+        , ('StartDate') : '01/01/2019'], FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/OrthoLoaderButton'))
 
