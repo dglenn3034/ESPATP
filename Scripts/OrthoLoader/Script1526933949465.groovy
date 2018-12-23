@@ -43,7 +43,7 @@ WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('QCAnalyst/OrthoLoader/O
 
 WebUI.check(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderCopytoESPCheckbox'))
 
-WebUI.check(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderIsPublicCheckbox'))
+not_run: WebUI.check(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderIsPublicCheckbox'))
 
 not_run: WebUI.sendKeys(findTestObject('QCAnalyst/OrthoLoader/OrthoLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\Hernando\\stplanFLWest.srs')
 

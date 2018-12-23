@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>GetLidarWestAlternate</name>
+   <name>GetLidarWestAlternate - USGS</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
@@ -31,7 +31,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>GetLidar-West PublicLidar Company</description>
-      <initValue>'https://usgs.getlidar-alternate.com'</initValue>
+      <initValue>'https://geocue.getlidar-alternate.com'</initValue>
       <name>GeoCueCompanySite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

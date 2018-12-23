@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SubscribeFinalButton</name>
+   <name>SubscriptionMgtPlanTitle</name>
    <tag></tag>
-   <elementGuidId>aa86a6f4-a602-4757-aeaa-72f79a99c801</elementGuidId>
+   <elementGuidId>f86edb69-5846-4bb0-9a4b-f8940871d3c8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type = 'submit' and (text() = 'Purchase' or . = 'Purchase')]</value>
+         <value>//div[@class='lead']/div/div[(contains(text(),'Current'))]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -48,7 +48,7 @@ not_run: WebUiBuiltInKeywords.selectOptionByValue(findTestObject('QCAnalyst/Lida
 
 WebUI.check(findTestObject('QCAnalyst/LidarLoader/LidarLoaderCopytoESPCheckbox'))
 
-WebUI.check(findTestObject('QCAnalyst/LidarLoader/LidarLoaderIsPubliccheckbox'))
+not_run: WebUI.check(findTestObject('QCAnalyst/LidarLoader/LidarLoaderIsPubliccheckbox'))
 
 WebUI.sendKeys(findTestObject('QCAnalyst/LidarLoader/LidarLoaderSRSFilename'), 'Z:\\ESP\\Test_data\\swfwmd\\stplanflwest.srs')
 

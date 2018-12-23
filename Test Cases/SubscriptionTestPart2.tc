@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Subscribe</name>
+   <name>SubscriptionTestPart2</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f07bd97b-3b28-4e69-b2b9-1dc09fb03aed</testCaseGuid>
+   <testCaseGuid>9087d04a-9ef4-470c-b968-c5c0cfdcce2c</testCaseGuid>
 </TestCaseEntity>
