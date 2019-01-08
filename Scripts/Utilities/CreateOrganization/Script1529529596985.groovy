@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Organizations/a_Organizations'))
 
@@ -49,20 +50,26 @@ WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/Organiz
 
 WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationDescription'), Description)
 
-WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationDeliveryBucket'), GlobalVariable.GeoCueDeliveryBucket)
+not_run: WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationDeliveryBucket'), GlobalVariable.GeoCueDeliveryBucket)
 
 WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Organizations/OrganizationDeliveryPrefix'), GlobalVariable.GeoCueDeliveryPrefix)
 
 /* set default group */
-def TestObject myObject = findTestObject('Admin Console/Organizations/OrganizationGroupPulldown')
-def String Xp = myObject.findPropertyValue('xpath')
+TestObject myObject = findTestObject('Admin Console/Organizations/OrganizationGroupPulldown')
+
+String Xp = myObject.findPropertyValue('xpath')
+
 println('Xp = ' + Xp)
+
 Xp = Xp.replace('GROUP', Group)
-def TestObject tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+
+TestObject tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+
 WebUiBuiltInKeywords.click(tmpObject, FailureHandling.STOP_ON_FAILURE)
 
-
 WebUI.setText(findTestObject('Admin Console/Organizations/OrganizationDomain'), Domain)
+
+WebUI.setText(findTestObject('Admin Console/Organizations/OrganizationQuota'), '5368709120')
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Organizations/OrganizationSaveButton'))
 

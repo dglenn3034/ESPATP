@@ -53,21 +53,29 @@ println('User = ' + GlobalVariable.User)
 
 GlobalVariable.ScreenShotFile = envData.getValue(4, rowNdx)
 
-String theSite = GlobalVariable.GeoCueCompanySite
 
-println('The Site = ' + theSite)
+String theSite = GlobalVariable.site
 
 if (Company) {
     println('Company is specified = ' + Company)
-
-    if (Company == 'site') {
-        theSite = GlobalVariable.site
-    } else {
-        theSite = theSite.replace('geocue', Company)
-    }
-    
-    println('Site is changed to: ' + theSite)
+    String replaceString = '//' + Company + '.'    
+	theSite = theSite.replace('//', replaceString)
+	// GlobalVariable.site = theSite
+} 
+else {
+	if (GlobalVariable.DefaultCompany) {
+   	    String replaceString = '//' + GlobalVariable.DefaultCompany + '.'    
+		theSite = theSite.replace('//', replaceString)
+		// GlobalVariable.site = theSite
+	}
 }
+
+println('The site =  ' + theSite)
+GlobalVariable.AdminSite = theSite + "/admin#"
+GlobalVariable.QCSite = theSite + "/qc#"
+println('The site =  ' + theSite)
+println('Admin site =  ' + GlobalVariable.AdminSite)
+println('QC site =  ' + GlobalVariable.QCSite)
 
 /* WebUI.navigateToUrl(theSite) */
 WebUI.openBrowser(theSite)

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>DEV</name>
+   <name>TCloud-Alternate</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
-      <description>User name for ESP Staging</description>
-      <initValue>'dummy.com'</initValue>
+      <description>User name for TCloud Production</description>
+      <initValue>'dummy@dummy.com'</initValue>
       <name>User</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP StagingUser Password</description>
+      <description>TCloud Production User Password</description>
       <initValue>'dummy'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP Geocue DEV Site</description>
-      <initValue>'http://dev.localhost:38251'</initValue>
+      <description>TCloud Alternate Production Site</description>
+      <initValue>'https://tcloudhost-alternate.com'</initValue>
       <name>site</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -41,7 +41,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Staging/atp/lidar'</initValue>
+      <initValue>'Production/atp/lidar'</initValue>
       <name>S3SourceLidarPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -51,7 +51,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Staging/atp/orthos'</initValue>
+      <initValue>'Production/atp/orthos'</initValue>
       <name>S3SourceOrthoPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -66,22 +66,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>1</initValue>
+      <initValue>6</initValue>
       <name>SRSRowNdx</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Houston, TX'</initValue>
+      <initValue>'Williston, FL '</initValue>
       <name>LidarLocation</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Email of user to use in Creating a New User</description>
+      <description></description>
       <initValue>''</initValue>
       <name>NewUser</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'B88DAE7F801348858FAAB53D9EDAF34A'</initValue>
+      <initValue>'70CDF0F3358140198A4A473F1B915CCF'</initValue>
       <name>GeoCueOrganizationID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -103,5 +103,10 @@
       <description></description>
       <initValue>'Dev/Ortho/ATPPasco'</initValue>
       <name>S3SourceOrthoWithMetadataPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Teledyne'</initValue>
+      <name>DefaultCompany</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

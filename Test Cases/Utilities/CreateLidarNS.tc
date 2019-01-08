@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CreateLidarNS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a5aeafba-73f1-487a-9101-1b03c494999b</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f42e4654-63ba-42cb-920b-803d0f48f250</id>
+      <masked>false</masked>
+      <name>NamedSearch</name>
+   </variable>
+</TestCaseEntity>

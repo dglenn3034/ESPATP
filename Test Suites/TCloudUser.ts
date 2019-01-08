@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TCloudUser</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <lastRun>2019-01-08T11:40:59</lastRun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>9bde36ff-dd94-4552-a8e6-94159cd43977</testSuiteGuid>
+   <testCaseLink>
+      <guid>8ce2ac0e-91a3-4664-bb28-7097c9770bf1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Landsat8AndNAIPOrder</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3c7d504a-237d-4291-8819-703614ae5ca9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c1674f07-7185-4d1c-8b4e-6d5b3c9b5f61</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>027a7cd0-2127-4b59-897d-79d8a7f42372</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9fe9dabe-ee08-4946-9bdd-8dbe0256b23f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/NAIPFilteredOrder</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d785c840-1d00-4ce5-8366-0833a91858ad</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>35eb19cf-bb71-428e-a4c6-7814e6caa3e3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>654c5b5b-9e23-439e-b670-fb7afb88e674</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a5ca43c6-0bc2-4693-89b3-c760d2e0c899</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrderHistorySanityTest</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7be0932d-906c-481c-a825-2fe9255f80a6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PreviewSanity</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ba468699-b86d-4a6e-9b55-c3017b99435b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SmokeTest01</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7bb4f580-751b-413a-a416-036929ece49e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrderHistoryAddToCart</testCaseId>
+   </testCaseLink>
+</TestSuiteEntity>

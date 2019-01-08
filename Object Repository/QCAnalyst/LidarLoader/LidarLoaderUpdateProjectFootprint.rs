@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SearchResults_Grid</name>
+   <name>LidarLoaderUpdateProjectFootprint</name>
    <tag></tag>
-   <elementGuidId>8d5a9dcd-654d-4bd4-970c-896ba881d14d</elementGuidId>
+   <elementGuidId>b9a7fab9-a695-4991-86ee-17bff1df7cd4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>#searchResult</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='search-result-container']</value>
+         <value>//input[@name='isUpdateFootprint']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

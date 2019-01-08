@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>DEV</name>
+   <name>TCloud</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
-      <description>User name for ESP Staging</description>
-      <initValue>'dummy.com'</initValue>
+      <description></description>
+      <initValue>'dummy@dummy.com'</initValue>
       <name>User</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP StagingUser Password</description>
-      <initValue>'dummy'</initValue>
+      <description></description>
+      <initValue>'dummypwd'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP Geocue DEV Site</description>
-      <initValue>'http://dev.localhost:38251'</initValue>
+      <description>TCloud Production Site - Company GeoCue</description>
+      <initValue>'https://tcloudhost.com'</initValue>
       <name>site</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'dummy placeholder'</initValue>
-      <name>QCSite</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'C:\\Users\\myname\\AppData\\Local\\Temp'</initValue>
+      <initValue>'C:\\Users\\dummy\\AppData\\Local\\Temp'</initValue>
       <name>ScreenShotFile</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Admin Site</description>
       <initValue>'dummy placeholder'</initValue>
       <name>AdminSite</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ATP'</initValue>
+      <name>GeoCueDeliveryPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -41,47 +41,42 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Staging/atp/lidar'</initValue>
-      <name>S3SourceLidarPrefix</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'esp-testing'</initValue>
       <name>S3SourceOrthoBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Staging/atp/orthos'</initValue>
+      <initValue>'Production/atp/lidar'</initValue>
+      <name>S3SourceLidarPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Production/atp/orthos'</initValue>
       <name>S3SourceOrthoPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'esp-geocue-orders'</initValue>
-      <name>GeoCueDeliveryBucket</name>
+      <description>QC Site</description>
+      <initValue>'dummy placeholder'</initValue>
+      <name>QCSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'ATPOrders'</initValue>
-      <name>GeoCueDeliveryPrefix</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>1</initValue>
+      <initValue>5</initValue>
       <name>SRSRowNdx</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Houston, TX'</initValue>
+      <initValue>'Williston, FL'</initValue>
       <name>LidarLocation</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Email of user to use in Creating a New User</description>
+      <description></description>
       <initValue>''</initValue>
       <name>NewUser</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'B88DAE7F801348858FAAB53D9EDAF34A'</initValue>
+      <initValue>'70CDF0F3358140198A4A473F1B915CCF'</initValue>
       <name>GeoCueOrganizationID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -103,5 +98,10 @@
       <description></description>
       <initValue>'Dev/Ortho/ATPPasco'</initValue>
       <name>S3SourceOrthoWithMetadataPrefix</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Teledyne'</initValue>
+      <name>DefaultCompany</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

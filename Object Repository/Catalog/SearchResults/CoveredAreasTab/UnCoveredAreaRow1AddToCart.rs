@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SearchResults_Grid</name>
+   <name>UnCoveredAreaRow1AddToCart</name>
    <tag></tag>
-   <elementGuidId>8d5a9dcd-654d-4bd4-970c-896ba881d14d</elementGuidId>
+   <elementGuidId>793c5e98-5000-4dcd-903b-fd6d3ae46ec3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>#searchResult</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='search-result-container']</value>
+         <value>//div[@id='searchResult-pane-2']/descendant::div[@class='fixedDataTableRowLayout_rowWrapper'][2]/descendant::i[contains(@class,'fa-cart-plus')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

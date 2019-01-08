@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>DEV</name>
+   <name>Get3DI - Alternate</name>
    <tag></tag>
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
-      <description>User name for ESP Staging</description>
-      <initValue>'dummy.com'</initValue>
+      <description>User name for ESP Production</description>
+      <initValue>'dummy@dummy.com'</initValue>
       <name>User</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP StagingUser Password</description>
+      <description>ESP Production User Password</description>
       <initValue>'dummy'</initValue>
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP Geocue DEV Site</description>
-      <initValue>'http://dev.localhost:38251'</initValue>
+      <description>Get3Di Alternate  Site</description>
+      <initValue>'https://get3di-alternate.com'</initValue>
       <name>site</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -36,27 +36,27 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'esp-testing'</initValue>
+      <initValue>'glesp-testing'</initValue>
       <name>S3SourceLidarBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Staging/atp/lidar'</initValue>
+      <initValue>'production/atp/lidar'</initValue>
       <name>S3SourceLidarPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'esp-testing'</initValue>
+      <initValue>'glesp-testing'</initValue>
       <name>S3SourceOrthoBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Staging/atp/orthos'</initValue>
+      <initValue>'production/atp/orthos'</initValue>
       <name>S3SourceOrthoPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'esp-geocue-orders'</initValue>
+      <initValue>'glesp-geocue-orders'</initValue>
       <name>GeoCueDeliveryBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -71,32 +71,27 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Houston, TX'</initValue>
+      <initValue>'Rolla, MO'</initValue>
       <name>LidarLocation</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Email of user to use in Creating a New User</description>
+      <description></description>
       <initValue>''</initValue>
       <name>NewUser</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'B88DAE7F801348858FAAB53D9EDAF34A'</initValue>
-      <name>GeoCueOrganizationID</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'esp-testing'</initValue>
+      <initValue>'glesp-testing'</initValue>
       <name>S3SourceLidarWithMetadataBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Dev/Lidar/ATPND_Fargo_2005'</initValue>
+      <initValue>'Dev/Lidar/ND_Fargo_2005'</initValue>
       <name>S3SourceLidarWithMetadataPrefix</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'esp-testing'</initValue>
+      <initValue>'glesp-testing'</initValue>
       <name>S3SourceOrthoWithMetadataBucket</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

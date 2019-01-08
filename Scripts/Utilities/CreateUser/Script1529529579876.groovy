@@ -32,12 +32,12 @@ try {
 }
 catch (Exception e) {
     println(email + ' already exists deleting...')
-		
-	WebUiBuiltInKeywords.click(findTestObject('Admin Console/AdminDeleteRowOne'))
 
-	WebUiBuiltInKeywords.click(findTestObject('OKButton'))
-	
-	WebUI.delay(5)
+    WebUiBuiltInKeywords.click(findTestObject('Admin Console/AdminDeleteRowOne'))
+
+    WebUiBuiltInKeywords.click(findTestObject('OKButton'))
+
+    WebUI.delay(5)
 } 
 finally { 
 }
@@ -48,7 +48,7 @@ WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Users/UsersEmail_Fiel
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Users/UsersSelect Organization_Option'), FailureHandling.STOP_ON_FAILURE)
 
-WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Users/UsersdeliveryBucket_Field'), GlobalVariable.GeoCueDeliveryBucket)
+not_run: WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Users/UsersdeliveryBucket_Field'), GlobalVariable.GeoCueDeliveryBucket)
 
 WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Users/UsersDeliveryPrefix_Field'), GlobalVariable.GeoCueDeliveryPrefix)
 

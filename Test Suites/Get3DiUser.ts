@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Get3DiUser</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <lastRun>2018-11-09T15:27:42</lastRun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>15</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>c7c278d3-821b-42cb-90df-047d4fcdc419</testSuiteGuid>
+   <testCaseLink>
+      <guid>f9d0c72b-479a-4b2a-ada6-1b3e60198743</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DavidsonQueryTest</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8b3d9343-c82b-4f42-b03b-785b88d3297c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>92f7ddff-330d-4343-803b-cb9483ee48ef</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c06465a0-524a-4c84-9209-9c8fdb322bd7</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a3289ca7-f617-4d47-a7f7-470819870cc4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/LidarandOrthosOrder</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>684e8664-c239-4252-a8dd-8379a3adbbda</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c0be5fd5-8c80-463e-a57e-2ac58234af6b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2544bbd2-71d7-4fb0-a350-4519e14d698e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9e22b189-4696-4f09-9017-45f30cd28896</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Landsat8AndNAIPOrder</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3c7d504a-237d-4291-8819-703614ae5ca9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c1674f07-7185-4d1c-8b4e-6d5b3c9b5f61</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>027a7cd0-2127-4b59-897d-79d8a7f42372</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e49cc818-83d5-4d4f-b781-283594356cef</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Landsat8AndOrthosOrder</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ab1f8373-b4cb-4ea2-b9dd-683b1481c675</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9ee1a239-85d4-4f14-a856-d328228e60d0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d4d6f444-302f-4e21-b470-20aa1febc1d0</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>39277fde-779d-4a6f-8d59-c6a08c734f47</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrderHistoryAddToCart</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>81d4b9e0-5226-4d10-b0d1-710eac571501</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrderHistorySanityTest</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8e1d803b-c0c3-420b-9bad-fe5d77c73e31</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PreviewSanity</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c8510f8c-6d23-4946-ba41-ceac9e59de2e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SearchResultsSanity_WithLidar</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6bcbaa48-1030-427a-ab90-04a251b1ed86</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SmokeTest01</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>69faf3e6-519d-4dde-96f5-dc4d6d16c9bd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ProjectsForCatalog</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>020e70cd-f55f-4736-8383-3d9fb43aad28</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ProjectsForCatalogFIlterByAOI</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0ea259fe-4bca-4435-8e06-a6a19f35b721</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SubscriptionTestPart1</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>81737012-a752-49af-9270-399ec5a503d8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SubscriptionTestPart2</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5135aee8-e8c9-4aab-a3e4-ac769299af82</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/VerifySubscriptionData</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2833b14e-a46f-4441-a2ba-2a6e123d051e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Sharing</testCaseId>
+   </testCaseLink>
+</TestSuiteEntity>

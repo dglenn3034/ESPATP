@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SearchResults_Grid</name>
+   <name>OrganizationQuota</name>
    <tag></tag>
-   <elementGuidId>8d5a9dcd-654d-4bd4-970c-896ba881d14d</elementGuidId>
+   <elementGuidId>e6b6027a-dca6-4c4a-963b-b54bd685b029</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>#searchResult</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='search-result-container']</value>
+         <value>//input[@id='formHorizontalQuota']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

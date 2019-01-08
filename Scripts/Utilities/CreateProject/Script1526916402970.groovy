@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import org.openqa.selenium.Keys as Keys
 
+
+
 WebUI.click(findTestObject('QCAnalyst/QCAnalystProjects_Button'))
 
 try {
@@ -53,7 +55,9 @@ catch (Exception e) {
         WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName], FailureHandling.STOP_ON_FAILURE)
 
         println(ProjectName + ' deleted ')
-    } else {
+    } 
+	else {
+		return 0
     }
 } 
 
@@ -88,7 +92,7 @@ if (StartDate) {
 
     WebUI.sendKeys(findTestObject('QCAnalyst/CreateProject/CreateProjectStartDatePicker'), Keys.chord(Keys.BACK_SPACE))
 
-    WebUI.setText(findTestObject('QCAnalyst/CreateProject/CreateProjectStartDatePicker'), StartDate)
+    WebUI.sendKeys(findTestObject('QCAnalyst/CreateProject/CreateProjectStartDatePicker'), StartDate)
 }
 
 println('FootprintFile = ' + FootprintFile)
@@ -102,5 +106,5 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('OKButton' /* ok off completion message */ ))
 
-return null
+return 1
 

@@ -47,28 +47,4 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/GeneratePyramids</testCaseId>
    </testCaseLink>
-   <testCaseLink>
-      <guid>98c6d485-b479-431d-840e-d58db06f1cc4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/LidarLoader</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0b412b81-25da-44ff-8835-e7913c47b9b0</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/OrthoLoader</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5b0f95d7-3b8e-46ee-9440-100c447e1c46</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/LidarLoaderWithMetadata</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>adade7e6-6513-41d5-8bba-a19a613a9155</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/OrthoLoaderWithMetadata</testCaseId>
-   </testCaseLink>
 </TestSuiteEntity>

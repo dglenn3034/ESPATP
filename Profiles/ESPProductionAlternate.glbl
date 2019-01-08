@@ -15,13 +15,13 @@
       <name>pwd</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP Geocue Alternate Production Site</description>
-      <initValue>'https://geocue.earthsensorportal-alternate.com'</initValue>
+      <description></description>
+      <initValue>'https://earthsensorportal-alternate.com'</initValue>
       <name>site</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>GeoCue QC site ESP Alternate Production</description>
-      <initValue>'https://geocue.earthsensorportal-alternate.com/qc'</initValue>
+      <description></description>
+      <initValue>'dummy placeholder'</initValue>
       <name>QCSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -30,18 +30,8 @@
       <name>ScreenShotFile</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>ESP Account Geocue Company</description>
-      <initValue>'https://geocue.earthsensorportal-alternate.com'</initValue>
-      <name>GeoCueCompanySite</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Lidar site SWFWMD</description>
-      <initValue>'https://swfwmd.earthsensorportal-alternate.com/'</initValue>
-      <name>LidarSite</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://geocue.earthsensorportal-alternate.com/admin#/'</initValue>
+      <initValue>'dummy placeholder'</initValue>
       <name>AdminSite</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -94,7 +84,7 @@
       <initValue>'70CDF0F3358140198A4A473F1B915CCF'</initValue>
       <name>GeoCueOrganizationID</name>
    </GlobalVariableEntity>
-      <GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description></description>
       <initValue>'gcesp-testing'</initValue>
       <name>S3SourceLidarWithMetadataBucket</name>
