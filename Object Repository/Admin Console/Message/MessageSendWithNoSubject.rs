@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='messagebox modal-dialog']/descendant::h4[(text()='Send with empty subject?')]</value>
+         <value>//div[@class='messagebox modal-dialog']/descendant::div[(text()='Send with empty subject?')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
