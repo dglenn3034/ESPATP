@@ -19,6 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -70,6 +71,12 @@ WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsDismissButton'))
 WebUI.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
 
 WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
+
+if (GlobalVariable.site.contains('Get3Di')) {
+    WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
+}
+
+WebUI.click(findTestObject('OKButton'))
 
 def date = new Date()
 

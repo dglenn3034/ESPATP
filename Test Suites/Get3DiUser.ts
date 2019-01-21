@@ -4,7 +4,7 @@
    <name>Get3DiUser</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-11-09T15:27:42</lastRun>
+   <lastRun>2019-01-20T15:39:30</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>15</pageLoadTimeout>
@@ -148,29 +148,5 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/ProjectsForCatalogFIlterByAOI</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>0ea259fe-4bca-4435-8e06-a6a19f35b721</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/SubscriptionTestPart1</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>81737012-a752-49af-9270-399ec5a503d8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/SubscriptionTestPart2</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5135aee8-e8c9-4aab-a3e4-ac769299af82</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/VerifySubscriptionData</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2833b14e-a46f-4441-a2ba-2a6e123d051e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Sharing</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
