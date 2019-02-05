@@ -75,7 +75,9 @@ CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Delete')
 
 WebUI.check(findTestObject('QCAnalyst/Projects/input_isDeleteFromCatalog'))
 
-WebUiBuiltInKeywords.check(findTestObject('QCAnalyst/Projects/input_isDeleteFromS3Source'))
+if (DeleteSource) {
+    WebUiBuiltInKeywords.check(findTestObject('QCAnalyst/Projects/input_isDeleteFromS3Source'))
+}
 
 WebUI.click(findTestObject('QCAnalyst/Projects/button_Delete'))
 

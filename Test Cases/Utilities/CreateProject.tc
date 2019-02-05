@@ -69,4 +69,11 @@ Simply returns if the project already exists</description>
       <masked>false</masked>
       <name>StartDate</name>
    </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>07213a2c-e97b-44cb-a0d3-0fd52aef65e9</id>
+      <masked>false</masked>
+      <name>DeleteSource</name>
+   </variable>
 </TestCaseEntity>

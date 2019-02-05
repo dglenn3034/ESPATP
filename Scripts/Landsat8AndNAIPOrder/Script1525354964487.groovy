@@ -73,10 +73,9 @@ WebUI.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
 WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
 if (GlobalVariable.site.contains('Get3Di')) {
-    WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
+    WebUI.click(findTestObject('OKButton'))
 }
 
-WebUI.click(findTestObject('OKButton'))
 
 def date = new Date()
 

@@ -149,4 +149,22 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/ProjectsForCatalogFIlterByAOI</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>677c38d2-fe49-4ebe-a6b9-43bd3e0249a9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/NotificationsSanity</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3ee0ca97-c9e7-4eda-9512-49bbceb31a0a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SubscriptionTestPart1</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aad3d894-d4f1-40c0-b12a-3a38a27ff295</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SubscriptionTestPart2</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

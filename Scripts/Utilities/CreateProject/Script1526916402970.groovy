@@ -21,8 +21,6 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import org.openqa.selenium.Keys as Keys
 
-
-
 WebUI.click(findTestObject('QCAnalyst/QCAnalystProjects_Button'))
 
 try {
@@ -52,12 +50,12 @@ catch (Exception e) {
     WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsCloseDialog_Button'))
 
     if (DeleteIfExists) {
-        WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName], FailureHandling.STOP_ON_FAILURE)
+        WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName, ('DeleteSource') : DeleteSource ], 
+            FailureHandling.STOP_ON_FAILURE)
 
         println(ProjectName + ' deleted ')
-    } 
-	else {
-		return 0
+    } else {
+        return 0
     }
 } 
 
