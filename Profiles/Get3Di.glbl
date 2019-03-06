@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Get3DI site</description>
-      <initValue>'https://get3Di.com'</initValue>
+      <initValue>'https://get3di.com'</initValue>
       <name>site</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

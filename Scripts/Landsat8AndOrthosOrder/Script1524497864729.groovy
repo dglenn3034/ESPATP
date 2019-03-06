@@ -67,7 +67,7 @@ WebUI.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
 
 WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
-if (GlobalVariable.site.contains('Get3Di')) {
+if (GlobalVariable.site.contains('get3di')) {
     WebUI.click(findTestObject('OKButton'))
 }
 

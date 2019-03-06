@@ -20,12 +20,19 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testdata.ExcelData as ExcelData
 import com.kms.katalon.core.testdata.InternalData as InternalData
+import com.kms.katalon.core.logging.KeywordLogger
 
 ExcelData envData = findTestData('LoginData')
 
 Integer rowNdx = 1
 
 GlobalVariable.NewUser = envData.getValue(2, 6)
+KeywordLogger log = new KeywordLogger()
+
+log.logInfo('Role = ' +  Role )
+log.logInfo('Company  = ' +  Company )
+log.logInfo('Global Site   = ' +  GlobalVariable.site )
+
 
 if (Role == 'Company Admin') {
     rowNdx = 1
@@ -43,7 +50,7 @@ if (Role == 'Company Admin') {
     rowNdx = 1
 }
 
-println('rowNdx = ' + rowNdx.toString())
+log.logInfo('rowNdx = ' + rowNdx.toString())
 
 GlobalVariable.User = envData.getValue(2, rowNdx)
 
@@ -71,6 +78,8 @@ else {
 }
 
 println('The site =  ' + theSite)
+log.logInfo('Site = ' +  theSite )
+
 GlobalVariable.AdminSite = theSite + "/admin#"
 GlobalVariable.QCSite = theSite + "/qc#"
 println('The site =  ' + theSite)

@@ -4,7 +4,6 @@
    <name>TCloudUser</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2019-01-21T16:23:08</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>

@@ -36,7 +36,7 @@ CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Status', false)
 
 CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Order Name')
 
-WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'ATPLS')
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'ATP')
 
 CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Status')
 
@@ -54,11 +54,9 @@ CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Remove')
 
 WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
-if (GlobalVariable.site.contains('Get3Di')) {
+if (GlobalVariable.site.contains('get3di')) {
     WebUI.click(findTestObject('OKButton'))
 }
-
-
 
 def date = new Date()
 

@@ -21,7 +21,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst', ('Company') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'QC Analyst', ('Company') : 'USGS'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl(GlobalVariable.QCSite)
 
@@ -42,7 +42,7 @@ WebUI.click(findTestObject('OKButton'))
 
 CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Open')
 
-WebUI.verifyElementText(findTestObject('QCAnalyst/ProjectItems/DisplayCount'), 'Displaying 999 of 999 Item(s)')
+WebUI.verifyElementText(findTestObject('QCAnalyst/ProjectItems/DisplayCount'), 'Displaying 111 of 111 Item(s)')
 
 WebUI.callTestCase(findTestCase('Utilities/QCAnalystSignOut'), [:], FailureHandling.STOP_ON_FAILURE)
 

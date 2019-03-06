@@ -106,7 +106,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Teledyne'</initValue>
+      <initValue>'GeoCue'</initValue>
       <name>DefaultCompany</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

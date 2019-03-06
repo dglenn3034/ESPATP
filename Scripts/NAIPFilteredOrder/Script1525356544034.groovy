@@ -24,7 +24,7 @@ WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'User', ('Comp
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-WebUI.setText(findTestObject('Cesium/CesiumSearchField'), 'Atlanta, GA')
+WebUI.setText(findTestObject('Cesium/CesiumSearchField'), 'Miami Beach, FL')
 
 WebUI.click(findTestObject('Cesium/CesiumSearchButton'))
 
@@ -41,7 +41,7 @@ WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
 CustomKeywords.'productSelection.productSelection.SelectChildProduct'('NAIP', 'RGB')
 
-CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('NAIP', '>=', 'Date Acquired', '01/01/2014', 
+CustomKeywords.'productAttributeFiltering.attributeFiltering.SetAttributeFilter'('NAIP', '>=', 'Date Acquired', '01/01/2016', 
     true)
 
 WebUI.click(findTestObject('Catalog/ProductSelection/ProductSelection_OK'))
@@ -56,11 +56,9 @@ WebUI.click(findTestObject('Catalog/OrderCart/OrderCart_Button'))
 
 WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
-if (GlobalVariable.site.contains('Get3Di')) {
+if (GlobalVariable.site.contains('get3di')) {
     WebUI.click(findTestObject('OKButton'))
 }
-
-
 
 def date = new Date()
 

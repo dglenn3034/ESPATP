@@ -4,7 +4,6 @@
    <name>Get3DiUser</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2019-01-20T15:39:30</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>15</pageLoadTimeout>
