@@ -38,7 +38,7 @@ WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
-CustomKeywords.'productSelection.productSelection.SelectChildProduct'('DESIS-30', 'L2A')
+CustomKeywords.'productSelection.productSelection.SelectChildProduct'('DESIS-30', 'L1C')
 
 WebUiBuiltInKeywords.click(findTestObject('Catalog/ProductSelection/ProductSelection_OK'))
 
@@ -59,9 +59,10 @@ WebUI.selectOptionByLabel(findTestObject('Catalog/PostProcessingDESIS/MapProject
 WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Catalog/PostProcessingDESIS/ImageResampling'), 'Cubic Convolution', 
     false)
 
-WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Catalog/PostProcessingDESIS/TerrainCorrection'), 'Yes', false)
+not_run: WebUiBuiltInKeywords.selectOptionByLabel(findTestObject('Catalog/PostProcessingDESIS/TerrainCorrection'), 'Yes', 
+    false)
 
-WebUI.setText(findTestObject('Catalog/PostProcessingDESIS/OzoneValue'), '300')
+not_run: WebUI.setText(findTestObject('Catalog/PostProcessingDESIS/OzoneValue'), '300')
 
 WebUI.click(findTestObject('Catalog/PostProcessing/PostProcessingOK_Button'))
 

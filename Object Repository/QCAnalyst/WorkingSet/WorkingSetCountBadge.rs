@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button [@class='fa fa-gavel cesium-button btn btn-primary']/span[@class='badge']</value>
+         <value>//button [@class='fa fa-gavel cesium-button btn btn-primary']/span[@class='badge count-badge']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

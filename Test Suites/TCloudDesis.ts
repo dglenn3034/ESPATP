@@ -28,4 +28,28 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/TaskingRequestSetup</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>94167c91-eaaa-42ab-b91f-e17e63bd712f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/PreviewSanity</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2779712b-9ee9-42c7-beb9-648cfad3fb54</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrderHistoryAddToCart</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>782438a2-20c4-4e4a-8d0a-8b2d4deba720</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrderHistorySanityTest</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>77100984-a85d-4e42-8d4f-89015afcab42</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SmokeTest01</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

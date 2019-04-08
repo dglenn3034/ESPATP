@@ -6,12 +6,11 @@
    <elementGuidId>01766538-5fc5-4ebe-87f8-91e922bee2a1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[@class='badge count-badge']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@class='badge']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

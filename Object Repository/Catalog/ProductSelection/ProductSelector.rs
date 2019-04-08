@@ -6,6 +6,10 @@
    <elementGuidId>6f5643d9-21a9-4fdb-8878-da941dccd54f</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//span[(text()='PRODUCT')]/parent::td/parent::tr/td/input</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//span[(text()='PRODUCT')]/parent::td/parent::tr/td/input</value>
       </entry>

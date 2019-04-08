@@ -28,7 +28,7 @@ WebUI.delay(3)
 
 WebUI.waitForElementClickable(findTestObject('Catalog/Main/CatalogNamedSearch_Button'), 3)
 
-WebUI.click(findTestObject('Catalog/Main/CatalogNamedSearch_Button')) 
+WebUI.click(findTestObject('Catalog/Main/CatalogNamedSearch_Button'))
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 

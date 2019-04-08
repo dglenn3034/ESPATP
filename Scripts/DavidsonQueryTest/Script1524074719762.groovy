@@ -38,7 +38,7 @@ WebUI.click(findTestObject('QCAnalyst/Projects/ProjectFilterAttributeName_Dropdo
 
 WebUI.setText(findTestObject('QCAnalyst/Projects/ProjectFilterProjectName_field'), 'Davidson')
 
-WebUI.click(findTestObject('OKButton'))
+WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsFilterOKBtn'))
 
 CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Open')
 

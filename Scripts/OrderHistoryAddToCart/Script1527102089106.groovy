@@ -55,7 +55,7 @@ CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Remove')
 WebUiBuiltInKeywords.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 
 if (GlobalVariable.site.contains('get3di')) {
-    WebUI.click(findTestObject('OKButton'))
+    WebUI.click(findTestObject('Catalog/OrderCart/OrderCartOKBtn'))
 }
 
 def date = new Date()

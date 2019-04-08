@@ -25,7 +25,7 @@ WebUI.navigateToUrl(GlobalVariable.QCSite)
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
-not_run: WebUI.click(findTestObject('Cesium/canvas'))
+WebUI.click(findTestObject('Cesium/canvas'))
 
 WebUI.click(findTestObject('QCAnalyst/QCAnalystProjects_Button'))
 
@@ -33,7 +33,7 @@ WebUI.click(findTestObject('QCAnalyst/Projects/ProjectAddLine'))
 
 WebUI.setText(findTestObject('QCAnalyst/Projects/ProjectFilterProjectName_field'), 'Davidson')
 
-WebUI.click(findTestObject('OKButton'))
+WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsFilterOKBtn'))
 
 CustomKeywords.'genericGrid.gridOperations.ExecuteGridFunction'(1, 'Open')
 
@@ -57,7 +57,7 @@ CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Name', true)
 
 CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Name')
 
-WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'DavCo_AA')
+WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'AA')
 
 WebUiBuiltInKeywords.click(findTestObject('QCAnalyst/ProjectItems/ProjectItemsSelectAll'))
 

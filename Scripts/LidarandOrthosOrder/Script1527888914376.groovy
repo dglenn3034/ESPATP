@@ -38,6 +38,8 @@ WebUI.click(findTestObject('Catalog/Main/CatalogAOIAsView_Button'))
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
+WebUI.waitForElementNotPresent(findTestObject('MapFadeIn'), 5)
+
 WebUI.click(findTestObject('Catalog/Main/CatalogProducts_Button'))
 
 CustomKeywords.'productSelection.productSelection.SelectProduct'('OrthoImages')

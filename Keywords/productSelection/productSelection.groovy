@@ -41,7 +41,7 @@ public class productSelection {
 			println('Modified Product Filter Xp = ' + Xp)
 
 			try {
-				WebUiBuiltInKeywords.verifyElementPresent(tmpObject, 2, FailureHandling.STOP_ON_FAILURE)
+				/* WebUiBuiltInKeywords.verifyElementPresent(tmpObject, 2, FailureHandling.STOP_ON_FAILURE) */
 				WebUiBuiltInKeywords.uncheck(tmpObject)
 				ndx = ndx + 1
 			}

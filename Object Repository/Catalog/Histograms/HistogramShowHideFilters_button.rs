@@ -13,8 +13,12 @@
          <key>BASIC</key>
          <value>//button[@id = 'showHideFilter' and @type = 'button']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='tb-wrapper advanced-menu tb-slide-in']//button[@class='fas fa-chart-bar cesium-button cesium-toolbar-button btn btn-primary']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

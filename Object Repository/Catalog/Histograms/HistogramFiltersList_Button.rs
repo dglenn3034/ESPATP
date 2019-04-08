@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='show-hide-filter-container left-container']/div/div/div/div/div/button</value>
+         <value>//button[@type='button' and (text() = 'Filters')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LoadNotificationDisableText</name>
+   <name>SearchResultsMinimize</name>
    <tag></tag>
-   <elementGuidId>6f937463-952a-427b-a274-f8131cdf429a</elementGuidId>
+   <elementGuidId>9aee6fab-b063-4ef8-a10f-cec6ab87cc4e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[(contains(text(),'DISABLE'))]</value>
+         <value>//div[@class='search-result-container']//i[@class='fa fa-caret-up']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

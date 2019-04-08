@@ -35,7 +35,7 @@ WebUI.click(findTestObject('QCAnalyst/Projects/ProjectAddLine'))
 
 WebUI.setText(findTestObject('QCAnalyst/Projects/ProjectFilterProjectName_field'), ProjectName)
 
-WebUI.click(findTestObject('OKButton'))
+WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsFilterOKBtn'))
 
 try {
     WebUI.verifyElementPresent(findTestObject('QCAnalyst/Projects/ProjectsNoRecordsFound'), 2)
@@ -50,7 +50,7 @@ catch (Exception e) {
     WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsCloseDialog_Button'))
 
     if (DeleteIfExists) {
-        WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName, ('DeleteSource') : DeleteSource ], 
+        WebUI.callTestCase(findTestCase('Utilities/DeleteProject'), [('ProjectName') : ProjectName, ('DeleteSource') : DeleteSource], 
             FailureHandling.STOP_ON_FAILURE)
 
         println(ProjectName + ' deleted ')
@@ -97,7 +97,7 @@ println('FootprintFile = ' + FootprintFile)
 
 WebUI.click(findTestObject('QCAnalyst/CreateProject/CreateProjectSave'))
 
-WebUI.click(findTestObject('OKButton' /* OK off confirmation message */ ))
+WebUI.click(findTestObject('OKButton'))
 
 'Wait on completion message to fade'
 WebUI.delay(5)

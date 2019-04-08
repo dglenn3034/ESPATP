@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[(text()='Do you want to ENABLE data notification ATP-Missouri ?')]</value>
+         <value>//div[(contains(text(),'ENABLE'))]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

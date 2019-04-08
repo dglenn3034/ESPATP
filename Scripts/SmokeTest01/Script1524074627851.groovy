@@ -61,6 +61,10 @@ WebUI.click(findTestObject('Catalog/AOI/AOIExecutetheImport_button'))
 
 WebUI.waitForElementVisible(findTestObject('Catalog/SearchResults/SearchResults_Grid'), 0)
 
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsMinimize'))
+
+WebUI.click(findTestObject('Catalog/Main/AdvancedSlideOut'))
+
 WebUI.click(findTestObject('Catalog/Histograms/HistogramShowHideFilters_button'))
 
 WebUI.waitForElementClickable(findTestObject('Catalog/Histograms/HistogramFiltersList_Button'), 0)
@@ -93,6 +97,8 @@ WebUI.click(findTestObject('Catalog/NamedSearch/SaveNamedSearchSave_Button'))
 
 WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
+WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsMaximize'))
+
 WebUI.click(findTestObject('Catalog/SearchResults/SearchResults_SelectFirstRow'))
 
 WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsAddSelectedToCart_Button'))
@@ -104,8 +110,6 @@ WebUI.click(findTestObject('Catalog/OrderCart/OrderCartCheckout_Button'))
 if (GlobalVariable.site.contains('get3di')) {
     WebUI.click(findTestObject('OKButton'))
 }
-
-
 
 def date = new Date()
 

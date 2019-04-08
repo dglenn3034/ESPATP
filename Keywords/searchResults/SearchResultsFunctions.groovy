@@ -133,8 +133,8 @@ public class searchResults {
 
 		WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
 
-		/* arbitrary stop point of 10 for ndx */
-		while (colNdx < 1 && ndx < 10 && found == false) {
+		/* arbitrary stop point of 20 for ndx */
+		while (colNdx < 1 && ndx < 20 && found == false) {
 
 			sndx = ndx.toString()
 			Xp = ChkBoxLabelXp.replace('NDX', sndx)
@@ -166,7 +166,7 @@ public class searchResults {
 
 		WebUI.click(findTestObject('Catalog/SearchResults/SearchResultsFieldsToggle_button'))
 
-		if (ndx == 10) {
+		if (ndx == 20) {
 			throw new com.kms.katalon.core.exception.StepFailedException('Failed to find column name = ' + columnName)
 		}
 

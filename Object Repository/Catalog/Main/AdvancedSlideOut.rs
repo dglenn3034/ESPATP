@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LoadNotificationDisableText</name>
+   <name>AdvancedSlideOut</name>
    <tag></tag>
-   <elementGuidId>6f937463-952a-427b-a274-f8131cdf429a</elementGuidId>
+   <elementGuidId>ae68e848-4800-4eca-975d-2104f20b0690</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[(contains(text(),'DISABLE'))]</value>
+         <value>//div[@class='tb-wrapper advanced-menu tb-slide-out']/button</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

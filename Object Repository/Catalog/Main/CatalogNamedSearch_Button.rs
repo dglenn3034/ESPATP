@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[(contains(@class,'download'))])[1]</value>
+         <value>//div[@class='tb-wrapper basic-menu tb-slide-in']//button[@class='fab fa-neos cesium-button cesium-toolbar-button btn btn-primary']</value>
       </entry>
       <entry>
          <key>BASIC</key>

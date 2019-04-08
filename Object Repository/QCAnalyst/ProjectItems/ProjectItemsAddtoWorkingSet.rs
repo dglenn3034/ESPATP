@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='modal-footer projectItemFooter']/button[@class='fa fa-gavel btnAddSelectedProjectItems btn btn-primary']
+         <value>//span[@class='action-column-header-icon action-column-header-unselected']/a/i[@class='fa fa-gavel']
 
 </value>
       </entry>

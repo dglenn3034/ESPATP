@@ -6,12 +6,12 @@
    <elementGuidId>99ca2345-8b56-4130-b6a0-a5616b747181</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//iframe[@name = '__privateStripeFrame4' and @src = 'https://js.stripe.com/v3/elements-inner-card-4a29888d5af683ac95fb41d7321c34e4.html#style[base][fontSize]=18px&amp;style[base][color]=%23424770&amp;style[base][letterSpacing]=0.025em&amp;style[base][::placeholder][color]=%23aab7c4&amp;style[invalid][color]=%239e2146&amp;componentName=cardNumber&amp;wait=false&amp;rtl=false&amp;keyMode=test&amp;origin=https%3A%2F%2Fgetlidar-alternate.com&amp;referrer=https%3A%2F%2Fgetlidar-alternate.com%2F&amp;controllerId=__privateStripeController1' and @title = 'Secure payment input frame']</value>
+         <key>XPATH</key>
+         <value>//iframe[@name='__privateStripeFrame5']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//iframe[@name='__privateStripeFrame4']</value>
+         <key>BASIC</key>
+         <value>//iframe[@name = '__privateStripeFrame4' and @src = 'https://js.stripe.com/v3/elements-inner-card-4a29888d5af683ac95fb41d7321c34e4.html#style[base][fontSize]=18px&amp;style[base][color]=%23424770&amp;style[base][letterSpacing]=0.025em&amp;style[base][::placeholder][color]=%23aab7c4&amp;style[invalid][color]=%239e2146&amp;componentName=cardNumber&amp;wait=false&amp;rtl=false&amp;keyMode=test&amp;origin=https%3A%2F%2Fgetlidar-alternate.com&amp;referrer=https%3A%2F%2Fgetlidar-alternate.com%2F&amp;controllerId=__privateStripeController1' and @title = 'Secure payment input frame']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -4,7 +4,17 @@
    <name>CatalogProducts_Button</name>
    <tag></tag>
    <elementGuidId>7aeb9cbe-fbf4-49ae-b14a-c75fbc4127c6</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@class='fab fa-product-hunt cesium-button cesium-toolbar-button btn btn-primary']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@type = 'button' and (text() = 'Products' or . = 'Products')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
