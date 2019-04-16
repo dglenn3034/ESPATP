@@ -36,7 +36,7 @@ WebUI.click(findTestObject('QCAnalyst/Projects/ProjectFilterAttributeName_Dropdo
 
 WebUI.setText(findTestObject('QCAnalyst/Projects/ProjectFilterProjectName_field'), ProjectName)
 
-WebUI.click(findTestObject('OKButton'))
+WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsFilterOKBtn'))
 
 /* 
 'If filter is already set, skip to delete, otherwise create filter'
@@ -92,3 +92,4 @@ WebUiBuiltInKeywords.delay(5)
 WebUI.click(findTestObject('QCAnalyst/Projects/ProjectsCloseDialog_Button'))
 
 return null
+
