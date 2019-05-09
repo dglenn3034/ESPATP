@@ -29,13 +29,13 @@ WebUiBuiltInKeywords.click(findTestObject('Catalog/Main/CatalogOrderHistory_butt
 
 CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Order Name', true)
 
-CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Status', false)
+CustomKeywords.'genericGrid.gridOperations.AddOneColumn'('Catalog Status', false)
 
 CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Order Name')
 
 WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'ATP')
 
-CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Status')
+CustomKeywords.'genericGrid.gridOperations.ColumnFilter'('Catalog Status')
 
 WebUiBuiltInKeywords.setText(findTestObject('Grid/LikeFilter'), 'SUCCESS')
 
