@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ReportsDatePickEnd</name>
+   <name>TaskingUsageReportsDatePickEnd</name>
    <tag></tag>
-   <elementGuidId>9aa14b8a-3296-42b8-a884-88f87b887c0a</elementGuidId>
+   <elementGuidId>a5674a74-1b9a-41fb-860c-bb55dce08b0b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@type=&quot;text&quot; and @placeholder=&quot;End Date&quot; and contains(@class,&quot;date-pick&quot;)]</value>
+         <value>//div[@id='sysinfo-tabs-pane-3']/descendant::input[@type=&quot;text&quot; and @placeholder=&quot;End Date&quot; and contains(@class,&quot;date-pick&quot;)]</value>
       </entry>
       <entry>
          <key>BASIC</key>

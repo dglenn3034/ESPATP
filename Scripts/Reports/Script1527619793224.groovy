@@ -19,6 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import java.text.SimpleDateFormat as SimpleDateFormat
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 WebUI.callTestCase(findTestCase('Utilities/LogMeIn'), [('Role') : 'Company Admin', ('Company') : 'GeoCue'], FailureHandling.STOP_ON_FAILURE)
 
@@ -28,22 +29,30 @@ WebUI.waitForElementNotPresent(findTestObject('LoadingMask'), 0)
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsViewDetails'))
 
-'GeoCue Organization in GeoCue company'
-TestObject myObject = findTestObject('Admin Console/Reports/ReportsSelectOrganization')
+try {
+    myObject = findTestObject('Admin Console/Reports/OrdersOrganization')
 
-String Xp = myObject.findPropertyValue('xpath')
+    'GeoCue Organization in GeoCue company'
+    TestObject myObject = findTestObject('Admin Console/Reports/ReportsSelectOrganization')
 
-println('Xp = ' + Xp)
+    String Xp = myObject.findPropertyValue('xpath')
 
-Xp = Xp.replace('ORGANIZATIONID', GlobalVariable.GeoCueOrganizationID)
+    println('Xp = ' + Xp)
 
-Xp = Xp.replace('TABNO', '1' /* first tab is orders, 2nd is Users */ )
+    Xp = Xp.replace('ORGANIZATIONID', GlobalVariable.GeocueOrganizationID)
 
-TestObject tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+    Xp = Xp.replace('TABNO', '1' /* first tab is orders, 2nd is Users */ )
 
-WebUiBuiltInKeywords.click(tmpObject, FailureHandling.STOP_ON_FAILURE)
+    TestObject tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
 
-WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePickStart'), '04/01/2018')
+    WebUiBuiltInKeywords.click(tmpObject, FailureHandling.STOP_ON_FAILURE)
+}
+catch (Exception e) {
+} 
+
+WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/OrderReportsDatePickStart'), FailureHandling.STOP_ON_FAILURE)
+
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/OrderReportsDatePickStart'), '04/01/2018')
 
 'To clear date picker box'
 WebUI.click(findTestObject('Admin Console/Reports/OrderReportHeader'))
@@ -54,7 +63,7 @@ sdf = new SimpleDateFormat('MM/dd/yyyy')
 
 endDate = sdf.format(date)
 
-WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/ReportsDatePickEnd'), endDate)
+WebUiBuiltInKeywords.setText(findTestObject('Admin Console/Reports/OrderReportsDatePickEnd'), endDate)
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsOrderReportPreview'))
 
@@ -79,20 +88,26 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Admin Console/Reports/UserReportHeader'))
 
-'GeoCue Organization in GeoCue company'
-myObject = findTestObject('Admin Console/Reports/ReportsSelectOrganization')
+try {
+    myObject = findTestObject('Admin Console/Reports/UsersOrganization')
 
-Xp = myObject.findPropertyValue('xpath')
+    'GeoCue Organization in GeoCue company'
+    myObject = findTestObject('Admin Console/Reports/ReportsSelectOrganization')
 
-println('Xp = ' + Xp)
+    Xp = myObject.findPropertyValue('xpath')
 
-Xp = Xp.replace('ORGANIZATIONID', GlobalVariable.GeoCueOrganizationID)
+    Xp = Xp.replace('ORGANIZATIONID', GlobalVariable.GeocueOrganizationID)
 
-Xp = Xp.replace('TABNO', '2' /* first tab is orders, 2nd is Users */ )
+    Xp = Xp.replace('TABNO', '2' /* first tab is orders, 2nd is Users */ )
 
-tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+    println('Xp = ' + Xp)
 
-WebUiBuiltInKeywords.click(tmpObject, FailureHandling.STOP_ON_FAILURE)
+    tmpObject = WebUI.modifyObjectProperty(myObject, 'xpath', 'equals', Xp, true)
+
+    WebUiBuiltInKeywords.click(tmpObject, FailureHandling.STOP_ON_FAILURE)
+}
+catch (Exception e) {
+} 
 
 WebUiBuiltInKeywords.click(findTestObject('Admin Console/Reports/ReportsUserReportPreview'))
 

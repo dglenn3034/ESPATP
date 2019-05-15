@@ -102,6 +102,6 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'70CDF0F3358140198A4A473F1B915CCF'</initValue>
-      <name>GeoCueOrganizationID</name>
+      <name>GeocueOrganizationID</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

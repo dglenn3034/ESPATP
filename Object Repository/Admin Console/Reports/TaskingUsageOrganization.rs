@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>QCAnalystProjects_Button</name>
+   <name>TaskingUsageOrganization</name>
    <tag></tag>
-   <elementGuidId>c5e70f01-bf5a-45c0-aa7a-293b01c00c4c</elementGuidId>
+   <elementGuidId>3d94dd1a-b197-42fb-ab6b-223422385a1b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>.btnAddProj </value>
+         <key>XPATH</key>
+         <value>//div[@id='sysinfo-tabs-pane-3']/descendant::select[@placeholder='Organization']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[contains(@class, 'product-hunt')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

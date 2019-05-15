@@ -9,6 +9,10 @@
          <key>BASIC</key>
          <value>//div[@id='sysinfo-tabs-pane-TABNO']/div/div/form/div/div/div/div/select[@placeholder='Organization']/option[@value='ORGANIZATIONID' ]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

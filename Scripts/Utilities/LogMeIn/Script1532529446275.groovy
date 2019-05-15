@@ -20,18 +20,22 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testdata.ExcelData as ExcelData
 import com.kms.katalon.core.testdata.InternalData as InternalData
-import com.kms.katalon.core.logging.KeywordLogger
+import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
 ExcelData envData = findTestData('LoginData')
 
 Integer rowNdx = 1
 
 GlobalVariable.NewUser = envData.getValue(2, 6)
+
 KeywordLogger log = new KeywordLogger()
 
-log.logInfo('Role = ' +  Role )
-log.logInfo('Company  = ' +  Company )
-log.logInfo('Global Site   = ' +  GlobalVariable.site )
+log.logInfo('Role = ' + Role)
+
+log.logInfo('Company  = ' + Company)
+
+log.logInfo('Global Site   = ' + GlobalVariable.site)
 
 
 if (Role == 'Company Admin') {
@@ -60,36 +64,54 @@ println('User = ' + GlobalVariable.User)
 
 GlobalVariable.ScreenShotFile = envData.getValue(4, rowNdx)
 
-
 String theSite = GlobalVariable.site
 
 if (Company) {
     println('Company is specified = ' + Company)
-    String replaceString = '//' + Company + '.'    
-	theSite = theSite.replace('//', replaceString)
-	// GlobalVariable.site = theSite
-} 
-else {
-	if (GlobalVariable.DefaultCompany) {
-   	    String replaceString = '//' + GlobalVariable.DefaultCompany + '.'    
-		theSite = theSite.replace('//', replaceString)
-		// GlobalVariable.site = theSite
-	}
+
+    String replaceString = ('//' + Company) + '.'
+
+    theSite = theSite.replace('//', replaceString) // GlobalVariable.site = theSite
+    // GlobalVariable.site = theSite
+} else {
+    if (GlobalVariable.DefaultCompany) {
+        String replaceString = ('//' + GlobalVariable.DefaultCompany) + '.'
+
+        theSite = theSite.replace('//', replaceString)
+    }
 }
 
 println('The site =  ' + theSite)
-log.logInfo('Site = ' +  theSite )
 
-GlobalVariable.AdminSite = theSite + "/admin#"
-GlobalVariable.QCSite = theSite + "/qc#"
-println('The site =  ' + theSite)
+log.logInfo('Site = ' + theSite)
+
+GlobalVariable.AdminSite = (theSite + '/admin#')
+
+GlobalVariable.QCSite = (theSite + '/qc#')
+
 println('Admin site =  ' + GlobalVariable.AdminSite)
+
 println('QC site =  ' + GlobalVariable.QCSite)
 
-/* WebUI.navigateToUrl(theSite) */
-WebUI.openBrowser(theSite)
+/* if site is get3di then we have to go through the landing page */
+if (GlobalVariable.site.indexOf('get3di') > -1) {
+    WebUI.openBrowser(GlobalVariable.site)
 
-WebUI.maximizeWindow()
+    WebUI.maximizeWindow() /* click on login */
+
+    WebUI.click(findTestObject('LoginFromGet3di'))
+	
+	/* navigate to login url */
+	if (GlobalVariable.site != theSite) {
+	    WebUI.navigateToUrl(theSite)
+	}
+} 
+else {
+	WebUI.openBrowser(theSite)
+
+	WebUI.maximizeWindow()
+}
+
 
 WebUI.setText(findTestObject('Catalog/input_Email'), GlobalVariable.User)
 
